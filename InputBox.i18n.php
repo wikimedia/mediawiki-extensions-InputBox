@@ -133,7 +133,7 @@ $messages['az'] = array(
 $messages['bcc'] = array(
 	'inputbox-desc' => 'اجازه داتن په هور بیگ فرم های HTML چه پیش تعریف بوتگین',
 	'inputbox-error-no-type' => 'شما نوع جعبه ورودی په شرکتن مشخص نه کتت',
-	'inputbox-error-bad-type' => 'نوع جعبه ورودی "$1"  جاه آرگ نه بیت. 
+	'inputbox-error-bad-type' => 'نوع جعبه ورودی "$1"  جاه آرگ نه بیت.
 لطفا مشخص کنیت  "شرکتن", "نظر", "گردگ" یا "گردگ2".',
 	'tryexact' => 'تطبیق کامل آزمایش کن',
 	'searchfulltext' => 'متن کامل گرد',
@@ -198,7 +198,7 @@ $messages['bn'] = array(
 $messages['bqi'] = array(
 	'inputbox-desc' => 'اجازه استفاده زه فرم‌های HTML قبلا تعریف وابیده را اده',
 	'inputbox-error-no-type' => 'نوع جعبه ورودی  درست شونده را معلوم نکردین.',
-	'inputbox-error-bad-type' => 'نوع \\\'\\\'$1\\\'\\\' سی جعبه ورودی شناخته نه. لطفاً یکی زه موارد 
+	'inputbox-error-bad-type' => 'نوع "$1" سی جعبه ورودی شناخته نه. لطفاً یکی زه موارد 
 "create", "comment", "search" or "search2" را مشخص کنین.',
 	'tryexact' => 'تطبیق مورد به مورد را آزمایش کن',
 	'searchfulltext' => 'جستجوی همه متن',
@@ -517,7 +517,7 @@ $messages['he'] = array(
 $messages['hi'] = array(
 	'inputbox-desc' => 'पहलेसे लिखे गये HTML फार्म इस्तेमाल करने की अनुमति दें',
 	'inputbox-error-no-type' => 'इनपुट बक्सा बनाने के लिये आपने इसका प्रकार बताया नहीं हैं।',
-	'inputbox-error-bad-type' => 'इनपुट बक्से का "$1" यह प्रकार उचित नहीं हैं। 
+	'inputbox-error-bad-type' => 'इनपुट बक्से का "$1" यह प्रकार उचित नहीं हैं।
 कृपया "create", "comment", "search" या फिर "search2" में से एक चुनें।',
 	'tryexact' => 'दिये हुए शब्दही खोजें',
 	'searchfulltext' => 'पूरा पाठ खोजें',
@@ -674,7 +674,7 @@ $messages['jut'] = array(
 $messages['jv'] = array(
 	'inputbox-desc' => 'Ngidinaké nganggo formulir HTML sing wis ditemtokaké',
 	'inputbox-error-no-type' => 'Panjenengan durung nemtokaké tipe kothak input sing arep digawé.',
-	'inputbox-error-bad-type' => 'Tipe kothak input "$1" ora ditepungi. 
+	'inputbox-error-bad-type' => 'Tipe kothak input "$1" ora ditepungi.
 Tulung nganggoa "create", "comment", "search" utawa "search2".',
 	'tryexact' => 'Cobanen pancocogan èksak',
 	'searchfulltext' => 'Golèk ing tèks jangkep',
@@ -1425,4 +1425,3 @@ $messages['zh-hant'] = array(
 $messages['zu'] = array(
 	'searchfulltext' => 'Sesha ukubhala konke',
 );
-

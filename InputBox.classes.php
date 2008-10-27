@@ -10,7 +10,7 @@
 class InputBox {
 
 	/* Fields */
-	
+
 	private $_parser;
 	private $_type;
 	private $_width;
@@ -26,17 +26,17 @@ class InputBox {
 	private $_namespaces;
 	private $_id;
 	private $_inline;
-	
+
 	/* Functions */
-	
+
 	public function __construct( $parser ) {
 		$this->_parser = $parser;
 	}
-	
+
 	public function render() {
 		// Internationalization
 		wfLoadExtensionMessages( 'InputBox' );
-		
+
 		// Handle various types
 		switch( $this->_type ) {
 			case 'create':
@@ -65,15 +65,15 @@ class InputBox {
 	 */
 	public function getSearchForm() {
 		global $wgContLang;
-		
+
 		// Use button label fallbacks
-		if( !$this->_buttonlabel ) {
+		if ( !$this->_buttonlabel ) {
 			$this->_buttonlabel = wfMsgHtml( 'tryexact' );
 		}
-		if( !$this->_searchbuttonlabel ) {
+		if ( !$this->_searchbuttonlabel ) {
 			$this->_searchbuttonlabel = wfMsgHtml( 'searchfulltext' );
 		}
-		
+
 		// Build HTML
 		$htmlOut = Xml::openElement( 'div',
 			array(
@@ -111,7 +111,7 @@ class InputBox {
 					$userNamespace = str_replace( '**', '', $userNamespace );
 					$checked = array( 'checked' => 'checked' );
 				}
-				
+
 				// Namespace checkboxes
 				foreach ( $namespaces as $i => $name ) {
 					if ( $i < 0 ) {
@@ -119,7 +119,7 @@ class InputBox {
 					} elseif ( $i == 0 ) {
 						$name = 'Main';
 					}
-					if ( $userNamespace == $name) {
+					if ( $userNamespace == $name ) {
 						// Checkbox
 						$htmlOut .= Xml::element( 'input',
 							array(
@@ -133,8 +133,8 @@ class InputBox {
 					}
 				}
 			}
-			
-			// Line break 
+
+			// Line break
 			$htmlOut .= $this->_br;
 		} else {
 			// Go button
@@ -148,7 +148,7 @@ class InputBox {
 			);
 			$htmlOut .= '&nbsp;';
 		}
-		
+
 		// Search button
 		$htmlOut .= Xml::element( 'input',
 			array(
@@ -160,21 +160,21 @@ class InputBox {
 		);
 		$htmlOut .= Xml::closeElement( 'form' );
 		$htmlOut .= Xml::closeElement( 'div' );
-		
+
 		// Return HTML
 		return $htmlOut;
 	}
-	
+
 	/*
 	 * Generate search form version 2
 	 */
 	public function getSearchForm2() {
-		
+
 		// Use button label fallbacks
-		if( !$this->_buttonlabel ) {
+		if ( !$this->_buttonlabel ) {
 			$this->_buttonlabel = wfMsgHtml( 'tryexact' );
 		}
-		
+
 		$id = Sanitizer::escapeId( $this->_id );
 		$htmlLabel = '';
 		if ( isset( $this->_labeltext ) && strlen( trim( $this->_labeltext ) ) ) {
@@ -195,7 +195,7 @@ class InputBox {
 				$this->_labeltext
 			);
 		}
-		
+
 		$htmlOut = Xml::openElement( 'form',
 			array(
 				'name' => 'bodySearch' . $id,
@@ -241,7 +241,7 @@ class InputBox {
 				)
 			);
 		}
-		
+
 		$htmlOut .= Xml::closeElement( 'div' );
 		$htmlOut .= Xml::closeElement( 'form' );
 
@@ -253,19 +253,19 @@ class InputBox {
 	 * Generate create page form
 	 */
 	public function getCreateForm() {
-		global $wgScript;	
+		global $wgScript;
 
-		if($this->_type=="comment") {
-			if(!$this->_buttonlabel) {
+		if ( $this->_type == "comment" ) {
+			if ( !$this->_buttonlabel ) {
 				$this->_buttonlabel = wfMsgHtml( "postcomment" );
 			}
 		} else {
-			$comment='';
-			if(!$this->_buttonlabel) {			
+			$comment = '';
+			if ( !$this->_buttonlabel ) {
 				$this->_buttonlabel = wfMsgHtml( 'createarticle' );
 			}
 		}
-		
+
 		$htmlOut = Xml::openElement( 'div',
 			array(
 				'align' => 'center',
@@ -302,7 +302,7 @@ class InputBox {
 				'value' => $this->_editintro,
 			)
 		);
-		if( $this->_type == 'comment' ) {
+		if ( $this->_type == 'comment' ) {
 			$htmlOut .= Xml::openElement( 'input',
 				array(
 					'type' => 'hidden',
@@ -331,7 +331,7 @@ class InputBox {
 		);
 		$htmlOut .= Xml::closeElement( 'form' );
 		$htmlOut .= Xml::closeElement( 'div' );
-		
+
 		// Return HTML
 		return $htmlOut;
 	}
@@ -343,16 +343,16 @@ class InputBox {
 	 */
 	public function extractOptions( $text ) {
 		wfProfileIn( __METHOD__ );
-		
+
 		// Parse all possible options
 		$values = array();
-		foreach( explode( "\n", $text ) as $line ) {
-			if( strpos( $line, '=' ) === false )
+		foreach ( explode( "\n", $text ) as $line ) {
+			if ( strpos( $line, '=' ) === false )
 				continue;
 			list( $name, $value ) = explode( '=', $line, 2 );
 			$values[ strtolower( trim( $name ) ) ] = trim( $value );
 		}
-		
+
 		// Go through and set all the options we found
 		$options = array(
 			'type' => '_type',
@@ -370,18 +370,18 @@ class InputBox {
 			'hidden' => '_hidden',
 			'inline' => '_inline',
 		);
-		foreach( $options as $name => $var ) {
-			if( isset( $values[$name] ) ) {
+		foreach ( $options as $name => $var ) {
+			if ( isset( $values[$name] ) ) {
 				$this->$var = $values[$name];
 			}
 		}
-		
+
 		// Insert a line break if configured to do so
 		$this->_br = ( strtolower( $this->_br ) == "no" ) ? '' : '<br />';
 
 		// Validate the width; make sure it's a valid, positive integer
 		$this->_width = intval( $this->_width <= 0 ? 50 : $this->_width );
-		
+
 		wfProfileOut( __METHOD__ );
 	}
 
