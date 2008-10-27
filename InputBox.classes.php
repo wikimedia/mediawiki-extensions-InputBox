@@ -11,21 +11,22 @@ class InputBox {
 
 	/* Fields */
 
-	private $_parser;
-	private $_type;
-	private $_width;
-	private $_preload;
-	private $_editintro;
-	private $_br;
-	private $_defaulttext;
-	private $_bgcolor;
-	private $_buttonlabel;
-	private $_searchbuttonlabel;
-	private $_labeltext;
-	private $_hidden;
-	private $_namespaces;
-	private $_id;
-	private $_inline;
+	private $mParser;
+	private $mType;
+	private $mWidth;
+	private $mPreload;
+	private $mEditIntro;
+	private $mBR;
+	private $mDefaultText;
+	private $mBGColor;
+	private $mButtonLabel;
+	private $mSearchButtonLabel;
+	private $mFullTextButton;
+	private $mLabelText;
+	private $mHidden;
+	private $mNamespaces;
+	private $mID;
+	private $mInline;
 
 	/* Functions */
 
@@ -38,7 +39,7 @@ class InputBox {
 		wfLoadExtensionMessages( 'InputBox' );
 
 		// Handle various types
-		switch( $this->_type ) {
+		switch( $this->mType ) {
 			case 'create':
 			case 'comment':
 				return $this->getCreateForm();
@@ -52,8 +53,8 @@ class InputBox {
 						array(
 							'class' => 'error'
 						),
-						strlen( $this->_type ) > 0
-						? htmlspecialchars( wfMsgForContent( 'inputbox-error-bad-type', $this->_type ) )
+						strlen( $this->mtype ) > 0
+						? htmlspecialchars( wfMsgForContent( 'inputbox-error-bad-type', $this->mType ) )
 						: htmlspecialchars( wfMsgForContent( 'inputbox-error-no-type' ) )
 					)
 				);
@@ -67,18 +68,18 @@ class InputBox {
 		global $wgContLang;
 
 		// Use button label fallbacks
-		if ( !$this->_buttonlabel ) {
-			$this->_buttonlabel = wfMsgHtml( 'tryexact' );
+		if ( !$this->mButtonLabel ) {
+			$this->mButtonLabel = wfMsgHtml( 'tryexact' );
 		}
-		if ( !$this->_searchbuttonlabel ) {
-			$this->_searchbuttonlabel = wfMsgHtml( 'searchfulltext' );
+		if ( !$this->mSearchButtonLabel ) {
+			$this->mSearchButtonLabel = wfMsgHtml( 'searchfulltext' );
 		}
 
 		// Build HTML
 		$htmlOut = Xml::openElement( 'div',
 			array(
 				'align' => 'center',
-				'style' => 'background-color:' . $this->_bgcolor
+				'style' => 'background-color:' . $this->mBGColor
 			)
 		);
 		$htmlOut .= Xml::openElement( 'form',
@@ -93,17 +94,17 @@ class InputBox {
 			array(
 				'class' => 'searchboxInput',
 				'name' => 'search',
-				'type' => $this->_hidden ? 'hidden' : 'text',
-				'value' => $this->_defaulttext,
-				'size' => $this->_width,
+				'type' => $this->mHidden ? 'hidden' : 'text',
+				'value' => $this->mDefaultText,
+				'size' => $this->mWidth,
 			)
 		);
-		$htmlOut .= $this->_br;
+		$htmlOut .= $this->mBR;
 
 		// Determine namespace checkboxes
 		$namespaces = $wgContLang->getNamespaces();
-		$namespacesArray = explode( ',', $this->_namespaces );
-		if ( $this->_namespaces ) {
+		$namespacesArray = explode( ',', $this->mNamespaces );
+		if ( $this->mNamespaces ) {
 			foreach ( $namespacesArray as $userNamespace ) {
 				$checked = array();
 				// Namespace needs to be checked if flagged with "**" or if it's the only one
@@ -135,7 +136,7 @@ class InputBox {
 			}
 
 			// Line break
-			$htmlOut .= $this->_br;
+			$htmlOut .= $this->mBR;
 		} else {
 			// Go button
 			$htmlOut .= Xml::element( 'input',
@@ -143,7 +144,7 @@ class InputBox {
 					'type' => 'submit',
 					'name' => 'go',
 					'class' => 'searchboxGoButton',
-					'value' => $this->_buttonlabel
+					'value' => $this->mButtonLabel
 				)
 			);
 			$htmlOut .= '&nbsp;';
@@ -155,7 +156,7 @@ class InputBox {
 				'type' => 'submit',
 				'name' => 'fulltext',
 				'class' => 'searchboxSearchButton',
-				'value' => $this->_searchbuttonlabel
+				'value' => $this->mSearchButtonLabel
 			)
 		);
 		$htmlOut .= Xml::closeElement( 'form' );
@@ -171,53 +172,52 @@ class InputBox {
 	public function getSearchForm2() {
 
 		// Use button label fallbacks
-		if ( !$this->_buttonlabel ) {
-			$this->_buttonlabel = wfMsgHtml( 'tryexact' );
+		if ( !$this->mButtonLabel ) {
+			$this->mButtonLabel = wfMsgHtml( 'tryexact' );
 		}
 
-		$id = Sanitizer::escapeId( $this->_id );
+		$id = Sanitizer::escapeId( $this->mID );
 		$htmlLabel = '';
-		if ( isset( $this->_labeltext ) && strlen( trim( $this->_labeltext ) ) ) {
-			$output = $this->_parser->parse(
-				$this->_labeltext,
-				$this->_parser->getTitle(),
-				$this->_parser->getOptions(),
+		if ( isset( $this->mLabelText ) && strlen( trim( $this->mLabelText ) ) ) {
+			$output = $this->mParser->parse(
+				$this->mLabelText,
+				$this->mParser->getTitle(),
+				$this->mParser->getOptions(),
 				false,
 				false
 			);
-			$this->_labeltext = $output->getText();
-			$this->_labeltext = str_replace( '<p>', '', $this->_labeltext );
-			$this->_labeltext = str_replace( '</p>', '', $this->_labeltext );
+			$this->mLabelText = $output->getText();
+			$this->mLabelText = str_replace( '<p>', '', $this->mLabelText );
+			$this->mLabelText = str_replace( '</p>', '', $this->mLabelText );
 			$htmlLabel = Xml::element( 'label',
 				array(
 					'for' => 'bodySearchIput' . $id
 				),
-				$this->_labeltext
+				$this->mLabelText
 			);
 		}
-
 		$htmlOut = Xml::openElement( 'form',
 			array(
 				'name' => 'bodySearch' . $id,
 				'id' => 'bodySearch' . $id,
 				'class' => 'bodySearch',
 				'action' => SpecialPage::getTitleFor( 'Search' )->escapeLocalUrl(),
-				'style' => $this->_inline ? 'display: inline;' : ''
+				'style' => $this->mInline ? 'display: inline;' : ''
 			)
 		);
 		$htmlOut .= Xml::openElement( 'div',
 			array(
 				'class' => 'bodySearchWrap',
-				'style' => 'background-color:' . $this->_bgcolor . ';' .
-					$this->_inline ? 'display: inline;' : ''
+				'style' => 'background-color:' . $this->mBGColor . ';' .
+					$this->mInline ? 'display: inline;' : ''
 			)
 		);
 		$htmlOut .= $htmlLabel;
 		$htmlOut .= Xml::element( 'input',
 			array(
-				'type' => $this->_hidden ? 'hidden' : 'text',
+				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'search',
-				'size' => $this->_width,
+				'size' => $this->mWidth,
 				'class' => 'bodySearchInput' . $id
 			)
 		);
@@ -225,19 +225,19 @@ class InputBox {
 			array(
 				'type' => 'submit',
 				'name' => 'go',
-				'value' => $this->_buttonlabel,
+				'value' => $this->mButtonLabel,
 				'class' => 'bodySearchBtnGo' . $id
 			)
 		);
 
 		// Better testing needed here!
-		if ( !empty( $this->_fulltextbtn ) ) {
+		if ( !empty( $this->mFullTextButton ) ) {
 			$htmlOut .= Xml::element( 'input',
 				array(
 					'type' => 'submit',
 					'name' => 'fulltext',
 					'class' => 'bodySearchBtnSearch',
-					'value' => $this->_searchbuttonlabel
+					'value' => $this->mSearchButtonLabel
 				)
 			);
 		}
@@ -255,21 +255,21 @@ class InputBox {
 	public function getCreateForm() {
 		global $wgScript;
 
-		if ( $this->_type == "comment" ) {
-			if ( !$this->_buttonlabel ) {
-				$this->_buttonlabel = wfMsgHtml( "postcomment" );
+		if ( $this->mType == "comment" ) {
+			if ( !$this->mButtonLabel ) {
+				$this->mButtonLabel = wfMsgHtml( "postcomment" );
 			}
 		} else {
 			$comment = '';
-			if ( !$this->_buttonlabel ) {
-				$this->_buttonlabel = wfMsgHtml( 'createarticle' );
+			if ( !$this->mButtonLabel ) {
+				$this->mButtonLabel = wfMsgHtml( 'createarticle' );
 			}
 		}
 
 		$htmlOut = Xml::openElement( 'div',
 			array(
 				'align' => 'center',
-				'style' => 'background-color:' . $this->_bgcolor
+				'style' => 'background-color:' . $this->mBGColor
 			)
 		);
 		$htmlOut .= Xml::openElement( 'form',
@@ -292,17 +292,17 @@ class InputBox {
 			array(
 				'type' => 'hidden',
 				'name' => 'preload',
-				'value' => $this->_preload,
+				'value' => $this->mPreload,
 			)
 		);
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => 'hidden',
 				'name' => 'editintro',
-				'value' => $this->_editintro,
+				'value' => $this->mEditIntro,
 			)
 		);
-		if ( $this->_type == 'comment' ) {
+		if ( $this->mType == 'comment' ) {
 			$htmlOut .= Xml::openElement( 'input',
 				array(
 					'type' => 'hidden',
@@ -313,20 +313,20 @@ class InputBox {
 		}
 		$htmlOut .= Xml::openElement( 'input',
 			array(
-				'type' => $this->_hidden ? 'hidden' : 'text',
+				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'title',
 				'class' => 'createboxInput',
-				'value' => $this->_defaulttext,
-				'size' => $this->_width
+				'value' => $this->mDefaultText,
+				'size' => $this->mWidth
 			)
 		);
-		$htmlOut .= $this->_br;
+		$htmlOut .= $this->mBR;
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => 'submit',
 				'name' => 'create',
 				'class' => 'createboxButton',
-				'value' => $this->_buttonlabel
+				'value' => $this->mButtonLabel
 			)
 		);
 		$htmlOut .= Xml::closeElement( 'form' );
@@ -355,20 +355,21 @@ class InputBox {
 
 		// Go through and set all the options we found
 		$options = array(
-			'type' => '_type',
-			'width' => '_width',
-			'preload' => '_preload',
-			'editintro' => '_editintro',
-			'default' => '_defaulttext',
-			'bgcolor' => '_bgcolor',
-			'buttonlabel' => '_buttonlabel',
-			'searchbuttonlabel' => '_searchbuttonlabel',
+			'type' => 'mType',
+			'width' => 'mWidth',
+			'preload' => 'mPreload',
+			'editintro' => 'mEditIntro',
+			'break' => 'mBR',
+			'default' => 'mDefaultText',
+			'bgcolor' => 'mBGColor',
+			'buttonlabel' => 'mButtonLabel',
+			'searchbuttonlabel' => 'mSearchButtonLabel',
+			'fulltextbutton' => 'mFullTextButton',
 			'namespaces' => '_namespaces',
-			'id' => '_id',
-			'labeltext' => '_labeltext',
-			'break' => '_br',
-			'hidden' => '_hidden',
-			'inline' => '_inline',
+			'labeltext' => 'mLabelText',
+			'hidden' => 'mHidden',
+			'id' => 'mID',
+			'inline' => 'mInline'
 		);
 		foreach ( $options as $name => $var ) {
 			if ( isset( $values[$name] ) ) {
@@ -377,10 +378,10 @@ class InputBox {
 		}
 
 		// Insert a line break if configured to do so
-		$this->_br = ( strtolower( $this->_br ) == "no" ) ? '' : '<br />';
+		$this->mBR = ( strtolower( $this->mBR ) == "no" ) ? '' : '<br />';
 
 		// Validate the width; make sure it's a valid, positive integer
-		$this->_width = intval( $this->_width <= 0 ? 50 : $this->_width );
+		$this->mWidth = intval( $this->mWidth <= 0 ? 50 : $this->mWidth );
 
 		wfProfileOut( __METHOD__ );
 	}
