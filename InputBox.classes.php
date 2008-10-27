@@ -353,36 +353,38 @@ class InputBox {
 			$values[ strtolower( trim( $name ) ) ] = trim( $value );
 		}
 
-		// Go through and set all the options we found
+		// Build list of options, with local member names and deafults
 		$options = array(
-			'type' => 'mType',
-			'width' => 'mWidth',
-			'preload' => 'mPreload',
-			'editintro' => 'mEditIntro',
-			'break' => 'mBR',
-			'default' => 'mDefaultText',
-			'bgcolor' => 'mBGColor',
-			'buttonlabel' => 'mButtonLabel',
-			'searchbuttonlabel' => 'mSearchButtonLabel',
-			'fulltextbutton' => 'mFullTextButton',
-			'namespaces' => '_namespaces',
-			'labeltext' => 'mLabelText',
-			'hidden' => 'mHidden',
-			'id' => 'mID',
-			'inline' => 'mInline'
+			'type' => array( 'mType', '' ),
+			'width' => array( 'mWidth', 50 ),
+			'preload' => array( 'mPreload', '' ),
+			'editintro' => array( 'mEditIntro', '' ),
+			'break' => array( 'mBR', 'yes' ),
+			'default' => array( 'mDefaultText', '' ),
+			'bgcolor' => array( 'mBGColor', 'transparent' ),
+			'buttonlabel' => array( 'mButtonLabel', '' ),
+			'searchbuttonlabel' => array( 'mSearchButtonLabel', '' ),
+			'fulltextbutton' => array( 'mFullTextButton', '' ),
+			'namespaces' => array( '_namespaces', '' ),
+			'labeltext' => array( 'mLabelText', '' ),
+			'hidden' => array( 'mHidden', '' ),
+			'id' => array( 'mID', '' ),
+			'inline' => array( 'mInline', false )
 		);
 		foreach ( $options as $name => $var ) {
 			if ( isset( $values[$name] ) ) {
-				$this->$var = $values[$name];
+				$this->$var[0] = $values[$name];
+			} else {
+				$this->$var[0] = $var[1];
 			}
 		}
-
+		
 		// Insert a line break if configured to do so
 		$this->mBR = ( strtolower( $this->mBR ) == "no" ) ? '' : '<br />';
 
 		// Validate the width; make sure it's a valid, positive integer
 		$this->mWidth = intval( $this->mWidth <= 0 ? 50 : $this->mWidth );
-
+		
 		wfProfileOut( __METHOD__ );
 	}
 
