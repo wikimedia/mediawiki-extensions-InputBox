@@ -32,7 +32,7 @@ class InputBox {
 	/* Functions */
 
 	public function __construct( $parser ) {
-		$this->_parser = $parser;
+		$this->mParser = $parser;
 	}
 
 	public function render() {
@@ -56,9 +56,9 @@ class InputBox {
 						array(
 							'class' => 'error'
 						),
-						strlen( $this->mtype ) > 0
-						? htmlspecialchars( wfMsgForContent( 'inputbox-error-bad-type', $this->mType ) )
-						: htmlspecialchars( wfMsgForContent( 'inputbox-error-no-type' ) )
+						strlen( $this->mType ) > 0
+						? wfMsgForContent( 'inputbox-error-bad-type', $this->mType ) 
+						: wfMsgForContent( 'inputbox-error-no-type' ) 
 					)
 				);
 		}
@@ -129,11 +129,12 @@ class InputBox {
 							array(
 								'type' => 'checkbox',
 								'name' => 'ns' . $i,
-								'value' => 1
+								'value' => 1,
+								'id' => 'mw-inputbox-ns' . $i
 							) + $checked
 						);
 						// Label
-						$htmlOut .= '&nbsp;' . htmlspecialchars( $userNamespace );
+						$htmlOut .= '&nbsp;' . Xml::label( $userNamespace, 'mw-inputbox-ns' . $i );
 					}
 				}
 			}
@@ -454,7 +455,7 @@ class InputBox {
 			'buttonlabel' => array( 'mButtonLabel', '' ),
 			'searchbuttonlabel' => array( 'mSearchButtonLabel', '' ),
 			'fulltextbutton' => array( 'mFullTextButton', '' ),
-			'namespaces' => array( '_namespaces', '' ),
+			'namespaces' => array( 'mNamespaces', '' ),
 			'labeltext' => array( 'mLabelText', '' ),
 			'hidden' => array( 'mHidden', '' ),
 			'id' => array( 'mID', '' ),
