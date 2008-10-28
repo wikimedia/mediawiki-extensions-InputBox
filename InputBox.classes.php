@@ -16,6 +16,7 @@ class InputBox {
 	private $mWidth;
 	private $mPreload;
 	private $mEditIntro;
+	private $mPage;
 	private $mBR;
 	private $mDefaultText;
 	private $mBGColor;
@@ -43,6 +44,8 @@ class InputBox {
 			case 'create':
 			case 'comment':
 				return $this->getCreateForm();
+			case 'commenttitle':
+				return $this->getCommentForm();
 			case 'search':
 				return $this->getSearchForm();
 			case 'search2':
@@ -335,6 +338,91 @@ class InputBox {
 		// Return HTML
 		return $htmlOut;
 	}
+	
+	/**
+	 * Generate new section form
+	 */
+	public function getCommentForm() {
+		global $wgScript;
+
+		if ( !$this->mButtonLabel ) {
+				$this->mButtonLabel = wfMsgHtml( "postcomment" );
+		}
+
+		$htmlOut = Xml::openElement( 'div',
+			array(
+				'align' => 'center',
+				'style' => 'background-color:' . $this->mBGColor
+			)
+		);
+		$htmlOut .= Xml::openElement( 'form',
+			array(
+				'name' => 'commentbox',
+				'id' => 'commentbox',
+				'class' => 'commentbox',
+				'action' => $wgScript,
+				'method' => 'get'
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'action',
+				'value' => 'edit',
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'preload',
+				'value' => $this->mPreload,
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'editintro',
+				'value' => $this->mEditIntro,
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'text',
+				'name' => 'preloadtitle',
+				'class' => 'commentboxInput',
+				'value' => $this->mDefaultText,
+				'size' => $this->mWidth
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'section',
+				'value' => 'new',
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'title',
+				'value' => $this->mPage
+			)
+		);
+		$htmlOut .= $this->mBR;
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'submit',
+				'name' => 'create',
+				'class' => 'commentboxButton',
+				'value' => $this->mButtonLabel
+			)
+		);
+		$htmlOut .= Xml::closeElement( 'form' );
+		$htmlOut .= Xml::closeElement( 'div' );
+
+		// Return HTML
+		return $htmlOut;
+	}
 
 	/**
 	 * Extract options from a blob of text
@@ -358,6 +446,7 @@ class InputBox {
 			'type' => array( 'mType', '' ),
 			'width' => array( 'mWidth', 50 ),
 			'preload' => array( 'mPreload', '' ),
+			'page' => array( 'mPage', '' ),
 			'editintro' => array( 'mEditIntro', '' ),
 			'break' => array( 'mBR', 'yes' ),
 			'default' => array( 'mDefaultText', '' ),
