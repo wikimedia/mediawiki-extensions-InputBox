@@ -1232,6 +1232,13 @@ $messages['sv'] = array(
 	'createarticle' => 'Skapa sida',
 );
 
+/** Silesian (Ślůnski)
+ * @author Ozi64
+ */
+$messages['szl'] = array(
+	'createarticle' => 'Naškryflej artikel',
+);
+
 /** Telugu (తెలుగు)
  * @author Chaduvari
  * @author Veeven
@@ -1425,3 +1432,4 @@ $messages['zh-hant'] = array(
 $messages['zu'] = array(
 	'searchfulltext' => 'Sesha ukubhala konke',
 );
+
