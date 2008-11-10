@@ -183,8 +183,10 @@ $messages['bi'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Zaheen
  */
 $messages['bn'] = array(
+	'inputbox-desc' => 'পূর্বসংজ্ঞায়িত এইচটিএমএল ফর্মের অন্তর্ভুক্তি অনুমোদন করুন',
 	'inputbox-error-no-type' => 'আপনি ইনপুট বক্স তৈরির জন্য ইনপুট বক্সের ধরণ নির্ধারণ করেননি।',
 	'inputbox-error-bad-type' => '"$1" ধরণের ইনপুট বক্স নেই। দয়া করে "create", "comment", "search" অথবা "search2" নির্ধারণ করুন।',
 	'tryexact' => 'ঠিক এই নামের নিবন্ধে যান',
