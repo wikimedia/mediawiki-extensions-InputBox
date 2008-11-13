@@ -745,12 +745,13 @@ $messages['km'] = array(
 );
 
 /** Korean (한국어)
+ * @author Albamhandae
  * @author Klutzy
  * @author ToePeu
  */
 $messages['ko'] = array(
 	'inputbox-error-no-type' => 'type 속성을 정하지 않았습니다.',
-	'inputbox-error-bad-type' => '"$1"은 사용할 수 없는 type 속성입니다.
+	'inputbox-error-bad-type' => '"$1"은(는) 사용할 수 없는 type 속성입니다.
 "create", "comment", "search", "search2" 중 하나를 사용하세요.',
 	'searchfulltext' => '전체 글 검색',
 	'createarticle' => '문서 만들기',
@@ -954,8 +955,13 @@ Gebruik "create", "comment", "search" of "search2".',
 	'createarticle' => 'Nieuwe pagina maken',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Frokor
+ */
 $messages['nn'] = array(
+	'inputbox-desc' => 'Tillet inkludering av førehandsdefinerte HTML-skjema',
+	'inputbox-error-no-type' => 'Du har ikkje gjeve kva slags inputboks du vil lage.',
+	'inputbox-error-bad-type' => 'Inputboks av typen «$1» vart ikkje gjenkjent. Ver venleg og velg «create», «comment», «search» eller «search2».',
 	'tryexact' => 'Prøv nøyaktig treff',
 	'searchfulltext' => 'Søk i all tekst',
 	'createarticle' => 'Lag side',
