@@ -12,22 +12,22 @@ class InputBox {
 	/* Fields */
 
 	private $mParser;
-	private $mType;
-	private $mWidth;
-	private $mPreload;
-	private $mEditIntro;
-	private $mPage;
-	private $mBR;
-	private $mDefaultText;
-	private $mBGColor;
-	private $mButtonLabel;
-	private $mSearchButtonLabel;
-	private $mFullTextButton;
-	private $mLabelText;
-	private $mHidden;
-	private $mNamespaces;
-	private $mID;
-	private $mInline;
+	private $mType = '';
+	private $mWidth = 50;
+	private $mPreload = '';
+	private $mEditIntro = '';
+	private $mPage = '';
+	private $mBR = 'yes';
+	private $mDefaultText = '';
+	private $mBGColor = 'transparent';
+	private $mButtonLabel = '';
+	private $mSearchButtonLabel = '';
+	private $mFullTextButton = '';
+	private $mLabelText = '';
+	private $mHidden = '';
+	private $mNamespaces = '';
+	private $mID = '';
+	private $mInline = false;
 
 	/* Functions */
 
@@ -442,30 +442,28 @@ class InputBox {
 			$values[ strtolower( trim( $name ) ) ] = trim( $value );
 		}
 
-		// Build list of options, with local member names and deafults
+		// Build list of options, with local member names
 		$options = array(
-			'type' => array( 'mType', '' ),
-			'width' => array( 'mWidth', 50 ),
-			'preload' => array( 'mPreload', '' ),
-			'page' => array( 'mPage', '' ),
-			'editintro' => array( 'mEditIntro', '' ),
-			'break' => array( 'mBR', 'yes' ),
-			'default' => array( 'mDefaultText', '' ),
-			'bgcolor' => array( 'mBGColor', 'transparent' ),
-			'buttonlabel' => array( 'mButtonLabel', '' ),
-			'searchbuttonlabel' => array( 'mSearchButtonLabel', '' ),
-			'fulltextbutton' => array( 'mFullTextButton', '' ),
-			'namespaces' => array( 'mNamespaces', '' ),
-			'labeltext' => array( 'mLabelText', '' ),
-			'hidden' => array( 'mHidden', '' ),
-			'id' => array( 'mID', '' ),
-			'inline' => array( 'mInline', false )
+			'type' => 'mType',
+			'width' => 'mWidth',
+			'preload' => 'mPreload',
+			'page' => 'mPage',
+			'editintro' => 'mEditIntro',
+			'break' => 'mBR',
+			'default' => 'mDefaultText',
+			'bgcolor' => 'mBGColor',
+			'buttonlabel' => 'mButtonLabel',
+			'searchbuttonlabel' => 'mSearchButtonLabel',
+			'fulltextbutton' => 'mFullTextButton',
+			'namespaces' => 'mNamespaces',
+			'labeltext' => 'mLabelText',
+			'hidden' => 'mHidden',
+			'id' => 'mID',
+			'inline' => 'mInline',
 		);
 		foreach ( $options as $name => $var ) {
 			if ( isset( $values[$name] ) ) {
-				$this->$var[0] = $values[$name];
-			} else {
-				$this->$var[0] = $var[1];
+				$this->$var = $values[$name];
 			}
 		}
 		
