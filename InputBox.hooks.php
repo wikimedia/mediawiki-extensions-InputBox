@@ -16,7 +16,7 @@ class InputBoxHooks {
 		global $wgParser;
 
 		// Register the hook with the parser
-		$wgParser->setHook( 'inputbox', 'InputBoxHooks::render' );
+		$wgParser->setHook( 'inputbox', array( 'InputBoxHooks', 'render' ) );
 
 		// Continue
 		return true;
