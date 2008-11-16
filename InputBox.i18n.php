@@ -316,6 +316,13 @@ $messages['dsb'] = array(
 	'createarticle' => 'Nastawk natworiś',
 );
 
+/** Divehi (ދިވެހިބަސް)
+ * @author Spacebirdy
+ */
+$messages['dv'] = array(
+	'createarticle' => 'މަޒުމޫނެއް ފައްޓަވާ',
+);
+
 /** Ewe (Eʋegbe) */
 $messages['ee'] = array(
 	'createarticle' => 'Dze nuŋɔŋlɔ yeye gɔme',
