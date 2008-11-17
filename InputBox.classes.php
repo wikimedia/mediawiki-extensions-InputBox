@@ -388,7 +388,7 @@ class InputBox {
 		);
 		$htmlOut .= Xml::openElement( 'input',
 			array(
-				'type' => 'text',
+				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'preloadtitle',
 				'class' => 'commentboxInput',
 				'value' => $this->mDefaultText,
