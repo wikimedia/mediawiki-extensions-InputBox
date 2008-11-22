@@ -419,6 +419,7 @@ $messages['fo'] = array(
 );
 
 /** French (Français)
+ * @author IAlex
  * @author Sherbrooke
  */
 $messages['fr'] = array(
@@ -427,7 +428,7 @@ $messages['fr'] = array(
 	'inputbox-error-bad-type' => "Type de boîte entrée $1 non reconnue. Indiquez l'option ''create'', ''comment'', ''search'' ou ''searche2''.",
 	'tryexact' => 'Essayez la correspondance exacte.',
 	'searchfulltext' => 'Recherche en texte intégral',
-	'createarticle' => 'Créer l’article',
+	'createarticle' => 'Créer la page',
 );
 
 /** Franco-Provençal (Arpetan)
