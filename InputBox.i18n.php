@@ -911,6 +911,13 @@ $messages['mt'] = array(
 	'createarticle' => 'Oħloq paġna',
 );
 
+/** Mazanderani (مَزِروني)
+ * @author Spacebirdy
+ */
+$messages['mzn'] = array(
+	'createarticle' => 'ولگ بایتن',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
