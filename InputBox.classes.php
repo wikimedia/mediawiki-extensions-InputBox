@@ -183,22 +183,10 @@ class InputBox {
 		$id = Sanitizer::escapeId( $this->mID );
 		$htmlLabel = '';
 		if ( isset( $this->mLabelText ) && strlen( trim( $this->mLabelText ) ) ) {
-			$output = $this->mParser->parse(
-				$this->mLabelText,
-				$this->mParser->getTitle(),
-				$this->mParser->getOptions(),
-				false,
-				false
-			);
-			$this->mLabelText = $output->getText();
-			$this->mLabelText = str_replace( '<p>', '', $this->mLabelText );
-			$this->mLabelText = str_replace( '</p>', '', $this->mLabelText );
-			$htmlLabel = Xml::element( 'label',
-				array(
-					'for' => 'bodySearchIput' . $id
-				),
-				$this->mLabelText
-			);
+			$this->mLabelText = $this->mParser->recursiveTagParse( $this->mLabelText );
+			$htmlLabel = Xml::openElement( 'label', array( 'for' => 'bodySearchInput' . $id ) );
+			$htmlLabel .= $this->mLabelText;
+			$htmlLabel .= Xml::closeElement( 'label' );
 		}
 		$htmlOut = Xml::openElement( 'form',
 			array(
@@ -222,7 +210,7 @@ class InputBox {
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'search',
 				'size' => $this->mWidth,
-				'class' => 'bodySearchInput' . $id
+				'id' => 'bodySearchInput' . $id
 			)
 		);
 		$htmlOut .= Xml::element( 'input',
