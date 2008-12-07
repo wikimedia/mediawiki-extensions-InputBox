@@ -351,10 +351,13 @@ Bonvolu specifigi "krea", "komenta", "serĉa" aŭ "serĉa2".',
 /** Spanish (Español)
  * @author Icvav
  * @author Muro de Aguas
+ * @author Sanbec
  */
 $messages['es'] = array(
 	'inputbox-desc' => 'Permite la inclusión de formularios en HTML predefinidos.',
 	'inputbox-error-no-type' => 'No has especificado el tipo de formulario que vas a crear.',
+	'inputbox-error-bad-type' => 'No se reconoce el tipo de caja de entrada «$1».
+Por favor, especifique «create», «comment», «search» o «search2».',
 	'tryexact' => 'Buscar título exacto',
 	'searchfulltext' => 'Buscar por texto completo',
 	'createarticle' => 'Crear artículo',
