@@ -282,6 +282,7 @@ $messages['cv'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'inputbox-error-no-type' => "Nid ydych wedi pennu'r math o flwch mewnbynnu yr ydych am ei greu.",
 	'tryexact' => 'Chwilio am yr union gymal',
 	'searchfulltext' => "Chwilio'r testun cyfan",
 	'createarticle' => "Creu'r dudalen",
