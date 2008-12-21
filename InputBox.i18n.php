@@ -312,6 +312,10 @@ $messages['de'] = array(
  * @author Pe7er
  */
 $messages['dsb'] = array(
+	'inputbox-desc' => 'Zapśěgnjenje pśeddefiněrowanych HTML-formularow dowóliś',
+	'inputbox-error-no-type' => 'Njejsy pódał typ zapódawańskego póla za napóranje.',
+	'inputbox-error-bad-type' => 'Zapódawańske pólo typa "$1" njespóznane.
+Pšosym pódaj "create", "comment", "search" abo "search2".',
 	'tryexact' => 'Nawłos pytaś:',
 	'searchfulltext' => 'Ceły tekst pytaś',
 	'createarticle' => 'Nastawk natworiś',
