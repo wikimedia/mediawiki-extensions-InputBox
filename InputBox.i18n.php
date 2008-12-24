@@ -427,13 +427,15 @@ $messages['fo'] = array(
 );
 
 /** French (Français)
+ * @author Crochet.david
  * @author IAlex
  * @author Sherbrooke
  */
 $messages['fr'] = array(
 	'inputbox-desc' => 'Permet l’inclusion de formulaires HTML prédéfinis.',
 	'inputbox-error-no-type' => 'Vous n’avez pas précisé le type de la boîte d’entrée à créer.',
-	'inputbox-error-bad-type' => "Type de boîte entrée $1 non reconnue. Indiquez l'option ''create'', ''comment'', ''search'' ou ''searche2''.",
+	'inputbox-error-bad-type' => "Type de boîte entrée « $1 » non reconnue.
+Indiquez l'option ''create'', ''comment'', ''search'' ou ''searche2''.",
 	'tryexact' => 'Essayez la correspondance exacte.',
 	'searchfulltext' => 'Recherche en texte intégral',
 	'createarticle' => 'Créer la page',
