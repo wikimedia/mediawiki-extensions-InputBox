@@ -1160,6 +1160,18 @@ $messages['sah'] = array(
 	'createarticle' => 'Ыстатыйаны айарга',
 );
 
+/** Sicilian (Sicilianu)
+ * @author Santu
+ */
+$messages['scn'] = array(
+	'inputbox-desc' => 'Pirmetti nzirimenti di mòduli HTML predifiniti',
+	'inputbox-error-no-type' => 'Non vinni spicificatu lu tipu di inputbox di criari.',
+	'inputbox-error-bad-type' => '"$1" non è nu tipu di inputbox canusciutu. S\'hà scègghiri lu tipu ntra "create", "comment", "search" e "search2".',
+	'tryexact' => 'Cerca currispunnenza giusta',
+	'searchfulltext' => 'Circata ntô testu',
+	'createarticle' => 'Cria vuci',
+);
+
 /** Sindhi (سنڌي) */
 $messages['sd'] = array(
 	'createarticle' => 'نئون مضمون لکو',
