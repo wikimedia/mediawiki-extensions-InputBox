@@ -1338,6 +1338,14 @@ $messages['th'] = array(
 	'createarticle' => 'สร้างเนื้อหา',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'searchfulltext' => 'Maghanap sa buong teksto',
+	'createarticle' => 'Likhain ang pahina',
+);
+
 /** Tswana (Setswana) */
 $messages['tn'] = array(
 	'createarticle' => 'Kwala mokwalo',
