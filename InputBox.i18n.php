@@ -220,6 +220,19 @@ Spisait "create", "comment", "search" pe "search2".',
 	'createarticle' => 'Krouiñ ar pennad',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'inputbox-desc' => 'Omogućuje uključivanje prethodno napravljenih HTML obrazaca',
+	'inputbox-error-no-type' => 'Niste odredili tip kutije za unos koju pravite.',
+	'inputbox-error-bad-type' => 'Tip kutije unosa "$1" nije prepoznat.
+Molimo odredite "create", "comment", "search" ili "search2".',
+	'tryexact' => 'Isprobaj naći tačan upit',
+	'searchfulltext' => 'Pretraži cijeli tekst',
+	'createarticle' => 'Napravi stranicu',
+);
+
 /** Catalan (Català)
  * @author Paucabot
  * @author SMP
@@ -369,10 +382,13 @@ Por favor, especifique «create», «comment», «search» o «search2».',
 );
 
 /** Estonian (Eesti)
+ * @author Avjoska
  * @author Jaan513
  */
 $messages['et'] = array(
 	'tryexact' => 'Proovi täpset vastet',
+	'searchfulltext' => 'Otsi täisteksti',
+	'createarticle' => 'Alusta lehekülge',
 );
 
 /** Basque (Euskara) */
