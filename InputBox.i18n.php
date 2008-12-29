@@ -1342,6 +1342,11 @@ $messages['th'] = array(
  * @author AnakngAraw
  */
 $messages['tl'] = array(
+	'inputbox-desc' => 'Pahintulutan ang pagsasama ng mga pormularyong HTML na may paunang kahulugan',
+	'inputbox-error-no-type' => 'Hindi mo tinukoy ang uri ng pasukang kahong lilikhain.',
+	'inputbox-error-bad-type' => 'Hindi nakikilala ang uri ng pasukang kahong "$1".
+Pakitukoy ang "likhain", "kumento", "hanapin" o hanapin2".',
+	'tryexact' => 'Subukin ang hustung-hustong katugmaan',
 	'searchfulltext' => 'Maghanap sa buong teksto',
 	'createarticle' => 'Likhain ang pahina',
 );
