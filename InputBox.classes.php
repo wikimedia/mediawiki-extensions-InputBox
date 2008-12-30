@@ -180,7 +180,7 @@ class InputBox {
 			$this->mButtonLabel = wfMsgHtml( 'tryexact' );
 		}
 
-		$id = Sanitizer::escapeId( $this->mID );
+		$id = Sanitizer::escapeId( $this->mID, 'noninitial' );
 		$htmlLabel = '';
 		if ( isset( $this->mLabelText ) && strlen( trim( $this->mLabelText ) ) ) {
 			$this->mLabelText = $this->mParser->recursiveTagParse( $this->mLabelText );
