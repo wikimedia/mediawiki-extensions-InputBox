@@ -295,7 +295,10 @@ $messages['cv'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'inputbox-desc' => "Yn caniatau creu blychau mewnbynnu sy'n cynnwys ffurflenni HTML wedi eu gosod yn barod i'w defnyddio",
 	'inputbox-error-no-type' => "Nid ydych wedi pennu'r math o flwch mewnbynnu yr ydych am ei greu.",
+	'inputbox-error-bad-type' => 'Nid yw\'r gair "$1" ar y math o flwch mewnbynnu yn ddealladwy gan y meddalwedd.
+Dewiswch rhwng "create", "comment", "search" a "search2".',
 	'tryexact' => 'Chwilio am yr union gymal',
 	'searchfulltext' => "Chwilio'r testun cyfan",
 	'createarticle' => "Creu'r dudalen",
