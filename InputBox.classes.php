@@ -29,6 +29,7 @@ class InputBox {
 	private $mID = '';
 	private $mInline = false;
 	private $mHideGo = false;
+	private $mPrefix = '';
 
 	/* Functions */
 
@@ -103,6 +104,17 @@ class InputBox {
 				'size' => $this->mWidth,
 			)
 		);
+		
+		if( $this->mPrefix != '' ){
+			$htmlOut .= Xml::element( 'input',
+				array(
+					'name' => 'prefix',
+					'type' => 'hidden',
+					'value' => $this->mPrefix,
+				)
+			);	
+		}
+		
 		$htmlOut .= $this->mBR;
 
 		// Determine namespace checkboxes
@@ -450,6 +462,7 @@ class InputBox {
 			'id' => 'mID',
 			'inline' => 'mInline',
 			'hidego' => 'mHideGo',
+			'prefix' => 'mPrefix',
 		);
 		foreach ( $options as $name => $var ) {
 			if ( isset( $values[$name] ) ) {
