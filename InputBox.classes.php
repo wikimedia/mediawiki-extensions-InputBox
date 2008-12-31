@@ -28,6 +28,7 @@ class InputBox {
 	private $mNamespaces = '';
 	private $mID = '';
 	private $mInline = false;
+	private $mHideGo = false;
 
 	/* Functions */
 
@@ -141,7 +142,7 @@ class InputBox {
 
 			// Line break
 			$htmlOut .= $this->mBR;
-		} else {
+		} else if( !$this->mHideGo ) {
 			// Go button
 			$htmlOut .= Xml::element( 'input',
 				array(
@@ -448,6 +449,7 @@ class InputBox {
 			'hidden' => 'mHidden',
 			'id' => 'mID',
 			'inline' => 'mInline',
+			'hidego' => 'mHideGo',
 		);
 		foreach ( $options as $name => $var ) {
 			if ( isset( $values[$name] ) ) {
