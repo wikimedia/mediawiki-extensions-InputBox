@@ -511,6 +511,7 @@ $messages['gl'] = array(
  */
 $messages['grc'] = array(
 	'tryexact' => 'Πείρασον τὴν ἀκριβῆ ἀντιστοιχίαν',
+	'searchfulltext' => 'Ζητεῖν ἐν τῷ πλήρει κειμένῳ',
 	'createarticle' => 'Δέλτον δημιουργήσειν',
 );
 
@@ -784,9 +785,11 @@ $messages['km'] = array(
 /** Korean (한국어)
  * @author Albamhandae
  * @author Klutzy
+ * @author Kwj2772
  * @author ToePeu
  */
 $messages['ko'] = array(
+	'inputbox-desc' => '사전 정의된 HTML 폼을 포함할 수 있게 해 줌',
 	'inputbox-error-no-type' => 'type 속성을 정하지 않았습니다.',
 	'inputbox-error-bad-type' => '"$1"은(는) 사용할 수 없는 type 속성입니다.
 "create", "comment", "search", "search2" 중 하나를 사용하세요.',
