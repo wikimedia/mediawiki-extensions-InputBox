@@ -48,7 +48,9 @@ class InputBox {
 			case 'commenttitle':
 				return $this->getCommentForm();
 			case 'search':
-				return $this->getSearchForm();
+				return $this->getSearchForm('search');
+			case 'fulltext':
+				return $this->getSearchForm('fulltext');
 			case 'search2':
 				return $this->getSearchForm2();
 			default:
@@ -67,8 +69,9 @@ class InputBox {
 
 	/**
 	 * Generate search form
+	 * @param $type 
 	 */
-	public function getSearchForm() {
+	public function getSearchForm( $type ) {
 		global $wgContLang;
 
 		// Use button label fallbacks
@@ -153,7 +156,7 @@ class InputBox {
 
 			// Line break
 			$htmlOut .= $this->mBR;
-		} else {
+		} else if( $type == 'search') {
 			// Go button
 			$htmlOut .= Xml::element( 'input',
 				array(
