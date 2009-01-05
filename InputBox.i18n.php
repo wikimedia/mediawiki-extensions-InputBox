@@ -277,12 +277,14 @@ $messages['crh-cyrl'] = array(
 );
 
 /** Czech (Česky)
+ * @author Danny B.
  * @author Li-sung
  */
 $messages['cs'] = array(
 	'inputbox-desc' => 'Umožňuje vkládat určité HTML formuláře.',
 	'inputbox-error-no-type' => 'Není určen typ formulářového pole k vytvoření.',
-	'inputbox-error-bad-type' => 'Nerozpoznaný typ pole „$1“. Uveďte jednu z možností: „create“, „comment“, „search“ nebo „search2“.',
+	'inputbox-error-bad-type' => 'Nerozpoznaný typ pole „$1“.
+Uveďte jednu z možností: „create“, „comment“, „search“, „search2“ nebo „fulltext“.',
 	'tryexact' => 'Vyzkoušet přesné hledání',
 	'searchfulltext' => 'Plnotextové hledání',
 	'createarticle' => 'Vytvořit článek',
@@ -374,6 +376,7 @@ Bonvolu specifigi "krea", "komenta", "serĉa" aŭ "serĉa2".',
 );
 
 /** Spanish (Español)
+ * @author Crazymadlover
  * @author Icvav
  * @author Muro de Aguas
  * @author Sanbec
@@ -381,8 +384,8 @@ Bonvolu specifigi "krea", "komenta", "serĉa" aŭ "serĉa2".',
 $messages['es'] = array(
 	'inputbox-desc' => 'Permite la inclusión de formularios en HTML predefinidos.',
 	'inputbox-error-no-type' => 'No has especificado el tipo de formulario que vas a crear.',
-	'inputbox-error-bad-type' => 'No se reconoce el tipo de caja de entrada «$1».
-Por favor, especifique «create», «comment», «search» o «search2».',
+	'inputbox-error-bad-type' => 'Tipo de tabla de ingreso «$1» no reconocida.
+Por favor, especifique «create», «comment», «search» «search2» o "fulltext".',
 	'tryexact' => 'Buscar título exacto',
 	'searchfulltext' => 'Buscar por texto completo',
 	'createarticle' => 'Crear artículo',
@@ -501,11 +504,13 @@ $messages['ga'] = array(
 
 /** Galician (Galego)
  * @author Alma
+ * @author Toliño
  */
 $messages['gl'] = array(
 	'inputbox-desc' => 'Permitir a inclusión de formularios predefinidos de HTML',
 	'inputbox-error-no-type' => 'Non se especificou o tipo de caixa de entrada para crear.',
-	'inputbox-error-bad-type' => 'A caixa de entrada de tipo "$1" non se recoñece. Especifique "crear", "comentario", "procurar" ou "procurar2".',
+	'inputbox-error-bad-type' => 'O tipo de caixa de entrada "$1" non foi recoñecido.
+Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Tentar coincidencias exactas',
 	'searchfulltext' => 'Buscar o texto completo',
 	'createarticle' => 'Crear páxina',
@@ -940,7 +945,7 @@ $messages['mr'] = array(
 $messages['ms'] = array(
 	'inputbox-desc' => 'Membenarkan penyertaan borang HTML yang sudah ditetapkan.',
 	'inputbox-error-no-type' => 'Anda tidak menyatakan jenis kotak input untuk diciptakan.',
-	'inputbox-error-bad-type' => 'Jenis kotak input "$1" tidak dikenali. Sila nyatakan "create", "comment", "search" atau "search2".',
+	'inputbox-error-bad-type' => 'Jenis kotak input "$1" tidak dikenali. Sila nyatakan "create", "comment", "search", "search2" atau "fulltext".',
 	'tryexact' => 'Cuba padanan tepat',
 	'searchfulltext' => 'Cari dalam teks penuh',
 	'createarticle' => 'Cipta laman',
@@ -992,7 +997,8 @@ $messages['nap'] = array(
 $messages['nds'] = array(
 	'inputbox-desc' => 'Verlöövt dat Inbinnen vun vördefineerte HTML-Formularen',
 	'inputbox-error-no-type' => 'Du hest keen Typ för dat Ingaav-Feld angeven.',
-	'inputbox-error-bad-type' => 'De Typ „$1“ för dat Ingaav-Feld is nich bekannt. Geev een vun disse Typen an: „create“, „comment“, „search“ oder „search2“.',
+	'inputbox-error-bad-type' => 'De Typ „$1“ för dat Ingaav-Feld is nich bekannt.
+Geev een vun disse Typen an: „create“, „comment“, „search“, „search2“ oder „fulltext“.',
 	'tryexact' => 'exakte Söök versöken',
 	'searchfulltext' => 'in’n Vulltext söken',
 	'createarticle' => 'Siet anleggen',
@@ -1038,7 +1044,8 @@ Ver venleg og velg «create», «comment», «search», «search2», eller «ful
 $messages['no'] = array(
 	'inputbox-desc' => 'Tillater inkludering av forhåndsdefinerte HTML-skjemaer',
 	'inputbox-error-no-type' => 'Du har ikke angitt hva slags inputboks du vil lage.',
-	'inputbox-error-bad-type' => 'Inputboks av typen «$1» gjenkjennes ikke. Vennligst velg «create», «comment», «search» eller «search2».',
+	'inputbox-error-bad-type' => 'Inputboks av typen «$1» gjenkjennes ikke.
+Vennligst velg «create», «comment», «search», «search2» eller «fulltext».',
 	'tryexact' => 'Prøv nøyaktig treff',
 	'searchfulltext' => 'Søk full tekst',
 	'createarticle' => 'Opprett side',
@@ -1128,7 +1135,8 @@ $messages['ps'] = array(
 $messages['pt'] = array(
 	'inputbox-desc' => 'Permite a inclusão de formulários HTML pré-definidos.',
 	'inputbox-error-no-type' => 'Você não especificou o tipo de box de inserção a ser criado.',
-	'inputbox-error-bad-type' => 'O box de inserção de tipo "$1" não foi reconhecido. Por gentileza, especifique "create", "comment", "search" ou "search2".',
+	'inputbox-error-bad-type' => 'O tipo de caixa de introdução de dados "$1" não foi reconhecido.
+Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Tentar a exata expressão',
 	'searchfulltext' => 'Pesquisar no texto completo',
 	'createarticle' => 'Criar página',
@@ -1159,13 +1167,14 @@ $messages['qu'] = array(
 /** Romanian (Română)
  * @author Emily
  * @author Firilacroco
+ * @author KlaudiuMihaila
  * @author Mihai
  */
 $messages['ro'] = array(
 	'inputbox-desc' => 'Permite includerea formelor HTML predefinite',
 	'inputbox-error-no-type' => 'Nu ai specificat ce tip de cutie intrare să fie creată.',
 	'inputbox-error-bad-type' => 'Tipul de cutie intrare "$1" nu este recunoscut.
-Te rog specifică parametrii "create", "comment", "search" sau "search2".',
+Te rog să specifici parametrii "create", "comment", "search", "search2" sau "fulltext".',
 	'tryexact' => 'Încearcă varianta exactă',
 	'searchfulltext' => 'Caută textul întreg',
 	'createarticle' => 'Crează articol',
@@ -1194,7 +1203,7 @@ $messages['ru'] = array(
 $messages['sah'] = array(
 	'inputbox-desc' => 'Эрдэттэн талыллыбыт HTML-формалары холбуур',
 	'inputbox-error-no-type' => 'Вы не указали тип создаваемого поля ввода.',
-	'inputbox-error-bad-type' => 'Биллибэт тип поля ввода «$1». Бука диэн көҥүллэнэри тал: «create», «comment», «search» эбэтэр «search2».',
+	'inputbox-error-bad-type' => '«$1» көрүҥэ кыайан өйдөммөтө. Бука диэн көҥүллэнэри тал: «create», «comment», «search», «search2» эбэтэр «fulltext».',
 	'tryexact' => 'Чопчу булуу',
 	'searchfulltext' => 'Тиэкиһин барытын көрдөөһүн',
 	'createarticle' => 'Ыстатыйаны айарга',
@@ -1242,7 +1251,8 @@ $messages['si'] = array(
 $messages['sk'] = array(
 	'inputbox-desc' => 'Umožňuje vloženie preddefinovaných HTML formulárov',
 	'inputbox-error-no-type' => 'Neuviedli ste typ vstupného poľa, ktoré sa má vytvoriť.',
-	'inputbox-error-bad-type' => 'Vstupné pole typu „$1“ nie je podporované. Prosím, použite „create“, „comment“, „search“ alebo „search2“.',
+	'inputbox-error-bad-type' => 'Vstupné pole typu „$1“ nie je podporované.
+Prosím, použite „create“, „comment“, „search“ alebo „search2“.',
 	'tryexact' => 'Skúste presné vyhľadávanie',
 	'searchfulltext' => 'Fulltextové vyhľadávanie',
 	'createarticle' => 'Vytvoriť stránku',
@@ -1433,7 +1443,8 @@ $messages['uz'] = array(
 $messages['vec'] = array(
 	'inputbox-desc' => "Consente l'inserimento de moduli HTML predefinìi",
 	'inputbox-error-no-type' => 'No te ghè specificà el tipo de inputbox da crear.',
-	'inputbox-error-bad-type' => '"$1" no\'l xe mìa un tipo de inputbox riconossiùo. Siegli el tipo tra "create", "comment", "search" e "search2".',
+	'inputbox-error-bad-type' => '"$1" no\'l xe mìa un tipo de inputbox riconossiùo.
+Siegli el tipo tra "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => 'Çerca corispondenza precisa',
 	'searchfulltext' => 'Çerca nel testo',
 	'createarticle' => 'Crea pagina',
