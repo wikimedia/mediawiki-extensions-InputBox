@@ -1468,6 +1468,7 @@ $messages['vi'] = array(
  * @author Smeira
  */
 $messages['vo'] = array(
+	'inputbox-desc' => 'Dälön keninükami fomas-HTLM büo pemiedetölas',
 	'searchfulltext' => 'Sukön zi da vödem lölik',
 	'createarticle' => 'Jafön padi',
 );
