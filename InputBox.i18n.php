@@ -156,7 +156,7 @@ $messages['be-tarask'] = array(
 	'inputbox-desc' => 'Дазваляе ўключаць раней вызначаныя HTML-формы',
 	'inputbox-error-no-type' => 'Вы не пазначылі тып ствараемага поля ўводу.',
 	'inputbox-error-bad-type' => 'Невядомы тып поля ўводу «$1».
-Калі ласка, выбірайце толькі з дазволеных тыпаў «create», «comment», «search» ці «search2».',
+Калі ласка, выбірайце толькі з дазволеных тыпаў: «create», «comment», «search», «search2» ці «fulltext».',
 	'tryexact' => 'Паспрабаваць дакладны пошук',
 	'searchfulltext' => 'Шукаць увесь тэкст',
 	'createarticle' => 'Стварыць старонку',
@@ -384,8 +384,8 @@ Bonvolu specifigi "krea", "komenta", "serĉa" aŭ "serĉa2".',
 $messages['es'] = array(
 	'inputbox-desc' => 'Permite la inclusión de formularios en HTML predefinidos.',
 	'inputbox-error-no-type' => 'No has especificado el tipo de formulario que vas a crear.',
-	'inputbox-error-bad-type' => 'Tipo de tabla de ingreso «$1» no reconocida.
-Por favor, especifique «create», «comment», «search» «search2» o "fulltext".',
+	'inputbox-error-bad-type' => 'No se reconoce el tipo de caja de entrada «$1».
+Por favor, especifica «create», «comment», «search» «search2» o "fulltext".',
 	'tryexact' => 'Buscar título exacto',
 	'searchfulltext' => 'Buscar por texto completo',
 	'createarticle' => 'Crear artículo',
@@ -430,7 +430,7 @@ $messages['fa'] = array(
  * @author Nike
  */
 $messages['fi'] = array(
-	'inputbox-desc' => 'Sallii ennalta määriteltyjen lomakkeiden sisällyttämisen sivuille.',
+	'inputbox-desc' => 'Mahdollistaa ennalta määriteltyjen lomakkeiden sisällyttämisen sivuille.',
 	'inputbox-error-no-type' => 'Et määritellyt syötekentän tyyppiä.',
 	'inputbox-error-bad-type' => 'Syötekentän tyyppi ”$1” ei kelpaa.
 Sallittuja arvoja ovat create, comment, search, search2 ja fulltext.',
@@ -1071,7 +1071,8 @@ $messages['nso'] = array(
 $messages['oc'] = array(
 	'inputbox-desc' => 'Permet l’inclusion de formularis HTML predefinits',
 	'inputbox-error-no-type' => 'Avètz pas precisat lo tipe de la bóstia de dintrada de crear.',
-	'inputbox-error-bad-type' => "Tipe de bóstia d'entrada $1 pas reconeguda. Indicatz l'opcion ''create'', ''comment'', ''search'' o ''searche2''.",
+	'inputbox-error-bad-type' => "Tipe de bóstia d'entrada « $1 » pas reconeguda.
+Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o « fulltext ».",
 	'tryexact' => 'Ensajatz la correspondéncia exacta',
 	'searchfulltext' => 'Recèrca en tèxt integral',
 	'createarticle' => 'Crear l’article',
