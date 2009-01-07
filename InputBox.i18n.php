@@ -369,7 +369,7 @@ $messages['eo'] = array(
 	'inputbox-desc' => 'Permesi enhavon de antaŭdifinitaj HTML-kamparoj',
 	'inputbox-error-no-type' => 'Vi ne enigis la specon de enigo-kesto por krei.',
 	'inputbox-error-bad-type' => 'Enigo-kesto "$1" ne estas konata.
-Bonvolu specifigi "krea", "komenta", "serĉa" aŭ "serĉa2".',
+Bonvolu specifigi keston "krea", "komenta", "serĉa", "serĉa2", aŭ "plenateksa".',
 	'tryexact' => 'Provu ekzaktan trafon',
 	'searchfulltext' => 'Serĉi plentekste',
 	'createarticle' => 'Krei artikolon',
