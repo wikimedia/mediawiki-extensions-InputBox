@@ -529,6 +529,15 @@ $messages['grc'] = array(
 	'createarticle' => 'Δέλτον δημιουργήσειν',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Chlämens
+ */
+$messages['gsw'] = array(
+	'tryexact' => 'Versuech es mitenere exakte Suech',
+	'searchfulltext' => 'De gsamti Teggscht durchsueche',
+	'createarticle' => 'Syte aalaie',
+);
+
 /** Gujarati (ગુજરાતી)
  * @author Dsvyas
  */
