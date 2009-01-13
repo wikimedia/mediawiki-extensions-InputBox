@@ -16,6 +16,8 @@ class InputBox {
 	private $mWidth = 50;
 	private $mPreload = '';
 	private $mEditIntro = '';
+	private $mSummary = '';
+	private $mMinor = '';
 	private $mPage = '';
 	private $mBR = 'yes';
 	private $mDefaultText = '';
@@ -309,6 +311,20 @@ class InputBox {
 				'value' => $this->mEditIntro,
 			)
 		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'summary',
+				'value' => $this->mSummary,
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'minor',
+				'value' => $this->mMinor,
+			)
+		);
 		if ( $this->mType == 'comment' ) {
 			$htmlOut .= Xml::openElement( 'input',
 				array(
@@ -452,6 +468,8 @@ class InputBox {
 			'preload' => 'mPreload',
 			'page' => 'mPage',
 			'editintro' => 'mEditIntro',
+			'summary' => 'mSummary',
+			'minor' => 'mMinor',
 			'break' => 'mBR',
 			'default' => 'mDefaultText',
 			'bgcolor' => 'mBGColor',
