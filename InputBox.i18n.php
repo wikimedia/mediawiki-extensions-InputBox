@@ -485,6 +485,7 @@ $messages['frp'] = array(
  * @author Klenje
  */
 $messages['fur'] = array(
+	'tryexact' => 'Cîr une corispondence esate',
 	'searchfulltext' => 'Cîr in dut il test',
 	'createarticle' => 'Cree vôs',
 );
@@ -532,8 +533,13 @@ $messages['grc'] = array(
 
 /** Swiss German (Alemannisch)
  * @author Als-Chlämens
+ * @author Als-Holder
  */
 $messages['gsw'] = array(
+	'inputbox-desc' => 'Erlaubt d Yybindig vu vordefinierte HTML-Formular',
+	'inputbox-error-no-type' => 'Du hesch kei Yygabfäld-Typ aagee.',
+	'inputbox-error-bad-type' => 'Yygabfäld-Typ „$1“ nit bekannt.
+Bitte „create“, „comment“, „search“, „search2“ oder „fulltext“ aagee.',
 	'tryexact' => 'Versuech es mitenere exakte Suech',
 	'searchfulltext' => 'De gsamti Teggscht durchsueche',
 	'createarticle' => 'Syte aalaie',
@@ -586,6 +592,19 @@ $messages['hi'] = array(
 	'tryexact' => 'दिये हुए शब्दही खोजें',
 	'searchfulltext' => 'पूरा पाठ खोजें',
 	'createarticle' => 'लेख बनाईयें',
+);
+
+/** Fiji Hindi (Latin) (Fiji Hindi (Latin))
+ * @author Thakurji
+ */
+$messages['hif-latn'] = array(
+	'inputbox-desc' => 'Predefined HTML forms ke allow karo',
+	'inputbox-error-no-type' => 'Aap ii nai bataya hai ki kon rakam ke input box ke banae ke chaahi',
+	'inputbox-error-bad-type' => 'Input box type "$1" ke pehchana nai gais hai.
+Meharbani kar kr ii batao ki "create", "comment", "search", "search2" nai to "fulltext" hai.',
+	'tryexact' => 'Exact match ke try karo',
+	'searchfulltext' => 'Puura text me khojo',
+	'createarticle' => 'Panna banao',
 );
 
 /** Hiligaynon (Ilonggo)
@@ -700,11 +719,12 @@ $messages['is'] = array(
 
 /** Italian (Italiano)
  * @author BrokenArrow
+ * @author Darth Kule
  */
 $messages['it'] = array(
 	'inputbox-desc' => "Consente l'inserimento di moduli HTML predefiniti",
 	'inputbox-error-no-type' => 'Non è stato specificato il tipo di inputbox da creare.',
-	'inputbox-error-bad-type' => '"$1" non è un tipo di inputbox riconosciuto. Scegliere il tipo tra "create", "comment", "search" e "search2".',
+	'inputbox-error-bad-type' => '"$1" non è un tipo di inputbox riconosciuto. Scegliere il tipo tra "create", "comment", "search", "search2" e "fulltext".',
 	'tryexact' => 'Cerca corrispondenza esatta',
 	'searchfulltext' => 'Ricerca nel testo',
 	'createarticle' => 'Crea voce',
@@ -820,6 +840,7 @@ $messages['ko'] = array(
 	'inputbox-error-no-type' => 'type 속성을 정하지 않았습니다.',
 	'inputbox-error-bad-type' => '"$1"은(는) 사용할 수 없는 type 속성입니다.
 "create", "comment", "search", "search2", "fulltext" 중 하나를 사용하세요.',
+	'tryexact' => '정확한 이름으로 찾기',
 	'searchfulltext' => '전체 글 검색',
 	'createarticle' => '문서 만들기',
 );
@@ -900,11 +921,12 @@ $messages['lt'] = array(
 
 /** Latvian (Latviešu)
  * @author Xil
+ * @author Yyy
  */
 $messages['lv'] = array(
 	'inputbox-error-no-type' => 'Tu neesi norādījis ievades lauka tipu',
 	'inputbox-error-bad-type' => 'Ievades lauka tips "$1" nav atpazīts.
-Lūdzu norādi "create", "comment", "search" vai "search2".',
+Lūdzu norādi "create", "comment", "search", "search2" vai "fulltext".',
 	'tryexact' => 'Meklēt precīzi',
 	'searchfulltext' => 'Meklēt visu tekstu',
 	'createarticle' => 'Izveidot lapu',
@@ -1202,7 +1224,8 @@ $messages['roa-rup'] = array(
 $messages['ru'] = array(
 	'inputbox-desc' => 'Позволяет включать заранее определённые HTML-формы',
 	'inputbox-error-no-type' => 'Вы не указали тип создаваемого поля ввода.',
-	'inputbox-error-bad-type' => 'Неизвестный тип поля ввода «$1». Пожалуйста, укажите один из допустимых типов: «create», «comment», «search» или «search2».',
+	'inputbox-error-bad-type' => 'Неизвестный тип поля ввода «$1».
+Пожалуйста, укажите один из допустимых типов: «create», «comment», «search», «search2» или «fulltext».',
 	'tryexact' => 'Строгий поиск',
 	'searchfulltext' => 'Полнотекстовый поиск',
 	'createarticle' => 'Создать статью',
@@ -1318,7 +1341,8 @@ $messages['ss'] = array(
 $messages['stq'] = array(
 	'inputbox-desc' => 'Ferlööwet dät Apniemen fon foardefinierde HTML-Formulare',
 	'inputbox-error-no-type' => 'Du hääst naan Inputbox-Typ ounroat.',
-	'inputbox-error-bad-type' => 'Die Inputbox-Typ „$1“ is uunbekoand. Reek n gultigen Typ an: „create“, „comment“, „search“ of „search2“.',
+	'inputbox-error-bad-type' => 'Iengoawefäild-Typ "$1" uunbekoand.
+Reek n gultigen Typ an: „create“, „comment“, „search“, „search2“ of "fulltext".',
 	'tryexact' => 'Fersäik exakte Säike:',
 	'searchfulltext' => 'Dän ganse Text truchsäike',
 	'createarticle' => 'Siede anlääse',
@@ -1425,13 +1449,14 @@ $messages['ts'] = array(
 );
 
 /** Ukrainian (Українська)
+ * @author AS
  * @author Ahonc
  */
 $messages['uk'] = array(
 	'inputbox-desc' => 'Дозволяє включати заздалегідь визначені HTML-форми',
 	'inputbox-error-no-type' => 'Ви не зазначили тип поля вводу, яке створюється.',
 	'inputbox-error-bad-type' => 'Невідомий тип поля вводу «$1».
-Будь ласка, зазначте один з допустимих типів: «create», «comment», «search» або «search2».',
+Будь ласка, зазначте один з допустимих типів: «create», «comment», «search», «search2» або «fulltext».',
 	'tryexact' => 'Строгий пошук',
 	'searchfulltext' => 'Повнотекстовий пошук',
 	'createarticle' => 'Створити статтю',
