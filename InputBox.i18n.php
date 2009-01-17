@@ -243,9 +243,9 @@ Molimo odredite "create", "comment", "search", "search2" ili "fulltext".',
 $messages['ca'] = array(
 	'inputbox-desc' => 'Permet la inclusió de formularis HTML predefinits',
 	'inputbox-error-no-type' => "No heu especificat el tipus de quadre d'entrada per crear.",
-	'inputbox-error-bad-type' => "No es reconeix el tipus de quadre d'entrada «$1».
+	'inputbox-error-bad-type' => "El tipus de quadre d'entrada «$1» no està reconegut.
 
-Especifiqueu-hi «create», «comment», «search« o «search2».",
+Especifiqueu-hi «create», «comment», «search», «search2» o «fulltext».",
 	'tryexact' => 'Prova una coincidència exacta',
 	'searchfulltext' => 'Cerca un text sencer',
 	'createarticle' => 'Crea una pàgina',
