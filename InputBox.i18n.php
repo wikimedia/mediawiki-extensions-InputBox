@@ -878,6 +878,13 @@ $messages['lb'] = array(
 	'createarticle' => 'Säit uleeën',
 );
 
+/** Lingua Franca Nova (Lingua Franca Nova)
+ * @author Malafaya
+ */
+$messages['lfn'] = array(
+	'createarticle' => 'Crea paje',
+);
+
 /** Ganda (Luganda) */
 $messages['lg'] = array(
 	'createarticle' => 'Wandika omuko',
