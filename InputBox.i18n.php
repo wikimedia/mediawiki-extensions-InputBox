@@ -1434,9 +1434,15 @@ $messages['to'] = array(
 
 /** Turkish (Türkçe)
  * @author Erkan Yilmaz
+ * @author Joseph
  * @author Srhat
  */
 $messages['tr'] = array(
+	'inputbox-desc' => 'Öntanımlı HTML formlarının dahil edilmesine olanak verir',
+	'inputbox-error-no-type' => 'Oluşturulacak girdi kutusunun tipini belirtmediniz.',
+	'inputbox-error-bad-type' => 'Girdi kutusu tipi "$1" tanınmadı.
+Lütfen "create", "comment", "search", "search2" ya da  "fulltext" olarak belirtin.',
+	'tryexact' => 'Tam eşleşme dene',
 	'searchfulltext' => 'Tüm metni ara',
 	'createarticle' => 'Sayfayı oluştur',
 );
