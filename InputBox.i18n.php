@@ -1568,7 +1568,7 @@ $messages['yue'] = array(
 );
 
 /** Classical Chinese (文言) */
-$messages['zh-classical'] = array(
+$messages['lzh'] = array(
 	'inputbox-error-no-type' => '汝未定輸入盒之類也。',
 	'inputbox-error-bad-type' => '輸入盒之類"$1"無認耳。指"create"、"comment"、"search"或"search2"之。',
 	'tryexact' => '查全合',
