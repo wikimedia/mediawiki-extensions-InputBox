@@ -443,7 +443,7 @@ Sallittuja arvoja ovat create, comment, search, search2 ja fulltext.',
 /** Võro (Võro)
  * @author Võrok
  */
-$messages['fiu-vro'] = array(
+$messages['vro'] = array(
 	'tryexact' => 'Täpsä otsminõ',
 	'searchfulltext' => 'Otsiq terveq tekst',
 	'createarticle' => 'Luuq leht',
