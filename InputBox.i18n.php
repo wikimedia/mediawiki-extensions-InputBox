@@ -70,7 +70,7 @@ $messages['an'] = array(
 	'inputbox-desc' => 'Premite a enclusión de formularios HTML predefinitos',
 	'inputbox-error-no-type' => 'No ha endicato o tipo de caixa de dentrada que cal creyar.',
 	'inputbox-error-bad-type' => 'No se reconoixe o tipo de caixa de dentrada "$1".
-Please specify "create", "comment", "search" or "search2".',
+Por fabor, espezifique "create", "comment", "search" u "fulltext".',
 	'tryexact' => 'Mirar títol esauto',
 	'searchfulltext' => 'Mirar por testo completo',
 	'createarticle' => 'Creyar pachina',
@@ -438,15 +438,6 @@ Sallittuja arvoja ovat create, comment, search, search2 ja fulltext.',
 	'tryexact' => 'Yritä tarkkaa osumaa',
 	'searchfulltext' => 'Etsi koko tekstiä',
 	'createarticle' => 'Luo sivu',
-);
-
-/** Võro (Võro)
- * @author Võrok
- */
-$messages['vro'] = array(
-	'tryexact' => 'Täpsä otsminõ',
-	'searchfulltext' => 'Otsiq terveq tekst',
-	'createarticle' => 'Luuq leht',
 );
 
 /** Faroese (Føroyskt) */
@@ -937,6 +928,15 @@ Lūdzu norādi "create", "comment", "search", "search2" vai "fulltext".',
 	'tryexact' => 'Meklēt precīzi',
 	'searchfulltext' => 'Meklēt visu tekstu',
 	'createarticle' => 'Izveidot lapu',
+);
+
+/** Classical Chinese (文言) */
+$messages['lzh'] = array(
+	'inputbox-error-no-type' => '汝未定輸入盒之類也。',
+	'inputbox-error-bad-type' => '輸入盒之類"$1"無認耳。指"create"、"comment"、"search"或"search2"之。',
+	'tryexact' => '查全合',
+	'searchfulltext' => '尋全文',
+	'createarticle' => '撰文',
 );
 
 /** Macedonian (Македонски)
@@ -1521,6 +1521,15 @@ $messages['vo'] = array(
 	'createarticle' => 'Jafön padi',
 );
 
+/** Võro (Võro)
+ * @author Võrok
+ */
+$messages['vro'] = array(
+	'tryexact' => 'Täpsä otsminõ',
+	'searchfulltext' => 'Otsiq terveq tekst',
+	'createarticle' => 'Luuq leht',
+);
+
 /** Walloon (Walon) */
 $messages['wa'] = array(
 	'createarticle' => 'Ahiver årtike',
@@ -1565,15 +1574,6 @@ $messages['yue'] = array(
 	'tryexact' => '試吓精確嘅比較',
 	'searchfulltext' => '搵全文',
 	'createarticle' => '建立文章',
-);
-
-/** Classical Chinese (文言) */
-$messages['lzh'] = array(
-	'inputbox-error-no-type' => '汝未定輸入盒之類也。',
-	'inputbox-error-bad-type' => '輸入盒之類"$1"無認耳。指"create"、"comment"、"search"或"search2"之。',
-	'tryexact' => '查全合',
-	'searchfulltext' => '尋全文',
-	'createarticle' => '撰文',
 );
 
 /** Simplified Chinese (‪中文(简体)‬) */
