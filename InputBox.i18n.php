@@ -1505,7 +1505,7 @@ Siegli el tipo tra "create", "comment", "search", "search2" o "fulltext".',
 $messages['vi'] = array(
 	'inputbox-desc' => 'Thêm những biểu mẫu HTML đơn giản',
 	'inputbox-error-no-type' => 'Bạn chưa định rõ loại biểu mẫu để tạo ra.',
-	'inputbox-error-bad-type' => 'Loại biểu mẫu “$1” không hợp lệ. Xin hãy chọn “create”, “comment”, “search”, hay “search2”.',
+	'inputbox-error-bad-type' => 'Loại biểu mẫu “$1” không hợp lệ. Xin hãy chọn “create”, “comment”, “search”, “search2”, hay “fulltext”.',
 	'tryexact' => 'Thử tìm đoạn văn khớp chính xác với từ khóa',
 	'searchfulltext' => 'Tìm toàn văn',
 	'createarticle' => 'Viết bài mới',
