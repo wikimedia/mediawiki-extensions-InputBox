@@ -1184,12 +1184,13 @@ Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Brunoy Anastasiya Seryozhenko
+ * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
 	'inputbox-desc' => 'Permite a inclusão de formulários definidos de HTML',
 	'inputbox-error-no-type' => 'Você não especificou o tipo de inputbox a ser criada.',
-	'inputbox-error-bad-type' => 'A Input box de tipo "$1" não é reconhecida.
-Por favor, especifique "create", "comment", "search" ou "search2".',
+	'inputbox-error-bad-type' => 'O tipo de caixa de introdução de dados "$1" não foi reconhecido.
+Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Tentar a expressão exata',
 	'searchfulltext' => 'Pesquisar em todo o texto.',
 	'createarticle' => 'Criar página.',
