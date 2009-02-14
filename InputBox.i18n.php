@@ -355,11 +355,17 @@ $messages['ee'] = array(
 	'createarticle' => 'Dze nuŋɔŋlɔ yeye gɔme',
 );
 
-/** Greek (Ελληνικά) */
+/** Greek (Ελληνικά)
+ * @author Dead3y3
+ */
 $messages['el'] = array(
+	'inputbox-desc' => 'Επιτρέπει την περίληψη προκαθορισμένων φορμών HTML',
+	'inputbox-error-no-type' => 'Δεν έχετε καθορίσει τον τύπο του κουτιού εισόδου προς δημιουργία.',
+	'inputbox-error-bad-type' => 'Τύπος κουτιού εισόδου "$1" δεν αναγνωρίστηκε.<br/>
+Παρακαλώ ορίστε "create", "comment", "search", "search2" ή "fulltext".',
 	'tryexact' => 'Δοκιμάστε την επακριβή αντιστοιχία.',
 	'searchfulltext' => 'Αναζήτηση με το πλήρες κείμενο',
-	'createarticle' => 'Δημιουργία άρθρου',
+	'createarticle' => 'Δημιουργία σελίδας',
 );
 
 /** Esperanto (Esperanto)
