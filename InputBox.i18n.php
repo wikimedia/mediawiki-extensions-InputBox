@@ -361,7 +361,7 @@ $messages['ee'] = array(
 $messages['el'] = array(
 	'inputbox-desc' => 'Επιτρέπει την περίληψη προκαθορισμένων φορμών HTML',
 	'inputbox-error-no-type' => 'Δεν έχετε καθορίσει τον τύπο του κουτιού εισόδου προς δημιουργία.',
-	'inputbox-error-bad-type' => 'Τύπος κουτιού εισόδου "$1" δεν αναγνωρίστηκε.<br/>
+	'inputbox-error-bad-type' => 'Τύπος κουτιού εισόδου "$1" δεν αναγνωρίστηκε.<br />
 Παρακαλώ ορίστε "create", "comment", "search", "search2" ή "fulltext".',
 	'tryexact' => 'Δοκιμάστε την επακριβή αντιστοιχία.',
 	'searchfulltext' => 'Αναζήτηση με το πλήρες κείμενο',
