@@ -329,6 +329,13 @@ Bitte „create“, „comment“, „search“, „search2“ oder „fulltext�
 	'createarticle' => 'Seite anlegen',
 );
 
+/** German (formal address) (Deutsch (Sie-Form))
+ * @author Umherirrender
+ */
+$messages['de-formal'] = array(
+	'inputbox-error-no-type' => 'Sie haben keinen Eingabefeld-Typ angegeben.',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  * @author Pe7er
