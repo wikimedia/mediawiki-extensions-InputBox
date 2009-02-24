@@ -519,7 +519,7 @@ $messages['gl'] = array(
 Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Tentar coincidencias exactas',
 	'searchfulltext' => 'Buscar o texto completo',
-	'createarticle' => 'Crear páxina',
+	'createarticle' => 'Crear a páxina',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
