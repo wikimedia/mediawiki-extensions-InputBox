@@ -901,7 +901,8 @@ $messages['lg'] = array(
 $messages['li'] = array(
 	'inputbox-desc' => "Maakt 't toevoege van veurgedefinieerde HTML-formuliere meugelijk",
 	'inputbox-error-no-type' => "U heeft 't type inputbox neet aangegeve. Zie [http://www.mediawiki.org/wiki/Extension:Inputbox MediaWiki.org] veur meer informatie.",
-	'inputbox-error-bad-type' => 'Inputbox-type "$1" neet herkend. Gebroek "create", "comment", "search" of "search2".',
+	'inputbox-error-bad-type' => 'Inputbox-type "$1" neet herkend. 
+Gebroek "create", "comment", "search", "search2" óf "fulltext".',
 	'tryexact' => 'Perbeer exacte euvereinkoms',
 	'searchfulltext' => 'Zeuk dèr volledige tèks',
 	'createarticle' => "Maak 'ne pazjena aan",
