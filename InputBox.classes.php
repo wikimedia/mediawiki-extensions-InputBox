@@ -158,7 +158,7 @@ class InputBox {
 
 			// Line break
 			$htmlOut .= $this->mBR;
-		} else if( $type == 'search') {
+		} else if( $type == 'search' ) {
 			// Go button
 			$htmlOut .= Xml::element( 'input',
 				array(
@@ -180,6 +180,12 @@ class InputBox {
 				'value' => $this->mSearchButtonLabel
 			)
 		);
+		
+		// Hidden fulltext param for IE (bug 17161)
+		if( $type == 'fulltext' ) {
+			$htmlOut .= Xml::hidden( 'fulltext', 'Search' );
+		}
+		
 		$htmlOut .= Xml::closeElement( 'form' );
 		$htmlOut .= Xml::closeElement( 'div' );
 
