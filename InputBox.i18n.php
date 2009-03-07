@@ -661,12 +661,13 @@ $messages['ht'] = array(
 /** Hungarian (Magyar)
  * @author Dani
  * @author KossuthRad
+ * @author Tgr
  */
 $messages['hu'] = array(
 	'inputbox-desc' => 'Lehetővé teszi előre megadott HTML-űrlapok beillesztését',
 	'inputbox-error-no-type' => 'Nem adtad meg, hogy milyen típusú beviteli mezőt akarsz készíteni.',
 	'inputbox-error-bad-type' => '„$1” típusú beviteli mező nem ismert. „create”, „comment”, „search” vagy „search2” egyikét add meg.',
-	'tryexact' => 'Pontos párosítást igényel',
+	'tryexact' => 'Ugrás a szócikkre',
 	'searchfulltext' => 'Keresés a teljes szövegben',
 	'createarticle' => 'Szócikk létrehozása',
 );
@@ -1238,6 +1239,13 @@ Te rog să specifici parametrii "create", "comment", "search", "search2" sau "fu
 /** Aromanian (Armãneashce) */
 $messages['roa-rup'] = array(
 	'createarticle' => 'Adrats articlu',
+);
+
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'createarticle' => "Ccreje 'a vôsce",
 );
 
 /** Russian (Русский)
