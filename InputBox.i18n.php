@@ -308,11 +308,17 @@ Dewiswch rhwng "create", "comment", "search" a "search2" neu "fulltext".',
 	'createarticle' => "Creu'r dudalen",
 );
 
-/** Danish (Dansk) */
+/** Danish (Dansk)
+ * @author Byrial
+ */
 $messages['da'] = array(
-	'tryexact' => 'Forsøg eksakt søgning:',
-	'searchfulltext' => 'Gennemsøge hele teksten',
-	'createarticle' => 'Oprette side',
+	'inputbox-desc' => 'Muliggør inkludering af forhåndsdefinerede HTML-formularer',
+	'inputbox-error-no-type' => 'Du har ikke angivet type i inputboksen som skal laves.',
+	'inputbox-error-bad-type' => 'Inputboks-type "$1" kendes ikke.
+Vælg venligst "create", "comment", "search", "search2" eller "fulltext".',
+	'tryexact' => 'Gå til siden',
+	'searchfulltext' => 'Søg efter teksten',
+	'createarticle' => 'Opret side',
 );
 
 /** German (Deutsch)
