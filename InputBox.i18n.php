@@ -129,6 +129,13 @@ $messages['az'] = array(
 	'createarticle' => 'Məqalə yarat',
 );
 
+/** Samogitian (Žemaitėška)
+ * @author Hugo.arg
+ */
+$messages['bat-smg'] = array(
+	'searchfulltext' => 'Ėiškuotė pėlna teksta',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
@@ -324,13 +331,14 @@ Vælg venligst "create", "comment", "search", "search2" eller "fulltext".',
 /** German (Deutsch)
  * @author Metalhead64
  * @author Raimond Spekking
+ * @author Umherirrender
  */
 $messages['de'] = array(
 	'inputbox-desc' => 'Erlaubt die Einbindung vordefinierter HTML-Formulare',
 	'inputbox-error-no-type' => 'Du hast keinen Eingabefeld-Typ angegeben.',
 	'inputbox-error-bad-type' => 'Eingabefeld-Typ „$1“ unbekannt.
 Bitte „create“, „comment“, „search“, „search2“ oder „fulltext“ angeben.',
-	'tryexact' => 'Versuche exakte Suche:',
+	'tryexact' => 'Versuche exakte Suche',
 	'searchfulltext' => 'Gesamten Text durchsuchen',
 	'createarticle' => 'Seite anlegen',
 );
@@ -1277,6 +1285,13 @@ $messages['sah'] = array(
 	'tryexact' => 'Чопчу булуу',
 	'searchfulltext' => 'Тиэкиһин барытын көрдөөһүн',
 	'createarticle' => 'Ыстатыйаны айарга',
+);
+
+/** Sardinian (Sardu)
+ * @author Marzedu
+ */
+$messages['sc'] = array(
+	'createarticle' => 'Crea artìculu',
 );
 
 /** Sicilian (Sicilianu)
