@@ -959,7 +959,7 @@ Lūdzu norādi "create", "comment", "search", "search2" vai "fulltext".',
 	'createarticle' => 'Izveidot lapu',
 );
 
-/** Classical Chinese (文言) */
+/** Literary Chinese (文言) */
 $messages['lzh'] = array(
 	'inputbox-error-no-type' => '汝未定輸入盒之類也。',
 	'inputbox-error-bad-type' => '輸入盒之類"$1"無認耳。指"create"、"comment"、"search"或"search2"之。',
@@ -1478,7 +1478,7 @@ $messages['tn'] = array(
 	'createarticle' => 'Kwala mokwalo',
 );
 
-/** Tonga (faka-Tonga) */
+/** Tonga (lea faka-Tonga) */
 $messages['to'] = array(
 	'createarticle' => 'Fakatupu ʻa e kupu',
 );
@@ -1541,6 +1541,13 @@ Siegli el tipo tra "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => 'Çerca corispondenza precisa',
 	'searchfulltext' => 'Çerca nel testo',
 	'createarticle' => 'Crea pagina',
+);
+
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'createarticle' => "Säta lehtpol'",
 );
 
 /** Vietnamese (Tiếng Việt)
