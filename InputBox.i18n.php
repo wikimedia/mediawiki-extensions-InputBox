@@ -1361,11 +1361,13 @@ $messages['sq'] = array(
 
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Millosh
+ * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'inputbox-desc' => 'Омогући укључивање претходно дефинисаних HTML форми.',
 	'inputbox-error-no-type' => 'Ниси одредио тип уносне кутије да би је направио.',
-	'inputbox-error-bad-type' => 'Уносна кутија типа "$1" није препозната. Одреди "create", "comment", "search" или "search2".',
+	'inputbox-error-bad-type' => 'Тип "$1" кутијице за унос података је непознат.
+Молимо вас да га промените на "create", "comment", "search", "search2" или "fulltext".',
 	'tryexact' => 'Покушај тачно',
 	'searchfulltext' => 'Претражи цео текст',
 	'createarticle' => 'Направи чланак',
