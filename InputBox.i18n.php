@@ -1138,11 +1138,11 @@ $messages['nso'] = array(
  */
 $messages['oc'] = array(
 	'inputbox-desc' => 'Permet l’inclusion de formularis HTML predefinits',
-	'inputbox-error-no-type' => 'Avètz pas precisat lo tipe de la bóstia de dintrada de crear.',
+	'inputbox-error-no-type' => "Avètz pas precisat lo tipe de la bóstia d'entrada de crear.",
 	'inputbox-error-bad-type' => "Tipe de bóstia d'entrada « $1 » pas reconeguda.
 Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o « fulltext ».",
 	'tryexact' => 'Ensajatz la correspondéncia exacta',
-	'searchfulltext' => 'Recèrca en tèxt integral',
+	'searchfulltext' => 'Recèrca en tèxte integral',
 	'createarticle' => 'Crear l’article',
 );
 
