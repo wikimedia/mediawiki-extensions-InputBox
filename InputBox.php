@@ -30,6 +30,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 // Credits
 $wgExtensionCredits['parserhook'][] = array(
+	'path'           => __FILE__,
 	'name'           => 'InputBox',
 	'author'         => array( 'Erik Moeller', 'Leonardo Pimenta', 'Rob Church', 'Trevor Parscal' ),
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:InputBox',
