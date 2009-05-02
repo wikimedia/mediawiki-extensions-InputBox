@@ -1259,6 +1259,8 @@ $messages['roa-rup'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'tryexact' => "Pruève cu 'u combronde satte-satte",
+	'searchfulltext' => "Cirche jndr'à tutte 'u teste",
 	'createarticle' => "Ccreje 'a vôsce",
 );
 
