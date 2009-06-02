@@ -531,7 +531,7 @@ $messages['gl'] = array(
 	'inputbox-error-no-type' => 'Non se especificou o tipo de caixa de entrada para crear.',
 	'inputbox-error-bad-type' => 'O tipo de caixa de entrada "$1" non foi recoñecido.
 Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
-	'tryexact' => 'Tentar coincidencias exactas',
+	'tryexact' => 'Buscar coincidencias exactas',
 	'searchfulltext' => 'Buscar o texto completo',
 	'createarticle' => 'Crear a páxina',
 );
