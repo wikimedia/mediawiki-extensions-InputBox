@@ -492,11 +492,12 @@ Indiquez une option parmis « create », « comment », « search », « searche
  */
 $messages['frp'] = array(
 	'inputbox-desc' => 'Pèrmèt l’encllusion de formulèros HTML prèdèfenis.',
-	'inputbox-error-no-type' => 'Vos éd pas spècefiâ lo tipo de la bouèta d’entrâ a crèar.',
-	'inputbox-error-bad-type' => "Tipo de bouèta d’entrâ « $1 » pas recognu. Endicâd lo chouèx ''create'', ''comment'', ''search'' ou ben ''searche2''.",
-	'tryexact' => 'Èprovâd la corrèspondance ègzacta.',
-	'searchfulltext' => 'Rechèrche en tèxte complèt',
-	'createarticle' => 'Crèar l’articllo',
+	'inputbox-error-no-type' => 'Vos éd pas spècefiâ lo tipo de la bouèta d’entrâ a fâre.',
+	'inputbox-error-bad-type' => 'Tipo de bouèta d’entrâ « $1 » pas recognu.
+Volyéd spècefiar un chouèx permié « create », « comment », « search », « searche2 » ou ben « fulltext ».',
+	'tryexact' => 'Èprovâd la corrèspondance justa.',
+	'searchfulltext' => 'Rechèrche en tèxto complèt',
+	'createarticle' => 'Fâre la pâge',
 );
 
 /** Friulian (Furlan)
