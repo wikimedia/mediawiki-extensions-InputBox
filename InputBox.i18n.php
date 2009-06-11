@@ -1608,6 +1608,13 @@ $messages['wuu'] = array(
 	'createarticle' => '建立新文章',
 );
 
+/** Kalmyk (Хальмг)
+ * @author Huuchin
+ */
+$messages['xal'] = array(
+	'createarticle' => 'Халхиг бүтәх',
+);
+
 /** Xhosa (isiXhosa) */
 $messages['xh'] = array(
 	'createarticle' => 'Bhala Ibali',
