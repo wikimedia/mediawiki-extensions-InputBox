@@ -707,11 +707,13 @@ Per favor specifica "create", "comment", "search", "search2" o "fulltext".',
 
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
+ * @author Rex
  */
 $messages['id'] = array(
 	'inputbox-desc' => 'Memungkinkan penggunaan form HTML yang telah ditentukan',
 	'inputbox-error-no-type' => 'Anda harus menentukan tipe kotak input yang ingin dibuat.',
-	'inputbox-error-bad-type' => 'Tipe kotak input "$1" tak dikenal. Tolong gunakan "create", "comment", "search" atau "search2".',
+	'inputbox-error-bad-type' => 'Tipe kotak input "$1" tak dikenal.
+Harap gunakan "create", "comment", "search", "search2", atau "fulltext".',
 	'tryexact' => 'Coba pencocokan eksak',
 	'searchfulltext' => 'Cari di teks lengkap',
 	'createarticle' => 'Buat artikel',
