@@ -177,7 +177,7 @@ $messages['bg'] = array(
 	'inputbox-desc' => 'Позволява вмъкването на HTML формуляри.',
 	'inputbox-error-no-type' => 'Не се посочили типа на кутията за вход, която да бъде създадена.',
 	'inputbox-error-bad-type' => 'Неразпознат тип „$1“ на кутията за вход.
-Моля, посочете „create“, „comment“, „search“ или „search2“.',
+Необходимо е да се посочи „create“, „comment“, „search“, „search2“ или „fulltext“.',
 	'tryexact' => 'Пълно и точно съвпадение',
 	'searchfulltext' => 'Претърсване на целия текст',
 	'createarticle' => 'Създаване',
