@@ -297,7 +297,7 @@ Uveďte jednu z možností: „create“, „comment“, „search“, „search
 	'createarticle' => 'Vytvořit článek',
 );
 
-/** Chuvash (Чăвашла) */
+/** Chuvash (Чӑвашла) */
 $messages['cv'] = array(
 	'createarticle' => 'Çĕнĕ статья çыр',
 );
