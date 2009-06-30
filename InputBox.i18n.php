@@ -779,12 +779,13 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Pras
  */
 $messages['jv'] = array(
 	'inputbox-desc' => 'Ngidinaké nganggo formulir HTML sing wis ditemtokaké',
 	'inputbox-error-no-type' => 'Panjenengan durung nemtokaké tipe kothak input sing arep digawé.',
-	'inputbox-error-bad-type' => 'Tipe kothak input "$1" ora ditepungi.
-Tulung nganggoa "create", "comment", "search" utawa "search2".',
+	'inputbox-error-bad-type' => 'Tipe kothak input "$1" ora dikenal.
+Supaya migunakaké "create", "comment", "search", "search2", utawa "fulltext".',
 	'tryexact' => 'Cobanen pancocogan èksak',
 	'searchfulltext' => 'Golèk ing tèks jangkep',
 	'createarticle' => 'Damel artikel',
