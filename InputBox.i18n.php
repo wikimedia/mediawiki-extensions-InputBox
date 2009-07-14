@@ -896,6 +896,8 @@ $messages['la'] = array(
 $messages['lb'] = array(
 	'inputbox-desc' => "Erlaabt d'Afüge vu viirdefinéierten HTML-Formulairen",
 	'inputbox-error-no-type' => 'Dir hutt den Typ vu Këscht fir eppes anzeginn net uginn.',
+	'inputbox-error-bad-type' => 'Këscht fir anzeginn vum Typ "$1" net erkannt.
+Gitt w.e.g. "create", "comment", "search", "search2" oder "fulltext" un.',
 	'tryexact' => 'Versicht et matt der preziser Sich:',
 	'searchfulltext' => 'Am ganzen Text sichen',
 	'createarticle' => 'Säit uleeën',
