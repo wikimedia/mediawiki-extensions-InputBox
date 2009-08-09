@@ -223,7 +223,7 @@ $messages['br'] = array(
 	'inputbox-desc' => 'Aotren a ra degas furmskridoù HTML raktermenet.',
 	'inputbox-error-no-type' => "N'eo ket bet spisaet ganeoc'h ar seurt boest enmont da vezañ krouet",
 	'inputbox-error-bad-type' => 'N\'eo ket anavaezet ar seurt boest enmont "$1".
-Spisait "create", "comment", "search" pe "search2".',
+Spisait "create", "comment", "search" pe "search2" pe "fulltext".',
 	'tryexact' => 'Klask ma klotfe rik',
 	'searchfulltext' => 'Klask an destenn a-bezh',
 	'createarticle' => 'Krouiñ ar pennad',
@@ -421,8 +421,10 @@ Por favor, especifica «create», «comment», «search» «search2» o "fulltex
 /** Estonian (Eesti)
  * @author Avjoska
  * @author Jaan513
+ * @author Pikne
  */
 $messages['et'] = array(
+	'inputbox-desc' => 'Lubab kaasata eelmääratletud HTML-vormid.',
 	'tryexact' => 'Proovi täpset vastet',
 	'searchfulltext' => 'Otsi täisteksti',
 	'createarticle' => 'Alusta lehekülge',
