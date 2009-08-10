@@ -1385,8 +1385,14 @@ $messages['sr-ec'] = array(
 	'createarticle' => 'Направи чланак',
 );
 
-/** latinica (latinica) */
+/** latinica (latinica)
+ * @author Michaello
+ */
 $messages['sr-el'] = array(
+	'inputbox-desc' => 'Omogući uključivanje prethodno definisanih HTML formi.',
+	'inputbox-error-no-type' => 'Nisi odredio tip unosne kutije da bi je napravio.',
+	'inputbox-error-bad-type' => 'Tip "$1" kutijice za unos podataka je nepoznat.
+Molimo vas da ga promenite na "create", "comment", "search", "search2" ili "fulltext".',
 	'tryexact' => 'Pokušaj tačno',
 	'searchfulltext' => 'Pretraži ceo tekst',
 	'createarticle' => 'Napravi članak',
