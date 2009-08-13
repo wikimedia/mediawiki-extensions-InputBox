@@ -1042,6 +1042,13 @@ $messages['mt'] = array(
 	'createarticle' => 'Oħloq paġna',
 );
 
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'createarticle' => 'Шкамс лопа',
+);
+
 /** Mazanderani (مَزِروني)
  * @author Spacebirdy
  */
