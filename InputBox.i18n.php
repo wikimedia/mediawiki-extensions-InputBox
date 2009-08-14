@@ -979,6 +979,7 @@ $messages['lzh'] = array(
 );
 
 /** Macedonian (Македонски)
+ * @author Bjankuloski06
  * @author Brest
  * @author Misos
  */
@@ -989,7 +990,7 @@ $messages['mk'] = array(
 Наведете еден од следниве "create", "comment", "search", "search2" или "fulltext".',
 	'tryexact' => 'Обиди се точно',
 	'searchfulltext' => 'Барај низ целиот текст',
-	'createarticle' => 'Создади страница',
+	'createarticle' => 'Создај страница',
 );
 
 /** Malayalam (മലയാളം)
