@@ -1190,10 +1190,13 @@ Należy wybrać „create”, „comment”, „search”, „search2” or „f
 
 /** Piedmontese (Piemontèis)
  * @author Bèrto 'd Sèra
+ * @author Dragonòt
  */
 $messages['pms'] = array(
+	'inputbox-desc' => "A përmëtt l'anseriment ëd forme HTML predefinìe",
 	'inputbox-error-no-type' => "A l'ha nen dit che sòrt ëd quàder ëd caria dat ch'a debia fesse.",
-	'inputbox-error-bad-type' => 'La sòrt ëd quàder "$1" a l\'é nen conossùa. Për piasì, ch\'a sërna antra "create", "comment", "search" ò pura "search2".',
+	'inputbox-error-bad-type' => 'La sòrt ëd quàder "$1" a l\'é nen conossùa. 
+Për piasì, ch\'a sërna antra "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => 'Sërca che a sia pròpe parej',
 	'searchfulltext' => 'Sërca an tut ël test',
 	'createarticle' => "Crea n'artìcol",
