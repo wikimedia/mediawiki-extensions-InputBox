@@ -1382,7 +1382,7 @@ $messages['sq'] = array(
 	'createarticle' => 'Krijo artikull',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
  * @author Михајло Анђелковић
  */
@@ -1396,7 +1396,7 @@ $messages['sr-ec'] = array(
 	'createarticle' => 'Направи чланак',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
