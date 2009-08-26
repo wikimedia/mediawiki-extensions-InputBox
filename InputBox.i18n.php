@@ -49,8 +49,8 @@ $messages['niu'] = array(
 $messages['af'] = array(
 	'inputbox-desc' => 'Laat die insluiting van vooraf gedefinieerde HTML-vorms moontlik',
 	'inputbox-error-no-type' => 'U het nie die tipe invoerveld gespesifiseer nie.',
-	'inputbox-error-bad-type' => 'Tipe invoerveld "$1" nie herken nie.
-Gebruik "create", "comment", "search" of "search2".',
+	'inputbox-error-bad-type' => 'Tipe invoerveld is "$1" nie herken nie.
+Gebruik "create", "comment", "search", "search2" of "fulltext".',
 	'tryexact' => 'Soek presiese ooreenkoms',
 	'searchfulltext' => 'Deursoek volledige teks',
 	'createarticle' => 'Skep bladsy',
@@ -1462,11 +1462,14 @@ $messages['szl'] = array(
 
 /** Telugu (తెలుగు)
  * @author Chaduvari
+ * @author Kiranmayee
  * @author Veeven
  */
 $messages['te'] = array(
 	'inputbox-desc' => 'ముందే నిర్వచించబడిన HTML ఫారములను చేర్చనివ్వు',
 	'inputbox-error-no-type' => 'ఏ రకమైన ఇన్&zwnj;పుట్ పెట్టెని తయారుచేయాలో మీరు చెప్పలేదు.',
+	'inputbox-error-bad-type' => 'ప్రవేశికము పెట్టె యొక్క బాపతు "$1"ను గుర్తించలేదు .
+దయచేసి "create", "comment", "search", "search2" లేదా "fulltext" లను పేర్కొనండి.',
 	'tryexact' => 'ఖచ్చితమైన పోలిక కొరకు ప్రయత్నించు',
 	'searchfulltext' => 'పూర్తి పాఠ్యంలో వెతుకు',
 	'createarticle' => 'వ్యాసాన్ని సృష్టించు',
