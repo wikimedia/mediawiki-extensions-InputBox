@@ -225,7 +225,7 @@ $messages['br'] = array(
 	'inputbox-error-bad-type' => 'N\'eo ket anavaezet ar seurt boest enmont "$1".
 Spisait "create", "comment", "search" pe "search2" pe "fulltext".',
 	'tryexact' => 'Klask ma klotfe rik',
-	'searchfulltext' => 'Klask an destenn a-bezh',
+	'searchfulltext' => 'Klask en destenn a-bezh',
 	'createarticle' => 'Krouiñ ar pennad',
 );
 
