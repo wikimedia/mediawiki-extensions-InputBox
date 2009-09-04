@@ -49,10 +49,4 @@ $wgAutoloadClasses['InputBoxHooks'] = $dir . 'InputBox.hooks.php';
 $wgAutoloadClasses['InputBox'] = $dir . 'InputBox.classes.php';
 
 // Register parser hook
-if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
-	// Modern
-	$wgHooks['ParserFirstCallInit'][] = 'InputBoxHooks::register';
-} else {
-	// Legacy
-	$wgExtensionFunctions[] = array( 'InputBoxHooks', 'register' );
-}
+$wgHooks['ParserFirstCallInit'][] = 'InputBoxHooks::register';
