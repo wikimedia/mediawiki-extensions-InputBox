@@ -531,7 +531,7 @@ $messages['ga'] = array(
  */
 $messages['gl'] = array(
 	'inputbox-desc' => 'Permitir a inclusión de formularios predefinidos de HTML',
-	'inputbox-error-no-type' => 'Non se especificou o tipo de caixa de entrada para crear.',
+	'inputbox-error-no-type' => 'Non especificou o tipo de caixa de entrada que quere crear.',
 	'inputbox-error-bad-type' => 'O tipo de caixa de entrada "$1" non foi recoñecido.
 Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Buscar coincidencias exactas',
