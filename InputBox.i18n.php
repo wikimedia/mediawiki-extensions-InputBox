@@ -273,14 +273,14 @@ $messages['co'] = array(
  * @author Alessandro
  */
 $messages['crh-latn'] = array(
-	'createarticle' => 'Saifeni yañart',
+	'createarticle' => 'Saifeni yarat',
 );
 
 /** Crimean Turkish (Cyrillic) (Qırımtatarca (Cyrillic))
  * @author Alessandro
  */
 $messages['crh-cyrl'] = array(
-	'createarticle' => 'Саифени янъарт',
+	'createarticle' => 'Саифени ярат',
 );
 
 /** Czech (Česky)
