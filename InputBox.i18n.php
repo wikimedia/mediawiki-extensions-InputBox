@@ -1280,6 +1280,7 @@ $messages['roa-rup'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'inputbox-desc' => "Permette l'inglusione de module predefinite de HTML",
 	'tryexact' => "Pruève cu 'u combronde satte-satte",
 	'searchfulltext' => "Cirche jndr'à tutte 'u teste",
 	'createarticle' => "Ccreje 'a vôsce",
