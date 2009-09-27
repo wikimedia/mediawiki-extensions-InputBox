@@ -1281,6 +1281,9 @@ $messages['roa-rup'] = array(
  */
 $messages['roa-tara'] = array(
 	'inputbox-desc' => "Permette l'inglusione de module predefinite de HTML",
+	'inputbox-error-no-type' => "Tu non g'è specificate 'u tipe de scatele de input da ccrejà.",
+	'inputbox-error-bad-type' => '\'U tipe d\'a scatele de input "$1" non g\'è corrette.
+Pe piacere mitte "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => "Pruève cu 'u combronde satte-satte",
 	'searchfulltext' => "Cirche jndr'à tutte 'u teste",
 	'createarticle' => "Ccreje 'a vôsce",
