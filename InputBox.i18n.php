@@ -350,6 +350,15 @@ $messages['de-formal'] = array(
 	'inputbox-error-no-type' => 'Sie haben keinen Eingabefeld-Typ angegeben.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Aspar
+ */
+$messages['diq'] = array(
+	'inputbox-desc' => 'desturê daxilbiyayişê formê HTMLyi dano, no HTML gani ver ra şınasi bıbo.',
+	'inputbox-error-no-type' => 'Qutiya daxilbiyayişi ya ke vıraziyena gani tipê aye diyari bıbo',
+	'tryexact' => 'tam hemcıt biyayiş tesel bıker/bıcereb',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  * @author Pe7er
