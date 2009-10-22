@@ -357,6 +357,8 @@ $messages['diq'] = array(
 	'inputbox-desc' => 'desturê daxilbiyayişê formê HTMLyi dano, no HTML gani ver ra şınasi bıbo.',
 	'inputbox-error-no-type' => 'Qutiya daxilbiyayişi ya ke vıraziyena gani tipê aye diyari bıbo',
 	'tryexact' => 'tam hemcıt biyayiş tesel bıker/bıcereb',
+	'searchfulltext' => 'pêroyê metni bıgêr',
+	'createarticle' => 'pel vıraz',
 );
 
 /** Lower Sorbian (Dolnoserbski)
