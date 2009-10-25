@@ -352,10 +352,13 @@ $messages['de-formal'] = array(
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Xoser
  */
 $messages['diq'] = array(
 	'inputbox-desc' => 'desturê daxilbiyayişê formê HTMLyi dano, no HTML gani ver ra şınasi bıbo.',
 	'inputbox-error-no-type' => 'Qutiya daxilbiyayişi ya ke vıraziyena gani tipê aye diyari bıbo',
+	'inputbox-error-bad-type' => 'Qutiyê tîp ê "$1"î kebul nikerd.
+Ma şima rê "create", "comment", "search", "search2" or "fulltext" spesife bike.',
 	'tryexact' => 'tam hemcıt biyayiş tesel bıker/bıcereb',
 	'searchfulltext' => 'pêroyê metni bıgêr',
 	'createarticle' => 'pel vıraz',
