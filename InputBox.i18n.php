@@ -934,6 +934,7 @@ $messages['lg'] = array(
 );
 
 /** Limburgish (Limburgs)
+ * @author Aelske
  * @author Matthias
  * @author Ooswesthoesbes
  */
@@ -943,8 +944,8 @@ $messages['li'] = array(
 	'inputbox-error-bad-type' => 'Inputbox-type "$1" neet herkend. 
 Gebroek "create", "comment", "search", "search2" óf "fulltext".',
 	'tryexact' => 'Perbeer exacte euvereinkoms',
-	'searchfulltext' => 'Zeuk dèr volledige tèks',
-	'createarticle' => "Maak 'ne pazjena aan",
+	'searchfulltext' => 'Zeuk de volledige teks',
+	'createarticle' => "Maak 'n pagina aan",
 );
 
 /** Lingala (Lingála)
@@ -1103,6 +1104,13 @@ Geev een vun disse Typen an: „create“, „comment“, „search“, „searc
 	'tryexact' => 'exakte Söök versöken',
 	'searchfulltext' => 'in’n Vulltext söken',
 	'createarticle' => 'Siet anleggen',
+);
+
+/** Nedersaksisch (Nedersaksisch)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'createarticle' => 'Nieje pagina anmaken',
 );
 
 /** Nepali (नेपाली) */
