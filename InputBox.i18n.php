@@ -1110,6 +1110,8 @@ Geev een vun disse Typen an: „create“, „comment“, „search“, „searc
  * @author Servien
  */
 $messages['nds-nl'] = array(
+	'tryexact' => 'Krek zeuken',
+	'searchfulltext' => 'De hele tekse deurzeuken',
 	'createarticle' => 'Nieje pagina anmaken',
 );
 
