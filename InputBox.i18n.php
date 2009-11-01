@@ -1053,7 +1053,8 @@ $messages['ms'] = array(
 $messages['mt'] = array(
 	'inputbox-desc' => "Tħalli formuli ta' HTML predefiniti",
 	'inputbox-error-no-type' => "Inti ma speċifikajtx it-tip ta' ''input box'' li trid toħloq.",
-	'inputbox-error-bad-type' => '"$1" mhuwiex tip magħruf ta\' \'\'inputbox\'\'. Jekk jogħġbok speċifika fost "create", "comment", "search" u "search2".',
+	'inputbox-error-bad-type' => '"$1" mhuwiex tip magħruf ta\' \'\'inputbox\'\'.
+Jekk jogħġbok speċifika fost "create", "comment", "search", "search2" jew "fulltext".',
 	'tryexact' => 'Fittex korrispondenza eżatta',
 	'searchfulltext' => 'Fittex fit-test',
 	'createarticle' => 'Oħloq paġna',
