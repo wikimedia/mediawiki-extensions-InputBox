@@ -270,14 +270,14 @@ $messages['co'] = array(
 );
 
 /** Crimean Turkish (Latin) (Qırımtatarca (Latin))
- * @author Alessandro
+ * @author Don Alessandro
  */
 $messages['crh-latn'] = array(
 	'createarticle' => 'Saifeni yarat',
 );
 
 /** Crimean Turkish (Cyrillic) (Qırımtatarca (Cyrillic))
- * @author Alessandro
+ * @author Don Alessandro
  */
 $messages['crh-cyrl'] = array(
 	'createarticle' => 'Саифени ярат',
@@ -1067,7 +1067,7 @@ $messages['myv'] = array(
 	'createarticle' => 'Шкамс лопа',
 );
 
-/** Mazanderani (مَزِروني)
+/** Mazanderani (مازِرونی)
  * @author Spacebirdy
  */
 $messages['mzn'] = array(
