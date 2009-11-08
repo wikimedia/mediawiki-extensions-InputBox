@@ -404,13 +404,14 @@ $messages['el'] = array(
 );
 
 /** Esperanto (Esperanto)
+ * @author Michawiki
  * @author Yekrats
  */
 $messages['eo'] = array(
 	'inputbox-desc' => 'Permesi enhavon de antaŭdifinitaj HTML-kamparoj',
 	'inputbox-error-no-type' => 'Vi ne enigis la specon de enigo-kesto por krei.',
 	'inputbox-error-bad-type' => 'Enigo-kesto "$1" ne estas konata.
-Bonvolu specifigi keston "krea", "komenta", "serĉa", "serĉa2", aŭ "plenateksa".',
+Bonvolu specifi keston "create", "comment", "seatch", "search2", aŭ "fulltext".',
 	'tryexact' => 'Provu ekzaktan trafon',
 	'searchfulltext' => 'Serĉi plentekste',
 	'createarticle' => 'Krei artikolon',
