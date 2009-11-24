@@ -197,7 +197,8 @@ $messages['bi'] = array(
 $messages['bn'] = array(
 	'inputbox-desc' => 'পূর্বসংজ্ঞায়িত এইচটিএমএল ফর্মের অন্তর্ভুক্তি অনুমোদন করুন',
 	'inputbox-error-no-type' => 'আপনি ইনপুট বক্স তৈরির জন্য ইনপুট বক্সের ধরণ নির্ধারণ করেননি।',
-	'inputbox-error-bad-type' => '"$1" ধরণের ইনপুট বক্স নেই। দয়া করে "create", "comment", "search" অথবা "search2" নির্ধারণ করুন।',
+	'inputbox-error-bad-type' => '"$1" ধরনেরর ইনপুট বাক্স সনাক্ত করা যায় নাই।
+অনুগ্রহ করে "create", "comment", "search" অথবা "search2" নির্ধারণ করুন।',
 	'tryexact' => 'ঠিক এই নামের নিবন্ধে যান',
 	'searchfulltext' => 'সব বিষয়বস্তুতে খুঁজুন',
 	'createarticle' => 'নিবন্ধ শুরু করো',
