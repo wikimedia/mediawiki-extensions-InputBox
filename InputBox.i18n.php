@@ -707,9 +707,11 @@ A „create”, „comment”, „search”, „search2” vagy „fulltext” e
 	'createarticle' => 'Szócikk létrehozása',
 );
 
-/** Armenian (Հայերեն) */
+/** Armenian (Հայերեն)
+ * @author Xelgen
+ */
 $messages['hy'] = array(
-	'createarticle' => 'Հոդված ստեղծել',
+	'createarticle' => 'Ստեղծել էջ',
 );
 
 /** Interlingua (Interlingua)
