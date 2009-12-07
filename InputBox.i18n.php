@@ -89,6 +89,13 @@ $messages['ar'] = array(
 	'createarticle' => 'إنشاء صفحة',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'createarticle' => 'ܒܪܝ ܦܐܬܐ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
  * @author Ramsis II
@@ -976,10 +983,12 @@ $messages['lt'] = array(
 );
 
 /** Latvian (Latviešu)
+ * @author Dark Eagle
  * @author Xil
  * @author Yyy
  */
 $messages['lv'] = array(
+	'inputbox-desc' => 'Atļaut iekļaut iepriekš noteiktās HTML formas',
 	'inputbox-error-no-type' => 'Tu neesi norādījis ievades lauka tipu',
 	'inputbox-error-bad-type' => 'Ievades lauka tips "$1" nav atpazīts.
 Lūdzu norādi "create", "comment", "search", "search2" vai "fulltext".',
