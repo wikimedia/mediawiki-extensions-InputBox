@@ -1537,6 +1537,14 @@ $messages['th'] = array(
 	'createarticle' => 'สร้างเนื้อหา',
 );
 
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'searchfulltext' => 'Tutuş teksti gözle',
+	'createarticle' => 'Sahypa döret',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
