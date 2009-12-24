@@ -1731,11 +1731,14 @@ $messages['zh-hans'] = array(
 	'createarticle' => '建立文章',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Gaoxuewei
+ */
 $messages['zh-hant'] = array(
 	'inputbox-desc' => '容許包含預先設定的HTML表格',
 	'inputbox-error-no-type' => '您尚未指定創建輸入箱的指定類型。',
-	'inputbox-error-bad-type' => '輸入箱類型"$1"無法辨識。請指定"create"、"comment"、"search"或"search2"。',
+	'inputbox-error-bad-type' => '輸入框類型"$1"無法辨識。
+請指定"create"、"comment"、"search"、"search2"或者"fulltext"。',
 	'tryexact' => '嘗試精確匹配',
 	'searchfulltext' => '全文檢索',
 	'createarticle' => '建立文章',
