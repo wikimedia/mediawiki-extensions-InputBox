@@ -1530,6 +1530,17 @@ $messages['tg-cyrl'] = array(
 	'createarticle' => 'Эҷоди мақола',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'inputbox-desc' => "Içozai istifoda az formhoi HTML az peş ta'rifşudaro medihad",
+	'inputbox-error-no-type' => "Nav'i ça'bai vurudiji eçodşavandaro muşaxxas nakardaed.",
+	'tryexact' => 'Mutobiqati aniqro bisançed',
+	'searchfulltext' => 'Çustuçūi matni purra',
+	'createarticle' => 'Eçodi maqola',
+);
+
 /** Thai (ไทย) */
 $messages['th'] = array(
 	'tryexact' => 'ค้นหาตรงทุกตัวอักษร',
