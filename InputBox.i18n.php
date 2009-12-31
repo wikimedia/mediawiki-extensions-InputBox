@@ -1552,6 +1552,11 @@ $messages['th'] = array(
  * @author Hanberke
  */
 $messages['tk'] = array(
+	'inputbox-desc' => 'Deslapky kesgitlenen HTML formlarynyň goşulmagyna rugsat berýär',
+	'inputbox-error-no-type' => 'Dörediljek giriş gutusynyň tipini görkezmediňiz.',
+	'inputbox-error-bad-type' => 'Giriş gutusynyň tipi "$1" ykrar edilmedi.
+"create", "comment", "search", "search2" ýa-da "fulltext" diýip görkeziň.',
+	'tryexact' => 'Takyk gabat gelýänini syna',
 	'searchfulltext' => 'Tutuş teksti gözle',
 	'createarticle' => 'Sahypa döret',
 );
