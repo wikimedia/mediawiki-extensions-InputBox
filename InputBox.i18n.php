@@ -909,7 +909,7 @@ $messages['ksh'] = array(
 	'createarticle' => 'Sigg aanlääje',
 );
 
-/** Kurdish (Latin) (Kurdî / كوردی (Latin)) */
+/** Kurdish (Latin) (Kurdî (Latin)) */
 $messages['ku-latn'] = array(
 	'createarticle' => 'Gotarê biafirîne',
 );
@@ -1736,12 +1736,14 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Liangent
  * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
 	'inputbox-desc' => '容许包含预先设置的HTML表格',
 	'inputbox-error-no-type' => '您尚未指定创建输入箱的指定类型。',
-	'inputbox-error-bad-type' => '输入框类型"$1"无法识别。请指定"create"、"comment"、"search"、"search2"或"fulltext"。',
+	'inputbox-error-bad-type' => '输入框类型“$1”无法识别。
+请指定“create”、“comment”、“search”、“search2”或“fulltext”。',
 	'tryexact' => '尝试精确匹配',
 	'searchfulltext' => '全文搜索',
 	'createarticle' => '建立文章',
@@ -1749,12 +1751,13 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Gaoxuewei
+ * @author Liangent
  */
 $messages['zh-hant'] = array(
 	'inputbox-desc' => '容許包含預先設定的HTML表格',
 	'inputbox-error-no-type' => '您尚未指定創建輸入箱的指定類型。',
-	'inputbox-error-bad-type' => '輸入框類型"$1"無法辨識。
-請指定"create"、"comment"、"search"、"search2"或者"fulltext"。',
+	'inputbox-error-bad-type' => '輸入框類型“$1”無法識別。
+請指定“create”、“comment”、“search”、“search2”或“fulltext”。',
 	'tryexact' => '嘗試精確匹配',
 	'searchfulltext' => '全文檢索',
 	'createarticle' => '建立文章',
