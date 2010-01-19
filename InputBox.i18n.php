@@ -1035,6 +1035,13 @@ $messages['ml'] = array(
 	'createarticle' => 'താള്‍ സൃഷ്ടിക്കുക',
 );
 
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'createarticle' => 'Хуудас үүсгэх',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  */
