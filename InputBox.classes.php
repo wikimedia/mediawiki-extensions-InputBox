@@ -328,6 +328,13 @@ class InputBox {
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => 'hidden',
+				'name' => 'prefix',
+				'value' => $this->mPrefix,
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
 				'name' => 'minor',
 				'value' => $this->mMinor,
 			)
