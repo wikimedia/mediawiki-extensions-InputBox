@@ -63,18 +63,15 @@ class InputBoxHooks {
 		}
 		
 		$params = $request->getValues();
-		$title = $params['prefix'] . @$params['title'];
-		unset( $params['prefix'] );
-		unset( $params['title'] );
-		$url = "?title=$title";
-		foreach( $params as $key => $value ){
-			if( $key ){
-				$url .= "&{$key}={$value}";
-			}
+		$title = $params['prefix'];
+		if ( isset( $params['title'] ) ){
+			$title .= $params['title'];
 		}
+		unset( $params['prefix'] );
+		$params['title'] = $title;
 		
 		global $wgScript;
-		$output->redirect( $wgScript . $url, '301' );
+		$output->redirect( wfAppendQuery( $wgScript, $params ), '301' );
 		return false;
 	}
 }
