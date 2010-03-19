@@ -1715,6 +1715,11 @@ $messages['wuu'] = array(
  * @author Huuchin
  */
 $messages['xal'] = array(
+	'inputbox-error-no-type' => 'Та бүтәлдг оруллһна теегин янз заав уга.',
+	'inputbox-error-bad-type' => '«$1» буру оруллһна теегин янз болҗана.
+Буйн болтха, нег йоста янз автн: «create», «comment», «search», «search2» аль «fulltext».',
+	'tryexact' => 'Дарата хәәлһн',
+	'searchfulltext' => 'Күцц бичг хәәлһн',
 	'createarticle' => 'Халхиг бүтәх',
 );
 
