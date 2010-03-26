@@ -1416,9 +1416,11 @@ Prosím, použite „create“, „comment“, „search“ alebo „search2“.
 	'createarticle' => 'Vytvoriť stránku',
 );
 
-/** Slovenian (Slovenščina) */
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
 $messages['sl'] = array(
-	'tryexact' => 'Poskusite z natančnim zadetkom',
+	'tryexact' => 'Poskusite z natančnim ujemanjem',
 	'searchfulltext' => 'Preišči vse besedilo',
 	'createarticle' => 'Ustvarite stran',
 );
