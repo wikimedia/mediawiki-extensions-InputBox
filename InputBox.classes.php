@@ -17,6 +17,7 @@ class InputBox {
 	private $mPreload = '';
 	private $mEditIntro = '';
 	private $mSummary = '';
+	private $mNosummary = '';
 	private $mMinor = '';
 	private $mPage = '';
 	private $mBR = 'yes';
@@ -328,6 +329,13 @@ class InputBox {
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => 'hidden',
+				'name' => 'nosummary',
+				'value' => $this->mNosummary,
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
 				'name' => 'prefix',
 				'value' => $this->mPrefix,
 			)
@@ -484,6 +492,7 @@ class InputBox {
 			'page' => 'mPage',
 			'editintro' => 'mEditIntro',
 			'summary' => 'mSummary',
+			'nosummary' => 'mNosummary',
 			'minor' => 'mMinor',
 			'break' => 'mBR',
 			'default' => 'mDefaultText',
