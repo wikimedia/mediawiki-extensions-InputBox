@@ -337,6 +337,7 @@ Vælg venligst "create", "comment", "search", "search2" eller "fulltext".',
 );
 
 /** German (Deutsch)
+ * @author LWChris
  * @author Metalhead64
  * @author Raimond Spekking
  * @author Umherirrender
@@ -344,10 +345,10 @@ Vælg venligst "create", "comment", "search", "search2" eller "fulltext".',
 $messages['de'] = array(
 	'inputbox-desc' => 'Erlaubt die Einbindung vordefinierter HTML-Formulare',
 	'inputbox-error-no-type' => 'Du hast keinen Eingabefeld-Typ angegeben.',
-	'inputbox-error-bad-type' => 'Eingabefeld-Typ „$1“ unbekannt.
-Bitte „create“, „comment“, „search“, „search2“ oder „fulltext“ angeben.',
+	'inputbox-error-bad-type' => 'Eingabefeld-Typ "$1" unbekannt.
+Bitte "create", "comment", "search", "search2" oder "fulltext" angeben.',
 	'tryexact' => 'Versuche exakte Suche',
-	'searchfulltext' => 'Gesamten Text durchsuchen',
+	'searchfulltext' => 'Volltext-Suche',
 	'createarticle' => 'Seite anlegen',
 );
 
@@ -1026,13 +1027,13 @@ $messages['mk'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'inputbox-desc' => 'നിര്‍‌വചിക്കപ്പെട്ടു വെച്ചിരിക്കുന്ന HTML ഫോമുകള്‍ ഉള്‍പ്പെടുത്താന്‍ അനുവദിക്കുക',
-	'inputbox-error-no-type' => 'സൃഷ്ടിക്കേണ്ട ഇന്‍‌പുട്ട് ബോക്സിന്റെ തരം നിഷ്കര്‍ഷിച്ചിട്ടില്ല',
-	'inputbox-error-bad-type' => 'ഇന്‍പുട്ട് ബോക്സ് "$1" ഏതു തരം എന്നു തിരിച്ചറിയാൻ കഴിഞ്ഞില്ല.
-ദയവു ചെയ്ത് "create", "comment", "search", "search2" ഇവയിലൊന്നു നിഷ്കര്‍ഷിക്കുക',
-	'tryexact' => 'കൃത്യമായി യോജിക്കുന്ന ഫലങ്ങള്‍ ഉണ്ടോയെന്നു പരിശോധിക്കുക',
+	'inputbox-desc' => 'നിർ‌വചിക്കപ്പെട്ടു വെച്ചിരിക്കുന്ന HTML ഫോമുകൾ ഉൾപ്പെടുത്താൻ അനുവദിക്കുക',
+	'inputbox-error-no-type' => 'സൃഷ്ടിക്കേണ്ട ഇൻ‌പുട്ട് ബോക്സിന്റെ തരം നിഷ്കർഷിച്ചിട്ടില്ല',
+	'inputbox-error-bad-type' => 'ഇൻപുട്ട് ബോക്സ് "$1" ഏതു തരം എന്നു തിരിച്ചറിയാൻ കഴിഞ്ഞില്ല.
+ദയവു ചെയ്ത് "create", "comment", "search", "search2" ഇവയിലൊന്നു നിഷ്കർഷിക്കുക',
+	'tryexact' => 'കൃത്യമായി യോജിക്കുന്ന ഫലങ്ങൾ ഉണ്ടോയെന്നു പരിശോധിക്കുക',
 	'searchfulltext' => 'എഴുത്ത് മൊത്തമായി തിരയുക',
-	'createarticle' => 'താള്‍ സൃഷ്ടിക്കുക',
+	'createarticle' => 'താൾ സൃഷ്ടിക്കുക',
 );
 
 /** Mongolian (Монгол)
