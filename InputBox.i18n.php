@@ -345,8 +345,8 @@ Vælg venligst "create", "comment", "search", "search2" eller "fulltext".',
 $messages['de'] = array(
 	'inputbox-desc' => 'Erlaubt die Einbindung vordefinierter HTML-Formulare',
 	'inputbox-error-no-type' => 'Du hast keinen Eingabefeld-Typ angegeben.',
-	'inputbox-error-bad-type' => 'Eingabefeld-Typ "$1" unbekannt.
-Bitte "create", "comment", "search", "search2" oder "fulltext" angeben.',
+	'inputbox-error-bad-type' => 'Eingabefeld-Typ „$1“ unbekannt.
+Bitte „create“, „comment“, „search“, „search2“ oder „fulltext“ angeben.',
 	'tryexact' => 'Versuche exakte Suche',
 	'searchfulltext' => 'Volltext-Suche',
 	'createarticle' => 'Seite anlegen',
@@ -1687,6 +1687,10 @@ $messages['vo'] = array(
  * @author Võrok
  */
 $messages['vro'] = array(
+	'inputbox-desc' => 'Lupa pruukiq ette ärqmäärätüid HTML-vormõ.',
+	'inputbox-error-no-type' => 'Sa olõ-õi määränüq sisseandmisvälä tüüpi.',
+	'inputbox-error-bad-type' => 'Sisseandmisvälä tüüp ”$1” ei kõlbaq.
+Tüüp piät olõma create, comment, search, search2 vai fulltext.',
 	'tryexact' => 'Täpsä otsminõ',
 	'searchfulltext' => 'Otsiq terveq tekst',
 	'createarticle' => 'Luuq leht',
