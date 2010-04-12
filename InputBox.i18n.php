@@ -382,9 +382,9 @@ $messages['dsb'] = array(
 	'inputbox-error-no-type' => 'Njejsy pódał typ zapódawańskego póla za napóranje.',
 	'inputbox-error-bad-type' => 'Zapódawańske pólo typa "$1" njespóznane.
 Pšosym pódaj "create", "comment", "search", "search2" abo "fulltext".',
-	'tryexact' => 'Nawłos pytaś:',
+	'tryexact' => 'Eksaktne pytanje',
 	'searchfulltext' => 'Ceły tekst pytaś',
-	'createarticle' => 'Nastawk natworiś',
+	'createarticle' => 'Bok załožyś',
 );
 
 /** Divehi (ދިވެހިބަސް)
