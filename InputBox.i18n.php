@@ -898,7 +898,7 @@ $messages['ko'] = array(
 	'createarticle' => '문서 만들기',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -1745,7 +1745,7 @@ $messages['yi'] = array(
 	'createarticle' => 'באשאפט ארטיקל',
 );
 
-/** Yue (粵語) */
+/** Cantonese (粵語) */
 $messages['yue'] = array(
 	'inputbox-desc' => '容許包含預先設定嘅HTML表格',
 	'inputbox-error-no-type' => '你重未指定開輸入盒嘅指定類型。',
