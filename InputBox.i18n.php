@@ -1422,6 +1422,10 @@ Prosím, použite „create“, „comment“, „search“ alebo „search2“.
  * @author Dbc334
  */
 $messages['sl'] = array(
+	'inputbox-desc' => 'Omogoča vključitev vnaprej določenih obrazcev HTML',
+	'inputbox-error-no-type' => 'Niste določili vrste vnosnega polja za ustvarjanje.',
+	'inputbox-error-bad-type' => 'Vrsta vnosnega polja »$1« ni prepoznana.
+Prosimo, določite »create«, »comment«, »search«, »search2« ali »fulltext«.',
 	'tryexact' => 'Poskusite z natančnim ujemanjem',
 	'searchfulltext' => 'Preišči vse besedilo',
 	'createarticle' => 'Ustvarite stran',
