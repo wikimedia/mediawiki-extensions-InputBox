@@ -1111,7 +1111,7 @@ $messages['nan'] = array(
  * @author SabineCretella
  */
 $messages['nap'] = array(
-	'searchfulltext' => 'Ascià dint&#39;&#39;o testo',
+	'searchfulltext' => "Ascià dint''o testo",
 	'createarticle' => 'Cria voce',
 );
 
