@@ -40,9 +40,6 @@ class InputBox {
 	}
 
 	public function render() {
-		// Internationalization
-		wfLoadExtensionMessages( 'InputBox' );
-
 		// Handle various types
 		switch( $this->mType ) {
 			case 'create':
