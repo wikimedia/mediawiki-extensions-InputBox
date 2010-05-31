@@ -131,7 +131,7 @@ $messages['ast'] = array(
 	'createarticle' => 'Crear páxina',
 );
 
-/** Azerbaijani (Azərbaycan) */
+/** Azerbaijani (Azərbaycanca) */
 $messages['az'] = array(
 	'createarticle' => 'Məqalə yarat',
 );
