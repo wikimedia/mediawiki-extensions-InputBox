@@ -3,7 +3,8 @@
 /**
  * Messages file for the InputBox extension
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  */
 
 /**
