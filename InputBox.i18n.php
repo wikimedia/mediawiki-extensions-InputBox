@@ -71,7 +71,7 @@ $messages['an'] = array(
 	'inputbox-desc' => 'Premite a enclusión de formularios HTML predefinitos',
 	'inputbox-error-no-type' => 'No ha endicato o tipo de caixa de dentrada que cal creyar.',
 	'inputbox-error-bad-type' => 'No se reconoixe o tipo de caixa de dentrada "$1".
-Por fabor, espezifique "create", "comment", "search" u "fulltext".',
+Por favor, especifique "create", "comment", "search" u "fulltext".',
 	'tryexact' => 'Mirar títol esauto',
 	'searchfulltext' => 'Mirar por testo completo',
 	'createarticle' => 'Creyar pachina',
