@@ -1305,6 +1305,7 @@ $messages['qu'] = array(
 );
 
 /** Romanian (Română)
+ * @author AdiJapan
  * @author Emily
  * @author Firilacroco
  * @author KlaudiuMihaila
@@ -1317,7 +1318,7 @@ $messages['ro'] = array(
 Te rog să specifici parametrii "create", "comment", "search", "search2" sau "fulltext".',
 	'tryexact' => 'Încearcă varianta exactă',
 	'searchfulltext' => 'Caută textul întreg',
-	'createarticle' => 'Crează articol',
+	'createarticle' => 'Creează pagina',
 );
 
 /** Aromanian (Armãneashce) */
