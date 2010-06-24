@@ -1310,6 +1310,7 @@ $messages['qu'] = array(
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Mihai
+ * @author Minisarm
  */
 $messages['ro'] = array(
 	'inputbox-desc' => 'Permite includerea formelor HTML predefinite',
@@ -1318,7 +1319,7 @@ $messages['ro'] = array(
 Te rog să specifici parametrii "create", "comment", "search", "search2" sau "fulltext".',
 	'tryexact' => 'Încearcă varianta exactă',
 	'searchfulltext' => 'Caută textul întreg',
-	'createarticle' => 'Creează pagina',
+	'createarticle' => 'Creează pagină',
 );
 
 /** Aromanian (Armãneashce) */
