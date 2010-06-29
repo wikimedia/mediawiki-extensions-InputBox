@@ -1353,6 +1353,13 @@ $messages['ru'] = array(
 	'createarticle' => 'Создать статью',
 );
 
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'createarticle' => 'Створити статю',
+);
+
 /** Yakut (Саха тыла)
  * @author HalanTul
  */
