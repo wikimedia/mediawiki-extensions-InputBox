@@ -395,8 +395,11 @@ $messages['dv'] = array(
 	'createarticle' => 'މަޒުމޫނެއް ފައްޓަވާ',
 );
 
-/** Ewe (Eʋegbe) */
+/** Ewe (Eʋegbe)
+ * @author Natsubee
+ */
 $messages['ee'] = array(
+	'searchfulltext' => 'Di nuŋɔŋlɔ bliboa me',
 	'createarticle' => 'Dze nuŋɔŋlɔ yeye gɔme',
 );
 
