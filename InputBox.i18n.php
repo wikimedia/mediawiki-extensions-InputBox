@@ -1724,7 +1724,7 @@ $messages['wa'] = array(
  */
 $messages['wo'] = array(
 	'inputbox-error-no-type' => 'Leeraloo ban xeetu boyotu duggit nga bëgga sos.',
-	'inputbox-error-bad-type' => '"$1" du xeetu boyotu duggit bu ñu xam. Tànnal benn ci yii "create", "comment", "seach" walla "search2"',
+	'inputbox-error-bad-type' => '↓"$1" du xeetu boyotu duggiit bees xam. Tànnal benn ci yii "create", "comment", "seach" walla "search2"',
 	'tryexact' => 'Seet wi mu yamal',
 	'searchfulltext' => 'Ceet ci mbind mi',
 	'createarticle' => 'Sos jukki bi',
