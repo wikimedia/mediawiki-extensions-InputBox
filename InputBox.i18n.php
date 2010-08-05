@@ -753,6 +753,13 @@ Harap gunakan "create", "comment", "search", "search2", atau "fulltext".',
 	'createarticle' => 'Buat artikel',
 );
 
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
+$messages['ig'] = array(
+	'createarticle' => 'Ké ihü',
+);
+
 /** Iloko (Ilokano) */
 $messages['ilo'] = array(
 	'createarticle' => 'Mangaramid iti articulo',
