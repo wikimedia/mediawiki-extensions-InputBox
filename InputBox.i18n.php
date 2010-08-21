@@ -28,9 +28,10 @@ Please specify "create", "comment", "search", "search2" or "fulltext".',
  * @author Meno25
  * @author SPQRobin
  * @author Siebrand
+ * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'inputbox-desc' => 'Short description of the Inputbox extension, shown on [[Special:Version]].',
+	'inputbox-desc' => '{{desc}}',
 	'inputbox-error-bad-type' => '{{doc-important|"create", "comment", "search", "search2" and "fulltext" should not be translated.}}',
 	'tryexact' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. If the page with the exact name exists, you will go directly to that page.',
 	'searchfulltext' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. This button always goes to the search page, even if the page with the exact name exists.',
