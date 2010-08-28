@@ -911,6 +911,15 @@ $messages['ko'] = array(
 	'createarticle' => '문서 만들기',
 );
 
+/** Komi-Permyak (Перем Коми)
+ * @author Enye Lav
+ */
+$messages['koi'] = array(
+	'tryexact' => 'Кошшыны утлянно сiйö',
+	'searchfulltext' => 'Кошшыны тыр текст',
+	'createarticle' => 'Лöсьöтны листбок',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
