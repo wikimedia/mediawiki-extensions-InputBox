@@ -468,7 +468,7 @@ $messages['eu'] = array(
 
 /** Extremaduran (Estremeñu) */
 $messages['ext'] = array(
-	'createarticle' => 'Creal artículu',
+	'createarticle' => 'Crial página',
 );
 
 /** Persian (فارسی)
@@ -742,6 +742,7 @@ Per favor specifica "create", "comment", "search", "search2" o "fulltext".',
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author -iNu-
  * @author IvanLanin
  * @author Rex
  */
@@ -752,7 +753,7 @@ $messages['id'] = array(
 Harap gunakan "create", "comment", "search", "search2", atau "fulltext".',
 	'tryexact' => 'Coba pencocokan eksak',
 	'searchfulltext' => 'Cari di teks lengkap',
-	'createarticle' => 'Buat artikel',
+	'createarticle' => 'Buat halaman',
 );
 
 /** Igbo (Igbo)
