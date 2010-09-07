@@ -1543,6 +1543,11 @@ Var god specifiera "create", "comment", "search", "search2" eller "fulltext".',
 	'createarticle' => 'Skapa sida',
 );
 
+/** Swahili (Kiswahili) */
+$messages['sw'] = array(
+	'createarticle' => 'Anzisha ukurasa',
+);
+
 /** Silesian (Ślůnski)
  * @author Ozi64
  */
