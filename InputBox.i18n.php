@@ -1555,6 +1555,13 @@ $messages['szl'] = array(
 	'createarticle' => 'Naškryflej artikel',
 );
 
+/** Tamil (தமிழ்)
+ * @author TRYPPN
+ */
+$messages['ta'] = array(
+	'createarticle' => 'பக்கத்தை உருவாக்க்கவும்',
+);
+
 /** Telugu (తెలుగు)
  * @author Chaduvari
  * @author Kiranmayee
