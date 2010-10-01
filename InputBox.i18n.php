@@ -548,8 +548,14 @@ $messages['fy'] = array(
 	'createarticle' => 'Side oanmeitsje',
 );
 
-/** Irish (Gaeilge) */
+/** Irish (Gaeilge)
+ * @author Evertype
+ */
 $messages['ga'] = array(
+	'inputbox-desc' => 'Ceadaigh glactha foirmeacha HTML réamhshainithe',
+	'inputbox-error-no-type' => 'Níor shocraigh tú an cineál bosca ionchur a bheadh le cruthú.',
+	'inputbox-error-bad-type' => 'Bosca iochur den chineál "$1" gan aithint.
+Sonraigh "create", "comment", "search", "search2" nó "fulltext".',
 	'tryexact' => 'Déan iarracht ar meaitseáil cruinn',
 	'searchfulltext' => 'Cuardaigh sa téacs iomlán',
 	'createarticle' => 'Cruthaigh alt',
