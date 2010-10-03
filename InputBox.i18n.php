@@ -1562,10 +1562,11 @@ $messages['szl'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Kanags
  * @author TRYPPN
  */
 $messages['ta'] = array(
-	'createarticle' => 'பக்கத்தை உருவாக்க்கவும்',
+	'createarticle' => 'பக்கத்தை உருவாக்கவும்',
 );
 
 /** Telugu (తెలుగు)
