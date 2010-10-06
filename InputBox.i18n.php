@@ -1119,9 +1119,10 @@ $messages['myv'] = array(
 
 /** Mazanderani (مازِرونی)
  * @author Spacebirdy
+ * @author محک
  */
 $messages['mzn'] = array(
-	'createarticle' => 'ولگ بایتن',
+	'createarticle' => 'صفحه بَیتن',
 );
 
 /** Nahuatl (Nāhuatl)
