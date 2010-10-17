@@ -1386,6 +1386,8 @@ $messages['ru'] = array(
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'tryexact' => 'Спробуйте точне гляданя',
+	'searchfulltext' => 'Повнотекстове гляданя',
 	'createarticle' => 'Створити статю',
 );
 
