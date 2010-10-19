@@ -1386,6 +1386,10 @@ $messages['ru'] = array(
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'inputbox-desc' => 'Доволює вкладати вызначены HTML формуларї.',
+	'inputbox-error-no-type' => 'Не задали сьте тіп формуларёвого поля про створїня.',
+	'inputbox-error-bad-type' => 'Нерозпознаный тіп поля „$1“.
+Зазначте єдну з можностей: „create“, „comment“, „search“, „search2“ або „fulltext“.',
 	'tryexact' => 'Спробуйте точне гляданя',
 	'searchfulltext' => 'Повнотекстове гляданя',
 	'createarticle' => 'Створити статю',
