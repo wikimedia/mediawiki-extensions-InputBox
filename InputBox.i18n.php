@@ -1807,6 +1807,13 @@ $messages['yi'] = array(
 	'createarticle' => 'באשאפט ארטיקל',
 );
 
+/** Yoruba (Yorùbá)
+ * @author Demmy
+ */
+$messages['yo'] = array(
+	'createarticle' => 'Dá ojúewé',
+);
+
 /** Cantonese (粵語) */
 $messages['yue'] = array(
 	'inputbox-desc' => '容許包含預先設定嘅HTML表格',
