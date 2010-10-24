@@ -138,13 +138,6 @@ $messages['az'] = array(
 	'createarticle' => 'Məqalə yarat',
 );
 
-/** Samogitian (Žemaitėška)
- * @author Hugo.arg
- */
-$messages['sgs'] = array(
-	'searchfulltext' => 'Ėiškuotė pėlna teksta',
-);
-
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
@@ -454,6 +447,9 @@ Por favor, especifica «create», «comment», «search» «search2» o "fulltex
  */
 $messages['et'] = array(
 	'inputbox-desc' => 'Lubab kaasata eelmääratletud HTML-vormid.',
+	'inputbox-error-no-type' => 'Sisendkasti tüüp on määramata.',
+	'inputbox-error-bad-type' => 'Tundmatu sisendkasti tüüp "$1".
+Palun vali tüübiks "create", "comment", "search", "search2" või "fulltext".',
 	'tryexact' => 'Proovi täpset vastet',
 	'searchfulltext' => 'Otsi täisteksti',
 	'createarticle' => 'Alusta lehekülge',
@@ -1434,6 +1430,13 @@ $messages['sd'] = array(
 /** Sango (Sängö) */
 $messages['sg'] = array(
 	'createarticle' => 'Sü soura',
+);
+
+/** Samogitian (Žemaitėška)
+ * @author Hugo.arg
+ */
+$messages['sgs'] = array(
+	'searchfulltext' => 'Ėiškuotė pėlna teksta',
 );
 
 /** Sinhala (සිංහල)
