@@ -181,7 +181,7 @@ class InputBox {
 		
 		// Hidden fulltext param for IE (bug 17161)
 		if( $type == 'fulltext' ) {
-			$htmlOut .= Xml::hidden( 'fulltext', 'Search' );
+			$htmlOut .= Html::hidden( 'fulltext', 'Search' );
 		}
 		
 		$htmlOut .= Xml::closeElement( 'form' );
