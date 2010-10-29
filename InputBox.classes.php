@@ -273,7 +273,6 @@ class InputBox {
 				$this->mButtonLabel = wfMsgHtml( "postcomment" );
 			}
 		} else {
-			$comment = '';
 			if ( !$this->mButtonLabel ) {
 				$this->mButtonLabel = wfMsgHtml( 'createarticle' );
 			}
