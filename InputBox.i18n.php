@@ -138,6 +138,19 @@ $messages['az'] = array(
 	'createarticle' => 'Məqalə yarat',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Assele
+ */
+$messages['ba'] = array(
+	'inputbox-desc' => 'Алдан билдәләнгән HTML формаларҙы индереү мөмкинлеген бирә',
+	'inputbox-error-no-type' => 'Һеҙ булдырыла торған юлдың төрөн күрһәтмәгеҙ.',
+	'inputbox-error-bad-type' => '"$1" юл төрө танылмаған.
+Зинһар, "create", "comment", "search", "search2" йәки "fulltext" төрөнөң береһен күрһәтегеҙ.',
+	'tryexact' => 'Теүәл тура килеү буйынса эҙләү',
+	'searchfulltext' => 'Тулы текст буйынса эҙләү',
+	'createarticle' => 'Яңы бит яһарға',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
