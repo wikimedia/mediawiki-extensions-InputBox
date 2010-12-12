@@ -52,7 +52,7 @@ class InputBoxHooks {
 		$request, 
 		$wiki )
 	{
-		$action = $wiki->getVal( 'Action' );
+		$action = $request->getVal( 'action', 'view' );
 		if( $action !== 'edit' ){
 			# not our problem
 			return true;
