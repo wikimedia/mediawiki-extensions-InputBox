@@ -113,11 +113,12 @@ $messages['arz'] = array(
 );
 
 /** Assamese (অসমীয়া)
+ * @author Chaipau
  * @author Rajuonline
  */
 $messages['as'] = array(
 	'tryexact' => 'কেবল দিয়া শব্দহে বিচাৰিব',
-	'searchfulltext' => 'সম্পূর্ণ পাঠ্য বিচাৰিব',
+	'searchfulltext' => 'সম্পূৰ্ণ পাঠ্য বিচাৰিব',
 	'createarticle' => 'পৃষ্ঠা বনাওক',
 );
 
