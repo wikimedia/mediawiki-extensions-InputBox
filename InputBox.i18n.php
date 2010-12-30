@@ -518,6 +518,7 @@ $messages['fo'] = array(
  * @author Crochet.david
  * @author IAlex
  * @author Sherbrooke
+ * @author Wyz
  */
 $messages['fr'] = array(
 	'inputbox-desc' => 'Permet l’inclusion de formulaires HTML prédéfinis.',
@@ -526,7 +527,7 @@ $messages['fr'] = array(
 Indiquez une option parmis « create », « comment », « search », « searche2 » ou « fulltext ».',
 	'tryexact' => 'Essayez la correspondance exacte.',
 	'searchfulltext' => 'Recherche en texte intégral',
-	'createarticle' => 'Créer la page',
+	'createarticle' => 'Créer une page',
 );
 
 /** Franco-Provençal (Arpetan)
