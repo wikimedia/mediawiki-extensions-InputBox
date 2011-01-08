@@ -711,10 +711,11 @@ $messages['hsb'] = array(
 );
 
 /** Haitian (Kreyòl ayisyen)
+ * @author Boukman
  * @author Masterches
  */
 $messages['ht'] = array(
-	'inputbox-desc' => 'Ap pèmèt ou mete fòmilè HTML yo ki ja defini.',
+	'inputbox-desc' => 'Pèmèt ou mete fòmilè HTML yo ki deja defini.',
 	'inputbox-error-no-type' => 'Atansyon, ou pa bay detay sou tip, kalite bwat antre pou ou kreye',
 	'inputbox-error-bad-type' => "Kalite bwat antre $1 pa bon, sistèm an pa konnen l. Mete opsyon sa ''create (kreye)'', ''comment (komante)'', ''search (chache, fouye)'' ou ''searche2''.",
 	'tryexact' => 'Eseye yon korespondans egzakt, toutbon.',
