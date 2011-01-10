@@ -717,9 +717,10 @@ $messages['hsb'] = array(
 $messages['ht'] = array(
 	'inputbox-desc' => 'Pèmèt ou mete fòmilè HTML yo ki deja defini.',
 	'inputbox-error-no-type' => 'Atansyon, ou pa bay detay sou tip, kalite bwat antre pou ou kreye',
-	'inputbox-error-bad-type' => "Kalite bwat antre $1 pa bon, sistèm an pa konnen l. Mete opsyon sa ''create (kreye)'', ''comment (komante)'', ''search (chache, fouye)'' ou ''searche2''.",
-	'tryexact' => 'Eseye yon korespondans egzakt, toutbon.',
-	'searchfulltext' => 'Chache, fouye ak opsyon tèks entegral; wap pran an konsiderasyon tout mo ki nan demann ou an',
+	'inputbox-error-bad-type' => 'Kalite bwat $1 ou antre pa bon, sistèm nan pa konnen l.
+Tanpri mete youn nan opsyon sa yo: "create", "comment", "search", "search2" oubyen "fulltext".',
+	'tryexact' => 'Eseye paj ki koresponn toutbon.',
+	'searchfulltext' => 'Fouye nan tout teks nèt',
 	'createarticle' => 'Kreye atik sa',
 );
 
