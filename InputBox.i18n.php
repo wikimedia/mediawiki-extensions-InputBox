@@ -280,6 +280,13 @@ $messages['cdo'] = array(
 	'createarticle' => 'Kŭi hiĕk',
 );
 
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
+$messages['ce'] = array(
+	'tryexact' => 'Леррина лахар',
+);
+
 /** Corsican (Corsu) */
 $messages['co'] = array(
 	'searchfulltext' => 'Ricerca testu cumplettu',
@@ -1197,7 +1204,7 @@ Zie [http://www.mediawiki.org/wiki/Extension:Inputbox MediaWiki.org] voor meer i
 Gebruik "create", "comment", "search", "search2" of "fulltext".',
 	'tryexact' => 'Zoeken op exacte overeenkomst',
 	'searchfulltext' => 'Volledige tekst doorzoeken',
-	'createarticle' => 'Nieuwe pagina maken',
+	'createarticle' => 'Pagina aanmaken',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
