@@ -491,6 +491,7 @@ $messages['ext'] = array(
 /** Persian (فارسی)
  * @author Ebraminio
  * @author Huji
+ * @author Mjbmr
  */
 $messages['fa'] = array(
 	'inputbox-desc' => 'اجازهٔ استفاده از فرم‌های HTML از پیش تعریف شده را می‌دهد',
@@ -499,7 +500,7 @@ $messages['fa'] = array(
 لطفاً یکی از موارد «create»، «comment»، «search»، «search2» یا «fulltext» را مشخص کنید.',
 	'tryexact' => 'مطابقت نظیر به نظیر را بیازما',
 	'searchfulltext' => 'جستجوی کل متن',
-	'createarticle' => 'ایجاد مقاله',
+	'createarticle' => 'ایجاد صفحه',
 );
 
 /** Finnish (Suomi)
@@ -1869,12 +1870,13 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Gaoxuewei
  * @author Liangent
+ * @author Mark85296341
  */
 $messages['zh-hant'] = array(
-	'inputbox-desc' => '容許包含預先設定的HTML表格',
-	'inputbox-error-no-type' => '您尚未指定創建輸入箱的指定類型。',
-	'inputbox-error-bad-type' => '輸入框類型“$1”無法識別。
-請指定“create”、“comment”、“search”、“search2”或“fulltext”。',
+	'inputbox-desc' => '容許包含預先設定的 HTML 表格',
+	'inputbox-error-no-type' => '您尚未指定建立輸入框的指定類型。',
+	'inputbox-error-bad-type' => '輸入框類型「$1」無法識別。
+請指定「create」、「comment」、「search」、「search2」或「fulltext」。',
 	'tryexact' => '嘗試精確匹配',
 	'searchfulltext' => '全文檢索',
 	'createarticle' => '建立文章',
