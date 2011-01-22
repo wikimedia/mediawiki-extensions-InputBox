@@ -139,7 +139,7 @@ $messages['az'] = array(
 	'createarticle' => 'Məqalə yarat',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -170,7 +170,7 @@ $messages['be'] = array(
 	'createarticle' => 'Пачаць артыкул',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -368,7 +368,7 @@ Bitte „create“, „comment“, „search“, „search2“ oder „fulltext�
 	'createarticle' => 'Seite anlegen',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
@@ -1514,7 +1514,7 @@ $messages['sq'] = array(
 	'createarticle' => 'Krijo artikull',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Михајло Анђелковић
  */
@@ -1528,7 +1528,7 @@ $messages['sr-ec'] = array(
 	'createarticle' => 'Направи чланак',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1880,6 +1880,13 @@ $messages['zh-hant'] = array(
 	'tryexact' => '嘗試精確匹配',
 	'searchfulltext' => '全文檢索',
 	'createarticle' => '建立文章',
+);
+
+/** Chinese (Taiwan) (‪中文(台灣)‬)
+ * @author Ffaarr
+ */
+$messages['zh-tw'] = array(
+	'createarticle' => '創建頁面',
 );
 
 /** Zulu (isiZulu) */
