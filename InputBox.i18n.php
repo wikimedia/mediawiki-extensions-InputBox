@@ -1507,8 +1507,13 @@ Prosimo, določite »create«, »comment«, »search«, »search2« ali »fullte
 
 /** Albanian (Shqip)
  * @author Dori
+ * @author Olsi
  */
 $messages['sq'] = array(
+	'inputbox-desc' => 'Lejoni futjen e formave të paracaktuara HTML',
+	'inputbox-error-no-type' => 'Ju nuk keni specifikuar llojin e kutisë për ta krijuar.',
+	'inputbox-error-bad-type' => 'Lloji i kutisë "$1" nuk njihet.
+Ju lutemi specifikoni "create", "comment", "search", "search2" ose "fulltext".',
 	'tryexact' => 'Kërko përputhje të plotë',
 	'searchfulltext' => 'Kërko tekstin e plotë',
 	'createarticle' => 'Krijo artikull',
