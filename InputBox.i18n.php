@@ -353,18 +353,19 @@ Vælg venligst "create", "comment", "search", "search2" eller "fulltext".',
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author LWChris
  * @author Metalhead64
  * @author Raimond Spekking
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'inputbox-desc' => 'Erlaubt die Einbindung vordefinierter HTML-Formulare',
-	'inputbox-error-no-type' => 'Du hast keinen Eingabefeld-Typ angegeben.',
-	'inputbox-error-bad-type' => 'Eingabefeld-Typ „$1“ unbekannt.
+	'inputbox-desc' => 'Ermöglicht die Einbindung vordefinierter HTML-Eingabefelder',
+	'inputbox-error-no-type' => 'Es wurde kein Eingabefeldtyp angegeben.',
+	'inputbox-error-bad-type' => 'Der Eingabefeldtyp „$1“ ist unbekannt.
 Bitte „create“, „comment“, „search“, „search2“ oder „fulltext“ angeben.',
-	'tryexact' => 'Versuche exakte Suche',
-	'searchfulltext' => 'Volltext-Suche',
+	'tryexact' => 'Exakte Suche durchführen',
+	'searchfulltext' => 'Volltextsuche',
 	'createarticle' => 'Seite anlegen',
 );
 
