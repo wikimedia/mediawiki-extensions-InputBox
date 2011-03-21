@@ -1066,7 +1066,7 @@ $messages['lzh'] = array(
  * @author Misos
  */
 $messages['mk'] = array(
-	'inputbox-desc' => 'Овозможува вклучување на предефинирани HTML форми',
+	'inputbox-desc' => 'Овозможува вклучување на предодредени HTML-форми',
 	'inputbox-error-no-type' => 'Немате наведено тип на поле за внос кое сакате да го создадете.',
 	'inputbox-error-bad-type' => 'Типот на полето за внес "$1" не е познат.
 Наведете еден од следниве "create", "comment", "search", "search2" или "fulltext".',
