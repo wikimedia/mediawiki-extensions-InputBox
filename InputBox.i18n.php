@@ -1036,6 +1036,13 @@ $messages['lt'] = array(
 	'createarticle' => 'Kurti straipsnį',
 );
 
+/** Latgalian (Latgaļu)
+ * @author Dark Eagle
+ */
+$messages['ltg'] = array(
+	'createarticle' => 'Sataiseit rakstīņu',
+);
+
 /** Latvian (Latviešu)
  * @author Dark Eagle
  * @author Xil
