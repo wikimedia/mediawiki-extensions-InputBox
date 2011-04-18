@@ -124,11 +124,13 @@ $messages['as'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
 	'inputbox-desc' => 'Permite la inclusión de formularios HTML predefiníos',
 	'inputbox-error-no-type' => "Nun especificasti la triba de caxellu d'entrada pa crear.",
-	'inputbox-error-bad-type' => "Triba de caxa d'entrada $1 non reconocida. Por favor conseña la opción ''create'', ''comment'', ''search'' o ''search2''.",
+	'inputbox-error-bad-type' => "Triba de caxa d'entrada \$1 non reconocida.
+Por favor conseña la opción ''create'', ''comment'', ''search'', ''search2'' o \"fulltext\".",
 	'tryexact' => 'Intentar concueyar exautamente',
 	'searchfulltext' => 'Buscar testu completu',
 	'createarticle' => 'Crear páxina',
