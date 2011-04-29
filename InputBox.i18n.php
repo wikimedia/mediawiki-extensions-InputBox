@@ -136,8 +136,11 @@ Por favor conseña la opción ''create'', ''comment'', ''search'', ''search2'' o
 	'createarticle' => 'Crear páxina',
 );
 
-/** Azerbaijani (Azərbaycanca) */
+/** Azerbaijani (Azərbaycanca)
+ * @author Vugar 1981
+ */
 $messages['az'] = array(
+	'searchfulltext' => 'Yaxşı mətni axtar',
 	'createarticle' => 'Məqalə yarat',
 );
 
