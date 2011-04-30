@@ -1277,6 +1277,13 @@ Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o 
 	'createarticle' => 'Crear l’article',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Psubhashish
+ */
+$messages['or'] = array(
+	'createarticle' => 'ନୂଆ ପୃଷ୍ଠାଟିଏ ତିଆରିବେ',
+);
+
 /** Pangasinan (Pangasinan) */
 $messages['pag'] = array(
 	'createarticle' => 'Mangawa na artikulo',
