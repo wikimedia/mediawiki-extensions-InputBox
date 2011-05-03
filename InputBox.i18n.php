@@ -326,6 +326,13 @@ Uveďte jednu z možností: „create“, „comment“, „search“, „search
 	'createarticle' => 'Vytvořit článek',
 );
 
+/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'createarticle' => 'cъꙁижди члѣнъ',
+);
+
 /** Chuvash (Чӑвашла) */
 $messages['cv'] = array(
 	'createarticle' => 'Çĕнĕ статья çыр',
