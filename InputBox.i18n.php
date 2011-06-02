@@ -1395,7 +1395,7 @@ Te rog să specifici parametrii "create", "comment", "search", "search2" sau "fu
 );
 
 /** Aromanian (Armãneashce) */
-$messages['roa-rup'] = array(
+$messages['rup'] = array(
 	'createarticle' => 'Adrats articlu',
 );
 
