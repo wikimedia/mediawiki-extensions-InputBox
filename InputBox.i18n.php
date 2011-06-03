@@ -1394,11 +1394,6 @@ Te rog să specifici parametrii "create", "comment", "search", "search2" sau "fu
 	'createarticle' => 'Creează pagină',
 );
 
-/** Aromanian (Armãneashce) */
-$messages['rup'] = array(
-	'createarticle' => 'Adrats articlu',
-);
-
 /** Tarandíne (Tarandíne)
  * @author Joetaras
  */
@@ -1436,6 +1431,11 @@ $messages['rue'] = array(
 	'tryexact' => 'Спробуйте точне гляданя',
 	'searchfulltext' => 'Повнотекстове гляданя',
 	'createarticle' => 'Створити статю',
+);
+
+/** Aromanian (Armãneashce) */
+$messages['rup'] = array(
+	'createarticle' => 'Adrats articlu',
 );
 
 /** Yakut (Саха тыла)
