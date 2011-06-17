@@ -60,8 +60,8 @@ class InputBox {
 							'class' => 'error'
 						),
 						strlen( $this->mType ) > 0
-						? wfMsgForContent( 'inputbox-error-bad-type', $this->mType ) 
-						: wfMsgForContent( 'inputbox-error-no-type' ) 
+						? wfMsgForContent( 'inputbox-error-bad-type', $this->mType )
+						: wfMsgForContent( 'inputbox-error-no-type' )
 					)
 				);
 		}
@@ -69,7 +69,7 @@ class InputBox {
 
 	/**
 	 * Generate search form
-	 * @param $type 
+	 * @param $type
 	 */
 	public function getSearchForm( $type ) {
 		global $wgContLang;
@@ -106,7 +106,7 @@ class InputBox {
 				'size' => $this->mWidth,
 			)
 		);
-		
+
 		if( $this->mPrefix != '' ){
 			$htmlOut .= Xml::element( 'input',
 				array(
@@ -114,9 +114,9 @@ class InputBox {
 					'type' => 'hidden',
 					'value' => $this->mPrefix,
 				)
-			);	
+			);
 		}
-		
+
 		$htmlOut .= $this->mBR;
 
 		// Determine namespace checkboxes
@@ -156,7 +156,7 @@ class InputBox {
 
 			// Line break
 			$htmlOut .= $this->mBR;
-		} else if( $type == 'search' ) {
+		} elseif( $type == 'search' ) {
 			// Go button
 			$htmlOut .= Xml::element( 'input',
 				array(
@@ -178,12 +178,12 @@ class InputBox {
 				'value' => $this->mSearchButtonLabel
 			)
 		);
-		
+
 		// Hidden fulltext param for IE (bug 17161)
 		if( $type == 'fulltext' ) {
 			$htmlOut .= Html::hidden( 'fulltext', 'Search' );
 		}
-		
+
 		$htmlOut .= Xml::closeElement( 'form' );
 		$htmlOut .= Xml::closeElement( 'div' );
 
@@ -376,7 +376,7 @@ class InputBox {
 		// Return HTML
 		return $htmlOut;
 	}
-	
+
 	/**
 	 * Generate new section form
 	 */
