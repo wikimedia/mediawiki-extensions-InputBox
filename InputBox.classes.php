@@ -139,17 +139,31 @@ class InputBox {
 						$name = 'Main';
 					}
 					if ( $userNamespace == $name ) {
-						// Checkbox
-						$htmlOut .= Xml::element( 'input',
-							array(
-								'type' => 'checkbox',
-								'name' => 'ns' . $i,
-								'value' => 1,
-								'id' => 'mw-inputbox-ns' . $i
-							) + $checked
-						);
-						// Label
-						$htmlOut .= '&#160;' . Xml::label( $userNamespace, 'mw-inputbox-ns' . $i );
+						if ( count( $namespacesArray ) == 1 ) {
+							// Checkbox
+							$htmlOut .= Xml::element( 'input',
+								array(
+									'type' => 'hidden',
+									'name' => 'ns' . $i,
+									'value' => 1,
+									'id' => 'mw-inputbox-ns' . $i
+								) + $checked
+							);
+						} else {
+							// Checkbox
+							$htmlOut .= ' <div class="inputbox-element" style="display: inline; white-space: nowrap;">';
+							$htmlOut .= Xml::element( 'input',
+								array(
+									'type' => 'checkbox',
+									'name' => 'ns' . $i,
+									'value' => 1,
+									'id' => 'mw-inputbox-ns' . $i
+								) + $checked
+							);
+							// Label
+							$htmlOut .= '&#160;' . Xml::label( $userNamespace, 'mw-inputbox-ns' . $i );
+							$htmlOut .= '</div> ';
+						}
 					}
 				}
 			}

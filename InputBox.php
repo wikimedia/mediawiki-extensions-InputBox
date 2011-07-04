@@ -32,8 +32,10 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'InputBox',
-	'author'         => array( 'Erik Moeller', 'Leonardo Pimenta', 'Rob Church', 'Trevor Parscal' ),
+	'author'         => array( 'Erik Moeller', 'Leonardo Pimenta', 'Rob Church', 'Trevor Parscal', 'DaSch' ),
+	'version'        => '0.1.3',
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:InputBox',
+	'description'    => 'Allow inclusion of predefined HTML forms.',
 	'descriptionmsg' => 'inputbox-desc',
 );
 
