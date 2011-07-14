@@ -17,7 +17,7 @@
  *	Cleaned up by Trevor Parscal <tparscal@wikimedia.org>
  * @copyright Public domain
  * @license Public domain
- * @version 0.1.1
+ * @version 0.1.4
  */
 
 // Check environment
@@ -33,7 +33,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'InputBox',
 	'author'         => array( 'Erik Moeller', 'Leonardo Pimenta', 'Rob Church', 'Trevor Parscal', 'DaSch' ),
-	'version'        => '0.1.3',
+	'version'        => '0.1.4',
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:InputBox',
 	'description'    => 'Allow inclusion of predefined HTML forms.',
 	'descriptionmsg' => 'inputbox-desc',
