@@ -72,7 +72,7 @@ class InputBox {
 	 * @param $type
 	 */
 	public function getSearchForm( $type ) {
-		global $wgContLang;
+		global $wgContLang, $wgNamespaceAliases;
 
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
@@ -120,51 +120,70 @@ class InputBox {
 		$htmlOut .= $this->mBR;
 
 		// Determine namespace checkboxes
-		$namespaces = $wgContLang->getNamespaces();
 		$namespacesArray = explode( ',', $this->mNamespaces );
 		if ( $this->mNamespaces ) {
-			foreach ( $namespacesArray as $userNamespace ) {
+			$namespaces = $wgContLang->getNamespaces();
+			$nsAliases = array_merge( $wgContLang->getNamespaceAliases(), $wgNamespaceAliases );
+			$showNamespaces = array();
+			# Check for valid namespaces
+			foreach ( $namespacesArray as $userNS ) {
+				$userNS = trim( $userNS ); # no whitespace
+
+				$checkedNS = array();
+				# Namespace needs to be checked if flagged with "**"
+				if ( strstr( $userNS, '**' ) ) {
+					$userNS = str_replace( '**', '', $userNS );
+					$checkedNS[$userNS] = true;
+				}
+
+				$mainMsg = wfMsgForContent( 'inputbox-ns-main' );
+				if( $userNS == 'Main' || $userNS == $mainMsg ) {
+					$i = 0;
+				} elseif( array_search( $userNS, $namespaces ) ) {
+					$i = array_search( $userNS, $namespaces );
+				} elseif ( isset( $nsAliases[$userNS] ) ) {
+					$i = $nsAliases[$userNS];
+				} else {
+					continue; # Namespace not recognised, skip
+				}
+				$showNamespaces[$i] = $userNS;
+				if( isset( $checkedNS[$userNS] ) && $checkedNS[$userNS] ) {
+					$checkedNS[$i] = true;
+				}
+			}
+
+			# Show valid namespaces
+			foreach( $showNamespaces as $i => $name ) {
 				$checked = array();
-				// Namespace needs to be checked if flagged with "**" or if it's the only one
-				if ( strstr( $userNamespace, '**' ) || count( $namespacesArray ) == 1 ) {
-					$userNamespace = str_replace( '**', '', $userNamespace );
+				// Namespace flagged with "**" or if it's the only one
+				if ( ( isset( $checkedNS[$i] ) && $checkedNS[$i] ) || count( $showNamespaces ) == 1 ) {
 					$checked = array( 'checked' => 'checked' );
 				}
 
-				// Namespace checkboxes
-				foreach ( $namespaces as $i => $name ) {
-					if ( $i < 0 ) {
-						continue;
-					} elseif ( $i == 0 ) {
-						$name = 'Main';
-					}
-					if ( $userNamespace == $name ) {
-						if ( count( $namespacesArray ) == 1 ) {
-							// Checkbox
-							$htmlOut .= Xml::element( 'input',
-								array(
-									'type' => 'hidden',
-									'name' => 'ns' . $i,
-									'value' => 1,
-									'id' => 'mw-inputbox-ns' . $i
-								) + $checked
-							);
-						} else {
-							// Checkbox
-							$htmlOut .= ' <div class="inputbox-element" style="display: inline; white-space: nowrap;">';
-							$htmlOut .= Xml::element( 'input',
-								array(
-									'type' => 'checkbox',
-									'name' => 'ns' . $i,
-									'value' => 1,
-									'id' => 'mw-inputbox-ns' . $i
-								) + $checked
-							);
-							// Label
-							$htmlOut .= '&#160;' . Xml::label( $userNamespace, 'mw-inputbox-ns' . $i );
-							$htmlOut .= '</div> ';
-						}
-					}
+				if ( count( $showNamespaces ) == 1 ) {
+					// Checkbox
+					$htmlOut .= Xml::element( 'input',
+						array(
+							'type' => 'hidden',
+							'name' => 'ns' . $i,
+							'value' => 1,
+							'id' => 'mw-inputbox-ns' . $i
+						) + $checked
+					);
+				} else {
+					// Checkbox
+					$htmlOut .= ' <div class="inputbox-element" style="display: inline; white-space: nowrap;">';
+					$htmlOut .= Xml::element( 'input',
+						array(
+							'type' => 'checkbox',
+							'name' => 'ns' . $i,
+							'value' => 1,
+							'id' => 'mw-inputbox-ns' . $i
+						) + $checked
+					);
+					// Label
+					$htmlOut .= '&#160;' . Xml::label( $name, 'mw-inputbox-ns' . $i );
+					$htmlOut .= '</div> ';
 				}
 			}
 

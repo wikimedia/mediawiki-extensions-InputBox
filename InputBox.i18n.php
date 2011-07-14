@@ -22,6 +22,7 @@ Please specify "create", "comment", "search", "search2" or "fulltext".',
 	'tryexact'                => 'Try exact match',
 	'searchfulltext'          => 'Search full text',
 	'createarticle'           => 'Create page',
+	'inputbox-ns-main'        => 'Main',
 );
 
 /** Message documentation (Message documentation)
@@ -1221,6 +1222,7 @@ Gebruik "create", "comment", "search", "search2" of "fulltext".',
 	'tryexact' => 'Zoeken op exacte overeenkomst',
 	'searchfulltext' => 'Volledige tekst doorzoeken',
 	'createarticle' => 'Pagina aanmaken',
+	'inputbox-ns-main' => 'Hoofdnaamruimte',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
