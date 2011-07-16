@@ -776,6 +776,7 @@ Per favor specifica "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => 'Provar correspondentia exacte',
 	'searchfulltext' => 'Cercar in texto integre',
 	'createarticle' => 'Crear pagina',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -823,6 +824,7 @@ $messages['is'] = array(
 /** Italian (Italiano)
  * @author BrokenArrow
  * @author Darth Kule
+ * @author Karika
  */
 $messages['it'] = array(
 	'inputbox-desc' => "Consente l'inserimento di moduli HTML predefiniti",
@@ -831,6 +833,7 @@ $messages['it'] = array(
 	'tryexact' => 'Cerca corrispondenza esatta',
 	'searchfulltext' => 'Ricerca nel testo',
 	'createarticle' => 'Crea voce',
+	'inputbox-ns-main' => 'Principale',
 );
 
 /** Japanese (日本語)
@@ -1089,6 +1092,7 @@ $messages['mk'] = array(
 	'tryexact' => 'Обиди се точно',
 	'searchfulltext' => 'Барај низ целиот текст',
 	'createarticle' => 'Создај страница',
+	'inputbox-ns-main' => 'Главна',
 );
 
 /** Malayalam (മലയാളം)
@@ -1103,6 +1107,7 @@ $messages['ml'] = array(
 	'tryexact' => 'കൃത്യമായി യോജിക്കുന്ന ഫലങ്ങൾ ഉണ്ടോയെന്നു പരിശോധിക്കുക',
 	'searchfulltext' => 'എഴുത്ത് മൊത്തമായി തിരയുക',
 	'createarticle' => 'താൾ സൃഷ്ടിക്കുക',
+	'inputbox-ns-main' => 'മുഖ്യം',
 );
 
 /** Mongolian (Монгол)
@@ -1125,6 +1130,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aviator
  */
 $messages['ms'] = array(
@@ -1134,6 +1140,7 @@ $messages['ms'] = array(
 	'tryexact' => 'Cuba padanan tepat',
 	'searchfulltext' => 'Cari dalam teks penuh',
 	'createarticle' => 'Cipta laman',
+	'inputbox-ns-main' => 'Utama',
 );
 
 /** Maltese (Malti)
@@ -1311,6 +1318,7 @@ Należy wybrać „create”, „comment”, „search”, „search2” or „f
 	'tryexact' => 'Użyj dokładnego wyrażenia',
 	'searchfulltext' => 'Szukaj w całych tekstach',
 	'createarticle' => 'Utwórz artykuł',
+	'inputbox-ns-main' => 'Główna',
 );
 
 /** Piedmontese (Piemontèis)
@@ -1356,6 +1364,7 @@ Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Tentar a exata expressão',
 	'searchfulltext' => 'Pesquisar no texto completo',
 	'createarticle' => 'Criar página',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -1530,6 +1539,7 @@ Prosimo, določite »create«, »comment«, »search«, »search2« ali »fullte
 	'tryexact' => 'Poskusite z natančnim ujemanjem',
 	'searchfulltext' => 'Preišči vse besedilo',
 	'createarticle' => 'Ustvarite stran',
+	'inputbox-ns-main' => 'Osnovno',
 );
 
 /** Albanian (Shqip)
