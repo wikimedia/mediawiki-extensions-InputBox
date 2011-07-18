@@ -973,6 +973,7 @@ $messages['ksh'] = array(
 	'tryexact' => 'Versök en akkurate Üvvereinstimmung:',
 	'searchfulltext' => 'Sök durch dä janze Tex',
 	'createarticle' => 'Sigg aanlääje',
+	'inputbox-ns-main' => '{{int:blanknamespace}}',
 );
 
 /** Kurdish (Latin) (Kurdî (Latin)) */
