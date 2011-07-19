@@ -1433,6 +1433,7 @@ $messages['ru'] = array(
 	'tryexact' => 'Строгий поиск',
 	'searchfulltext' => 'Полнотекстовый поиск',
 	'createarticle' => 'Создать статью',
+	'inputbox-ns-main' => 'Главная',
 );
 
 /** Rusyn (Русиньскый)
