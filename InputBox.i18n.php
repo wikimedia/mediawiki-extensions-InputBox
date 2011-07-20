@@ -544,6 +544,7 @@ Indiquez une option parmis « create », « comment », « search », « searche
 	'tryexact' => 'Essayez la correspondance exacte.',
 	'searchfulltext' => 'Recherche en texte intégral',
 	'createarticle' => 'Créer une page',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Franco-Provençal (Arpetan)
