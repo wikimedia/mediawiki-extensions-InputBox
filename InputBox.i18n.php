@@ -1902,15 +1902,17 @@ $messages['yue'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Liangent
  * @author Wmr89502270
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
-	'inputbox-desc' => '容许包含预先设置的HTML表格',
-	'inputbox-error-no-type' => '您尚未指定创建输入箱的指定类型。',
+	'inputbox-desc' => '允许包含预先设置的HTML表格',
+	'inputbox-error-no-type' => '你未指定创建的输入框的类型。',
 	'inputbox-error-bad-type' => '输入框类型“$1”无法识别。
 请指定“create”、“comment”、“search”、“search2”或“fulltext”。',
 	'tryexact' => '尝试精确匹配',
-	'searchfulltext' => '全文搜索',
-	'createarticle' => '建立文章',
+	'searchfulltext' => '搜索全文',
+	'createarticle' => '创建页面',
+	'inputbox-ns-main' => '主',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
