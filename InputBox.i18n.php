@@ -998,6 +998,7 @@ Gitt w.e.g. "create", "comment", "search", "search2" oder "fulltext" un.',
 	'tryexact' => 'Versicht et matt der preziser Sich:',
 	'searchfulltext' => 'Am ganzen Text sichen',
 	'createarticle' => 'Säit uleeën',
+	'inputbox-ns-main' => 'Haapt',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
