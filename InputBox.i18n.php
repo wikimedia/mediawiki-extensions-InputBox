@@ -1212,8 +1212,8 @@ Geev een vun disse Typen an: „create“, „comment“, „search“, „searc
  * @author Servien
  */
 $messages['nds-nl'] = array(
-	'tryexact' => 'Krek zeuken',
-	'searchfulltext' => 'De hele tekse deurzeuken',
+	'tryexact' => 'Naor sekuur zeuken',
+	'searchfulltext' => 'De hele tekste deurzeuken',
 	'createarticle' => 'Nieje pagina anmaken',
 );
 
