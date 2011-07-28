@@ -180,6 +180,7 @@ $messages['be'] = array(
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'inputbox-desc' => 'Дазваляе ўключаць раней вызначаныя HTML-формы',
@@ -189,6 +190,7 @@ $messages['be-tarask'] = array(
 	'tryexact' => 'Паспрабаваць дакладны пошук',
 	'searchfulltext' => 'Шукаць увесь тэкст',
 	'createarticle' => 'Стварыць старонку',
+	'inputbox-ns-main' => 'Асноўная',
 );
 
 /** Bulgarian (Български)
