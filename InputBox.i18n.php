@@ -318,6 +318,7 @@ $messages['crh-cyrl'] = array(
 /** Czech (Česky)
  * @author Danny B.
  * @author Li-sung
+ * @author Mormegil
  */
 $messages['cs'] = array(
 	'inputbox-desc' => 'Umožňuje vkládat určité HTML formuláře.',
@@ -327,6 +328,7 @@ Uveďte jednu z možností: „create“, „comment“, „search“, „search
 	'tryexact' => 'Vyzkoušet přesné hledání',
 	'searchfulltext' => 'Plnotextové hledání',
 	'createarticle' => 'Vytvořit článek',
+	'inputbox-ns-main' => 'Hlavní',
 );
 
 /** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
@@ -603,6 +605,7 @@ Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Buscar coincidencias exactas',
 	'searchfulltext' => 'Buscar o texto completo',
 	'createarticle' => 'Crear a páxina',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -1255,6 +1258,7 @@ Ver venleg og velg «create», «comment», «search», «search2», eller «ful
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author EivindJ
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
@@ -1265,6 +1269,7 @@ Vennligst velg «create», «comment», «search», «search2» eller «fulltext
 	'tryexact' => 'Prøv nøyaktig treff',
 	'searchfulltext' => 'Søk full tekst',
 	'createarticle' => 'Opprett side',
+	'inputbox-ns-main' => 'Hoved',
 );
 
 /** Novial (Novial)
@@ -1904,12 +1909,13 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Liangent
+ * @author PhiLiP
  * @author Wmr89502270
  * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'inputbox-desc' => '允许包含预先设置的HTML表格',
-	'inputbox-error-no-type' => '你未指定创建的输入框的类型。',
+	'inputbox-error-no-type' => '您没有指定所创建输入框的类型。',
 	'inputbox-error-bad-type' => '输入框类型“$1”无法识别。
 请指定“create”、“comment”、“search”、“search2”或“fulltext”。',
 	'tryexact' => '尝试精确匹配',
