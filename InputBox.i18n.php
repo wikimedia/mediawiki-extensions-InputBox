@@ -562,6 +562,7 @@ Volyéd spècefiar un chouèx permié « create », « comment », « search »,
 	'tryexact' => 'Èprovâd la corrèspondance justa.',
 	'searchfulltext' => 'Rechèrche en tèxto complèt',
 	'createarticle' => 'Fâre la pâge',
+	'inputbox-ns-main' => 'Principâl',
 );
 
 /** Friulian (Furlan)
@@ -1625,6 +1626,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Boivie
  * @author Lejonel
  * @author Najami
  */
@@ -1636,6 +1638,7 @@ Var god specifiera "create", "comment", "search", "search2" eller "fulltext".',
 	'tryexact' => 'Försök hitta exakt matchning',
 	'searchfulltext' => 'Fulltextsökning',
 	'createarticle' => 'Skapa sida',
+	'inputbox-ns-main' => 'Huvud',
 );
 
 /** Swahili (Kiswahili) */
