@@ -1464,7 +1464,7 @@ $messages['rup'] = array(
 	'createarticle' => 'Adrats articlu',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1737,7 +1737,7 @@ $messages['tn'] = array(
 	'createarticle' => 'Kwala mokwalo',
 );
 
-/** Tonga (lea faka-Tonga) */
+/** Tongan (lea faka-Tonga) */
 $messages['to'] = array(
 	'createarticle' => 'Fakatupu ʻa e kupu',
 );
