@@ -1474,6 +1474,7 @@ $messages['sah'] = array(
 	'tryexact' => 'Чопчу булуу',
 	'searchfulltext' => 'Тиэкиһин барытын көрдөөһүн',
 	'createarticle' => 'Ыстатыйаны айарга',
+	'inputbox-ns-main' => 'Сүрүн',
 );
 
 /** Sardinian (Sardu)
