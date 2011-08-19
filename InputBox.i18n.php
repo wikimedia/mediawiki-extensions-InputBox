@@ -1346,6 +1346,15 @@ Për piasì, ch\'a sërna antra "create", "comment", "search", "search2" o "full
 	'createarticle' => "Crea n'artìcol",
 );
 
+/** Western Punjabi (پنجابی)
+ * @author Khalid Mahmood
+ */
+$messages['pnb'] = array(
+	'tryexact' => 'ٹھیک جوڑ رلاؤ',
+	'searchfulltext' => 'پوری لکھت لبو',
+	'createarticle' => 'صفہ بناؤ',
+);
+
 /** Pontic (Ποντιακά)
  * @author Sinopeus
  */
