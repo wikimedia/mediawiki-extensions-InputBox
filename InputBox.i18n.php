@@ -135,6 +135,7 @@ Por favor conseña la opción ''create'', ''comment'', ''search'', ''search2'' o
 	'tryexact' => 'Intentar concueyar exautamente',
 	'searchfulltext' => 'Buscar testu completu',
 	'createarticle' => 'Crear páxina',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Azerbaijani (Azərbaycanca)
@@ -1684,6 +1685,7 @@ $messages['te'] = array(
 	'tryexact' => 'ఖచ్చితమైన పోలిక కొరకు ప్రయత్నించు',
 	'searchfulltext' => 'పూర్తి పాఠ్యంలో వెతుకు',
 	'createarticle' => 'వ్యాసాన్ని సృష్టించు',
+	'inputbox-ns-main' => 'ప్రధాన',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
