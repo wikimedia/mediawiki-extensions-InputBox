@@ -131,7 +131,7 @@ class InputBox {
 
 				$checkedNS = array();
 				# Namespace needs to be checked if flagged with "**"
-				if ( strstr( $userNS, '**' ) ) {
+				if ( strpos( $userNS, '**' ) ) {
 					$userNS = str_replace( '**', '', $userNS );
 					$checkedNS[$userNS] = true;
 				}
