@@ -1421,9 +1421,9 @@ $messages['qu'] = array(
  */
 $messages['ro'] = array(
 	'inputbox-desc' => 'Permite includerea formelor HTML predefinite',
-	'inputbox-error-no-type' => 'Nu ai specificat ce tip de cutie intrare să fie creată.',
-	'inputbox-error-bad-type' => 'Tipul de cutie intrare "$1" nu este recunoscut.
-Te rog să specifici parametrii "create", "comment", "search", "search2" sau "fulltext".',
+	'inputbox-error-no-type' => 'Nu ați specificat ce tip de cutie intrare să fie creată.',
+	'inputbox-error-bad-type' => 'Tipul de cutie intrare „$1” nu este recunoscut.
+Vă rugăm să specificați parametrii „create”, „comment”, „search”, „search2” sau „fulltext”.',
 	'tryexact' => 'Încearcă varianta exactă',
 	'searchfulltext' => 'Caută textul întreg',
 	'createarticle' => 'Creează pagină',
