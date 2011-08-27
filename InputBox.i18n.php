@@ -384,7 +384,7 @@ $messages['de'] = array(
 Bitte „create“, „comment“, „search“, „search2“ oder „fulltext“ angeben.',
 	'tryexact' => 'Exakte Suche durchführen',
 	'searchfulltext' => 'Volltextsuche',
-	'createarticle' => 'Seite anlegen',
+	'createarticle' => 'Seite erstellen',
 	'inputbox-ns-main' => 'Seiten',
 );
 
