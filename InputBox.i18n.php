@@ -1302,10 +1302,12 @@ Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o 
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
  * @author Psubhashish
  */
 $messages['or'] = array(
 	'createarticle' => 'ନୂଆ ପୃଷ୍ଠାଟିଏ ତିଆରିବେ',
+	'inputbox-ns-main' => 'ମୁଖ୍ୟ',
 );
 
 /** Pangasinan (Pangasinan) */
