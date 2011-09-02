@@ -57,6 +57,7 @@ Gebruik "create", "comment", "search", "search2" of "fulltext".',
 	'tryexact' => 'Soek presiese ooreenkoms',
 	'searchfulltext' => 'Deursoek volledige teks',
 	'createarticle' => 'Skep bladsy',
+	'inputbox-ns-main' => 'Hoofnaamruimte',
 );
 
 /** Amharic (አማርኛ)
@@ -81,6 +82,7 @@ Por favor, especifique "create", "comment", "search" u "fulltext".',
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author زكريا
  */
 $messages['ar'] = array(
 	'inputbox-desc' => 'يسمح بتضمين أشكال HTML معرفة مسبقا.',
@@ -90,6 +92,7 @@ $messages['ar'] = array(
 	'tryexact' => 'ابحث عن عنوان مطابق',
 	'searchfulltext' => 'ابحث في النص الكامل',
 	'createarticle' => 'إنشاء صفحة',
+	'inputbox-ns-main' => 'رئيسي',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -433,6 +436,7 @@ $messages['ee'] = array(
 
 /** Greek (Ελληνικά)
  * @author Dead3y3
+ * @author ZaDiak
  */
 $messages['el'] = array(
 	'inputbox-desc' => 'Επιτρέπει την περίληψη προκαθορισμένων φορμών HTML',
@@ -442,6 +446,7 @@ $messages['el'] = array(
 	'tryexact' => 'Δοκιμάστε την επακριβή αντιστοιχία.',
 	'searchfulltext' => 'Αναζήτηση με το πλήρες κείμενο',
 	'createarticle' => 'Δημιουργία σελίδας',
+	'inputbox-ns-main' => 'Κύριος',
 );
 
 /** Esperanto (Esperanto)
@@ -456,6 +461,7 @@ Bonvolu specifi keston "create", "comment", "seatch", "search2", aŭ "fulltext".
 	'tryexact' => 'Provu ekzaktan trafon',
 	'searchfulltext' => 'Serĉi plentekste',
 	'createarticle' => 'Krei artikolon',
+	'inputbox-ns-main' => 'Ĉefa',
 );
 
 /** Spanish (Español)
@@ -514,6 +520,7 @@ $messages['fa'] = array(
 	'tryexact' => 'مطابقت نظیر به نظیر را بیازما',
 	'searchfulltext' => 'جستجوی کل متن',
 	'createarticle' => 'ایجاد صفحه',
+	'inputbox-ns-main' => 'اصلی',
 );
 
 /** Finnish (Suomi)
@@ -1429,6 +1436,7 @@ Vă rugăm să specificați parametrii „create”, „comment”, „search”
 	'tryexact' => 'Încearcă varianta exactă',
 	'searchfulltext' => 'Caută textul întreg',
 	'createarticle' => 'Creează pagină',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Tarandíne (Tarandíne)
