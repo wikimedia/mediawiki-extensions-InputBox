@@ -854,6 +854,7 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Fryed-peach
  * @author JtFuruhata
+ * @author Schu
  */
 $messages['ja'] = array(
 	'inputbox-desc' => 'あらかじめ定義されたHTMLフォーム埋め込み機能を有効にする',
@@ -862,6 +863,7 @@ $messages['ja'] = array(
 	'tryexact' => '一致する項目を検索',
 	'searchfulltext' => '全文検索',
 	'createarticle' => '項目を作成',
+	'inputbox-ns-main' => '(標準)',
 );
 
 /** Jutish (Jysk)
@@ -1400,6 +1402,7 @@ Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 /** Brazilian Portuguese (Português do Brasil)
  * @author Brunoy Anastasiya Seryozhenko
  * @author Eduardo.mps
+ * @author MetalBrasil
  */
 $messages['pt-br'] = array(
 	'inputbox-desc' => 'Permite a inclusão de formulários definidos de HTML',
@@ -1409,6 +1412,7 @@ Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Tentar a expressão exata',
 	'searchfulltext' => 'Pesquisar em todo o texto.',
 	'createarticle' => 'Criar página.',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Quechua (Runa Simi)
@@ -1789,6 +1793,7 @@ $messages['ts'] = array(
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
+ * @author Dim Grits
  */
 $messages['uk'] = array(
 	'inputbox-desc' => 'Дозволяє включати заздалегідь визначені HTML-форми',
@@ -1798,6 +1803,7 @@ $messages['uk'] = array(
 	'tryexact' => 'Строгий пошук',
 	'searchfulltext' => 'Повнотекстовий пошук',
 	'createarticle' => 'Створити статтю',
+	'inputbox-ns-main' => 'Головна',
 );
 
 /** Urdu (اردو) */
