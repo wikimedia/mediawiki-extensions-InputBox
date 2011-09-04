@@ -526,6 +526,7 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Crt
  * @author Nike
+ * @author Olli
  */
 $messages['fi'] = array(
 	'inputbox-desc' => 'Mahdollistaa ennalta määriteltyjen lomakkeiden sisällyttämisen sivuille.',
@@ -535,6 +536,7 @@ Sallittuja arvoja ovat create, comment, search, search2 ja fulltext.',
 	'tryexact' => 'Yritä tarkkaa osumaa',
 	'searchfulltext' => 'Etsi koko tekstiä',
 	'createarticle' => 'Luo sivu',
+	'inputbox-ns-main' => 'Pääsivu',
 );
 
 /** Faroese (Føroyskt) */
@@ -1481,6 +1483,7 @@ $messages['rue'] = array(
 	'tryexact' => 'Спробуйте точне гляданя',
 	'searchfulltext' => 'Повнотекстове гляданя',
 	'createarticle' => 'Створити статю',
+	'inputbox-ns-main' => 'Головна',
 );
 
 /** Aromanian (Armãneashce) */
