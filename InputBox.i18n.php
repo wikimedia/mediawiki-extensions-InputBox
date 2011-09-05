@@ -1358,6 +1358,7 @@ Për piasì, ch\'a sërna antra "create", "comment", "search", "search2" o "full
 	'tryexact' => 'Sërca che a sia pròpe parej',
 	'searchfulltext' => 'Sërca an tut ël test',
 	'createarticle' => "Crea n'artìcol",
+	'inputbox-ns-main' => 'Prinsipal',
 );
 
 /** Western Punjabi (پنجابی)
