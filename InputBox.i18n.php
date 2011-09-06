@@ -467,6 +467,7 @@ Bonvolu specifi keston "create", "comment", "seatch", "search2", aŭ "fulltext".
 /** Spanish (Español)
  * @author Crazymadlover
  * @author Icvav
+ * @author MetalBrasil
  * @author Muro de Aguas
  * @author Sanbec
  */
@@ -478,6 +479,7 @@ Por favor, especifica «create», «comment», «search» «search2» o "fulltex
 	'tryexact' => 'Buscar título exacto',
 	'searchfulltext' => 'Buscar por texto completo',
 	'createarticle' => 'Crear artículo',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Estonian (Eesti)
@@ -1457,6 +1459,7 @@ Pe piacere mitte "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => "Pruève cu 'u combronde satte-satte",
 	'searchfulltext' => "Cirche jndr'à tutte 'u teste",
 	'createarticle' => "Ccreje 'a vôsce",
+	'inputbox-ns-main' => 'Prengepàle',
 );
 
 /** Russian (Русский)
@@ -1960,6 +1963,7 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Anakmalaysia
  * @author Gaoxuewei
  * @author Liangent
  * @author Mark85296341
@@ -1972,6 +1976,7 @@ $messages['zh-hant'] = array(
 	'tryexact' => '嘗試精確匹配',
 	'searchfulltext' => '全文檢索',
 	'createarticle' => '建立文章',
+	'inputbox-ns-main' => '主',
 );
 
 /** Chinese (Taiwan) (‪中文(台灣)‬)
