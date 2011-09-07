@@ -1387,6 +1387,7 @@ $messages['ps'] = array(
 	'tryexact' => 'کټ مټ انډول يې وآزمويه',
 	'searchfulltext' => 'بشپړ متن پلټل',
 	'createarticle' => 'نوې ليکنه پيلول',
+	'inputbox-ns-main' => 'آرنی',
 );
 
 /** Portuguese (Português)
