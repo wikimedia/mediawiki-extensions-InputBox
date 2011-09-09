@@ -142,11 +142,13 @@ Por favor conseña la opción ''create'', ''comment'', ''search'', ''search2'' o
 );
 
 /** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
  * @author Vugar 1981
  */
 $messages['az'] = array(
 	'searchfulltext' => 'Yaxşı mətni axtar',
 	'createarticle' => 'Məqalə yarat',
+	'inputbox-ns-main' => 'Əsas',
 );
 
 /** Bashkir (Башҡортса)
