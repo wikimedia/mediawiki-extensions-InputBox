@@ -648,6 +648,7 @@ Bitte „create“, „comment“, „search“, „search2“ oder „fulltext�
 	'tryexact' => 'Versuech es mitenere exakte Suech',
 	'searchfulltext' => 'De gsamti Teggscht durchsueche',
 	'createarticle' => 'Syte aalaie',
+	'inputbox-ns-main' => 'Hauptsyte',
 );
 
 /** Gujarati (ગુજરાતી)
