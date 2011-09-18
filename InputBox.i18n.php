@@ -258,6 +258,7 @@ Spisait "create", "comment", "search" pe "search2" pe "fulltext".',
 	'tryexact' => 'Klask ma klotfe rik',
 	'searchfulltext' => 'Klask en destenn a-bezh',
 	'createarticle' => 'Krouiñ ar pennad',
+	'inputbox-ns-main' => 'Pennañ',
 );
 
 /** Bosnian (Bosanski)
@@ -1322,6 +1323,7 @@ Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o 
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'searchfulltext' => 'ପୁରା ଲେଖା ଖୋଜିବେ',
 	'createarticle' => 'ନୂଆ ପୃଷ୍ଠାଟିଏ ତିଆରିବେ',
 	'inputbox-ns-main' => 'ମୁଖ୍ୟ',
 );
