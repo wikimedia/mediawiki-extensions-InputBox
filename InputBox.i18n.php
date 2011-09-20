@@ -1323,6 +1323,7 @@ Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o 
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'tryexact' => 'ପୁରାପୁରି ମେଳ କରିବାକୁ ଚେଷ୍ଟା କରିବେ',
 	'searchfulltext' => 'ପୁରା ଲେଖା ଖୋଜିବେ',
 	'createarticle' => 'ନୂଆ ପୃଷ୍ଠାଟିଏ ତିଆରିବେ',
 	'inputbox-ns-main' => 'ମୁଖ୍ୟ',
