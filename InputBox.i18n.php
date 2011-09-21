@@ -1373,9 +1373,12 @@ Për piasì, ch\'a sërna antra "create", "comment", "search", "search2" o "full
  * @author Khalid Mahmood
  */
 $messages['pnb'] = array(
+	'inputbox-desc' => 'ایچ ٹی ایم ایل پریڈیفائینڈ فورمز نوں رلان دی اجازت دیو۔',
+	'inputbox-error-no-type' => 'تساں انپٹ ڈبے بنان دی ٹائپ نئیں دسی۔',
 	'tryexact' => 'ٹھیک جوڑ رلاؤ',
 	'searchfulltext' => 'پوری لکھت لبو',
 	'createarticle' => 'صفہ بناؤ',
+	'inputbox-ns-main' => 'مین',
 );
 
 /** Pontic (Ποντιακά)
