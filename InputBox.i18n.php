@@ -1323,6 +1323,10 @@ Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o 
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'inputbox-desc' => 'ଆଗରୁ ତିଆରି HTML ରୂପରେ ଆହରଣକୁ ଅନୁମୋଦନ ଦେବା',
+	'inputbox-error-no-type' => 'ଆପଣ ନିବେଶ ଘରେ ଦେବାକୁ ଥିବା ଲେଖାର ପ୍ରକାର ଏଯାଏଁ ଦେଇନାହାନ୍ତି ।',
+	'inputbox-error-bad-type' => 'ନିବେଶ ଘର ପ୍ରକାର "$1" ବାରିପାରିଲୁ ନାହିଁ ।
+ଦୟାକରି "create", "comment", "search", "search2" ଅବା "fulltext" ସ୍ଥିର କରନ୍ତୁ ।',
 	'tryexact' => 'ପୁରାପୁରି ମେଳ କରିବାକୁ ଚେଷ୍ଟା କରିବେ',
 	'searchfulltext' => 'ପୁରା ଲେଖା ଖୋଜିବେ',
 	'createarticle' => 'ନୂଆ ପୃଷ୍ଠାଟିଏ ତିଆରିବେ',
