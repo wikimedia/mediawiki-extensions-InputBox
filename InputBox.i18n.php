@@ -1050,6 +1050,7 @@ Gebroek "create", "comment", "search", "search2" óf "fulltext".',
 	'tryexact' => 'Perbeer exacte euvereinkoms',
 	'searchfulltext' => 'Zeuk de volledige teks',
 	'createarticle' => "Maak 'n pagina aan",
+	'inputbox-ns-main' => 'Houfnaamruumdje',
 );
 
 /** Lingala (Lingála)
