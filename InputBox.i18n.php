@@ -1380,6 +1380,8 @@ Për piasì, ch\'a sërna antra "create", "comment", "search", "search2" o "full
 $messages['pnb'] = array(
 	'inputbox-desc' => 'ایچ ٹی ایم ایل پریڈیفائینڈ فورمز نوں رلان دی اجازت دیو۔',
 	'inputbox-error-no-type' => 'تساں انپٹ ڈبے بنان دی ٹائپ نئیں دسی۔',
+	'inputbox-error-bad-type' => 'انپٹ ڈبہ ٹائپ "$1" نئیں پچھانیا گیا۔
+مہربانی کرکے "create", "comment", "search", "search2"  "fulltext" بارے دسو۔',
 	'tryexact' => 'ٹھیک جوڑ رلاؤ',
 	'searchfulltext' => 'پوری لکھت لبو',
 	'createarticle' => 'صفہ بناؤ',
@@ -1563,6 +1565,7 @@ $messages['sgs'] = array(
  * @author Asiri wiki
  * @author Budhajeewa
  * @author නන්දිමිතුරු
+ * @author බිඟුවා
  */
 $messages['si'] = array(
 	'inputbox-desc' => 'පූර්වාර්ථදැක්වූණු HTML ආකාරයන් අඩංගුකිරීමට ඉඩදෙන්න',
@@ -1572,6 +1575,7 @@ $messages['si'] = array(
 	'tryexact' => 'තථ්‍ය ගැලපීම  වෑයම් කරන්න',
 	'searchfulltext' => 'සම්පූර්ණ පෙළ ගවේෂණය කරන්න',
 	'createarticle' => 'පිටුවක් සාදන්න',
+	'inputbox-ns-main' => 'ප්‍රධාන',
 );
 
 /** Slovak (Slovenčina)
