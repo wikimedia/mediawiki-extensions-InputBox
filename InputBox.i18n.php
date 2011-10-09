@@ -26,6 +26,7 @@ Please specify "create", "comment", "search", "search2" or "fulltext".',
 );
 
 /** Message documentation (Message documentation)
+ * @author Lloffiwr
  * @author Meno25
  * @author SPQRobin
  * @author Siebrand
@@ -37,6 +38,7 @@ $messages['qqq'] = array(
 	'tryexact' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. If the page with the exact name exists, you will go directly to that page.',
 	'searchfulltext' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. This button always goes to the search page, even if the page with the exact name exists.',
 	'createarticle' => 'Part of the "Inputbox" extension. This message is the text of the button to create the page you typed in the inputbox.',
+	'inputbox-ns-main' => 'Probably refers to the main namespace.',
 );
 
 /** Niuean (ko e vagahau Niuē)
@@ -361,6 +363,7 @@ Dewiswch rhwng "create", "comment", "search" a "search2" neu "fulltext".',
 	'tryexact' => 'Chwilio am yr union gymal',
 	'searchfulltext' => "Chwilio'r testun cyfan",
 	'createarticle' => "Creu'r dudalen",
+	'inputbox-ns-main' => 'Prif',
 );
 
 /** Danish (Dansk)
@@ -1692,9 +1695,12 @@ Var god specifiera "create", "comment", "search", "search2" eller "fulltext".',
 	'inputbox-ns-main' => 'Huvud',
 );
 
-/** Swahili (Kiswahili) */
+/** Swahili (Kiswahili)
+ * @author Lloffiwr
+ */
 $messages['sw'] = array(
 	'createarticle' => 'Anzisha ukurasa',
+	'inputbox-ns-main' => 'Kuu',
 );
 
 /** Silesian (Ślůnski)
