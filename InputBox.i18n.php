@@ -368,6 +368,7 @@ Dewiswch rhwng "create", "comment", "search" a "search2" neu "fulltext".',
 
 /** Danish (Dansk)
  * @author Byrial
+ * @author Peter Alberti
  */
 $messages['da'] = array(
 	'inputbox-desc' => 'Muliggør inkludering af forhåndsdefinerede HTML-formularer',
@@ -377,6 +378,7 @@ Vælg venligst "create", "comment", "search", "search2" eller "fulltext".',
 	'tryexact' => 'Gå til siden',
 	'searchfulltext' => 'Søg efter teksten',
 	'createarticle' => 'Opret side',
+	'inputbox-ns-main' => 'Hoved',
 );
 
 /** German (Deutsch)
@@ -807,6 +809,7 @@ Per favor specifica "create", "comment", "search", "search2" o "fulltext".',
 
 /** Indonesian (Bahasa Indonesia)
  * @author -iNu-
+ * @author Aldnonymous
  * @author IvanLanin
  * @author Rex
  */
@@ -818,6 +821,7 @@ Harap gunakan "create", "comment", "search", "search2", atau "fulltext".',
 	'tryexact' => 'Coba pencocokan eksak',
 	'searchfulltext' => 'Cari di teks lengkap',
 	'createarticle' => 'Buat halaman',
+	'inputbox-ns-main' => 'Utama',
 );
 
 /** Igbo (Igbo)
