@@ -1626,8 +1626,9 @@ Ju lutemi specifikoni "create", "comment", "search", "search2" ose "fulltext".',
 	'createarticle' => 'Krijo artikull',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Millosh
+ * @author Rancher
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -1638,6 +1639,7 @@ $messages['sr-ec'] = array(
 	'tryexact' => 'Покушај тачно',
 	'searchfulltext' => 'Претражи цео текст',
 	'createarticle' => 'Направи чланак',
+	'inputbox-ns-main' => 'Главни',
 );
 
 /** Serbian Latin ekavian (‪Srpski (latinica)‬)
