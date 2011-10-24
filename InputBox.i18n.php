@@ -831,9 +831,17 @@ $messages['ig'] = array(
 	'createarticle' => 'Ké ihü',
 );
 
-/** Iloko (Ilokano) */
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
 $messages['ilo'] = array(
-	'createarticle' => 'Mangaramid iti articulo',
+	'inputbox-desc' => 'Mabalin nga agikabil kadagiti napalasin nga forma ti HTML',
+	'inputbox-error-no-type' => 'Saan mo pay nga imbaga no ania nga kita ti pagikabilan nga kahon ti aramiden.',
+	'inputbox-error-bad-type' => 'Ti kita ti pigikabilan nga kahon "$1" ket saan nga ma-ammoan.
+Pangaasim ta ibagam nga "agaramid", "komento", "biroken", "biroken2", "wenno punno nga teksto".',
+	'tryexact' => 'Padasem to pudno nga akkapada',
+	'searchfulltext' => 'Agbirok ti punno nga teksto',
+	'createarticle' => 'Agaramid ka ti panid',
 );
 
 /** Ido (Ido)
