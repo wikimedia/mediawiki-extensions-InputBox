@@ -510,7 +510,7 @@ class InputBox {
 			if ( strpos( $line, '=' ) === false )
 				continue;
 			list( $name, $value ) = explode( '=', $line, 2 );
-			$values[ strtolower( trim( $name ) ) ] = trim( $value );
+			$values[ strtolower( trim( $name ) ) ] = Sanitizer::decodeCharReferences( trim( $value ) );
 		}
 
 		// Build list of options, with local member names
