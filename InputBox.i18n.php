@@ -1815,6 +1815,7 @@ $messages['to'] = array(
 );
 
 /** Turkish (Türkçe)
+ * @author Emperyan
  * @author Erkan Yilmaz
  * @author Joseph
  * @author Srhat
@@ -1827,6 +1828,7 @@ Lütfen "create", "comment", "search", "search2" ya da  "fulltext" olarak belirt
 	'tryexact' => 'Tam eşleşme dene',
 	'searchfulltext' => 'Tüm metni ara',
 	'createarticle' => 'Sayfayı oluştur',
+	'inputbox-ns-main' => 'Ana',
 );
 
 /** Tsonga (Xitsonga)
