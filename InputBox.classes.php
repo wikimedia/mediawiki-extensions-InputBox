@@ -224,7 +224,7 @@ class InputBox {
 		return $htmlOut;
 	}
 
-	/*
+	/**
 	 * Generate search form version 2
 	 */
 	public function getSearchForm2() {
