@@ -22,6 +22,7 @@ class InputBox {
 	private $mPage = '';
 	private $mBR = 'yes';
 	private $mDefaultText = '';
+	private $mPlaceholderText = '';
 	private $mBGColor = 'transparent';
 	private $mButtonLabel = '';
 	private $mSearchButtonLabel = '';
@@ -103,6 +104,7 @@ class InputBox {
 				'name' => 'search',
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'value' => $this->mDefaultText,
+				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
 			)
 		);
@@ -391,6 +393,7 @@ class InputBox {
 				'name' => 'title',
 				'class' => 'createboxInput',
 				'value' => $this->mDefaultText,
+				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth
 			)
 		);
@@ -463,6 +466,7 @@ class InputBox {
 				'name' => 'preloadtitle',
 				'class' => 'commentboxInput',
 				'value' => $this->mDefaultText,
+				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth
 			)
 		);
@@ -525,6 +529,7 @@ class InputBox {
 			'minor' => 'mMinor',
 			'break' => 'mBR',
 			'default' => 'mDefaultText',
+			'placeholder' => 'mPlaceholderText',
 			'bgcolor' => 'mBGColor',
 			'buttonlabel' => 'mButtonLabel',
 			'searchbuttonlabel' => 'mSearchButtonLabel',
