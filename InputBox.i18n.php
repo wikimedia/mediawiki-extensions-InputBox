@@ -754,6 +754,7 @@ $messages['hsb'] = array(
 	'tryexact' => 'Dokładne pytanje spytać',
 	'searchfulltext' => 'Dospołny tekst pytać',
 	'createarticle' => 'Nastawk wutworić',
+	'inputbox-ns-main' => 'Strony',
 );
 
 /** Haitian (Kreyòl ayisyen)
