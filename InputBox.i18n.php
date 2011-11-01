@@ -425,6 +425,7 @@ Pšosym pódaj "create", "comment", "search", "search2" abo "fulltext".',
 	'tryexact' => 'Eksaktne pytanje',
 	'searchfulltext' => 'Ceły tekst pytaś',
 	'createarticle' => 'Bok załožyś',
+	'inputbox-ns-main' => 'Boki',
 );
 
 /** Divehi (ދިވެހިބަސް)
