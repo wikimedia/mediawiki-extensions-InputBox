@@ -277,6 +277,7 @@ Molimo odredite "create", "comment", "search", "search2" ili "fulltext".',
 );
 
 /** Catalan (Català)
+ * @author Gemmaa
  * @author Paucabot
  * @author SMP
  * @author Toniher
@@ -290,6 +291,7 @@ Especifiqueu-hi «create», «comment», «search», «search2» o «fulltext».
 	'tryexact' => 'Prova una coincidència exacta',
 	'searchfulltext' => 'Cerca un text sencer',
 	'createarticle' => 'Crea una pàgina',
+	'inputbox-ns-main' => 'Main',
 );
 
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
