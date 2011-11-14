@@ -1363,6 +1363,13 @@ $messages['pam'] = array(
 	'createarticle' => 'Gawang artikulu',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'inputbox-ns-main' => 'Bledder',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Sp5uhe
