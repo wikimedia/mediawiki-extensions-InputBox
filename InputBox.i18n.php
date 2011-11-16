@@ -996,6 +996,7 @@ $messages['ko'] = array(
 	'tryexact' => '정확한 이름으로 찾기',
 	'searchfulltext' => '전체 글 검색',
 	'createarticle' => '문서 만들기',
+	'inputbox-ns-main' => '문서',
 );
 
 /** Komi-Permyak (Перем Коми)
