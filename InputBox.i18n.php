@@ -776,6 +776,7 @@ Tanpri mete youn nan opsyon sa yo: "create", "comment", "search", "search2" ouby
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Dj
  * @author Glanthor Reviol
  * @author KossuthRad
  * @author Tgr
@@ -788,6 +789,7 @@ A „create”, „comment”, „search”, „search2” vagy „fulltext” e
 	'tryexact' => 'Ugrás a szócikkre',
 	'searchfulltext' => 'Keresés a teljes szövegben',
 	'createarticle' => 'Szócikk létrehozása',
+	'inputbox-ns-main' => 'Fő',
 );
 
 /** Armenian (Հայերեն)
