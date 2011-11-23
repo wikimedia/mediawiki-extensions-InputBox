@@ -312,14 +312,14 @@ $messages['co'] = array(
 	'createarticle' => "Creà l'articulu",
 );
 
-/** Crimean Turkish (Latin) (Qırımtatarca (Latin))
+/** Crimean Turkish (Latin script) (‪Qırımtatarca (Latin)‬)
  * @author Don Alessandro
  */
 $messages['crh-latn'] = array(
 	'createarticle' => 'Saifeni yarat',
 );
 
-/** Crimean Turkish (Cyrillic) (Qırımtatarca (Cyrillic))
+/** Crimean Turkish (Cyrillic script) (‪Къырымтатарджа (Кирилл)‬)
  * @author Don Alessandro
  */
 $messages['crh-cyrl'] = array(
@@ -711,7 +711,7 @@ $messages['hi'] = array(
 	'createarticle' => 'लेख बनाईयें',
 );
 
-/** Fiji Hindi (Latin) (Fiji Hindi (Latin))
+/** Fiji Hindi (Latin script) (Fiji Hindi)
  * @author Thakurji
  */
 $messages['hif-latn'] = array(
@@ -841,13 +841,14 @@ $messages['ig'] = array(
  * @author Lam-ang
  */
 $messages['ilo'] = array(
-	'inputbox-desc' => 'Mabalin nga agikabil kadagiti napalasin nga forma ti HTML',
+	'inputbox-desc' => 'Mabalin nga agikabil kadagiti napalasin nga porma ti HTML',
 	'inputbox-error-no-type' => 'Saan mo pay nga imbaga no ania nga kita ti pagikabilan nga kahon ti aramiden.',
 	'inputbox-error-bad-type' => 'Ti kita ti pigikabilan nga kahon "$1" ket saan nga ma-ammoan.
 Pangaasim ta ibagam nga "agaramid", "komento", "biroken", "biroken2", "wenno punno nga teksto".',
 	'tryexact' => 'Padasem to pudno nga akkapada',
 	'searchfulltext' => 'Agbirok ti punno nga teksto',
 	'createarticle' => 'Agaramid ka ti panid',
+	'inputbox-ns-main' => 'Dati',
 );
 
 /** Ido (Ido)
@@ -955,7 +956,7 @@ $messages['kk-arab'] = array(
 	'createarticle' => 'بەتتٸ باستاۋ',
 );
 
-/** Kazakh (Cyrillic) (Қазақша (Cyrillic)) */
+/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬) */
 $messages['kk-cyrl'] = array(
 	'inputbox-error-no-type' => 'Жасалатын енгізу жолағының түрін келтірмепсіз.',
 	'inputbox-error-bad-type' => 'Енгізу жолақтың «$1» түрі танылмады. Тек «create», «comment», «search» не «search2» деген түрлерді келтіріңіз.',
@@ -964,7 +965,7 @@ $messages['kk-cyrl'] = array(
 	'createarticle' => 'Бетті бастау',
 );
 
-/** Kazakh (Latin) (Қазақша (Latin)) */
+/** Kazakh (Latin script) (‪Qazaqşa (latın)‬) */
 $messages['kk-latn'] = array(
 	'inputbox-error-no-type' => 'Jasalatın engizw jolağınıñ türin keltirmepsiz.',
 	'inputbox-error-bad-type' => 'Engizw jolaqtıñ «$1» türi tanılmadı. Tek «create», «comment», «search» ne «search2» degen türlerdi keltiriñiz.',
@@ -1023,7 +1024,7 @@ $messages['ksh'] = array(
 	'inputbox-ns-main' => '{{int:blanknamespace}}',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin)) */
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬) */
 $messages['ku-latn'] = array(
 	'createarticle' => 'Gotarê biafirîne',
 );
@@ -1664,7 +1665,7 @@ $messages['sr-ec'] = array(
 	'inputbox-ns-main' => 'Главни',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1762,7 +1763,7 @@ $messages['te'] = array(
 	'inputbox-ns-main' => 'ప్రధాన',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1774,7 +1775,7 @@ $messages['tg-cyrl'] = array(
 	'createarticle' => 'Эҷоди мақола',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
