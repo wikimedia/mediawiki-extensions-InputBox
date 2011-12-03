@@ -1170,6 +1170,7 @@ $messages['mn'] = array(
 
 /** Marathi (मराठी)
  * @author Kaustubh
+ * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
 	'inputbox-desc' => 'पूर्वी लिहिलेले HTML अर्ज वापरण्याची परवानगी द्या',
@@ -1178,6 +1179,7 @@ $messages['mr'] = array(
 	'tryexact' => 'दिलेलेच शब्द शोधा',
 	'searchfulltext' => 'पूर्ण मजकूर शोधा',
 	'createarticle' => 'लेख बनवा',
+	'inputbox-ns-main' => 'मुख्य',
 );
 
 /** Malay (Bahasa Melayu)
