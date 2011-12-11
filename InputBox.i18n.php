@@ -550,7 +550,7 @@ Sallittuja arvoja ovat create, comment, search, search2 ja fulltext.',
 	'tryexact' => 'Yritä tarkkaa osumaa',
 	'searchfulltext' => 'Etsi koko tekstiä',
 	'createarticle' => 'Luo sivu',
-	'inputbox-ns-main' => 'Pääsivu',
+	'inputbox-ns-main' => '(sivut)',
 );
 
 /** Faroese (Føroyskt) */
