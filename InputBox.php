@@ -34,7 +34,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'name'           => 'InputBox',
 	'author'         => array( 'Erik Moeller', 'Leonardo Pimenta', 'Rob Church', 'Trevor Parscal', 'DaSch' ),
 	'version'        => '0.1.4',
-	'url'            => 'http://www.mediawiki.org/wiki/Extension:InputBox',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:InputBox',
 	'description'    => 'Allow inclusion of predefined HTML forms.',
 	'descriptionmsg' => 'inputbox-desc',
 );
