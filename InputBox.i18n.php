@@ -1680,6 +1680,7 @@ Molimo vas da ga promenite na "create", "comment", "search", "search2" ili "full
 	'tryexact' => 'Pokušaj tačno',
 	'searchfulltext' => 'Pretraži ceo tekst',
 	'createarticle' => 'Napravi članak',
+	'inputbox-ns-main' => 'Glavni',
 );
 
 /** Swati (SiSwati)
