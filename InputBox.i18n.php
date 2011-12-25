@@ -1308,7 +1308,7 @@ Ver venleg og velg «create», «comment», «search», «search2», eller «ful
  * @author EivindJ
  * @author Jon Harald Søby
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'inputbox-desc' => 'Tillater inkludering av forhåndsdefinerte HTML-skjemaer',
 	'inputbox-error-no-type' => 'Du har ikke angitt hva slags inputboks du vil lage.',
 	'inputbox-error-bad-type' => 'Inputboks av typen «$1» gjenkjennes ikke.
