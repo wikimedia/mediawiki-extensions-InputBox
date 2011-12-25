@@ -234,6 +234,7 @@ $messages['bn'] = array(
 	'tryexact' => 'ঠিক এই নামের নিবন্ধে যান',
 	'searchfulltext' => 'সব বিষয়বস্তুতে খুঁজুন',
 	'createarticle' => 'নিবন্ধ শুরু করো',
+	'inputbox-ns-main' => 'প্রধান',
 );
 
 /** Bakhtiari (بختياري)
@@ -1247,6 +1248,21 @@ $messages['nap'] = array(
 	'createarticle' => 'Cria voce',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author EivindJ
+ * @author Jon Harald Søby
+ */
+$messages['nb'] = array(
+	'inputbox-desc' => 'Tillater inkludering av forhåndsdefinerte HTML-skjemaer',
+	'inputbox-error-no-type' => 'Du har ikke angitt hva slags inputboks du vil lage.',
+	'inputbox-error-bad-type' => 'Inputboks av typen «$1» gjenkjennes ikke.
+Vennligst velg «create», «comment», «search», «search2» eller «fulltext».',
+	'tryexact' => 'Prøv nøyaktig treff',
+	'searchfulltext' => 'Søk full tekst',
+	'createarticle' => 'Opprett side',
+	'inputbox-ns-main' => 'Hoved',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -1302,21 +1318,6 @@ Ver venleg og velg «create», «comment», «search», «search2», eller «ful
 	'tryexact' => 'Prøv nøyaktig treff',
 	'searchfulltext' => 'Søk i all tekst',
 	'createarticle' => 'Lag side',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author EivindJ
- * @author Jon Harald Søby
- */
-$messages['nb'] = array(
-	'inputbox-desc' => 'Tillater inkludering av forhåndsdefinerte HTML-skjemaer',
-	'inputbox-error-no-type' => 'Du har ikke angitt hva slags inputboks du vil lage.',
-	'inputbox-error-bad-type' => 'Inputboks av typen «$1» gjenkjennes ikke.
-Vennligst velg «create», «comment», «search», «search2» eller «fulltext».',
-	'tryexact' => 'Prøv nøyaktig treff',
-	'searchfulltext' => 'Søk full tekst',
-	'createarticle' => 'Opprett side',
-	'inputbox-ns-main' => 'Hoved',
 );
 
 /** Novial (Novial)
@@ -1651,6 +1652,7 @@ Ju lutemi specifikoni "create", "comment", "search", "search2" ose "fulltext".',
 	'tryexact' => 'Kërko përputhje të plotë',
 	'searchfulltext' => 'Kërko tekstin e plotë',
 	'createarticle' => 'Krijo artikull',
+	'inputbox-ns-main' => 'Kryesor',
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
