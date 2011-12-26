@@ -1568,6 +1568,7 @@ $messages['sc'] = array(
 );
 
 /** Sicilian (Sicilianu)
+ * @author Aushulz
  * @author Santu
  */
 $messages['scn'] = array(
@@ -1577,6 +1578,7 @@ $messages['scn'] = array(
 	'tryexact' => 'Cerca currispunnenza giusta',
 	'searchfulltext' => 'Circata ntô testu',
 	'createarticle' => 'Cria vuci',
+	'inputbox-ns-main' => 'Principali',
 );
 
 /** Sindhi (سنڌي) */
