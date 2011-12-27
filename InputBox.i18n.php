@@ -701,6 +701,7 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  */
 $messages['hi'] = array(
@@ -711,6 +712,7 @@ $messages['hi'] = array(
 	'tryexact' => 'दिये हुए शब्दही खोजें',
 	'searchfulltext' => 'पूरा पाठ खोजें',
 	'createarticle' => 'लेख बनाईयें',
+	'inputbox-ns-main' => 'मुख्य',
 );
 
 /** Fiji Hindi (Latin script) (Fiji Hindi)
