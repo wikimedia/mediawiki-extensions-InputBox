@@ -845,13 +845,13 @@ $messages['ig'] = array(
  * @author Lam-ang
  */
 $messages['ilo'] = array(
-	'inputbox-desc' => 'Mabalin nga agikabil kadagiti napalasin nga porma ti HTML',
-	'inputbox-error-no-type' => 'Saan mo pay nga imbaga no ania nga kita ti pagikabilan nga kahon ti aramiden.',
-	'inputbox-error-bad-type' => 'Ti kita ti pigikabilan nga kahon "$1" ket saan nga ma-ammoan.
-Pangaasim ta ibagam nga "agaramid", "komento", "biroken", "biroken2", "wenno punno nga teksto".',
-	'tryexact' => 'Padasem to pudno nga akkapada',
-	'searchfulltext' => 'Agbirok ti punno nga teksto',
-	'createarticle' => 'Agaramid ka ti panid',
+	'inputbox-desc' => 'Pakabaelan na nga agikabil kadagiti napalasin a kinabuklan ti HTML',
+	'inputbox-error-no-type' => 'Saan mo pay nga imbaga no ania a kita ti pagikabilan a kahon ti aramiden.',
+	'inputbox-error-bad-type' => 'Ti kita ti pigikabilan a kahon "$1" ket saan a ma-ammoan.
+Pangaasi ta ibagam nga "agaramid", "komentario", "biruken", "biruken2", "wenno sibubukel a teksto".',
+	'tryexact' => 'Padasem to pudno a kapada',
+	'searchfulltext' => 'Agbiruk ti sibubukel a teksto',
+	'createarticle' => 'Agaramid ti panid',
 	'inputbox-ns-main' => 'Dati',
 );
 
