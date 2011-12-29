@@ -1752,10 +1752,12 @@ $messages['szl'] = array(
 
 /** Tamil (தமிழ்)
  * @author Kanags
+ * @author Shanmugamp7
  * @author TRYPPN
  */
 $messages['ta'] = array(
 	'createarticle' => 'பக்கத்தை உருவாக்கவும்',
+	'inputbox-ns-main' => 'முதன்மை',
 );
 
 /** Telugu (తెలుగు)
