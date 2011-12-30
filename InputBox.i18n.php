@@ -929,12 +929,14 @@ Supaya migunakaké "create", "comment", "search", "search2", utawa "fulltext".',
 /** Georgian (ქართული)
  * @author Alsandro
  * @author David1010
+ * @author ITshnik
  */
 $messages['ka'] = array(
 	'inputbox-desc' => 'საშუალებას იძლევა ჩართოს წინასწარ განსაზღვრული HTML ფორმები',
 	'tryexact' => 'სცადე ზუსტი დამთხვევა',
 	'searchfulltext' => 'სრული ტექსტის ძიება',
 	'createarticle' => 'სტატიის შექმნა',
+	'inputbox-ns-main' => 'მთავარი',
 );
 
 /** Kara-Kalpak (Qaraqalpaqsha) */
