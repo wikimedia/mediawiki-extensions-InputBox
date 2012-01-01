@@ -554,9 +554,14 @@ Sallittuja arvoja ovat create, comment, search, search2 ja fulltext.',
 	'inputbox-ns-main' => '(sivut)',
 );
 
-/** Faroese (Føroyskt) */
+/** Faroese (Føroyskt)
+ * @author EileenSanda
+ */
 $messages['fo'] = array(
-	'createarticle' => 'Stovna grein',
+	'tryexact' => 'Far til síðu',
+	'searchfulltext' => 'Leita eftir hesum teksti',
+	'createarticle' => 'Upprætta síðu',
+	'inputbox-ns-main' => 'Høvuðs',
 );
 
 /** French (Français)
