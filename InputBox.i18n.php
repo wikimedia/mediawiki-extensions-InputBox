@@ -1556,6 +1556,13 @@ $messages['rup'] = array(
 	'createarticle' => 'Adrats articlu',
 );
 
+/** Sanskrit (संस्कृतम्)
+ * @author Ansumang
+ */
+$messages['sa'] = array(
+	'inputbox-ns-main' => 'मुख्य',
+);
+
 /** Sakha (Саха тыла)
  * @author HalanTul
  */
@@ -1913,11 +1920,14 @@ Siegli el tipo tra "create", "comment", "search", "search2" o "fulltext".',
 	'createarticle' => 'Crea pagina',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel')
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
+	'tryexact' => "Lat'kat tehta tarkoiged ecind",
+	'searchfulltext' => 'Ectä täudes tekstas',
 	'createarticle' => "Säta lehtpol'",
+	'inputbox-ns-main' => 'Pänimiavaruz',
 );
 
 /** Vietnamese (Tiếng Việt)
