@@ -80,6 +80,7 @@ Por favor, especifique "create", "comment", "search" u "fulltext".',
 	'tryexact' => 'Mirar títol esauto',
 	'searchfulltext' => 'Mirar por testo completo',
 	'createarticle' => 'Creyar pachina',
+	'inputbox-ns-main' => 'Prencipal',
 );
 
 /** Arabic (العربية)
