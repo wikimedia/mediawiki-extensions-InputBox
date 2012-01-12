@@ -127,11 +127,11 @@ class InputBox {
 			$namespaces = $wgContLang->getNamespaces();
 			$nsAliases = array_merge( $wgContLang->getNamespaceAliases(), $wgNamespaceAliases );
 			$showNamespaces = array();
+			$checkedNS = array();
 			# Check for valid namespaces
 			foreach ( $namespacesArray as $userNS ) {
 				$userNS = trim( $userNS ); # no whitespace
 
-				$checkedNS = array();
 				# Namespace needs to be checked if flagged with "**"
 				if ( strpos( $userNS, '**' ) ) {
 					$userNS = str_replace( '**', '', $userNS );
