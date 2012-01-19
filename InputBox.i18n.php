@@ -2015,6 +2015,7 @@ $messages['xh'] = array(
 $messages['yi'] = array(
 	'searchfulltext' => 'זוך אין אלע בלעטער',
 	'createarticle' => 'באשאפט ארטיקל',
+	'inputbox-ns-main' => 'הויפט',
 );
 
 /** Yoruba (Yorùbá)
