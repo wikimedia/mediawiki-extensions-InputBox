@@ -394,7 +394,7 @@ Vælg venligst "create", "comment", "search", "search2" eller "fulltext".',
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'inputbox-desc' => 'Ermöglicht die Einbindung vordefinierter HTML-Eingabefelder',
+	'inputbox-desc' => 'Ergänzt das Tag <code>&lt;inputbox&gt;</code> zum Einbinden vordefinierter HTML-Eingabefelder',
 	'inputbox-error-no-type' => 'Es wurde kein Eingabefeldtyp angegeben.',
 	'inputbox-error-bad-type' => 'Der Eingabefeldtyp „$1“ ist unbekannt.
 Bitte „create“, „comment“, „search“, „search2“ oder „fulltext“ angeben.',
