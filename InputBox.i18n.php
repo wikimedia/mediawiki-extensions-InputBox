@@ -670,9 +670,11 @@ Bitte „create“, „comment“, „search“, „search2“ oder „fulltext�
 
 /** Gujarati (ગુજરાતી)
  * @author Dsvyas
+ * @author KartikMistry
  */
 $messages['gu'] = array(
 	'createarticle' => 'નવો લેખ શરૂ કરો',
+	'inputbox-ns-main' => 'મુખ્ય',
 );
 
 /** Manx (Gaelg)
