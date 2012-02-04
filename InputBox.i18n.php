@@ -671,8 +671,11 @@ Bitte „create“, „comment“, „search“, „search2“ oder „fulltext�
 /** Gujarati (ગુજરાતી)
  * @author Dsvyas
  * @author KartikMistry
+ * @author Sushant savla
  */
 $messages['gu'] = array(
+	'tryexact' => 'આબેહૂબ સરખામણી ધારી પ્રયત્ન કરો',
+	'searchfulltext' => 'સંપૂર્ણ લખાણ શોધો',
 	'createarticle' => 'નવો લેખ શરૂ કરો',
 	'inputbox-ns-main' => 'મુખ્ય',
 );
