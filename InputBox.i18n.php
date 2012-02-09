@@ -863,7 +863,7 @@ $messages['ilo'] = array(
 	'inputbox-error-bad-type' => 'Ti kita ti pigikabilan a kahon "$1" ket saan a ma-ammoan.
 Pangaasi ta ibagam nga "agaramid", "komentario", "biruken", "biruken2", "wenno sibubukel a teksto".',
 	'tryexact' => 'Padasem to pudno a kapada',
-	'searchfulltext' => 'Agbiruk ti sibubukel a teksto',
+	'searchfulltext' => 'Agbiruk ti sibubukel a testo',
 	'createarticle' => 'Agaramid ti panid',
 	'inputbox-ns-main' => 'Dati',
 );
