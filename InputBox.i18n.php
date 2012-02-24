@@ -863,7 +863,7 @@ $messages['ilo'] = array(
 	'inputbox-desc' => 'Pakabaelan na nga agikabil kadagiti napalasin a kinabuklan ti HTML',
 	'inputbox-error-no-type' => 'Saan mo pay nga imbaga no ania a kita ti pagikabilan a kahon ti aramiden.',
 	'inputbox-error-bad-type' => 'Ti kita ti pigikabilan a kahon "$1" ket saan a ma-ammoan.
-Pangaasi ta ibagam nga "agaramid", "komentario", "biruken", "biruken2", "wenno sibubukel a teksto".',
+Pangaasi ta ibagam nga "agaramid", "komentario", "biruken", "biruken2", "wenno sibubukel a testo".',
 	'tryexact' => 'Padasem to pudno a kapada',
 	'searchfulltext' => 'Agbiruk ti sibubukel a testo',
 	'createarticle' => 'Agaramid ti panid',
