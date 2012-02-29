@@ -509,6 +509,7 @@ Palun vali tüübiks "create", "comment", "search", "search2" või "fulltext".',
 	'tryexact' => 'Proovi täpset vastet',
 	'searchfulltext' => 'Otsi täisteksti',
 	'createarticle' => 'Alusta lehekülge',
+	'inputbox-ns-main' => 'Põhinimeruum',
 );
 
 /** Basque (Euskara) */
