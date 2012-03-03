@@ -267,6 +267,7 @@ Spisait "create", "comment", "search" pe "search2" pe "fulltext".',
 
 /** Bosnian (Bosanski)
  * @author CERminator
+ * @author DzWiki
  */
 $messages['bs'] = array(
 	'inputbox-desc' => 'Omogućuje uključivanje prethodno napravljenih HTML obrazaca',
@@ -276,6 +277,7 @@ Molimo odredite "create", "comment", "search", "search2" ili "fulltext".',
 	'tryexact' => 'Isprobaj naći tačan upit',
 	'searchfulltext' => 'Pretraži cijeli tekst',
 	'createarticle' => 'Napravi stranicu',
+	'inputbox-ns-main' => 'Glavno',
 );
 
 /** Catalan (Català)
