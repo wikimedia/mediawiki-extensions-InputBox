@@ -192,7 +192,7 @@ $messages['be'] = array(
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
-	'inputbox-desc' => 'Дазваляе ўключаць раней вызначаныя HTML-формы',
+	'inputbox-desc' => 'Дазваляе дадаваць у тэкст перадвызначаныя HTML-формы',
 	'inputbox-error-no-type' => 'Вы не пазначылі тып ствараемага поля ўводу.',
 	'inputbox-error-bad-type' => 'Невядомы тып поля ўводу «$1».
 Калі ласка, выбірайце толькі з дазволеных тыпаў: «create», «comment», «search», «search2» ці «fulltext».',
