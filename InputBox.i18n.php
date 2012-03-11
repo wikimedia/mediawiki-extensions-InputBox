@@ -1781,10 +1781,14 @@ $messages['szl'] = array(
 
 /** Tamil (தமிழ்)
  * @author Kanags
+ * @author Karthi.dr
  * @author Shanmugamp7
  * @author TRYPPN
  */
 $messages['ta'] = array(
+	'inputbox-error-no-type' => 'எவ்வகையான உள்ளீட்டுப் பெட்டியை உருவாக்குவது என்பதை நீங்கள் குறிப்பிடவில்லை.',
+	'tryexact' => 'சரியான பொருத்தத்தை முயற்சி செய்',
+	'searchfulltext' => ' முழு உரையையும் தேடு',
 	'createarticle' => 'பக்கத்தை உருவாக்கவும்',
 	'inputbox-ns-main' => 'முதன்மை',
 );
