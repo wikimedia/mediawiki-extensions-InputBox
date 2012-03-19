@@ -1130,6 +1130,14 @@ $messages['ltg'] = array(
 	'createarticle' => 'Sataiseit rakstīņu',
 );
 
+/** Lushai (Mizo ţawng)
+ * @author RMizo
+ */
+$messages['lus'] = array(
+	'createarticle' => 'Hemi phêk hi siam rawh le',
+	'inputbox-ns-main' => 'Phekpui',
+);
+
 /** Latvian (Latviešu)
  * @author Dark Eagle
  * @author Xil
@@ -1648,6 +1656,7 @@ $messages['si'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Teslaton
  */
 $messages['sk'] = array(
 	'inputbox-desc' => 'Umožňuje vloženie preddefinovaných HTML formulárov',
@@ -1657,6 +1666,7 @@ Prosím, použite „create“, „comment“, „search“ alebo „search2“.
 	'tryexact' => 'Skúste presné vyhľadávanie',
 	'searchfulltext' => 'Fulltextové vyhľadávanie',
 	'createarticle' => 'Vytvoriť stránku',
+	'inputbox-ns-main' => 'Hlavný',
 );
 
 /** Slovenian (Slovenščina)
