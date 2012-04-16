@@ -951,6 +951,9 @@ Supaya migunakaké "create", "comment", "search", "search2", utawa "fulltext".',
  */
 $messages['ka'] = array(
 	'inputbox-desc' => 'საშუალებას იძლევა ჩართოს წინასწარ განსაზღვრული HTML ფორმები',
+	'inputbox-error-no-type' => 'თქვენ არ მიგითითებიათ აკრეფვის შესაქმნელი ველის ტიპი.',
+	'inputbox-error-bad-type' => 'ველის შეყვანის უცნობი ტიპი „$1“.
+გთხოვთ, მიუთითეთ ერთ-ერთი დასაშვები ტიპი: „create“, „comment“, „search“, „search2“ ან „fulltext“.',
 	'tryexact' => 'სცადე ზუსტი დამთხვევა',
 	'searchfulltext' => 'სრული ტექსტის ძიება',
 	'createarticle' => 'სტატიის შექმნა',
