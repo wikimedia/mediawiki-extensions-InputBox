@@ -907,11 +907,12 @@ $messages['it'] = array(
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Schu
+ * @author Shirayuki
  */
 $messages['ja'] = array(
 	'inputbox-desc' => 'あらかじめ定義されたHTMLフォーム埋め込み機能を有効にする',
 	'inputbox-error-no-type' => '作成すべき入力ボックスのタイプが指定されていません。',
-	'inputbox-error-bad-type' => '"$1" というタイプの入力ボックスは定義されていません。"create"・"comment"・"search"・"search2"・"fulltext" が指定可能です。',
+	'inputbox-error-bad-type' => '「$1」という種類の入力ボックスは定義されていません。"create"、"comment"、"search"、"search2"、"fulltext"のいずれかを指定してください。',
 	'tryexact' => '一致する項目を検索',
 	'searchfulltext' => '全文検索',
 	'createarticle' => '項目を作成',
