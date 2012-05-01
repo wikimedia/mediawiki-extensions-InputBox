@@ -156,6 +156,7 @@ $messages['az'] = array(
 
 /** Bashkir (Башҡортса)
  * @author Assele
+ * @author Haqmar
  */
 $messages['ba'] = array(
 	'inputbox-desc' => 'Алдан билдәләнгән HTML формаларҙы индереү мөмкинлеген бирә',
@@ -165,6 +166,7 @@ $messages['ba'] = array(
 	'tryexact' => 'Теүәл тура килеү буйынса эҙләү',
 	'searchfulltext' => 'Тулы текст буйынса эҙләү',
 	'createarticle' => 'Яңы бит яһарға',
+	'inputbox-ns-main' => 'Төп',
 );
 
 /** Southern Balochi (بلوچی مکرانی)
