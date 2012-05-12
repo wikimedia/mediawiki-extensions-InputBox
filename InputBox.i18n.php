@@ -120,6 +120,7 @@ $messages['arz'] = array(
 );
 
 /** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
  * @author Chaipau
  * @author Rajuonline
  */
@@ -127,6 +128,7 @@ $messages['as'] = array(
 	'tryexact' => 'কেবল দিয়া শব্দহে বিচাৰিব',
 	'searchfulltext' => 'সম্পূৰ্ণ পাঠ্য বিচাৰিব',
 	'createarticle' => 'পৃষ্ঠা বনাওক',
+	'inputbox-ns-main' => 'মূখ্য',
 );
 
 /** Asturian (Asturianu)
@@ -410,6 +412,7 @@ Bitte „create“, „comment“, „search“, „search2“ oder „fulltext�
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Erdemaslancan
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -420,6 +423,7 @@ Ma şima rê "create", "comment", "search", "search2" or "fulltext" spesife bike
 	'tryexact' => 'tam hemcıt biyayiş tesel bıker/bıcereb',
 	'searchfulltext' => 'pêroyê metni bıgêr',
 	'createarticle' => 'pel vıraz',
+	'inputbox-ns-main' => 'Ser',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -1078,6 +1082,14 @@ Gitt w.e.g. "create", "comment", "search", "search2" oder "fulltext" un.',
 	'inputbox-ns-main' => 'Haapt',
 );
 
+/** Lezghian (Лезги)
+ * @author Migraghvi
+ */
+$messages['lez'] = array(
+	'createarticle' => 'Макъала туькIуьрун',
+	'inputbox-ns-main' => 'КЬилдин',
+);
+
 /** Lingua Franca Nova (Lingua Franca Nova)
  * @author Malafaya
  */
@@ -1347,6 +1359,7 @@ Gebruik "create", "comment", "search", "search2" of "fulltext".',
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Frokor
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'inputbox-desc' => 'Tillet inkludering av førehandsdefinerte HTML-skjema',
@@ -1837,7 +1850,7 @@ $messages['tg-cyrl'] = array(
 	'createarticle' => 'Эҷоди мақола',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1937,7 +1950,7 @@ $messages['ur'] = array(
 	'createarticle' => 'نیا مضمون',
 );
 
-/** Uzbek (O'zbek) */
+/** Uzbek (Oʻzbek) */
 $messages['uz'] = array(
 	'createarticle' => 'Maqola kiritish',
 );
@@ -1955,7 +1968,7 @@ Siegli el tipo tra "create", "comment", "search", "search2" o "fulltext".',
 	'createarticle' => 'Crea pagina',
 );
 
-/** Veps (Vepsän kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
