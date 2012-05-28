@@ -1271,11 +1271,12 @@ $messages['myv'] = array(
 );
 
 /** Mazanderani (مازِرونی)
+ * @author Mehdi
  * @author Spacebirdy
  * @author محک
  */
 $messages['mzn'] = array(
-	'createarticle' => 'صفحه بَیتن',
+	'createarticle' => 'صفحه بساتن',
 );
 
 /** Nahuatl (Nāhuatl)
