@@ -577,6 +577,7 @@ $messages['fo'] = array(
 /** French (Français)
  * @author Crochet.david
  * @author IAlex
+ * @author Kghbln
  * @author Sherbrooke
  * @author Wyz
  */
@@ -585,7 +586,7 @@ $messages['fr'] = array(
 	'inputbox-error-no-type' => 'Vous n’avez pas précisé le type de la boîte d’entrée à créer.',
 	'inputbox-error-bad-type' => 'Type de boîte entrée « $1 » non reconnue.
 Indiquez une option parmis « create », « comment », « search », « searche2 » ou « fulltext ».',
-	'tryexact' => 'Essayez la correspondance exacte.',
+	'tryexact' => 'Essayez la correspondance exacte',
 	'searchfulltext' => 'Recherche en texte intégral',
 	'createarticle' => 'Créer une page',
 	'inputbox-ns-main' => 'Principal',
