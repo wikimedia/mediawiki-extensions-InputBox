@@ -422,7 +422,7 @@ $messages['diq'] = array(
 Ma şima rê "create", "comment", "search", "search2" or "fulltext" spesife bike.',
 	'tryexact' => 'tam hemcıt biyayiş tesel bıker/bıcereb',
 	'searchfulltext' => 'pêroyê metni bıgêr',
-	'createarticle' => 'pel vıraz',
+	'createarticle' => 'Pela vırazê',
 	'inputbox-ns-main' => 'Ser',
 );
 
