@@ -579,7 +579,7 @@ $messages['fo'] = array(
 	'inputbox-ns-main' => 'Høvuðs',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author IAlex
  * @author Kghbln
