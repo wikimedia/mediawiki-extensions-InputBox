@@ -122,9 +122,14 @@ $messages['arz'] = array(
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Chaipau
+ * @author Gitartha.bordoloi
  * @author Rajuonline
  */
 $messages['as'] = array(
+	'inputbox-desc' => 'পূৰ্বসংজ্ঞায়িত HTML ফৰ্মৰ অন্তৰ্ভুক্তি অনুমোদন কৰক',
+	'inputbox-error-no-type' => 'আপুনি সৃষ্টি কৰিবলগীয়া ইন্‌পুট বক্সৰ প্ৰকাৰ নিৰ্ধাৰণ কৰা নাই।',
+	'inputbox-error-bad-type' => 'ইন্‌পুট বক্স প্ৰকাৰ "$1" চিনাক্ত কৰিব পৰা নগ\'ল।
+অনুগ্ৰহ কৰি "create", "comment", "search", "search2" বা "fulltext" নিৰ্ধাৰণ কৰক',
 	'tryexact' => 'কেবল দিয়া শব্দহে বিচাৰিব',
 	'searchfulltext' => 'সম্পূৰ্ণ পাঠ্য বিচাৰিব',
 	'createarticle' => 'পৃষ্ঠা বনাওক',
