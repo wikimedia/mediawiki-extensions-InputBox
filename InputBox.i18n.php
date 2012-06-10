@@ -923,7 +923,7 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'inputbox-desc' => 'あらかじめ定義されたHTMLフォーム埋め込み機能を有効にする',
-	'inputbox-error-no-type' => '作成すべき入力ボックスのタイプが指定されていません。',
+	'inputbox-error-no-type' => '作成する入力ボックスの種類を指定していません。',
 	'inputbox-error-bad-type' => '「$1」という種類の入力ボックスは定義されていません。"create"、"comment"、"search"、"search2"、"fulltext"のいずれかを指定してください。',
 	'tryexact' => '一致する項目を検索',
 	'searchfulltext' => '全文検索',
