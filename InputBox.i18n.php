@@ -136,7 +136,7 @@ $messages['as'] = array(
 	'inputbox-ns-main' => 'মূখ্য',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -151,7 +151,7 @@ Por favor conseña la opción ''create'', ''comment'', ''search'', ''search2'' o
 	'inputbox-ns-main' => 'Principal',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vugar 1981
  */
@@ -189,7 +189,7 @@ $messages['bcc'] = array(
 	'createarticle' => 'شرکتن صفحه',
 );
 
-/** Belarusian (Беларуская) */
+/** Belarusian (беларуская) */
 $messages['be'] = array(
 	'createarticle' => 'Пачаць артыкул',
 );
@@ -211,7 +211,7 @@ $messages['be-tarask'] = array(
 	'inputbox-ns-main' => 'Асноўная',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  */
@@ -260,7 +260,7 @@ $messages['bqi'] = array(
 	'createarticle' => 'درست کردن صفحه',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -274,7 +274,7 @@ Spisait "create", "comment", "search" pe "search2" pe "fulltext".',
 	'inputbox-ns-main' => 'Pennañ',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  * @author DzWiki
  */
@@ -289,7 +289,7 @@ Molimo odredite "create", "comment", "search", "search2" ili "fulltext".',
 	'inputbox-ns-main' => 'Glavno',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Aleator
  * @author Gemmaa
  * @author Paucabot
@@ -320,7 +320,7 @@ $messages['ce'] = array(
 	'tryexact' => 'Леррина лахар',
 );
 
-/** Corsican (Corsu) */
+/** Corsican (corsu) */
 $messages['co'] = array(
 	'searchfulltext' => 'Ricerca testu cumplettu',
 	'createarticle' => "Creà l'articulu",
@@ -340,7 +340,7 @@ $messages['crh-cyrl'] = array(
 	'createarticle' => 'Саифени ярат',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Danny B.
  * @author Li-sung
  * @author Mormegil
@@ -382,7 +382,7 @@ Dewiswch rhwng "create", "comment", "search" a "search2" neu "fulltext".',
 	'inputbox-ns-main' => 'Prif',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Byrial
  * @author Peter Alberti
  */
@@ -453,7 +453,7 @@ $messages['dv'] = array(
 	'createarticle' => 'މަޒުމޫނެއް ފައްޓަވާ',
 );
 
-/** Ewe (Eʋegbe)
+/** Ewe (eʋegbe)
  * @author Natsubee
  */
 $messages['ee'] = array(
@@ -491,7 +491,7 @@ Bonvolu specifi keston "create", "comment", "seatch", "search2", aŭ "fulltext".
 	'inputbox-ns-main' => 'Ĉefa',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Icvav
  * @author MetalBrasil
@@ -509,7 +509,7 @@ Por favor, especifica «create», «comment», «search» «search2» o "fulltex
 	'inputbox-ns-main' => 'Principal',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Jaan513
  * @author Pikne
@@ -525,14 +525,14 @@ Palun vali tüübiks "create", "comment", "search", "search2" või "fulltext".',
 	'inputbox-ns-main' => 'Põhinimeruum',
 );
 
-/** Basque (Euskara) */
+/** Basque (euskara) */
 $messages['eu'] = array(
 	'tryexact' => 'Izenburu zehatza bilatu',
 	'searchfulltext' => 'Testu osoa bilatu',
 	'createarticle' => 'Artikulua sortu',
 );
 
-/** Extremaduran (Estremeñu) */
+/** Extremaduran (estremeñu) */
 $messages['ext'] = array(
 	'createarticle' => 'Crial página',
 );
@@ -553,7 +553,7 @@ $messages['fa'] = array(
 	'inputbox-ns-main' => 'اصلی',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nike
  * @author Olli
@@ -569,7 +569,7 @@ Sallittuja arvoja ovat create, comment, search, search2 ja fulltext.',
 	'inputbox-ns-main' => '(sivut)',
 );
 
-/** Faroese (Føroyskt)
+/** Faroese (føroyskt)
  * @author EileenSanda
  */
 $messages['fo'] = array(
@@ -597,7 +597,7 @@ Indiquez une option parmis « create », « comment », « search », « searche
 	'inputbox-ns-main' => 'Principal',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -611,7 +611,7 @@ Volyéd spècefiar un chouèx permié « create », « comment », « search »,
 	'inputbox-ns-main' => 'Principâl',
 );
 
-/** Friulian (Furlan)
+/** Friulian (furlan)
  * @author Klenje
  */
 $messages['fur'] = array(
@@ -765,7 +765,7 @@ $messages['hil'] = array(
 	'createarticle' => 'Maghimo artikulo',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Brest
  * @author Dnik
  * @author SpeedyGonsales
@@ -808,7 +808,7 @@ Tanpri mete youn nan opsyon sa yo: "create", "comment", "search", "search2" ouby
 	'createarticle' => 'Kreye atik sa',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dj
  * @author Glanthor Reviol
@@ -833,7 +833,7 @@ $messages['hy'] = array(
 	'createarticle' => 'Ստեղծել էջ',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -893,14 +893,14 @@ $messages['io'] = array(
 	'createarticle' => 'Krear pagino',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  */
 $messages['is'] = array(
 	'createarticle' => 'Búa til síðu',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author BrokenArrow
  * @author Darth Kule
  * @author Karika
@@ -931,7 +931,7 @@ $messages['ja'] = array(
 	'inputbox-ns-main' => '(標準)',
 );
 
-/** Jutish (Jysk)
+/** Jutish (jysk)
  * @author Huslåke
  */
 $messages['jut'] = array(
@@ -1124,7 +1124,7 @@ Gebroek "create", "comment", "search", "search2" óf "fulltext".',
 	'inputbox-ns-main' => 'Houfnaamruumdje',
 );
 
-/** Lingala (Lingála)
+/** Lingala (lingála)
  * @author Moyogo
  */
 $messages['ln'] = array(
@@ -1140,14 +1140,14 @@ $messages['lo'] = array(
 	'createarticle' => 'ສ້າງບົດຄວາມ',
 );
 
-/** Lithuanian (Lietuvių) */
+/** Lithuanian (lietuvių) */
 $messages['lt'] = array(
 	'tryexact' => 'Mėginti tikslų atitikimą',
 	'searchfulltext' => 'Ieškoti pilno teksto',
 	'createarticle' => 'Kurti straipsnį',
 );
 
-/** Latgalian (Latgaļu)
+/** Latgalian (latgaļu)
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
@@ -1162,7 +1162,7 @@ $messages['lus'] = array(
 	'inputbox-ns-main' => 'Phekpui',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author Dark Eagle
  * @author Xil
  * @author Yyy
@@ -1186,7 +1186,7 @@ $messages['lzh'] = array(
 	'createarticle' => '撰文',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  * @author Misos
@@ -1217,7 +1217,7 @@ $messages['ml'] = array(
 	'inputbox-ns-main' => 'മുഖ്യം',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -1363,7 +1363,7 @@ Gebruik "create", "comment", "search", "search2" of "fulltext".',
 	'inputbox-ns-main' => 'Hoofdnaamruimte',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
@@ -1392,7 +1392,7 @@ $messages['nso'] = array(
 	'createarticle' => 'Tlhoma letlakala',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1437,7 +1437,7 @@ $messages['pdc'] = array(
 	'inputbox-ns-main' => 'Bledder',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Sp5uhe
  */
@@ -1499,7 +1499,7 @@ $messages['ps'] = array(
 	'inputbox-ns-main' => 'آرنی',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  */
@@ -1514,7 +1514,7 @@ Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'inputbox-ns-main' => 'Principal',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Brunoy Anastasiya Seryozhenko
  * @author Eduardo.mps
  * @author MetalBrasil
@@ -1539,7 +1539,7 @@ $messages['qu'] = array(
 	'createarticle' => 'Qillqata kamariy',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author AdiJapan
  * @author Emily
  * @author Firilacroco
@@ -1558,7 +1558,7 @@ Vă rugăm să specificați parametrii „create”, „comment”, „search”
 	'inputbox-ns-main' => 'Principal',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -1572,7 +1572,7 @@ Pe piacere mitte "create", "comment", "search", "search2" o "fulltext".',
 	'inputbox-ns-main' => 'Prengepàle',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1612,7 +1612,7 @@ $messages['sa'] = array(
 	'inputbox-ns-main' => 'मुख्य',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1625,14 +1625,14 @@ $messages['sah'] = array(
 	'inputbox-ns-main' => 'Сүрүн',
 );
 
-/** Sardinian (Sardu)
+/** Sardinian (sardu)
  * @author Marzedu
  */
 $messages['sc'] = array(
 	'createarticle' => 'Crea artìculu',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  * @author Santu
  */
@@ -1680,7 +1680,7 @@ $messages['si'] = array(
 	'inputbox-ns-main' => 'ප්‍රධාන',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  * @author Teslaton
  */
@@ -1695,7 +1695,7 @@ Prosím, použite „create“, „comment“, „search“ alebo „search2“.
 	'inputbox-ns-main' => 'Hlavný',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1709,7 +1709,7 @@ Prosimo, določite »create«, »comment«, »search«, »search2« ali »fullte
 	'inputbox-ns-main' => 'Osnovno',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Dori
  * @author Olsi
  */
@@ -1724,7 +1724,7 @@ Ju lutemi specifikoni "create", "comment", "search", "search2" ose "fulltext".',
 	'inputbox-ns-main' => 'Kryesor',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  * @author Михајло Анђелковић
@@ -1740,7 +1740,7 @@ $messages['sr-ec'] = array(
 	'inputbox-ns-main' => 'Главни',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1784,7 +1784,7 @@ $messages['su'] = array(
 	'createarticle' => 'Jieun artikel',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Lejonel
  * @author Najami
@@ -1845,7 +1845,7 @@ $messages['te'] = array(
 	'inputbox-ns-main' => 'ప్రధాన',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1857,7 +1857,7 @@ $messages['tg-cyrl'] = array(
 	'createarticle' => 'Эҷоди мақола',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1935,7 +1935,7 @@ $messages['ts'] = array(
 	'createarticle' => 'Tumbuluxa tluka',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Dim Grits
@@ -1957,12 +1957,12 @@ $messages['ur'] = array(
 	'createarticle' => 'نیا مضمون',
 );
 
-/** Uzbek (Oʻzbek) */
+/** Uzbek (Oʻzbekcha) */
 $messages['uz'] = array(
 	'createarticle' => 'Maqola kiritish',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -2021,7 +2021,7 @@ Tüüp piät olõma create, comment, search, search2 vai fulltext.',
 	'createarticle' => 'Luuq leht',
 );
 
-/** Walloon (Walon) */
+/** Walloon (walon) */
 $messages['wa'] = array(
 	'createarticle' => 'Ahiver årtike',
 );
@@ -2087,7 +2087,7 @@ $messages['yue'] = array(
 	'createarticle' => '建立文章',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Liangent
  * @author PhiLiP
  * @author Wmr89502270
@@ -2104,7 +2104,7 @@ $messages['zh-hans'] = array(
 	'inputbox-ns-main' => '主',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Anakmalaysia
  * @author Gaoxuewei
  * @author Liangent
