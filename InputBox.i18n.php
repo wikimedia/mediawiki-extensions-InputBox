@@ -1935,6 +1935,14 @@ $messages['ts'] = array(
 	'createarticle' => 'Tumbuluxa tluka',
 );
 
+/** Tuvinian (Тыва дыл)
+ * @author Sborsody
+ */
+$messages['tyv'] = array(
+	'createarticle' => 'Арынны чаяары',
+	'inputbox-ns-main' => 'Кол',
+);
+
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
