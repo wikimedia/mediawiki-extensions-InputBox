@@ -1899,6 +1899,7 @@ Pakitukoy ang "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => 'Subukin ang hustung-hustong katugmaan',
 	'searchfulltext' => 'Maghanap sa buong teksto',
 	'createarticle' => 'Likhain ang pahina',
+	'inputbox-ns-main' => 'Pangunahin',
 );
 
 /** Tswana (Setswana) */
