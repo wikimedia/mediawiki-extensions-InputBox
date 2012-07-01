@@ -69,7 +69,7 @@ $messages['am'] = array(
 	'createarticle' => 'አዲስ አርዕስት ለመፍጠር',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -194,7 +194,7 @@ $messages['be'] = array(
 	'createarticle' => 'Пачаць артыкул',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -356,7 +356,7 @@ Uveďte jednu z možností: „create“, „comment“, „search“, „search
 	'inputbox-ns-main' => 'Hlavní',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -431,7 +431,7 @@ Ma şima rê "create", "comment", "search", "search2" or "fulltext" spesife bike
 	'inputbox-ns-main' => 'Ser',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  * @author Pe7er
  */
@@ -640,7 +640,7 @@ Sonraigh "create", "comment", "search", "search2" nó "fulltext".',
 	'createarticle' => 'Cruthaigh alt',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  */
@@ -780,7 +780,7 @@ Molimo navedite "create", "comment", "search", "search2" ili "fulltext".',
 	'createarticle' => 'Stvori članak',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Dundak
  * @author Michawiki
  */
@@ -1586,7 +1586,7 @@ $messages['ru'] = array(
 	'inputbox-ns-main' => 'Главная',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -1656,7 +1656,7 @@ $messages['sg'] = array(
 	'createarticle' => 'Sü soura',
 );
 
-/** Samogitian (Žemaitėška)
+/** Samogitian (žemaitėška)
  * @author Hugo.arg
  */
 $messages['sgs'] = array(
@@ -1808,7 +1808,7 @@ $messages['sw'] = array(
 	'inputbox-ns-main' => 'Kuu',
 );
 
-/** Silesian (Ślůnski)
+/** Silesian (ślůnski)
  * @author Ozi64
  */
 $messages['szl'] = array(
