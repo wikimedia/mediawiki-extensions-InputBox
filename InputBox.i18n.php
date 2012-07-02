@@ -1810,9 +1810,10 @@ $messages['sw'] = array(
 
 /** Silesian (ślůnski)
  * @author Ozi64
+ * @author Przemub
  */
 $messages['szl'] = array(
-	'createarticle' => 'Naškryflej artikel',
+	'createarticle' => 'Naszkryflej artikel',
 );
 
 /** Tamil (தமிழ்)
