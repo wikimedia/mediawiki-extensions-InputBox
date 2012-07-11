@@ -161,7 +161,7 @@ $messages['az'] = array(
 	'inputbox-ns-main' => 'Əsas',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -313,7 +313,7 @@ $messages['cdo'] = array(
 	'createarticle' => 'Kŭi hiĕk',
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -326,14 +326,14 @@ $messages['co'] = array(
 	'createarticle' => "Creà l'articulu",
 );
 
-/** Crimean Turkish (Latin script) (‪Qırımtatarca (Latin)‬)
+/** Crimean Turkish (Latin script) (‪qırımtatarca (Latin)‬)
  * @author Don Alessandro
  */
 $messages['crh-latn'] = array(
 	'createarticle' => 'Saifeni yarat',
 );
 
-/** Crimean Turkish (Cyrillic script) (‪Къырымтатарджа (Кирилл)‬)
+/** Crimean Turkish (Cyrillic script) (‪къырымтатарджа (Кирилл)‬)
  * @author Don Alessandro
  */
 $messages['crh-cyrl'] = array(
@@ -996,7 +996,7 @@ $messages['kk-arab'] = array(
 	'createarticle' => 'بەتتٸ باستاۋ',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬) */
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬) */
 $messages['kk-cyrl'] = array(
 	'inputbox-error-no-type' => 'Жасалатын енгізу жолағының түрін келтірмепсіз.',
 	'inputbox-error-bad-type' => 'Енгізу жолақтың «$1» түрі танылмады. Тек «create», «comment», «search» не «search2» деген түрлерді келтіріңіз.',
@@ -1005,7 +1005,7 @@ $messages['kk-cyrl'] = array(
 	'createarticle' => 'Бетті бастау',
 );
 
-/** Kazakh (Latin script) (‪Qazaqşa (latın)‬) */
+/** Kazakh (Latin script) (‪qazaqşa (latın)‬) */
 $messages['kk-latn'] = array(
 	'inputbox-error-no-type' => 'Jasalatın engizw jolağınıñ türin keltirmepsiz.',
 	'inputbox-error-bad-type' => 'Engizw jolaqtıñ «$1» türi tanılmadı. Tek «create», «comment», «search» ne «search2» degen türlerdi keltiriñiz.',
@@ -1088,7 +1088,7 @@ Gitt w.e.g. "create", "comment", "search", "search2" oder "fulltext" un.',
 	'inputbox-ns-main' => 'Haapt',
 );
 
-/** Lezghian (Лезги)
+/** Lezghian (лезги)
  * @author Migraghvi
  */
 $messages['lez'] = array(
@@ -1269,7 +1269,7 @@ Jekk jogħġbok speċifika fost "create", "comment", "search", "search2" jew "fu
 	'createarticle' => 'Oħloq paġna',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -1305,9 +1305,8 @@ $messages['nap'] = array(
 	'createarticle' => 'Cria voce',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author EivindJ
- * @author Jon Harald Søby
  */
 $messages['nb'] = array(
 	'inputbox-desc' => 'Tillater inkludering av forhåndsdefinerte HTML-skjemaer',
@@ -1937,7 +1936,7 @@ $messages['ts'] = array(
 	'createarticle' => 'Tumbuluxa tluka',
 );
 
-/** Tuvinian (Тыва дыл)
+/** Tuvinian (тыва дыл)
  * @author Sborsody
  */
 $messages['tyv'] = array(
@@ -1967,7 +1966,7 @@ $messages['ur'] = array(
 	'createarticle' => 'نیا مضمون',
 );
 
-/** Uzbek (Oʻzbekcha) */
+/** Uzbek (oʻzbekcha) */
 $messages['uz'] = array(
 	'createarticle' => 'Maqola kiritish',
 );
@@ -1985,7 +1984,7 @@ Siegli el tipo tra "create", "comment", "search", "search2" o "fulltext".',
 	'createarticle' => 'Crea pagina',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
@@ -2053,7 +2052,7 @@ $messages['wuu'] = array(
 	'createarticle' => '建立新文章',
 );
 
-/** Kalmyk (Хальмг)
+/** Kalmyk (хальмг)
  * @author Huuchin
  */
 $messages['xal'] = array(
