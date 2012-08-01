@@ -1338,7 +1338,7 @@ Geev een vun disse Typen an: „create“, „comment“, „search“, „searc
 $messages['nds-nl'] = array(
 	'tryexact' => 'Naor sekuur zeuken',
 	'searchfulltext' => 'De hele tekste deurzeuken',
-	'createarticle' => 'Nieje pagina anmaken',
+	'createarticle' => 'Nieje zied anmaken',
 );
 
 /** Nepali (नेपाली) */
