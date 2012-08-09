@@ -1140,11 +1140,14 @@ $messages['lo'] = array(
 	'createarticle' => 'ສ້າງບົດຄວາມ',
 );
 
-/** Lithuanian (lietuvių) */
+/** Lithuanian (lietuvių)
+ * @author Vogone
+ */
 $messages['lt'] = array(
 	'tryexact' => 'Mėginti tikslų atitikimą',
 	'searchfulltext' => 'Ieškoti pilno teksto',
 	'createarticle' => 'Kurti straipsnį',
+	'inputbox-ns-main' => 'Pagrindinis',
 );
 
 /** Latgalian (latgaļu)
