@@ -895,9 +895,14 @@ $messages['io'] = array(
 
 /** Icelandic (íslenska)
  * @author S.Örvarr.S
+ * @author Snævar
  */
 $messages['is'] = array(
+	'inputbox-error-no-type' => 'Þú hefur ekki tilgreint hverskonar kassa þú villt búa til.',
+	'inputbox-error-bad-type' => '"$1" gerð innsetningarkassa þekkist ekki.
+Vinsamlegast tilgreindu "create", "comment", "search", "search2" eða "fulltext".',
 	'createarticle' => 'Búa til síðu',
+	'inputbox-ns-main' => 'Aðalsíða',
 );
 
 /** Italian (italiano)
@@ -945,6 +950,7 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
@@ -955,6 +961,7 @@ Supaya migunakaké "create", "comment", "search", "search2", utawa "fulltext".',
 	'tryexact' => 'Cobanen pancocogan èksak',
 	'searchfulltext' => 'Golèk ing tèks jangkep',
 	'createarticle' => 'Damel artikel',
+	'inputbox-ns-main' => 'Utama',
 );
 
 /** Georgian (ქართული)
