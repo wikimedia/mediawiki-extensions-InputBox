@@ -1277,6 +1277,7 @@ Jekk jogħġbok speċifika fost "create", "comment", "search", "search2" jew "fu
 	'tryexact' => 'Fittex korrispondenza eżatta',
 	'searchfulltext' => 'Fittex fit-test',
 	'createarticle' => 'Oħloq paġna',
+	'inputbox-ns-main' => 'Prinċipali',
 );
 
 /** Erzya (эрзянь)
