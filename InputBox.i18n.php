@@ -525,11 +525,14 @@ Palun vali tüübiks "create", "comment", "search", "search2" või "fulltext".',
 	'inputbox-ns-main' => 'Põhinimeruum',
 );
 
-/** Basque (euskara) */
+/** Basque (euskara)
+ * @author පසිඳු කාවින්ද
+ */
 $messages['eu'] = array(
 	'tryexact' => 'Izenburu zehatza bilatu',
 	'searchfulltext' => 'Testu osoa bilatu',
 	'createarticle' => 'Artikulua sortu',
+	'inputbox-ns-main' => 'Nagusia',
 );
 
 /** Extremaduran (estremeñu) */
