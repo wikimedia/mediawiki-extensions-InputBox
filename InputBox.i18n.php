@@ -1366,14 +1366,20 @@ $messages['ne'] = array(
  */
 $messages['nl'] = array(
 	'inputbox-desc' => 'Maakt het toevoegen van voorgedefinieerde HTML-formulieren mogelijk',
-	'inputbox-error-no-type' => 'U hebt het type invoerveld niet aangegeven.
-Zie [http://www.mediawiki.org/wiki/Extension:Inputbox MediaWiki.org] voor meer informatie.',
+	'inputbox-error-no-type' => 'U hebt het type invoerveld niet aangegeven.',
 	'inputbox-error-bad-type' => 'Type invoerveld "$1" niet herkend.
 Gebruik "create", "comment", "search", "search2" of "fulltext".',
 	'tryexact' => 'Zoeken op exacte overeenkomst',
 	'searchfulltext' => 'Volledige tekst doorzoeken',
 	'createarticle' => 'Pagina aanmaken',
 	'inputbox-ns-main' => 'Hoofdnaamruimte',
+);
+
+/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'inputbox-error-no-type' => 'Je hebt het type invoerveld niet aangegeven.',
 );
 
 /** Norwegian Nynorsk (‪norsk (nynorsk)‬)
