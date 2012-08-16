@@ -1988,10 +1988,13 @@ $messages['uk'] = array(
 	'inputbox-ns-main' => 'Головна',
 );
 
-/** Urdu (اردو) */
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
 $messages['ur'] = array(
 	'searchfulltext' => 'تلاش ِکل متن',
 	'createarticle' => 'نیا مضمون',
+	'inputbox-ns-main' => 'مین',
 );
 
 /** Uzbek (oʻzbekcha) */
