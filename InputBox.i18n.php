@@ -919,7 +919,7 @@ $messages['it'] = array(
 	'inputbox-error-bad-type' => '"$1" non è un tipo di inputbox riconosciuto. Scegliere il tipo tra "create", "comment", "search", "search2" e "fulltext".',
 	'tryexact' => 'Cerca corrispondenza esatta',
 	'searchfulltext' => 'Ricerca nel testo',
-	'createarticle' => 'Crea voce',
+	'createarticle' => 'Crea pagina',
 	'inputbox-ns-main' => 'Principale',
 );
 
