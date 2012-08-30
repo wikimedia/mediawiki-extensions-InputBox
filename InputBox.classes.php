@@ -61,8 +61,8 @@ class InputBox {
 							'class' => 'error'
 						),
 						strlen( $this->mType ) > 0
-						? wfMsgForContent( 'inputbox-error-bad-type', $this->mType )
-						: wfMsgForContent( 'inputbox-error-no-type' )
+						? wfMessage( 'inputbox-error-bad-type', $this->mType )->inContentLanguage()->text()
+						: wfMessage( 'inputbox-error-no-type' )->inContentLanguage()->text()
 					)
 				);
 		}
@@ -71,16 +71,17 @@ class InputBox {
 	/**
 	 * Generate search form
 	 * @param $type
+	 * @return string HTML
 	 */
 	public function getSearchForm( $type ) {
 		global $wgContLang, $wgNamespaceAliases;
 
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
-			$this->mButtonLabel = wfMsgHtml( 'tryexact' );
+			$this->mButtonLabel = wfMessage( 'tryexact' )->escaped();
 		}
 		if ( !$this->mSearchButtonLabel ) {
-			$this->mSearchButtonLabel = wfMsgHtml( 'searchfulltext' );
+			$this->mSearchButtonLabel = wfMessage( 'searchfulltext' )->escaped();
 		}
 
 		// Build HTML
@@ -138,7 +139,7 @@ class InputBox {
 					$checkedNS[$userNS] = true;
 				}
 
-				$mainMsg = wfMsgForContent( 'inputbox-ns-main' );
+				$mainMsg = wfMessage( 'inputbox-ns-main' )->inContentLanguage()->text();
 				if( $userNS == 'Main' || $userNS == $mainMsg ) {
 					$i = 0;
 				} elseif( array_search( $userNS, $namespaces ) ) {
@@ -230,10 +231,9 @@ class InputBox {
 	 * Generate search form version 2
 	 */
 	public function getSearchForm2() {
-
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
-			$this->mButtonLabel = wfMsgHtml( 'tryexact' );
+			$this->mButtonLabel = wfMessage( 'tryexact' )->escaped();
 		}
 
 		$id = Sanitizer::escapeId( $this->mID, 'noninitial' );
@@ -305,11 +305,11 @@ class InputBox {
 
 		if ( $this->mType == "comment" ) {
 			if ( !$this->mButtonLabel ) {
-				$this->mButtonLabel = wfMsgHtml( "postcomment" );
+				$this->mButtonLabel = wfMessage( "postcomment" )->escaped();
 			}
 		} else {
 			if ( !$this->mButtonLabel ) {
-				$this->mButtonLabel = wfMsgHtml( 'createarticle' );
+				$this->mButtonLabel = wfMessage( 'createarticle' )->escaped();
 			}
 		}
 
@@ -420,7 +420,7 @@ class InputBox {
 		global $wgScript;
 
 		if ( !$this->mButtonLabel ) {
-				$this->mButtonLabel = wfMsgHtml( "postcomment" );
+				$this->mButtonLabel = wfMessage( "postcomment" )->escaped();
 		}
 
 		$htmlOut = Xml::openElement( 'div',

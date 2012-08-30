@@ -8,11 +8,8 @@
 
 // InputBox hooks
 class InputBoxHooks {
-
-	/* Functions */
-
 	// Initialization
-	public static function register( &$parser ) {
+	public static function register( Parser &$parser ) {
 		// Register the hook with the parser
 		$parser->setHook( 'inputbox', array( 'InputBoxHooks', 'render' ) );
 
@@ -21,7 +18,7 @@ class InputBoxHooks {
 	}
 
 	// Render the input box
-	public static function render( $input, $args, $parser ) {
+	public static function render( $input, $args, Parser $parser ) {
 		// Create InputBox
 		$inputBox = new InputBox( $parser );
 
@@ -42,7 +39,7 @@ class InputBoxHooks {
 	 * @param $user User
 	 * @param $request WebRequest 
 	 * @param $wiki MediaWiki
-	 * @return True
+	 * @return bool
 	 */
 	public static function onMediaWikiPerformAction( 
 		$output, 
