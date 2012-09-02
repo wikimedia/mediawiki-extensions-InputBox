@@ -33,11 +33,14 @@ class InputBox {
 	private $mID = '';
 	private $mInline = false;
 	private $mPrefix = '';
+	private $mDir = '';
 
 	/* Functions */
 
 	public function __construct( $parser ) {
 		$this->mParser = $parser;
+		// Default value for dir taken from the page language (bug 37018)
+		$this->mDir = $this->mParser->getTargetLanguage()->getDir();
 	}
 
 	public function render() {
@@ -106,6 +109,7 @@ class InputBox {
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
+				'dir' => $this->mDir,
 			)
 		);
 
@@ -265,7 +269,8 @@ class InputBox {
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'search',
 				'size' => $this->mWidth,
-				'id' => 'bodySearchInput' . $id
+				'id' => 'bodySearchInput' . $id,
+				'dir' => $this->mDir,
 			)
 		);
 		$htmlOut .= Xml::element( 'input',
@@ -392,7 +397,8 @@ class InputBox {
 				'class' => 'createboxInput',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
-				'size' => $this->mWidth
+				'size' => $this->mWidth,
+				'dir' => $this->mDir,
 			)
 		);
 		$htmlOut .= $this->mBR;
@@ -464,7 +470,8 @@ class InputBox {
 				'class' => 'commentboxInput',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
-				'size' => $this->mWidth
+				'size' => $this->mWidth,
+				'dir' => $this->mDir,
 			)
 		);
 		$htmlOut .= Xml::openElement( 'input',
@@ -514,6 +521,11 @@ class InputBox {
 			$values[ strtolower( trim( $name ) ) ] = Sanitizer::decodeCharReferences( trim( $value ) );
 		}
 
+		// Validate the dir value.
+		if ( isset( $values['dir'] ) && !in_array( $values['dir'], array( 'ltr', 'rtl' ) ) ) {
+			unset( $values['dir'] );
+		}
+
 		// Build list of options, with local member names
 		$options = array(
 			'type' => 'mType',
@@ -537,6 +549,7 @@ class InputBox {
 			'id' => 'mID',
 			'inline' => 'mInline',
 			'prefix' => 'mPrefix',
+			'dir' => 'mDir',
 		);
 		foreach ( $options as $name => $var ) {
 			if ( isset( $values[$name] ) ) {
