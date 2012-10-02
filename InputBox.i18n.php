@@ -194,7 +194,7 @@ $messages['be'] = array(
 	'createarticle' => 'Пачаць артыкул',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -326,14 +326,14 @@ $messages['co'] = array(
 	'createarticle' => "Creà l'articulu",
 );
 
-/** Crimean Turkish (Latin script) (‪qırımtatarca (Latin)‬)
+/** Crimean Turkish (Latin script) (qırımtatarca (Latin)‎)
  * @author Don Alessandro
  */
 $messages['crh-latn'] = array(
 	'createarticle' => 'Saifeni yarat',
 );
 
-/** Crimean Turkish (Cyrillic script) (‪къырымтатарджа (Кирилл)‬)
+/** Crimean Turkish (Cyrillic script) (къырымтатарджа (Кирилл)‎)
  * @author Don Alessandro
  */
 $messages['crh-cyrl'] = array(
@@ -997,7 +997,7 @@ $messages['kab'] = array(
 	'createarticle' => 'Xleq amagrad',
 );
 
-/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
+/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏) */
 $messages['kk-arab'] = array(
 	'inputbox-error-no-type' => 'جاسالاتىن ەنگٸزۋ جولاعىنىڭ تٷرٸن كەلتٸرمەپسٸز.',
 	'inputbox-error-bad-type' => 'ەنگٸزۋ جولاقتىڭ «$1» تٷرٸ تانىلمادى. تەك «create», «comment», «search» نە «search2» دەگەن تٷرلەردٸ كەلتٸرٸڭٸز.',
@@ -1006,7 +1006,7 @@ $messages['kk-arab'] = array(
 	'createarticle' => 'بەتتٸ باستاۋ',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬) */
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎) */
 $messages['kk-cyrl'] = array(
 	'inputbox-error-no-type' => 'Жасалатын енгізу жолағының түрін келтірмепсіз.',
 	'inputbox-error-bad-type' => 'Енгізу жолақтың «$1» түрі танылмады. Тек «create», «comment», «search» не «search2» деген түрлерді келтіріңіз.',
@@ -1015,7 +1015,7 @@ $messages['kk-cyrl'] = array(
 	'createarticle' => 'Бетті бастау',
 );
 
-/** Kazakh (Latin script) (‪qazaqşa (latın)‬) */
+/** Kazakh (Latin script) (qazaqşa (latın)‎) */
 $messages['kk-latn'] = array(
 	'inputbox-error-no-type' => 'Jasalatın engizw jolağınıñ türin keltirmepsiz.',
 	'inputbox-error-bad-type' => 'Engizw jolaqtıñ «$1» türi tanılmadı. Tek «create», «comment», «search» ne «search2» degen türlerdi keltiriñiz.',
@@ -1074,7 +1074,7 @@ $messages['ksh'] = array(
 	'inputbox-ns-main' => '{{int:blanknamespace}}',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬) */
+/** Kurdish (Latin script) (Kurdî (latînî)‎) */
 $messages['ku-latn'] = array(
 	'createarticle' => 'Gotarê biafirîne',
 );
@@ -1319,7 +1319,7 @@ $messages['nap'] = array(
 	'createarticle' => 'Cria voce',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author EivindJ
  */
 $messages['nb'] = array(
@@ -1375,14 +1375,14 @@ Gebruik "create", "comment", "search", "search2" of "fulltext".',
 	'inputbox-ns-main' => 'Hoofdnaamruimte',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
 	'inputbox-error-no-type' => 'Je hebt het type invoerveld niet aangegeven.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
@@ -1751,7 +1751,7 @@ Ju lutemi specifikoni "create", "comment", "search", "search2" ose "fulltext".',
 	'inputbox-ns-main' => 'Kryesor',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Millosh
  * @author Rancher
  * @author Михајло Анђелковић
@@ -1767,7 +1767,7 @@ $messages['sr-ec'] = array(
 	'inputbox-ns-main' => 'Главни',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -2127,7 +2127,7 @@ $messages['yue'] = array(
 	'createarticle' => '建立文章',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Liangent
  * @author PhiLiP
  * @author Wmr89502270
@@ -2144,7 +2144,7 @@ $messages['zh-hans'] = array(
 	'inputbox-ns-main' => '主',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Anakmalaysia
  * @author Gaoxuewei
  * @author Liangent
