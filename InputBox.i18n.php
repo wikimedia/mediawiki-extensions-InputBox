@@ -1724,6 +1724,7 @@ Prosím, použite „create“, „comment“, „search“ alebo „search2“.
 
 /** Slovenian (slovenščina)
  * @author Dbc334
+ * @author Eleassar
  */
 $messages['sl'] = array(
 	'inputbox-desc' => 'Omogoča vključitev vnaprej določenih obrazcev HTML',
@@ -1732,7 +1733,7 @@ $messages['sl'] = array(
 Prosimo, določite »create«, »comment«, »search«, »search2« ali »fulltext«.',
 	'tryexact' => 'Poskusite z natančnim ujemanjem',
 	'searchfulltext' => 'Preišči vse besedilo',
-	'createarticle' => 'Ustvarite stran',
+	'createarticle' => 'Ustvari stran',
 	'inputbox-ns-main' => 'Osnovno',
 );
 
