@@ -41,13 +41,6 @@ $messages['qqq'] = array(
 	'inputbox-ns-main' => 'Probably refers to the main namespace.',
 );
 
-/** Niuean (ko e vagahau Niuē)
- * @author Jose77
- */
-$messages['niu'] = array(
-	'createarticle' => 'Talaga tohi tala',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
@@ -183,13 +176,14 @@ $messages['bcc'] = array(
 	'inputbox-desc' => 'اجازه داتن په هور بیگ فرم های HTML چه پیش تعریف بوتگین',
 	'inputbox-error-no-type' => 'شما نوع جعبه ورودی په شرکتن مشخص نه کتت',
 	'inputbox-error-bad-type' => 'نوع جعبه ورودی "$1"  جاه آرگ نه بیت.
-لطفا مشخص کنیت  "شرکتن", "نظر", "گردگ" یا "گردگ2".',
+لطفا مشخص کنیت  "شرکتن", "نظر", "گردگ" یا "گردگ2".', # Fuzzy
 	'tryexact' => 'تطبیق کامل آزمایش کن',
 	'searchfulltext' => 'متن کامل گرد',
 	'createarticle' => 'شرکتن صفحه',
 );
 
-/** Belarusian (беларуская) */
+/** Belarusian (беларуская)
+ */
 $messages['be'] = array(
 	'createarticle' => 'Пачаць артыкул',
 );
@@ -229,7 +223,7 @@ $messages['bg'] = array(
  * @author Ushanka
  */
 $messages['bi'] = array(
-	'createarticle' => 'Mekem atikel',
+	'createarticle' => 'Mekem atikel', # Fuzzy
 );
 
 /** Bengali (বাংলা)
@@ -254,7 +248,7 @@ $messages['bqi'] = array(
 	'inputbox-desc' => 'اجازه استفاده زه فرم‌های HTML قبلا تعریف وابیده را اده',
 	'inputbox-error-no-type' => 'نوع جعبه ورودی  درست شونده را معلوم نکردین.',
 	'inputbox-error-bad-type' => 'نوع "$1" سی جعبه ورودی شناخته نه. لطفاً یکی زه موارد 
-"create", "comment", "search" or "search2" را مشخص کنین.',
+"create", "comment", "search" or "search2" را مشخص کنین.', # Fuzzy
 	'tryexact' => 'تطبیق مورد به مورد را آزمایش کن',
 	'searchfulltext' => 'جستجوی همه متن',
 	'createarticle' => 'درست کردن صفحه',
@@ -308,7 +302,8 @@ Especifiqueu-hi «create», «comment», «search», «search2» o «fulltext».
 	'inputbox-ns-main' => 'Principal',
 );
 
-/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄)
+ */
 $messages['cdo'] = array(
 	'createarticle' => 'Kŭi hiĕk',
 );
@@ -320,17 +315,11 @@ $messages['ce'] = array(
 	'tryexact' => 'Леррина лахар',
 );
 
-/** Corsican (corsu) */
+/** Corsican (corsu)
+ */
 $messages['co'] = array(
 	'searchfulltext' => 'Ricerca testu cumplettu',
-	'createarticle' => "Creà l'articulu",
-);
-
-/** Crimean Turkish (Latin script) (qırımtatarca (Latin)‎)
- * @author Don Alessandro
- */
-$messages['crh-latn'] = array(
-	'createarticle' => 'Saifeni yarat',
+	'createarticle' => "Creà l'articulu", # Fuzzy
 );
 
 /** Crimean Turkish (Cyrillic script) (къырымтатарджа (Кирилл)‎)
@@ -338,6 +327,13 @@ $messages['crh-latn'] = array(
  */
 $messages['crh-cyrl'] = array(
 	'createarticle' => 'Саифени ярат',
+);
+
+/** Crimean Turkish (Latin script) (qırımtatarca (Latin)‎)
+ * @author Don Alessandro
+ */
+$messages['crh-latn'] = array(
+	'createarticle' => 'Saifeni yarat',
 );
 
 /** Czech (česky)
@@ -363,7 +359,8 @@ $messages['cu'] = array(
 	'createarticle' => 'cъꙁижди члѣнъ',
 );
 
-/** Chuvash (Чӑвашла) */
+/** Chuvash (Чӑвашла)
+ */
 $messages['cv'] = array(
 	'createarticle' => 'Çĕнĕ статья çыр',
 );
@@ -535,7 +532,8 @@ $messages['eu'] = array(
 	'inputbox-ns-main' => 'Nagusia',
 );
 
-/** Extremaduran (estremeñu) */
+/** Extremaduran (estremeñu)
+ */
 $messages['ext'] = array(
 	'createarticle' => 'Crial página',
 );
@@ -715,7 +713,7 @@ $messages['gv'] = array(
 $messages['hak'] = array(
 	'tryexact' => 'Sòng-chhṳ chîn-khok phit-phi',
 	'searchfulltext' => 'Chhiòn vùn-kiám chhìm-cháu',
-	'createarticle' => 'Kien-li̍p vùn-chông',
+	'createarticle' => 'Kien-li̍p vùn-chông', # Fuzzy
 );
 
 /** Hebrew (עברית)
@@ -741,7 +739,7 @@ $messages['hi'] = array(
 	'inputbox-desc' => 'पहलेसे लिखे गये HTML फार्म इस्तेमाल करने की अनुमति दें',
 	'inputbox-error-no-type' => 'इनपुट बक्सा बनाने के लिये आपने इसका प्रकार बताया नहीं हैं।',
 	'inputbox-error-bad-type' => 'इनपुट बक्से का "$1" यह प्रकार उचित नहीं हैं।
-कृपया "create", "comment", "search" या फिर "search2" में से एक चुनें।',
+कृपया "create", "comment", "search" या फिर "search2" में से एक चुनें।', # Fuzzy
 	'tryexact' => 'दिये हुए शब्दही खोजें',
 	'searchfulltext' => 'पूरा पाठ खोजें',
 	'createarticle' => 'लेख बनाईयें',
@@ -945,7 +943,7 @@ $messages['ja'] = array(
 $messages['jut'] = array(
 	'inputbox-desc' => 'Tilstån der inklusje der prædæfiiniærn HTML fårmer',
 	'inputbox-error-no-type' => 'Du harst ekke spæsifiærn æ type der input boks til skep.',
-	'inputbox-error-bad-type' => 'Input boks type "$1" ekke herkonnen. Spæsifiær "skep", "bimærkenge", "søĝ" æller "søĝ2".',
+	'inputbox-error-bad-type' => 'Input boks type "$1" ekke herkonnen. Spæsifiær "skep", "bimærkenge", "søĝ" æller "søĝ2".', # Fuzzy
 	'tryexact' => 'Førsøĝ eksakt søĝnenge:',
 	'searchfulltext' => "Gennemsøĝe'n hæle tekster",
 	'createarticle' => 'Åprette side',
@@ -983,9 +981,10 @@ $messages['ka'] = array(
 	'inputbox-ns-main' => 'მთავარი',
 );
 
-/** Kara-Kalpak (Qaraqalpaqsha) */
+/** Kara-Kalpak (Qaraqalpaqsha)
+ */
 $messages['kaa'] = array(
-	'createarticle' => 'Bet jaratıw',
+	'createarticle' => 'Bet jaratıw', # Fuzzy
 );
 
 /** Kabyle (Taqbaylit)
@@ -994,31 +993,34 @@ $messages['kaa'] = array(
 $messages['kab'] = array(
 	'tryexact' => 'Nadi ɣef uzwel kif-kif',
 	'searchfulltext' => 'Nadi aḍris ettmam',
-	'createarticle' => 'Xleq amagrad',
+	'createarticle' => 'Xleq amagrad', # Fuzzy
 );
 
-/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏) */
+/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏)
+ */
 $messages['kk-arab'] = array(
 	'inputbox-error-no-type' => 'جاسالاتىن ەنگٸزۋ جولاعىنىڭ تٷرٸن كەلتٸرمەپسٸز.',
-	'inputbox-error-bad-type' => 'ەنگٸزۋ جولاقتىڭ «$1» تٷرٸ تانىلمادى. تەك «create», «comment», «search» نە «search2» دەگەن تٷرلەردٸ كەلتٸرٸڭٸز.',
+	'inputbox-error-bad-type' => 'ەنگٸزۋ جولاقتىڭ «$1» تٷرٸ تانىلمادى. تەك «create», «comment», «search» نە «search2» دەگەن تٷرلەردٸ كەلتٸرٸڭٸز.', # Fuzzy
 	'tryexact' => 'دٵل سٵيكەسٸن سىناپ كٶرٸڭٸز',
 	'searchfulltext' => 'تولىق مٵتٸنٸمەن ٸزدەۋ',
 	'createarticle' => 'بەتتٸ باستاۋ',
 );
 
-/** Kazakh (Cyrillic script) (қазақша (кирил)‎) */
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
+ */
 $messages['kk-cyrl'] = array(
 	'inputbox-error-no-type' => 'Жасалатын енгізу жолағының түрін келтірмепсіз.',
-	'inputbox-error-bad-type' => 'Енгізу жолақтың «$1» түрі танылмады. Тек «create», «comment», «search» не «search2» деген түрлерді келтіріңіз.',
+	'inputbox-error-bad-type' => 'Енгізу жолақтың «$1» түрі танылмады. Тек «create», «comment», «search» не «search2» деген түрлерді келтіріңіз.', # Fuzzy
 	'tryexact' => 'Дәл сәйкесін сынап көріңіз',
 	'searchfulltext' => 'Толық мәтінімен іздеу',
 	'createarticle' => 'Бетті бастау',
 );
 
-/** Kazakh (Latin script) (qazaqşa (latın)‎) */
+/** Kazakh (Latin script) (qazaqşa (latın)‎)
+ */
 $messages['kk-latn'] = array(
 	'inputbox-error-no-type' => 'Jasalatın engizw jolağınıñ türin keltirmepsiz.',
-	'inputbox-error-bad-type' => 'Engizw jolaqtıñ «$1» türi tanılmadı. Tek «create», «comment», «search» ne «search2» degen türlerdi keltiriñiz.',
+	'inputbox-error-bad-type' => 'Engizw jolaqtıñ «$1» türi tanılmadı. Tek «create», «comment», «search» ne «search2» degen türlerdi keltiriñiz.', # Fuzzy
 	'tryexact' => 'Däl säýkesin sınap köriñiz',
 	'searchfulltext' => 'Tolıq mätinimen izdew',
 	'createarticle' => 'Betti bastaw',
@@ -1074,12 +1076,14 @@ $messages['ksh'] = array(
 	'inputbox-ns-main' => '{{int:blanknamespace}}',
 );
 
-/** Kurdish (Latin script) (Kurdî (latînî)‎) */
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
+ */
 $messages['ku-latn'] = array(
 	'createarticle' => 'Gotarê biafirîne',
 );
 
-/** Latin (Latina) */
+/** Latin (Latina)
+ */
 $messages['la'] = array(
 	'createarticle' => 'Paginam creare',
 );
@@ -1113,7 +1117,8 @@ $messages['lfn'] = array(
 	'createarticle' => 'Crea paje',
 );
 
-/** Ganda (Luganda) */
+/** Ganda (Luganda)
+ */
 $messages['lg'] = array(
 	'createarticle' => 'Wandika omuko',
 );
@@ -1190,10 +1195,11 @@ Lūdzu norādi "create", "comment", "search", "search2" vai "fulltext".',
 	'createarticle' => 'Izveidot lapu',
 );
 
-/** Literary Chinese (文言) */
+/** Literary Chinese (文言)
+ */
 $messages['lzh'] = array(
 	'inputbox-error-no-type' => '汝未定輸入盒之類也。',
-	'inputbox-error-bad-type' => '輸入盒之類"$1"無認耳。指"create"、"comment"、"search"或"search2"之。',
+	'inputbox-error-bad-type' => '輸入盒之類"$1"無認耳。指"create"、"comment"、"search"或"search2"之。', # Fuzzy
 	'tryexact' => '查全合',
 	'searchfulltext' => '尋全文',
 	'createarticle' => '撰文',
@@ -1306,7 +1312,8 @@ $messages['nah'] = array(
 	'createarticle' => 'Ticchīhuāz zāzanilli',
 );
 
-/** Min Nan Chinese (Bân-lâm-gú) */
+/** Min Nan Chinese (Bân-lâm-gú)
+ */
 $messages['nan'] = array(
 	'searchfulltext' => 'Chhiau choan-bûn',
 );
@@ -1316,7 +1323,7 @@ $messages['nan'] = array(
  */
 $messages['nap'] = array(
 	'searchfulltext' => "Ascià dint''o testo",
-	'createarticle' => 'Cria voce',
+	'createarticle' => 'Cria voce', # Fuzzy
 );
 
 /** Norwegian Bokmål (norsk (bokmål)‎)
@@ -1355,9 +1362,17 @@ $messages['nds-nl'] = array(
 	'createarticle' => 'Nieje zied anmaken',
 );
 
-/** Nepali (नेपाली) */
+/** Nepali (नेपाली)
+ */
 $messages['ne'] = array(
 	'createarticle' => 'लेख थाल्नुहोस्',
+);
+
+/** Niuean (ko e vagahau Niuē)
+ * @author Jose77
+ */
+$messages['niu'] = array(
+	'createarticle' => 'Talaga tohi tala',
 );
 
 /** Dutch (Nederlands)
@@ -1439,12 +1454,14 @@ $messages['or'] = array(
 	'inputbox-ns-main' => 'ମୁଖ୍ୟ',
 );
 
-/** Pangasinan (Pangasinan) */
+/** Pangasinan (Pangasinan)
+ */
 $messages['pag'] = array(
 	'createarticle' => 'Mangawa na artikulo',
 );
 
-/** Pampanga (Kapampangan) */
+/** Pampanga (Kapampangan)
+ */
 $messages['pam'] = array(
 	'createarticle' => 'Gawang artikulu',
 );
@@ -1619,9 +1636,10 @@ $messages['rue'] = array(
 	'inputbox-ns-main' => 'Головна',
 );
 
-/** Aromanian (Armãneashce) */
+/** Aromanian (Armãneashce)
+ */
 $messages['rup'] = array(
-	'createarticle' => 'Adrats articlu',
+	'createarticle' => 'Adrats articlu', # Fuzzy
 );
 
 /** Sanskrit (संस्कृतम्)
@@ -1673,12 +1691,14 @@ $messages['scn'] = array(
 	'inputbox-ns-main' => 'Principali',
 );
 
-/** Sindhi (سنڌي) */
+/** Sindhi (سنڌي)
+ */
 $messages['sd'] = array(
-	'createarticle' => 'نئون مضمون لکو',
+	'createarticle' => 'نئون مضمون لکو', # Fuzzy
 );
 
-/** Sango (Sängö) */
+/** Sango (Sängö)
+ */
 $messages['sg'] = array(
 	'createarticle' => 'Sü soura',
 );
@@ -1881,7 +1901,7 @@ $messages['te'] = array(
 $messages['tg-cyrl'] = array(
 	'inputbox-desc' => 'Иҷозаи истифода аз формҳои HTML аз пеш таърифшударо медиҳад',
 	'inputbox-error-no-type' => 'Навъи ҷаъбаи вурудии эҷодшавандаро мушаххас накардаед.',
-	'inputbox-error-bad-type' => 'Навъи ҷаъбаи вурудии "$1" ношинохта аст. Лутфан як аз маворидро аз инҳо "create", "comment", "search" ё "search2" мушаххас кунед.',
+	'inputbox-error-bad-type' => 'Навъи ҷаъбаи вурудии "$1" ношинохта аст. Лутфан як аз маворидро аз инҳо "create", "comment", "search" ё "search2" мушаххас кунед.', # Fuzzy
 	'tryexact' => 'Мутобиқати аниқро бисанҷед',
 	'searchfulltext' => 'Ҷустуҷӯи матни пурра',
 	'createarticle' => 'Эҷоди мақола',
@@ -1898,7 +1918,8 @@ $messages['tg-latn'] = array(
 	'createarticle' => 'Eçodi maqola',
 );
 
-/** Thai (ไทย) */
+/** Thai (ไทย)
+ */
 $messages['th'] = array(
 	'tryexact' => 'ค้นหาตรงทุกตัวอักษร',
 	'searchfulltext' => 'ค้นหาข้อมูล',
@@ -1932,14 +1953,16 @@ Pakitukoy ang "create", "comment", "search", "search2" o "fulltext".',
 	'inputbox-ns-main' => 'Pangunahin',
 );
 
-/** Tswana (Setswana) */
+/** Tswana (Setswana)
+ */
 $messages['tn'] = array(
-	'createarticle' => 'Kwala mokwalo',
+	'createarticle' => 'Kwala mokwalo', # Fuzzy
 );
 
-/** Tongan (lea faka-Tonga) */
+/** Tongan (lea faka-Tonga)
+ */
 $messages['to'] = array(
-	'createarticle' => 'Fakatupu ʻa e kupu',
+	'createarticle' => 'Fakatupu ʻa e kupu', # Fuzzy
 );
 
 /** Turkish (Türkçe)
@@ -1999,7 +2022,8 @@ $messages['ur'] = array(
 	'inputbox-ns-main' => 'مین',
 );
 
-/** Uzbek (oʻzbekcha) */
+/** Uzbek (oʻzbekcha)
+ */
 $messages['uz'] = array(
 	'createarticle' => 'Maqola kiritish',
 );
@@ -2063,7 +2087,8 @@ Tüüp piät olõma create, comment, search, search2 vai fulltext.',
 	'createarticle' => 'Luuq leht',
 );
 
-/** Walloon (walon) */
+/** Walloon (walon)
+ */
 $messages['wa'] = array(
 	'createarticle' => 'Ahiver årtike',
 );
@@ -2079,7 +2104,8 @@ $messages['wo'] = array(
 	'createarticle' => 'Sos jukki bi',
 );
 
-/** Wu (吴语) */
+/** Wu (吴语)
+ */
 $messages['wuu'] = array(
 	'searchfulltext' => '全文搜寻',
 	'createarticle' => '建立新文章',
@@ -2097,7 +2123,8 @@ $messages['xal'] = array(
 	'createarticle' => 'Халхиг бүтәх',
 );
 
-/** Xhosa (isiXhosa) */
+/** Xhosa (isiXhosa)
+ */
 $messages['xh'] = array(
 	'createarticle' => 'Bhala Ibali',
 );
@@ -2119,11 +2146,12 @@ $messages['yo'] = array(
 	'createarticle' => 'Dá ojúewé',
 );
 
-/** Cantonese (粵語) */
+/** Cantonese (粵語)
+ */
 $messages['yue'] = array(
 	'inputbox-desc' => '容許包含預先設定嘅HTML表格',
 	'inputbox-error-no-type' => '你重未指定開輸入盒嘅指定類型。',
-	'inputbox-error-bad-type' => '輸入盒類型"$1"認唔到。請指定"create"、"comment"、"search"或"search2"。',
+	'inputbox-error-bad-type' => '輸入盒類型"$1"認唔到。請指定"create"、"comment"、"search"或"search2"。', # Fuzzy
 	'tryexact' => '試吓精確嘅比較',
 	'searchfulltext' => '搵全文',
 	'createarticle' => '建立文章',
@@ -2170,8 +2198,8 @@ $messages['zh-tw'] = array(
 	'createarticle' => '創建頁面',
 );
 
-/** Zulu (isiZulu) */
+/** Zulu (isiZulu)
+ */
 $messages['zu'] = array(
 	'searchfulltext' => 'Sesha ukubhala konke',
 );
-
