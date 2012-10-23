@@ -1211,12 +1211,12 @@ $messages['lzh'] = array(
  * @author Misos
  */
 $messages['mk'] = array(
-	'inputbox-desc' => 'Овозможува вклучување на предодредени HTML-форми',
+	'inputbox-desc' => 'Овозможува вклучување на предодредени HTML-облици',
 	'inputbox-error-no-type' => 'Немате наведено тип на поле за внос кое сакате да го создадете.',
 	'inputbox-error-bad-type' => 'Типот на полето за внос „$1“ не е познат.
 Укажете еден од допуштените: „create“, „comment“, „search“, „search2“ или „fulltext“.',
-	'tryexact' => 'Обиди се точно',
-	'searchfulltext' => 'Барај низ целиот текст',
+	'tryexact' => 'Строго ова',
+	'searchfulltext' => 'По цел текст',
 	'createarticle' => 'Создај страница',
 	'inputbox-ns-main' => 'Главна',
 );
