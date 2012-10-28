@@ -1172,7 +1172,7 @@ $messages['ltg'] = array(
 	'createarticle' => 'Sataiseit rakstīņu',
 );
 
-/** Lushai (Mizo ţawng)
+/** Mizo (Mizo ţawng)
  * @author RMizo
  */
 $messages['lus'] = array(
