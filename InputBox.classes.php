@@ -41,6 +41,9 @@ class InputBox {
 		$this->mParser = $parser;
 		// Default value for dir taken from the page language (bug 37018)
 		$this->mDir = $this->mParser->getTargetLanguage()->getDir();
+		// Split caches by language, to make sure visitors do not see a cached
+		// version in a random language (since labels are in the user language)
+		$this->mParser->getOptions()->getUserLangObj();
 	}
 
 	public function render() {
@@ -64,8 +67,8 @@ class InputBox {
 							'class' => 'error'
 						),
 						strlen( $this->mType ) > 0
-						? wfMessage( 'inputbox-error-bad-type', $this->mType )->inContentLanguage()->text()
-						: wfMessage( 'inputbox-error-no-type' )->inContentLanguage()->text()
+						? wfMessage( 'inputbox-error-bad-type', $this->mType )->text()
+						: wfMessage( 'inputbox-error-no-type' )->text()
 					)
 				);
 		}
