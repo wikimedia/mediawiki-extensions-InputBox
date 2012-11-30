@@ -1490,6 +1490,7 @@ Należy wybrać „create”, „comment”, „search”, „search2” or „f
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Bèrto 'd Sèra
  * @author Dragonòt
  */
@@ -1500,7 +1501,7 @@ $messages['pms'] = array(
 Për piasì, ch\'a sërna antra "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => 'Sërca che a sia pròpe parej',
 	'searchfulltext' => 'Sërca an tut ël test',
-	'createarticle' => "Crea n'artìcol",
+	'createarticle' => 'Creé na pàgina',
 	'inputbox-ns-main' => 'Prinsipal',
 );
 
