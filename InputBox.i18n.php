@@ -155,6 +155,15 @@ $messages['az'] = array(
 	'inputbox-ns-main' => 'Əsas',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Amir a57
+ */
+$messages['azb'] = array(
+	'searchfulltext' => 'یاخشی متنی آختار',
+	'createarticle' => 'صحیفه یارات',
+	'inputbox-ns-main' => 'آنا',
+);
+
 /** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
@@ -2069,7 +2078,7 @@ $messages['vi'] = array(
 	'inputbox-error-bad-type' => 'Loại biểu mẫu “$1” không hợp lệ. Xin hãy chọn “create”, “comment”, “search”, “search2”, hay “fulltext”.',
 	'tryexact' => 'Thử tìm đoạn văn khớp chính xác với từ khóa',
 	'searchfulltext' => 'Tìm toàn văn',
-	'createarticle' => 'Viết bài mới',
+	'createarticle' => 'Tạo trang',
 	'inputbox-ns-main' => 'Chính',
 );
 
