@@ -37,7 +37,12 @@ $messages['qqq'] = array(
 	'inputbox-desc' => '{{desc|name=Input Box|url=http://www.mediawiki.org/wiki/Extension:InputBox}}',
 	'inputbox-error-bad-type' => '{{doc-important|"create", "comment", "search", "search2" and "fulltext" should not be translated.}}',
 	'tryexact' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. If the page with the exact name exists, you will go directly to that page.',
-	'searchfulltext' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. This button always goes to the search page, even if the page with the exact name exists.',
+	'searchfulltext' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. This button always goes to the search page, even if the page with the exact name exists.
+
+See also:
+* {{msg-mw|Search}}
+* {{msg-mw|Accesskey-search-fulltext}}
+* {{msg-mw|Tooltip-search-fulltext}}',
 	'createarticle' => 'Part of the "Inputbox" extension. This message is the text of the button to create the page you typed in the inputbox.',
 	'inputbox-ns-main' => 'Probably refers to the main namespace.',
 );
