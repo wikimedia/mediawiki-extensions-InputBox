@@ -2020,6 +2020,14 @@ $messages['tzm'] = array(
 	'createarticle' => 'ⴰⵔⴰ ⵜⴰⵙⵏⴰ',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'createarticle' => 'بەت قۇر',
+	'inputbox-ns-main' => 'ئاساسىي تىزىملىك',
+);
+
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
