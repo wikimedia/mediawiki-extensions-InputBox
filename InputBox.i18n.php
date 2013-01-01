@@ -330,6 +330,13 @@ $messages['ce'] = array(
 	'tryexact' => 'Леррина лахар',
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Calak
+ */
+$messages['ckb'] = array(
+	'inputbox-ns-main' => 'سەرەکی',
+);
+
 /** Corsican (corsu)
  */
 $messages['co'] = array(
