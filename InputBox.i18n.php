@@ -2068,6 +2068,7 @@ $messages['uz'] = array(
 
 /** vèneto (vèneto)
  * @author Candalua
+ * @author GatoSelvadego
  */
 $messages['vec'] = array(
 	'inputbox-desc' => "Consente l'inserimento de moduli HTML predefinìi",
@@ -2077,6 +2078,7 @@ Siegli el tipo tra "create", "comment", "search", "search2" o "fulltext".',
 	'tryexact' => 'Çerca corispondenza precisa',
 	'searchfulltext' => 'Çerca nel testo',
 	'createarticle' => 'Crea pagina',
+	'inputbox-ns-main' => 'Prinsipałe',
 );
 
 /** Veps (vepsän kel’)
