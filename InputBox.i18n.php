@@ -1459,6 +1459,7 @@ Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o 
 	'tryexact' => 'Ensajatz la correspondéncia exacta',
 	'searchfulltext' => 'Recèrca en tèxte integral',
 	'createarticle' => 'Crear l’article',
+	'inputbox-ns-main' => 'Principal',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
