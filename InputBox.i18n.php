@@ -1375,7 +1375,7 @@ Geev een vun disse Typen an: „create“, „comment“, „search“, „searc
 	'createarticle' => 'Siet anleggen',
 );
 
-/** Nedersaksisch (Nedersaksisch)
+/** Nedersaksies (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
