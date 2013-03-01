@@ -1778,7 +1778,7 @@ $messages['sl'] = array(
 Prosimo, določite »create«, »comment«, »search«, »search2« ali »fulltext«.',
 	'tryexact' => 'Poskusite z natančnim ujemanjem',
 	'searchfulltext' => 'Preišči vse besedilo',
-	'createarticle' => 'Ustvarite stran',
+	'createarticle' => 'Ustvari stran',
 	'inputbox-ns-main' => 'Osnovno',
 );
 
