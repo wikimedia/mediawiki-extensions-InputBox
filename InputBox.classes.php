@@ -153,7 +153,7 @@ class InputBox {
 				} elseif ( isset( $nsAliases[$userNS] ) ) {
 					$i = $nsAliases[$userNS];
 				} else {
-					continue; # Namespace not recognised, skip
+					continue; # Namespace not recognized, skip
 				}
 				$showNamespaces[$i] = $userNS;
 				if( isset( $checkedNS[$userNS] ) && $checkedNS[$userNS] ) {

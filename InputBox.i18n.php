@@ -17,7 +17,7 @@ $messages = array();
 $messages['en'] = array(
 	'inputbox-desc'           => 'Allow inclusion of predefined HTML forms',
 	'inputbox-error-no-type'  => 'You have not specified the type of input box to create.',
-	'inputbox-error-bad-type' => 'Input box type "$1" not recognised.
+	'inputbox-error-bad-type' => 'Input box type "$1" not recognized.
 Please specify "create", "comment", "search", "search2" or "fulltext".',
 	'tryexact'                => 'Try exact match',
 	'searchfulltext'          => 'Search full text',
