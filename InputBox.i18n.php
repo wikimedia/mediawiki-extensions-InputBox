@@ -495,6 +495,14 @@ $messages['el'] = array(
 	'inputbox-ns-main' => 'Κύριος',
 );
 
+/** British English (British English)
+ * @author Shirayuki
+ */
+$messages['en-gb'] = array(
+	'inputbox-error-bad-type' => 'Input box type "$1" not recognised.
+Please specify "create", "comment", "search", "search2" or "fulltext".',
+);
+
 /** Esperanto (Esperanto)
  * @author Michawiki
  * @author Yekrats
@@ -952,7 +960,8 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'inputbox-desc' => 'あらかじめ定義されたHTMLフォーム埋め込み機能を有効にする',
 	'inputbox-error-no-type' => '作成する入力ボックスの種類を指定していません。',
-	'inputbox-error-bad-type' => '「$1」という種類の入力ボックスは定義されていません。"create"、"comment"、"search"、"search2"、"fulltext"のいずれかを指定してください。',
+	'inputbox-error-bad-type' => '「$1」という種類の入力ボックスは定義されていません。
+"create"、"comment"、"search"、"search2"、"fulltext"のいずれかを指定してください。',
 	'tryexact' => '一致する項目を検索',
 	'searchfulltext' => '全文検索',
 	'createarticle' => '項目を作成',
