@@ -101,7 +101,7 @@ $messages['ar'] = array(
  * @author Basharh
  */
 $messages['arc'] = array(
-	'createarticle' => 'ܒܪܝ ܦܐܬܐ',
+	'createarticle' => 'ܣܝܡ ܦܐܬܐ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
