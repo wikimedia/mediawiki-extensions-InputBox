@@ -35,7 +35,15 @@ Please specify "create", "comment", "search", "search2" or "fulltext".',
  */
 $messages['qqq'] = array(
 	'inputbox-desc' => '{{desc|name=Input Box|url=http://www.mediawiki.org/wiki/Extension:InputBox}}',
-	'inputbox-error-bad-type' => '{{doc-important|"create", "comment", "search", "search2" and "fulltext" should not be translated.}}',
+	'inputbox-error-no-type' => 'Used as error message.
+
+See also:
+* {{msg-mw|Inputbox-error-bad-type}}',
+	'inputbox-error-bad-type' => '{{doc-important|"create", "comment", "search", "search2" and "fulltext" should not be translated.}}
+Used as error message.
+
+See also:
+* {{msg-mw|Inputbox-error-no-type}}',
 	'tryexact' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. If the page with the exact name exists, you will go directly to that page.',
 	'searchfulltext' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. This button always goes to the search page, even if the page with the exact name exists.
 
