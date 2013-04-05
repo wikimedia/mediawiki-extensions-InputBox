@@ -1358,11 +1358,12 @@ $messages['nan'] = array(
 );
 
 /** Neapolitan (Nnapulitano)
+ * @author Chelin
  * @author SabineCretella
  */
 $messages['nap'] = array(
 	'searchfulltext' => "Ascià dint''o testo",
-	'createarticle' => 'Cria voce', # Fuzzy
+	'createarticle' => 'Cria paggena',
 );
 
 /** Norwegian Bokmål (norsk (bokmål)‎)
