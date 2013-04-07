@@ -650,6 +650,19 @@ Volyéd spècefiar un chouèx permié « create », « comment », « search »,
 	'inputbox-ns-main' => 'Principâl',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'inputbox-desc' => 'Föörformatiaret HTML-fialen tuläät',
+	'inputbox-error-no-type' => 'Dü heest ei uunden, hün slach faan fial iinracht wurd skal.',
+	'inputbox-error-bad-type' => 'Di slach „$1“ as ei tuläät. Wees so gud an nem „create“, „comment“, „search“, „search2“ of „fulltext“.',
+	'tryexact' => 'Sjük genau',
+	'searchfulltext' => 'Sjük uun di hialer tekst',
+	'createarticle' => 'Maage en nei sidj',
+	'inputbox-ns-main' => 'Sidjen',
+);
+
 /** Friulian (furlan)
  * @author Klenje
  */
