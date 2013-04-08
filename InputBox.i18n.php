@@ -1434,7 +1434,7 @@ $messages['niu'] = array(
  */
 $messages['nl'] = array(
 	'inputbox-desc' => 'Maakt het toevoegen van voorgedefinieerde HTML-formulieren mogelijk',
-	'inputbox-error-no-type' => 'U hebt het type invoerveld niet aangegeven.',
+	'inputbox-error-no-type' => 'U hebt het type invoerveld niet opgegeven.',
 	'inputbox-error-bad-type' => 'Type invoerveld "$1" niet herkend.
 Gebruik "create", "comment", "search", "search2" of "fulltext".',
 	'tryexact' => 'Zoeken op exacte overeenkomst',
@@ -1447,7 +1447,7 @@ Gebruik "create", "comment", "search", "search2" of "fulltext".',
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
-	'inputbox-error-no-type' => 'Je hebt het type invoerveld niet aangegeven.',
+	'inputbox-error-no-type' => 'Je hebt het type invoerveld niet opgegeven.',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
