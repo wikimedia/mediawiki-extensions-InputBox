@@ -107,9 +107,10 @@ $messages['ar'] = array(
 
 /** Aramaic (ܐܪܡܝܐ)
  * @author Basharh
+ * @author Man2fly2002
  */
 $messages['arc'] = array(
-	'createarticle' => 'ܣܝܡ ܦܐܬܐ',
+	'createarticle' => 'ܒܪܝ ܦܐܬܐ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
