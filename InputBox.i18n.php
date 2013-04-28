@@ -1258,6 +1258,20 @@ $messages['lzh'] = array(
 	'createarticle' => '撰文',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'inputbox-desc' => 'Mamungkinan panggunoan form HTML nan alah ditantuan',
+	'inputbox-error-no-type' => 'Sanak musti manantuan jinih kotak input nan ka dibuek.',
+	'inputbox-error-bad-type' => 'Jinih kotak input "$1" indak dikenal.
+Gunoan "create", "comment", "search", "search2", atau "fulltext".',
+	'tryexact' => 'Cubo pancocokan eksak',
+	'searchfulltext' => 'Cari teks langkok',
+	'createarticle' => 'Buek laman',
+	'inputbox-ns-main' => 'Utamo',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
