@@ -334,9 +334,11 @@ $messages['cdo'] = array(
 
 /** Chechen (нохчийн)
  * @author Sasan700
+ * @author Умар
  */
 $messages['ce'] = array(
 	'tryexact' => 'Леррина лахар',
+	'createarticle' => 'Яззам кхоллар',
 );
 
 /** Sorani Kurdish (کوردی)
@@ -658,8 +660,8 @@ $messages['frr'] = array(
 	'inputbox-desc' => 'Föörformatiaret HTML-fialen tuläät',
 	'inputbox-error-no-type' => 'Dü heest ei uunden, hün slach faan fial iinracht wurd skal.',
 	'inputbox-error-bad-type' => 'Di slach „$1“ as ei tuläät. Wees so gud an nem „create“, „comment“, „search“, „search2“ of „fulltext“.',
-	'tryexact' => 'Sjük genau',
-	'searchfulltext' => 'Sjük uun di hialer tekst',
+	'tryexact' => 'Schük genau',
+	'searchfulltext' => 'Schük uun di hialer tekst',
 	'createarticle' => 'Maage en nei sidj',
 	'inputbox-ns-main' => 'Sidjen',
 );
