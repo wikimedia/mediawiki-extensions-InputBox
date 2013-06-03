@@ -127,7 +127,7 @@ $messages['arz'] = array(
 	'createarticle' => 'إنشاء صفحة',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Chaipau
  * @author Gitartha.bordoloi
@@ -1396,7 +1396,7 @@ $messages['nap'] = array(
 	'createarticle' => 'Cria paggena',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author EivindJ
  */
 $messages['nb'] = array(
@@ -1423,7 +1423,7 @@ Geev een vun disse Typen an: „create“, „comment“, „search“, „searc
 	'createarticle' => 'Siet anleggen',
 );
 
-/** Nedersaksies (Nedersaksies)
+/** Low Saxon (Netherlands) (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -1467,7 +1467,7 @@ $messages['nl-informal'] = array(
 	'inputbox-error-no-type' => 'Je hebt het type invoerveld niet opgegeven.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
@@ -1510,7 +1510,7 @@ Indicatz una opcion demest ''create'', ''comment'', ''search'' o ''searche2'' o 
 	'inputbox-ns-main' => 'Principal',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Odisha1
  * @author Psubhashish
  */
