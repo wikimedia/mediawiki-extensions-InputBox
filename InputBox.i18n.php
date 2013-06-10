@@ -1097,6 +1097,7 @@ $messages['km'] = array(
  * @author Klutzy
  * @author Kwj2772
  * @author ToePeu
+ * @author 아라
  */
 $messages['ko'] = array(
 	'inputbox-desc' => '사전 정의된 HTML 폼을 포함할 수 있게 해 줌',
@@ -1104,7 +1105,7 @@ $messages['ko'] = array(
 	'inputbox-error-bad-type' => '"$1"은(는) 사용할 수 없는 type 속성입니다.
 "create", "comment", "search", "search2", "fulltext" 중 하나를 사용하세요.',
 	'tryexact' => '정확한 이름으로 찾기',
-	'searchfulltext' => '전체 글 검색',
+	'searchfulltext' => '전체 글 찾기',
 	'createarticle' => '문서 만들기',
 	'inputbox-ns-main' => '문서',
 );
