@@ -338,6 +338,7 @@ $messages['cdo'] = array(
  */
 $messages['ce'] = array(
 	'tryexact' => 'Леррина лахар',
+	'searchfulltext' => 'Дуьззина йозанца лахар',
 	'createarticle' => 'Яззам кхоллар',
 );
 
