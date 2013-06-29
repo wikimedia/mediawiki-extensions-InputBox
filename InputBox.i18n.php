@@ -52,7 +52,8 @@ See also:
 * {{msg-mw|Accesskey-search-fulltext}}
 * {{msg-mw|Tooltip-search-fulltext}}',
 	'createarticle' => 'Part of the "Inputbox" extension. This message is the text of the button to create the page you typed in the inputbox.',
-	'inputbox-ns-main' => 'Probably refers to the main namespace.',
+	'inputbox-ns-main' => 'Probably refers to the main namespace.
+{{Identical|Main}}',
 );
 
 /** Afrikaans (Afrikaans)
