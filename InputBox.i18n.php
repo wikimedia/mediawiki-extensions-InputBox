@@ -207,6 +207,20 @@ $messages['bcc'] = array(
 	'createarticle' => 'شرکتن صفحه',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'inputbox-desc' => 'Minatugot na balihon an pangenot na pakahulugan kan mga porma nin HTML',
+	'inputbox-error-no-type' => 'Ika dae nagsasambit kan tipo nin palaogang kahon tanganing maimukna.',
+	'inputbox-error-bad-type' => 'An tipo kan palaogang kahon na "$1" bakong rekonosido.
+Pakisambit tabi an "magmukna", "komento", "hanapa" "hanapa2" o an "kabilogang teksto".',
+	'tryexact' => 'Prubaran an eksaktong katampadan',
+	'searchfulltext' => 'Hanapa an kabilogang teksto',
+	'createarticle' => 'Muknaon an pahina',
+	'inputbox-ns-main' => 'Kapamayuhan',
+);
+
 /** Belarusian (беларуская)
  */
 $messages['be'] = array(
