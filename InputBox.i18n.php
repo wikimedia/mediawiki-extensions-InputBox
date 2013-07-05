@@ -342,9 +342,10 @@ Especifiqueu-hi «create», «comment», «search», «search2» o «fulltext».
 );
 
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄)
+ * @author Yejianfei
  */
 $messages['cdo'] = array(
-	'createarticle' => 'Kŭi hiĕk',
+	'createarticle' => '開頁',
 );
 
 /** Chechen (нохчийн)
