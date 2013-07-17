@@ -220,7 +220,7 @@ Pakisambit tabi an "magmukna", "komento", "hanapa" "hanapa2" o an "kabilogang te
 	'tryexact' => 'Prubaran an eksaktong katampadan',
 	'searchfulltext' => 'Hanapa an kabilogang teksto',
 	'createarticle' => 'Muknaon an pahina',
-	'inputbox-ns-main' => 'Kapamayohan',
+	'inputbox-ns-main' => 'Kapamayuhanan',
 );
 
 /** Belarusian (беларуская)
