@@ -1119,11 +1119,11 @@ $messages['km'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'inputbox-desc' => '사전 정의된 HTML 폼을 포함할 수 있게 해 줌',
-	'inputbox-error-no-type' => 'type 속성을 정하지 않았습니다.',
-	'inputbox-error-bad-type' => '"$1"은(는) 사용할 수 없는 type 속성입니다.
-"create", "comment", "search", "search2", "fulltext" 중 하나를 사용하세요.',
-	'tryexact' => '정확한 이름으로 찾기',
+	'inputbox-desc' => '사전 정의된 HTML 양식을 포함할 수 있습니다',
+	'inputbox-error-no-type' => '만드려는 입력 상자의 종류를 지정하지 않았습니다.',
+	'inputbox-error-bad-type' => '"$1" 입력 상자 종류는 정의되어 있지 않습니다.
+"create", "comment", "search", "search2"나 "fulltext" 중 하나를 지정하세요.',
+	'tryexact' => '일치하는 항목 찾기',
 	'searchfulltext' => '전체 글 찾기',
 	'createarticle' => '문서 만들기',
 	'inputbox-ns-main' => '문서',
