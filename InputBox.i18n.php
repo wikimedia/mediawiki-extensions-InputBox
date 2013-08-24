@@ -40,8 +40,8 @@ $messages['qqq'] = array(
 See also:
 * {{msg-mw|Inputbox-error-bad-type}}',
 	'inputbox-error-bad-type' => '{{doc-important|"create", "comment", "search", "search2" and "fulltext" should not be translated.}}
-Used as error message.
-
+Used as error message. Parameters:
+* $1 - invalid type. Valid types are: "create", "comment", "commenttitle", "search", "fulltext", and "search2"
 See also:
 * {{msg-mw|Inputbox-error-no-type}}',
 	'tryexact' => 'Part of the "Inputbox" extension. This message is the text of the button to search the page you typed in the inputbox. If the page with the exact name exists, you will go directly to that page.',
