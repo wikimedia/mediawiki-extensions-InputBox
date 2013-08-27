@@ -2082,10 +2082,11 @@ $messages['ts'] = array(
 );
 
 /** Tuvinian (тыва дыл)
+ * @author Agilight
  * @author Sborsody
  */
 $messages['tyv'] = array(
-	'createarticle' => 'Арынны чаяары',
+	'createarticle' => 'Арын чаяар',
 	'inputbox-ns-main' => 'Кол',
 );
 
