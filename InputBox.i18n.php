@@ -780,7 +780,7 @@ $messages['gv'] = array(
 	'createarticle' => 'Croo duillag',
 );
 
-/** Hakka (Hak-kâ-fa)
+/** Hakka (客家語/Hak-kâ-ngî)
  * @author Hakka
  */
 $messages['hak'] = array(
@@ -1407,7 +1407,7 @@ $messages['nan'] = array(
 	'searchfulltext' => 'Chhiau choan-bûn',
 );
 
-/** Neapolitan (Nnapulitano)
+/** Neapolitan (Napulitano)
  * @author Chelin
  * @author SabineCretella
  */
