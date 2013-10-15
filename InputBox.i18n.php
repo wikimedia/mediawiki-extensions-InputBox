@@ -1230,6 +1230,14 @@ $messages['lo'] = array(
 	'createarticle' => 'ສ້າງບົດຄວາມ',
 );
 
+/** لوری (لوری)
+ * @author Mogoeilor
+ */
+$messages['lrc'] = array(
+	'createarticle' => 'راس كردن بلگه',
+	'inputbox-ns-main' => 'اصلی',
+);
+
 /** Lithuanian (lietuvių)
  * @author Vogone
  */
