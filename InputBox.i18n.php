@@ -950,14 +950,14 @@ $messages['ig'] = array(
  * @author Lam-ang
  */
 $messages['ilo'] = array(
-	'inputbox-desc' => 'Pakabaelan na nga agikabil kadagiti napalasin a kinabuklan ti HTML',
-	'inputbox-error-no-type' => 'Saan mo pay nga imbaga no ania a kita ti pagikabilan a kahon ti aramiden.',
-	'inputbox-error-bad-type' => 'Ti kita ti pigikabilan a kahon "$1" ket saan a ma-ammoan.
-Pangaasi ta ibagam nga "agaramid", "komentario", "biruken", "biruken2", "wenno sibubukel a testo".',
+	'inputbox-desc' => 'Mangipalubos ti panangiraman kadagiti nasakbayan a naipalawag a porma ti HTML',
+	'inputbox-error-no-type' => 'Saanmo pay a nainaganan no ania a kita ti partuaten a kahon ti pagikabilan.',
+	'inputbox-error-bad-type' => 'Ti kita ti kahon a pigikabilan ti "$1" ket saan a mabigbigan.
+Pangngaasi nga inaganam ti "agpartuat", "komento", "biruken", "biruken2", "wenno sibubukel a testo".',
 	'tryexact' => 'Padasem to pudno a kapada',
-	'searchfulltext' => 'Agbiruk ti sibubukel a testo',
-	'createarticle' => 'Agaramid ti panid',
-	'inputbox-ns-main' => 'Dati',
+	'searchfulltext' => 'Agbiruk ti napno a testo',
+	'createarticle' => 'Agpartuat ti panid',
+	'inputbox-ns-main' => 'Nangruna',
 );
 
 /** Ido (Ido)
