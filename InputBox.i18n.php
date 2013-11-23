@@ -1125,7 +1125,7 @@ $messages['ko'] = array(
 	'inputbox-error-bad-type' => '"$1" 입력 상자 종류는 정의되어 있지 않습니다.
 "create", "comment", "search", "search2"나 "fulltext" 중 하나를 지정하세요.',
 	'tryexact' => '일치하는 항목 찾기',
-	'searchfulltext' => '전체 글 찾기',
+	'searchfulltext' => '전체 글 검색',
 	'createarticle' => '문서 만들기',
 	'inputbox-ns-main' => '문서',
 );
