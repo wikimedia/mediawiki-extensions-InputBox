@@ -792,11 +792,12 @@ $messages['hak'] = array(
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author Guycn2
  * @author Rotem Liss
  */
 $messages['he'] = array(
 	'inputbox-desc' => 'אפשרות להכללת טופסי HTML שהוגדרו מראש',
-	'inputbox-error-no-type' => 'לא ציינתם את סוג תיבת הקלט ליצירה.',
+	'inputbox-error-no-type' => 'לא ציינת את סוג תיבת הקלט ליצירה.',
 	'inputbox-error-bad-type' => 'סוג תיבת הקלט "$1" אינו ידוע.
 אנא ציינו "create", "comment", "search", "search2" או "fulltext".',
 	'tryexact' => 'לדף בשם זה',
