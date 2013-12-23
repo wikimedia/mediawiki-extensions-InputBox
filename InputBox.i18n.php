@@ -142,7 +142,7 @@ $messages['as'] = array(
 অনুগ্ৰহ কৰি "create", "comment", "search", "search2" বা "fulltext" নিৰ্ধাৰণ কৰক',
 	'tryexact' => 'কেবল দিয়া শব্দহে বিচাৰিব',
 	'searchfulltext' => 'সম্পূৰ্ণ পাঠ্য বিচাৰিব',
-	'createarticle' => 'পৃষ্ঠা বনাওক',
+	'createarticle' => 'পৃষ্ঠা সৃষ্টি কৰক',
 	'inputbox-ns-main' => 'মূখ্য',
 );
 
