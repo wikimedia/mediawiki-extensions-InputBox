@@ -101,7 +101,7 @@ class InputBox {
 				'name' => 'searchbox',
 				'id' => 'searchbox',
 				'class' => 'searchbox',
-				'action' => SpecialPage::getTitleFor( 'Search' )->escapeLocalUrl(),
+				'action' => htmlspecialchars( SpecialPage::getTitleFor( 'Search' )->getLocalUrl() ),
 			)
 		);
 		$htmlOut .= Xml::element( 'input',
@@ -255,7 +255,7 @@ class InputBox {
 				'name' => 'bodySearch' . $id,
 				'id' => 'bodySearch' . $id,
 				'class' => 'bodySearch',
-				'action' => SpecialPage::getTitleFor( 'Search' )->escapeLocalUrl(),
+				'action' => htmlspecialchars( SpecialPage::getTitleFor( 'Search' )->getLocalUrl() ),
 				'style' => $this->mInline ? 'display: inline;' : ''
 			)
 		);
