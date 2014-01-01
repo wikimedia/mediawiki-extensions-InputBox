@@ -1165,6 +1165,13 @@ $messages['la'] = array(
 	'createarticle' => 'Paginam creare',
 );
 
+/** Ladino (Ladino)
+ * @author Menachem.Moreira
+ */
+$messages['lad'] = array(
+	'createarticle' => 'Krear pajina',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
