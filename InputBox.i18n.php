@@ -1663,6 +1663,7 @@ Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
  * @author Brunoy Anastasiya Seryozhenko
  * @author Eduardo.mps
  * @author MetalBrasil
+ * @author Opraco
  */
 $messages['pt-br'] = array(
 	'inputbox-desc' => 'Permite a inclusão de formulários definidos de HTML',
@@ -1671,7 +1672,7 @@ $messages['pt-br'] = array(
 Por favor, especifique "create", "comment", "search", "search2" ou "fulltext".',
 	'tryexact' => 'Tentar a expressão exata',
 	'searchfulltext' => 'Pesquisar em todo o texto.',
-	'createarticle' => 'Criar página.',
+	'createarticle' => 'Criar página',
 	'inputbox-ns-main' => 'Principal',
 );
 
