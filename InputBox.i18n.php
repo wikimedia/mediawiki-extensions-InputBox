@@ -358,7 +358,7 @@ $messages['ce'] = array(
 	'inputbox-error-no-type' => 'Ахьа язъечу меттиган тайп билгала йина яц.',
 	'tryexact' => 'Леррина лахар',
 	'searchfulltext' => 'Дуьззина йозанца лахар',
-	'createarticle' => 'Яззам кхоллар',
+	'createarticle' => 'АгӀо кхолла',
 );
 
 /** Sorani Kurdish (کوردی)
