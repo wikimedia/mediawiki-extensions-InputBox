@@ -1065,11 +1065,12 @@ $messages['kaa'] = array(
 
 /** Kabyle (Taqbaylit)
  * @author Agurzil
+ * @author Mmistmurt
  */
 $messages['kab'] = array(
 	'tryexact' => 'Nadi ɣef uzwel kif-kif',
 	'searchfulltext' => 'Nadi aḍris ettmam',
-	'createarticle' => 'Xleq amagrad', # Fuzzy
+	'createarticle' => 'Xleq amagrad',
 );
 
 /** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏)
