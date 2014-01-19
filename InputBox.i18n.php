@@ -1821,6 +1821,13 @@ $messages['sgs'] = array(
 	'searchfulltext' => 'Ėiškuotė pėlna teksta',
 );
 
+/** Serbo-Croatian (srpskohrvatski / српскохрватски)
+ * @author Kolega2357
+ */
+$messages['sh'] = array(
+	'searchfulltext' => 'Pretraži cijeli tekst - Претражи цео текст',
+);
+
 /** Sinhala (සිංහල)
  * @author Asiri wiki
  * @author Budhajeewa
