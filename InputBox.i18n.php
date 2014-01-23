@@ -355,6 +355,7 @@ $messages['cdo'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'inputbox-desc' => 'Аьтту хуьлуьйту хьалхе билгалйина HTML-формаш лато',
 	'inputbox-error-no-type' => 'Ахьа язъечу меттиган тайп билгала йина яц.',
 	'tryexact' => 'Леррина лахар',
 	'searchfulltext' => 'Дуьззина йозанца лахар',
