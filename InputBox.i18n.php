@@ -1242,9 +1242,11 @@ $messages['lo'] = array(
 );
 
 /** لوری (لوری)
+ * @author Bonevarluri
  * @author Mogoeilor
  */
 $messages['lrc'] = array(
+	'searchfulltext' => 'پی جوری متنی',
 	'createarticle' => 'راس كردن بلگه',
 	'inputbox-ns-main' => 'اصلی',
 );
