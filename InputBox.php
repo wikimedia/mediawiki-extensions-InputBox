@@ -60,3 +60,13 @@ $wgResourceModules['ext.inputBox.styles'] = array(
 	'remoteExtPath' => 'InputBox/resources',
 	'styles' => 'ext.inputBox.styles.css',
 );
+$resourcePaths = array(
+	'localBasePath' => __DIR__,
+	'remoteExtPath' => 'InputBox'
+	);
+$wgResourceModules['ext.inputBox'] = array(
+	'scripts' => 'resources/ext.inputBox.js',
+	'dependencies' => array(
+		'jquery.throttle-debounce'
+	)
+) + $resourcePaths;

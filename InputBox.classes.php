@@ -52,6 +52,7 @@ class InputBox {
 		switch ( $this->mType ) {
 			case 'create':
 			case 'comment':
+				$this->mParser->getOutput()->addModules( 'ext.inputBox' );
 				return $this->getCreateForm();
 			case 'move':
 				return $this->getMoveForm();
