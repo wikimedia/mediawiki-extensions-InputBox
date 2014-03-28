@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+        "authors": [
+            "Boivie",
+            "Lejonel",
+            "Najami"
+        ]
+    },
+    "inputbox-desc": "Ger möjlighet att använda fördefinerade HTML-formulär.",
+    "inputbox-error-no-type": "Du har inte angivit vilken typ av inputbox som ska skapas..",
+    "inputbox-error-bad-type": "\"$1\" är inte en känd typ av inputbox.\nVar god specifiera \"create\", \"comment\", \"search\", \"search2\" eller \"fulltext\".",
+    "tryexact": "Försök hitta exakt matchning",
+    "searchfulltext": "Fulltextsökning",
+    "createarticle": "Skapa sida",
+    "inputbox-ns-main": "Huvud"
+}

@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Anakmalaysia",
+            "Gaoxuewei",
+            "Liangent",
+            "Mark85296341"
+        ]
+    },
+    "inputbox-desc": "容許包含預先設定的 HTML 表格",
+    "inputbox-error-no-type": "您尚未指定建立輸入框的指定類型。",
+    "inputbox-error-bad-type": "輸入框類型「$1」無法識別。\n請指定「create」、「comment」、「search」、「search2」或「fulltext」。",
+    "tryexact": "嘗試精確匹配",
+    "searchfulltext": "全文檢索",
+    "createarticle": "建立文章",
+    "inputbox-ns-main": "主"
+}

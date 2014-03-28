@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Александр Сигачёв"
+        ]
+    },
+    "inputbox-desc": "Позволяет включать заранее определённые HTML-формы",
+    "inputbox-error-no-type": "Вы не указали тип создаваемого поля ввода.",
+    "inputbox-error-bad-type": "Неизвестный тип поля ввода «$1».\nПожалуйста, укажите один из допустимых типов: «create», «comment», «search», «search2» или «fulltext».",
+    "tryexact": "Строгий поиск",
+    "searchfulltext": "Полнотекстовый поиск",
+    "createarticle": "Создать статью",
+    "inputbox-ns-main": "Главная"
+}

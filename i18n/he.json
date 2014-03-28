@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+        "authors": [
+            "Amire80",
+            "Guycn2",
+            "Rotem Liss"
+        ]
+    },
+    "inputbox-desc": "אפשרות להכללת טופסי HTML שהוגדרו מראש",
+    "inputbox-error-no-type": "לא ציינת את סוג תיבת הקלט ליצירה.",
+    "inputbox-error-bad-type": "סוג תיבת הקלט \"$1\" אינו ידוע.\nאנא ציינו \"create\", \"comment\", \"search\", \"search2\" או \"fulltext\".",
+    "tryexact": "לדף בשם זה",
+    "searchfulltext": "חיפוש בתוכן הדפים",
+    "createarticle": "יצירת הדף",
+    "inputbox-ns-main": "ראשי"
+}

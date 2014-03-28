@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Michaello"
+        ]
+    },
+    "inputbox-desc": "Omogući uključivanje prethodno definisanih HTML formi.",
+    "inputbox-error-no-type": "Nisi odredio tip unosne kutije da bi je napravio.",
+    "inputbox-error-bad-type": "Tip \"$1\" kutijice za unos podataka je nepoznat.\nMolimo vas da ga promenite na \"create\", \"comment\", \"search\", \"search2\" ili \"fulltext\".",
+    "tryexact": "Pokušaj tačno",
+    "searchfulltext": "Pretraži ceo tekst",
+    "createarticle": "Napravi članak",
+    "inputbox-ns-main": "Glavni"
+}

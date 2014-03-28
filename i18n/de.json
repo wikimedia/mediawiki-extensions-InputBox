@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Kghbln",
+            "LWChris",
+            "Metalhead64",
+            "Raimond Spekking",
+            "Umherirrender"
+        ]
+    },
+    "inputbox-desc": "Ergänzt das Tag <code>&lt;inputbox&gt;</code> zum Einbinden vordefinierter HTML-Eingabefelder",
+    "inputbox-error-no-type": "Es wurde kein Eingabefeldtyp angegeben.",
+    "inputbox-error-bad-type": "Der Eingabefeldtyp „$1“ ist unbekannt.\nBitte „create“, „comment“, „search“, „search2“ oder „fulltext“ angeben.",
+    "tryexact": "Exakte Suche durchführen",
+    "searchfulltext": "Volltextsuche",
+    "createarticle": "Seite erstellen",
+    "inputbox-ns-main": "Seiten"
+}

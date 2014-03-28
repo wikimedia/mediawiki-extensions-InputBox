@@ -33,16 +33,17 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'InputBox',
 	'author'         => array( 'Erik Moeller', 'Leonardo Pimenta', 'Rob Church', 'Trevor Parscal', 'DaSch' ),
-	'version'        => '0.1.4',
+	'version'        => '0.2.0',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:InputBox',
 	'description'    => 'Allow inclusion of predefined HTML forms.',
 	'descriptionmsg' => 'inputbox-desc',
 );
 
 // Shortcut to this extension directory
-$dir = dirname( __FILE__ ) . '/';
+$dir = __DIR__ . '/';
 
 // Internationalization
+$wgMessagesDirs['InputBox'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['InputBox'] = $dir . 'InputBox.i18n.php';
 
 // Register auto load for the special page class

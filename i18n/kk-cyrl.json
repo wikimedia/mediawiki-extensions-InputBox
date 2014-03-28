@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": []
+    },
+    "inputbox-error-no-type": "Жасалатын енгізу жолағының түрін келтірмепсіз.",
+    "inputbox-error-bad-type": "Енгізу жолақтың «$1» түрі танылмады. Тек «create», «comment», «search» не «search2» деген түрлерді келтіріңіз.",
+    "tryexact": "Дәл сәйкесін сынап көріңіз",
+    "searchfulltext": "Толық мәтінімен іздеу",
+    "createarticle": "Бетті бастау"
+}
