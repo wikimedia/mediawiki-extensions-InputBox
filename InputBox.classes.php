@@ -331,8 +331,8 @@ class InputBox {
 			'action' => $wgScript,
 			'method' => 'get'
 		);
-		if( isset( $this->mId ) ) {
-			$createBoxParams['id'] = Sanitizer::escapeId( $this->mId );
+		if( $this->mID !== '' ) {
+			$createBoxParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $createBoxParams );
 		$htmlOut .= Xml::openElement( 'input',
@@ -441,8 +441,8 @@ class InputBox {
 			'action' => $wgScript,
 			'method' => 'get'
 		);
-		if( isset( $this->mId ) ) {
-			$commentFormParams['id'] = Sanitizer::escapeId( $this->mId );
+		if( $this->mID !== '' ) {
+			$commentFormParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $commentFormParams );
 		$htmlOut .= Xml::openElement( 'input',
