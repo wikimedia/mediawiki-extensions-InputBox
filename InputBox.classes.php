@@ -52,6 +52,8 @@ class InputBox {
 			case 'create':
 			case 'comment':
 				return $this->getCreateForm();
+			case 'move':
+				return $this->getMoveForm();
 			case 'commenttitle':
 				return $this->getCommentForm();
 			case 'search':
@@ -410,6 +412,78 @@ class InputBox {
 				'type' => 'submit',
 				'name' => 'create',
 				'class' => 'createboxButton',
+				'value' => $this->mButtonLabel
+			)
+		);
+		$htmlOut .= Xml::closeElement( 'form' );
+		$htmlOut .= Xml::closeElement( 'div' );
+
+		// Return HTML
+		return $htmlOut;
+	}
+
+	/**
+	 * Generate move page form
+	 */
+	public function getMoveForm() {
+		global $wgScript;
+
+		if ( !$this->mButtonLabel ) {
+			$this->mButtonLabel = wfMessage( 'inputbox-movearticle' )->text();
+		}
+
+		$htmlOut = Xml::openElement( 'div',
+			array(
+				'style' => 'margin-left: auto; margin-right: auto; text-align: center; background-color:' . $this->mBGColor
+			)
+		);
+		$moveBoxParams = array(
+			'name' => 'movebox',
+			'class' => 'mw-movebox',
+			'action' => $wgScript,
+			'method' => 'get'
+		);
+		if( $this->mID !== '' ) {
+			$moveBoxParams['id'] = Sanitizer::escapeId( $this->mID );
+		}
+		$htmlOut .= Xml::openElement( 'form', $moveBoxParams );
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'title',
+				'value' => SpecialPage::getTitleFor( 'Movepage', $this->mPage )->getPrefixedText(),
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'wpReason',
+				'value' => $this->mSummary,
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'prefix',
+				'value' => $this->mPrefix,
+			)
+		);
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => $this->mHidden ? 'hidden' : 'text',
+				'name' => 'wpNewTitle',
+				'class' => 'mw-moveboxInput',
+				'value' => $this->mDefaultText,
+				'placeholder' => $this->mPlaceholderText,
+				'size' => $this->mWidth,
+				'dir' => $this->mDir,
+			)
+		);
+		$htmlOut .= $this->mBR;
+		$htmlOut .= Xml::openElement( 'input',
+			array(
+				'type' => 'submit',
+				'class' => 'mw-moveboxButton',
 				'value' => $this->mButtonLabel
 			)
 		);

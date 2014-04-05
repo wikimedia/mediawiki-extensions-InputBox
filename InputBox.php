@@ -53,3 +53,4 @@ $wgAutoloadClasses['InputBox'] = $dir . 'InputBox.classes.php';
 // Register parser hook
 $wgHooks['ParserFirstCallInit'][] = 'InputBoxHooks::register';
 $wgHooks['MediaWikiPerformAction'][] = 'InputBoxHooks::onMediaWikiPerformAction';
+$wgHooks['SpecialPageBeforeExecute'][] = 'InputBoxHooks::onSpecialPageBeforeExecute';

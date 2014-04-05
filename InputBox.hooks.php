@@ -17,6 +17,18 @@ class InputBoxHooks {
 		return true;
 	}
 
+	// Prepend prefix to wpNewTitle if necessary
+	public static function onSpecialPageBeforeExecute( $special, $subPage ) {
+		$request = $special->getRequest();
+		$prefix = $request->getText( 'prefix', '' );
+		$title = $request->getText( 'wpNewTitle', '' );
+		if( $special->getName() == 'Movepage' && $prefix !== '' && $title !== '' ) {
+			$request->setVal( 'wpNewTitle', $prefix . $title );
+			$request->unsetVal( 'prefix' );
+		}
+		return true;
+	}
+
 	// Render the input box
 	public static function render( $input, $args, Parser $parser ) {
 		// Create InputBox
