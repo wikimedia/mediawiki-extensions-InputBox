@@ -84,10 +84,10 @@ class InputBox {
 
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
-			$this->mButtonLabel = wfMessage( 'tryexact' )->text();
+			$this->mButtonLabel = wfMessage( 'inputbox-tryexact' )->text();
 		}
 		if ( !$this->mSearchButtonLabel ) {
-			$this->mSearchButtonLabel = wfMessage( 'searchfulltext' )->text();
+			$this->mSearchButtonLabel = wfMessage( 'inputbox-searchfulltext' )->text();
 		}
 
 		// Build HTML
@@ -239,7 +239,7 @@ class InputBox {
 	public function getSearchForm2() {
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
-			$this->mButtonLabel = wfMessage( 'tryexact' )->text();
+			$this->mButtonLabel = wfMessage( 'inputbox-tryexact' )->text();
 		}
 
 		$id = Sanitizer::escapeId( $this->mID, 'noninitial' );
@@ -316,7 +316,7 @@ class InputBox {
 			}
 		} else {
 			if ( !$this->mButtonLabel ) {
-				$this->mButtonLabel = wfMessage( 'createarticle' )->text();
+				$this->mButtonLabel = wfMessage( 'inputbox-createarticle' )->text();
 			}
 		}
 
