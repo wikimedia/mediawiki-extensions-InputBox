@@ -91,6 +91,14 @@ class InputBox {
 		if ( !$this->mSearchButtonLabel ) {
 			$this->mSearchButtonLabel = wfMessage( 'inputbox-searchfulltext' )->text();
 		}
+		if ( $this->mID !== '' ) {
+			$idArray = array( 'id' => Sanitizer::escapeId( $this->mID ) );
+		} else {
+			$idArray = array();
+		}
+		// We need a unqiue id to link <label> to checkboxes, but also
+		// want multiple <inputbox>'s to not be invalid html
+		$idRandStr = Sanitizer::escapeId( '-' . $this->mID . wfRandom(), 'noninitial' );
 
 		// Build HTML
 		$htmlOut = Xml::openElement( 'div',
@@ -101,10 +109,9 @@ class InputBox {
 		$htmlOut .= Xml::openElement( 'form',
 			array(
 				'name' => 'searchbox',
-				'id' => 'searchbox',
 				'class' => 'searchbox',
 				'action' => SpecialPage::getTitleFor( 'Search' )->getLocalUrl(),
-			)
+			) + $idArray
 		);
 		$htmlOut .= Xml::element( 'input',
 			array(
@@ -178,7 +185,7 @@ class InputBox {
 							'type' => 'hidden',
 							'name' => 'ns' . $i,
 							'value' => 1,
-							'id' => 'mw-inputbox-ns' . $i
+							'id' => 'mw-inputbox-ns' . $i . $idRandStr
 						) + $checked
 					);
 				} else {
@@ -189,11 +196,11 @@ class InputBox {
 							'type' => 'checkbox',
 							'name' => 'ns' . $i,
 							'value' => 1,
-							'id' => 'mw-inputbox-ns' . $i
+							'id' => 'mw-inputbox-ns' . $i . $idRandStr
 						) + $checked
 					);
 					// Label
-					$htmlOut .= '&#160;' . Xml::label( $name, 'mw-inputbox-ns' . $i );
+					$htmlOut .= '&#160;' . Xml::label( $name, 'mw-inputbox-ns' . $i . $idRandStr );
 					$htmlOut .= '</div> ';
 				}
 			}
@@ -244,7 +251,15 @@ class InputBox {
 			$this->mButtonLabel = wfMessage( 'inputbox-tryexact' )->text();
 		}
 
-		$id = Sanitizer::escapeId( $this->mID, 'noninitial' );
+		if ( $this->mID !== '' ) {
+			$unescapedID = $this->mID;
+		} else {
+			// The label element needs a unique id, use
+			// random number to avoid multiple input boxes
+			// having conflicts.
+			$unescapedID = wfRandom();
+		}
+		$id = Sanitizer::escapeId( $unescapedID, 'noninitial' );
 		$htmlLabel = '';
 		if ( isset( $this->mLabelText ) && strlen( trim( $this->mLabelText ) ) ) {
 			$this->mLabelText = $this->mParser->recursiveTagParse( $this->mLabelText );
