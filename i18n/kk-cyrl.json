@@ -1,10 +1,14 @@
 {
     "@metadata": {
-        "authors": []
+        "authors": [
+            "Arystanbek"
+        ]
     },
     "inputbox-error-no-type": "Жасалатын енгізу жолағының түрін келтірмепсіз.",
-    "inputbox-error-bad-type": "Енгізу жолақтың «$1» түрі танылмады. Тек «create», «comment», «search» не «search2» деген түрлерді келтіріңіз.",
-    "tryexact": "Дәл сәйкесін сынап көріңіз",
-    "searchfulltext": "Толық мәтінімен іздеу",
-    "createarticle": "Бетті бастау"
+    "inputbox-error-bad-type": "Енгізу жолағының «$1» түрі танылмады. Тек «create», «comment», «search» не «search2» деген түрлерін келтіріңіз.",
+    "inputbox-tryexact": "Дәл сәйкесін сынап көріңіз",
+    "inputbox-searchfulltext": "Толық мәтінімен іздеу",
+    "inputbox-createarticle": "Бетті бастау",
+    "inputbox-movearticle": "Бетті жылжыту",
+    "inputbox-ns-main": "Басты"
 }
