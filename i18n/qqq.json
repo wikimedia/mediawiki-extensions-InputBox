@@ -16,6 +16,6 @@
     "inputbox-tryexact": "Part of the \"Inputbox\" extension. This message is the text of the button to search the page you typed in the inputbox. If the page with the exact name exists, you will go directly to that page.",
     "inputbox-searchfulltext": "Part of the \"Inputbox\" extension. This message is the text of the button to search the page you typed in the inputbox. This button always goes to the search page, even if the page with the exact name exists.\n\nSee also:\n* {{msg-mw|Search}}\n* {{msg-mw|Accesskey-search-fulltext}}\n* {{msg-mw|Tooltip-search-fulltext}}",
     "inputbox-createarticle": "Part of the \"Inputbox\" extension. This message is the text of the button to create the page you typed in the inputbox.\n{{Identical|Create page}}",
-    "inputbox-movearticle": "Part of the \"Inputbox\" extension. This message is the text of the button to move the page to the name you typed in the inputbox.",
+    "inputbox-movearticle": "Part of the \"Inputbox\" extension. This message is the text of the button to move the page to the name you typed in the inputbox.\n{{Identical|Move page}}",
     "inputbox-ns-main": "Probably refers to the main namespace.\n{{Identical|Main}}"
 }

@@ -9,8 +9,9 @@
     "inputbox-desc": "Umožňuje vkládat určité HTML formuláře.",
     "inputbox-error-no-type": "Není určen typ formulářového pole k vytvoření.",
     "inputbox-error-bad-type": "Nerozpoznaný typ pole „$1“.\nUveďte jednu z možností: „create“, „comment“, „search“, „search2“ nebo „fulltext“.",
-    "tryexact": "Vyzkoušet přesné hledání",
-    "searchfulltext": "Plnotextové hledání",
-    "createarticle": "Vytvořit článek",
+    "inputbox-tryexact": "Vyzkoušet přesné hledání",
+    "inputbox-searchfulltext": "Plnotextové hledání",
+    "inputbox-createarticle": "Vytvořit článek",
+    "inputbox-movearticle": "Přesunout stránku",
     "inputbox-ns-main": "Hlavní"
 }
