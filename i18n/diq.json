@@ -3,14 +3,15 @@
         "authors": [
             "Aspar",
             "Erdemaslancan",
-            "Xoser"
+            "Xoser",
+            "Mirzali"
         ]
     },
     "inputbox-desc": "desturê daxilbiyayişê formê HTMLyi dano, no HTML gani ver ra şınasi bıbo.",
     "inputbox-error-no-type": "Qutiya daxilbiyayişi ya ke vıraziyena gani tipê aye diyari bıbo",
     "inputbox-error-bad-type": "Qutiyê tîp ê \"$1\"î kebul nikerd.\nMa şima rê \"create\", \"comment\", \"search\", \"search2\" or \"fulltext\" spesife bike.",
-    "tryexact": "tam hemcıt biyayiş tesel bıker/bıcereb",
-    "searchfulltext": "pêroyê metni bıgêr",
-    "createarticle": "Pela vırazê",
+    "inputbox-tryexact": "tam hemcıt biyayiş tesel bıker/bıcereb",
+    "inputbox-searchfulltext": "pêroyê metni bıgêr",
+    "inputbox-createarticle": "Pele vıraze",
     "inputbox-ns-main": "Ser"
 }
