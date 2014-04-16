@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ozi64",
-            "Przemub"
-        ]
-    },
-    "createarticle": "Naszkryflej artikel"
+	"@metadata": {
+		"authors": [
+			"Ozi64",
+			"Przemub"
+		]
+	},
+	"inputbox-createarticle": "Naszkryflej artikel"
 }

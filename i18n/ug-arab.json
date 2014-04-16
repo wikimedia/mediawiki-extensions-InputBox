@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Sahran"
-        ]
-    },
-    "createarticle": "بەت قۇر",
-    "inputbox-ns-main": "ئاساسىي تىزىملىك"
+	"@metadata": {
+		"authors": [
+			"Sahran"
+		]
+	},
+	"inputbox-createarticle": "بەت قۇر",
+	"inputbox-ns-main": "ئاساسىي تىزىملىك"
 }

@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Tuinui"
-        ]
-    },
-    "tryexact": "ໄປ",
-    "searchfulltext": "ຊອກຫາ",
-    "createarticle": "ສ້າງບົດຄວາມ"
+	"@metadata": {
+		"authors": [
+			"Tuinui"
+		]
+	},
+	"inputbox-tryexact": "ໄປ",
+	"inputbox-searchfulltext": "ຊອກຫາ",
+	"inputbox-createarticle": "ສ້າງບົດຄວາມ"
 }

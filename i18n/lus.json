@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "RMizo"
-        ]
-    },
-    "createarticle": "Hemi phêk hi siam rawh le",
-    "inputbox-ns-main": "Phekpui"
+	"@metadata": {
+		"authors": [
+			"RMizo"
+		]
+	},
+	"inputbox-createarticle": "Hemi phêk hi siam rawh le",
+	"inputbox-ns-main": "Phekpui"
 }

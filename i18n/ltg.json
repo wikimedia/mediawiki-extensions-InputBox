@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dark Eagle"
-        ]
-    },
-    "createarticle": "Sataiseit rakstīņu"
+	"@metadata": {
+		"authors": [
+			"Dark Eagle"
+		]
+	},
+	"inputbox-createarticle": "Sataiseit rakstīņu"
 }

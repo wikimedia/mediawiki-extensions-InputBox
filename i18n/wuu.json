@@ -1,7 +1,5 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "searchfulltext": "全文搜寻",
-    "createarticle": "建立新文章"
+	"@metadata": [],
+	"inputbox-searchfulltext": "全文搜寻",
+	"inputbox-createarticle": "建立新文章"
 }

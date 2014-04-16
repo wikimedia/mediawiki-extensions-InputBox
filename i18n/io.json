@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Malafaya"
-        ]
-    },
-    "searchfulltext": "Serchar tota texto",
-    "createarticle": "Krear pagino"
+	"@metadata": {
+		"authors": [
+			"Malafaya"
+		]
+	},
+	"inputbox-searchfulltext": "Serchar tota texto",
+	"inputbox-createarticle": "Krear pagino"
 }

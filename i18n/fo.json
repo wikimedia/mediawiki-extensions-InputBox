@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "EileenSanda"
-        ]
-    },
-    "tryexact": "Far til síðu",
-    "searchfulltext": "Leita eftir hesum teksti",
-    "createarticle": "Upprætta síðu",
-    "inputbox-ns-main": "Høvuðs"
+	"@metadata": {
+		"authors": [
+			"EileenSanda"
+		]
+	},
+	"inputbox-tryexact": "Far til síðu",
+	"inputbox-searchfulltext": "Leita eftir hesum teksti",
+	"inputbox-createarticle": "Upprætta síðu",
+	"inputbox-ns-main": "Høvuðs"
 }

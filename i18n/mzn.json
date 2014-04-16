@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Mehdi",
-            "Spacebirdy",
-            "محک"
-        ]
-    },
-    "createarticle": "صفحه بساتن"
+	"@metadata": {
+		"authors": [
+			"Mehdi",
+			"Spacebirdy",
+			"محک"
+		]
+	},
+	"inputbox-createarticle": "صفحه بساتن"
 }

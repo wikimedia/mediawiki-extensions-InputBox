@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Lloffiwr"
-        ]
-    },
-    "createarticle": "Anzisha ukurasa",
-    "inputbox-ns-main": "Kuu"
+	"@metadata": {
+		"authors": [
+			"Lloffiwr"
+		]
+	},
+	"inputbox-createarticle": "Anzisha ukurasa",
+	"inputbox-ns-main": "Kuu"
 }

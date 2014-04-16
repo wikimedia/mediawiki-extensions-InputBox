@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Yidel",
-            "פוילישער"
-        ]
-    },
-    "searchfulltext": "זוך אין אלע בלעטער",
-    "createarticle": "באשאפט ארטיקל",
-    "inputbox-ns-main": "הויפט"
+	"@metadata": {
+		"authors": [
+			"Yidel",
+			"פוילישער"
+		]
+	},
+	"inputbox-searchfulltext": "זוך אין אלע בלעטער",
+	"inputbox-createarticle": "באשאפט ארטיקל",
+	"inputbox-ns-main": "הויפט"
 }

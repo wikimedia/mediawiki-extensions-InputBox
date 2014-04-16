@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Игорь Бродский"
-        ]
-    },
-    "tryexact": "Lat'kat tehta tarkoiged ecind",
-    "searchfulltext": "Ectä täudes tekstas",
-    "createarticle": "Säta lehtpol'",
-    "inputbox-ns-main": "Pänimiavaruz"
+	"@metadata": {
+		"authors": [
+			"Игорь Бродский"
+		]
+	},
+	"inputbox-tryexact": "Lat'kat tehta tarkoiged ecind",
+	"inputbox-searchfulltext": "Ectä täudes tekstas",
+	"inputbox-createarticle": "Säta lehtpol'",
+	"inputbox-ns-main": "Pänimiavaruz"
 }

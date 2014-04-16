@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Vogone"
-        ]
-    },
-    "tryexact": "Mėginti tikslų atitikimą",
-    "searchfulltext": "Ieškoti pilno teksto",
-    "createarticle": "Kurti straipsnį",
-    "inputbox-ns-main": "Pagrindinis"
+	"@metadata": {
+		"authors": [
+			"Vogone"
+		]
+	},
+	"inputbox-tryexact": "Mėginti tikslų atitikimą",
+	"inputbox-searchfulltext": "Ieškoti pilno teksto",
+	"inputbox-createarticle": "Kurti straipsnį",
+	"inputbox-ns-main": "Pagrindinis"
 }

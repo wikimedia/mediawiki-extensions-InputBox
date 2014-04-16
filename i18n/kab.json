@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Agurzil",
-            "Mmistmurt"
-        ]
-    },
-    "tryexact": "Nadi ɣef uzwel kif-kif",
-    "searchfulltext": "Nadi aḍris ettmam",
-    "createarticle": "Xleq amagrad"
+	"@metadata": {
+		"authors": [
+			"Agurzil",
+			"Mmistmurt"
+		]
+	},
+	"inputbox-tryexact": "Nadi ɣef uzwel kif-kif",
+	"inputbox-searchfulltext": "Nadi aḍris ettmam",
+	"inputbox-createarticle": "Xleq amagrad"
 }

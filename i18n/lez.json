@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Migraghvi"
-        ]
-    },
-    "createarticle": "Макъала туькIуьрун",
-    "inputbox-ns-main": "КЬилдин"
+	"@metadata": {
+		"authors": [
+			"Migraghvi"
+		]
+	},
+	"inputbox-createarticle": "Макъала туькIуьрун",
+	"inputbox-ns-main": "КЬилдин"
 }

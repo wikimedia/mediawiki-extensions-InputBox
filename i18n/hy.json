@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Xelgen"
-        ]
-    },
-    "createarticle": "Ստեղծել էջ"
+	"@metadata": {
+		"authors": [
+			"Xelgen"
+		]
+	},
+	"inputbox-createarticle": "Ստեղծել էջ"
 }

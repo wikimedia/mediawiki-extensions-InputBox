@@ -1,8 +1,6 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "tryexact": "ค้นหาตรงทุกตัวอักษร",
-    "searchfulltext": "ค้นหาข้อมูล",
-    "createarticle": "สร้างเนื้อหา"
+	"@metadata": [],
+	"inputbox-tryexact": "ค้นหาตรงทุกตัวอักษร",
+	"inputbox-searchfulltext": "ค้นหาข้อมูล",
+	"inputbox-createarticle": "สร้างเนื้อหา"
 }

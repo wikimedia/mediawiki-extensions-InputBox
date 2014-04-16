@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Malafaya"
-        ]
-    },
-    "searchfulltext": "Sercha kompleti texte"
+	"@metadata": {
+		"authors": [
+			"Malafaya"
+		]
+	},
+	"inputbox-searchfulltext": "Sercha kompleti texte"
 }

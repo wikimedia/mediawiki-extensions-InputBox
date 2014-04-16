@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chelin",
-            "SabineCretella"
-        ]
-    },
-    "searchfulltext": "Ascià dint''o testo",
-    "createarticle": "Cria paggena"
+	"@metadata": {
+		"authors": [
+			"Chelin",
+			"SabineCretella"
+		]
+	},
+	"inputbox-searchfulltext": "Ascià dint''o testo",
+	"inputbox-createarticle": "Cria paggena"
 }

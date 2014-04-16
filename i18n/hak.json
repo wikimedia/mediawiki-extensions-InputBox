@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Hakka"
-        ]
-    },
-    "tryexact": "Sòng-chhṳ chîn-khok phit-phi",
-    "searchfulltext": "Chhiòn vùn-kiám chhìm-cháu",
-    "createarticle": "Kien-li̍p vùn-chông"
+	"@metadata": {
+		"authors": [
+			"Hakka"
+		]
+	},
+	"inputbox-tryexact": "Sòng-chhṳ chîn-khok phit-phi",
+	"inputbox-searchfulltext": "Chhiòn vùn-kiám chhìm-cháu",
+	"inputbox-createarticle": "!!FUZZY!!Kien-li̍p vùn-chông"
 }

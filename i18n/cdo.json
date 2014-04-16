@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Yejianfei"
-        ]
-    },
-    "createarticle": "開頁"
+	"@metadata": {
+		"authors": [
+			"Yejianfei"
+		]
+	},
+	"inputbox-createarticle": "開頁"
 }

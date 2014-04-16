@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Marzedu"
-        ]
-    },
-    "createarticle": "Crea artìculu"
+	"@metadata": {
+		"authors": [
+			"Marzedu"
+		]
+	},
+	"inputbox-createarticle": "Crea artìculu"
 }

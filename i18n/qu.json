@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "AlimanRuna"
-        ]
-    },
-    "tryexact": "Hinalla taripanayaspa maskay",
-    "searchfulltext": "Hunt'a qillqata maskay",
-    "createarticle": "Qillqata kamariy"
+	"@metadata": {
+		"authors": [
+			"AlimanRuna"
+		]
+	},
+	"inputbox-tryexact": "Hinalla taripanayaspa maskay",
+	"inputbox-searchfulltext": "Hunt'a qillqata maskay",
+	"inputbox-createarticle": "Qillqata kamariy"
 }

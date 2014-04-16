@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bonevarluri",
-            "Mogoeilor"
-        ]
-    },
-    "searchfulltext": "پی جوری متنی",
-    "createarticle": "راس كردن بلگه",
-    "inputbox-ns-main": "اصلی"
+	"@metadata": {
+		"authors": [
+			"Bonevarluri",
+			"Mogoeilor"
+		]
+	},
+	"inputbox-searchfulltext": "پی جوری متنی",
+	"inputbox-createarticle": "راس كردن بلگه",
+	"inputbox-ns-main": "اصلی"
 }

@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Menachem.Moreira"
-        ]
-    },
-    "createarticle": "Krear pajina"
+	"@metadata": {
+		"authors": [
+			"Menachem.Moreira"
+		]
+	},
+	"inputbox-createarticle": "Krear pajina"
 }

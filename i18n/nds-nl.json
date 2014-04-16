@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Servien"
-        ]
-    },
-    "tryexact": "Naor sekuur zeuken",
-    "searchfulltext": "De hele tekste deurzeuken",
-    "createarticle": "Nieje zied anmaken"
+	"@metadata": {
+		"authors": [
+			"Servien"
+		]
+	},
+	"inputbox-tryexact": "Naor sekuur zeuken",
+	"inputbox-searchfulltext": "De hele tekste deurzeuken",
+	"inputbox-createarticle": "Nieje zied anmaken"
 }

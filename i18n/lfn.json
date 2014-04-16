@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Malafaya"
-        ]
-    },
-    "createarticle": "Crea paje"
+	"@metadata": {
+		"authors": [
+			"Malafaya"
+		]
+	},
+	"inputbox-createarticle": "Crea paje"
 }

@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "searchfulltext": "تلاش ِکل متن",
-    "createarticle": "نیا مضمون",
-    "inputbox-ns-main": "مین"
+	"@metadata": {
+		"authors": [
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"inputbox-searchfulltext": "تلاش ِکل متن",
+	"inputbox-createarticle": "نیا مضمون",
+	"inputbox-ns-main": "مین"
 }
