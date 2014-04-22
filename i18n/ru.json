@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Александр Сигачёв",
-			"Okras"
+			"Okras",
+			"Meshkov.a"
 		]
 	},
 	"inputbox-desc": "Позволяет включать заранее определённые HTML-формы",
@@ -11,6 +12,6 @@
 	"inputbox-tryexact": "Строгий поиск",
 	"inputbox-searchfulltext": "Полнотекстовый поиск",
 	"inputbox-createarticle": "Создать статью",
-	"inputbox-movearticle": "Переименовать страницу",
+	"inputbox-movearticle": "Переместить страницу",
 	"inputbox-ns-main": "Главная"
 }
