@@ -314,7 +314,7 @@ class InputBox {
 
 		if ( $this->mType == "comment" ) {
 			if ( !$this->mButtonLabel ) {
-				$this->mButtonLabel = wfMessage( 'postcomment' )->text();
+				$this->mButtonLabel = wfMessage( 'inputbox-postcomment' )->text();
 			}
 		} else {
 			if ( !$this->mButtonLabel ) {
@@ -501,7 +501,7 @@ class InputBox {
 		global $wgScript;
 
 		if ( !$this->mButtonLabel ) {
-				$this->mButtonLabel = wfMessage( 'postcomment' )->text();
+				$this->mButtonLabel = wfMessage( 'inputbox-postcommenttitle' )->text();
 		}
 
 		$htmlOut = Xml::openElement( 'div',
