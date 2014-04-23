@@ -13,5 +13,7 @@
 	"inputbox-searchfulltext": "Полнотекстовый поиск",
 	"inputbox-createarticle": "Создать статью",
 	"inputbox-movearticle": "Переместить страницу",
+	"inputbox-postcomment": "Новый раздел",
+	"inputbox-postcommenttitle": "Новый раздел",
 	"inputbox-ns-main": "Главная"
 }

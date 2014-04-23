@@ -15,5 +15,7 @@
 	"inputbox-searchfulltext": "Volltextsuche",
 	"inputbox-createarticle": "Seite erstellen",
 	"inputbox-movearticle": "Seite verschieben",
+	"inputbox-postcomment": "Neuer Abschnitt",
+	"inputbox-postcommenttitle": "Neuer Abschnitt",
 	"inputbox-ns-main": "Seiten"
 }

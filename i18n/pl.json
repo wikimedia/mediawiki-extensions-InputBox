@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Derbeth",
-			"Sp5uhe"
+			"Sp5uhe",
+			"Alan ffm"
 		]
 	},
 	"inputbox-desc": "Umożliwia włączenie w treść strony wcześniej zdefiniowanych formularzy HTML",
@@ -11,5 +12,8 @@
 	"inputbox-tryexact": "Użyj dokładnego wyrażenia",
 	"inputbox-searchfulltext": "Szukaj w całych tekstach",
 	"inputbox-createarticle": "Utwórz artykuł",
+	"inputbox-movearticle": "Przenieś stronę",
+	"inputbox-postcomment": "Nowa sekcja",
+	"inputbox-postcommenttitle": "Nowa sekcja",
 	"inputbox-ns-main": "Główna"
 }
