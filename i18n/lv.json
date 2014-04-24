@@ -3,7 +3,8 @@
 		"authors": [
 			"Dark Eagle",
 			"Xil",
-			"Yyy"
+			"Yyy",
+			"Papuass"
 		]
 	},
 	"inputbox-desc": "Atļaut iekļaut iepriekš noteiktās HTML formas",
@@ -11,5 +12,7 @@
 	"inputbox-error-bad-type": "Ievades lauka tips \"$1\" nav atpazīts.\nLūdzu norādi \"create\", \"comment\", \"search\", \"search2\" vai \"fulltext\".",
 	"inputbox-tryexact": "Meklēt precīzi",
 	"inputbox-searchfulltext": "Meklēt visu tekstu",
-	"inputbox-createarticle": "Izveidot lapu"
+	"inputbox-createarticle": "Izveidot lapu",
+	"inputbox-postcomment": "Jauna sadaļa",
+	"inputbox-postcommenttitle": "Jauna sadaļa"
 }

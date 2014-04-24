@@ -15,5 +15,7 @@
 	"inputbox-searchfulltext": "搜索全文",
 	"inputbox-createarticle": "创建页面",
 	"inputbox-movearticle": "移动页面",
+	"inputbox-postcomment": "新段落",
+	"inputbox-postcommenttitle": "新段落",
 	"inputbox-ns-main": "主"
 }
