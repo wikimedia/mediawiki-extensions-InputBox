@@ -15,5 +15,7 @@
 	"inputbox-searchfulltext": "全文檢索",
 	"inputbox-createarticle": "建立文章",
 	"inputbox-movearticle": "移動頁面",
+	"inputbox-postcomment": "新段落",
+	"inputbox-postcommenttitle": "新段落",
 	"inputbox-ns-main": "主"
 }
