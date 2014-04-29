@@ -16,5 +16,7 @@
 	"inputbox-searchfulltext": "전체 글 검색",
 	"inputbox-createarticle": "문서 만들기",
 	"inputbox-movearticle": "문서 옮기기",
+	"inputbox-postcomment": "새 문단",
+	"inputbox-postcommenttitle": "새 문단",
 	"inputbox-ns-main": "문서"
 }
