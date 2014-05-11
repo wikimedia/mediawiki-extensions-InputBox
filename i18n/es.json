@@ -16,5 +16,7 @@
 	"inputbox-searchfulltext": "Buscar por texto completo",
 	"inputbox-createarticle": "Crear artículo",
 	"inputbox-movearticle": "Mover página",
+	"inputbox-postcomment": "Sección nueva",
+	"inputbox-postcommenttitle": "Sección nueva",
 	"inputbox-ns-main": "Principal"
 }
