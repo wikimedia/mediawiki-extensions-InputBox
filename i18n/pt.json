@@ -3,7 +3,8 @@
 		"authors": [
 			"Hamilton Abreu",
 			"Malafaya",
-			"Imperadeiro98"
+			"Imperadeiro98",
+			"Vitorvicentevalente"
 		]
 	},
 	"inputbox-desc": "Permite a inclusão de formulários HTML pré-definidos.",
@@ -12,6 +13,7 @@
 	"inputbox-tryexact": "Tentar a exata expressão",
 	"inputbox-searchfulltext": "Pesquisar no texto completo",
 	"inputbox-createarticle": "Criar página",
+	"inputbox-movearticle": "Mover página",
 	"inputbox-postcomment": "Nova seção",
 	"inputbox-postcommenttitle": "Nova seção",
 	"inputbox-ns-main": "Principal"
