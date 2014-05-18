@@ -44,6 +44,7 @@ class InputBox {
 		// Split caches by language, to make sure visitors do not see a cached
 		// version in a random language (since labels are in the user language)
 		$this->mParser->getOptions()->getUserLangObj();
+		$this->mParser->getOutput()->addModuleStyles( 'ext.inputBox.styles' );
 	}
 
 	public function render() {
@@ -103,7 +104,8 @@ class InputBox {
 		// Build HTML
 		$htmlOut = Xml::openElement( 'div',
 			array(
-				'style' => 'margin-left: auto; margin-right: auto; text-align: center; background-color:' . $this->mBGColor
+				'class' => 'mw-inputbox-centered',
+				'style' => $this->bgColorStyle(),
 			)
 		);
 		$htmlOut .= Xml::openElement( 'form',
@@ -190,7 +192,7 @@ class InputBox {
 					);
 				} else {
 					// Checkbox
-					$htmlOut .= ' <div class="inputbox-element" style="display: inline; white-space: nowrap;">';
+					$htmlOut .= ' <div class="inputbox-element">';
 					$htmlOut .= Xml::element( 'input',
 						array(
 							'type' => 'checkbox',
@@ -271,16 +273,14 @@ class InputBox {
 			array(
 				'name' => 'bodySearch' . $id,
 				'id' => 'bodySearch' . $id,
-				'class' => 'bodySearch',
+				'class' => 'bodySearch' . ( $this->mInline ? ' mw-inputbox-inline' : '' ),
 				'action' => SpecialPage::getTitleFor( 'Search' )->getLocalUrl(),
-				'style' => $this->mInline ? 'display: inline;' : ''
 			)
 		);
 		$htmlOut .= Xml::openElement( 'div',
 			array(
-				'class' => 'bodySearchWrap',
-				'style' => 'background-color:' . $this->mBGColor . ';' .
-					$this->mInline ? 'display: inline;' : ''
+				'class' => 'bodySearchWrap' . ( $this->mInline ? ' mw-inputbox-inline' : '' ),
+				'style' => $this->bgColorStyle(),
 			)
 		);
 		$htmlOut .= $htmlLabel;
@@ -339,7 +339,8 @@ class InputBox {
 
 		$htmlOut = Xml::openElement( 'div',
 			array(
-				'style' => 'margin-left: auto; margin-right: auto; text-align: center; background-color:' . $this->mBGColor
+				'class' => 'mw-inputbox-centered',
+				'style' => $this->bgColorStyle(),
 			)
 		);
 		$createBoxParams = array(
@@ -449,7 +450,8 @@ class InputBox {
 
 		$htmlOut = Xml::openElement( 'div',
 			array(
-				'style' => 'margin-left: auto; margin-right: auto; text-align: center; background-color:' . $this->mBGColor
+				'class' => 'mw-inputbox-centered',
+				'style' => $this->bgColorStyle(),
 			)
 		);
 		$moveBoxParams = array(
@@ -521,7 +523,8 @@ class InputBox {
 
 		$htmlOut = Xml::openElement( 'div',
 			array(
-				'style' => 'margin-left: auto; margin-right: auto; text-align: center; background-color:' . $this->mBGColor
+				'class' => 'mw-inputbox-centered',
+				'style' => $this->bgColorStyle(),
 			)
 		);
 		$commentFormParams = array(
@@ -678,5 +681,12 @@ class InputBox {
 			) $ /xi
 REGEX;
 		return (bool) preg_match( $regex, $color );
+	}
+
+	private function bgColorStyle() {
+		if ( $this->mBGColor != 'transparent' ) {
+			return 'background-color: ' . $this->mBGColor . ';';
+		}
+		return '';
 	}
 }
