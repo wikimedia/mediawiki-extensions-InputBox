@@ -298,7 +298,7 @@ class InputBox {
 				'type' => 'submit',
 				'name' => 'go',
 				'value' => $this->mButtonLabel,
-				'class' => 'bodySearchBtnGo' . $id
+				'class' => 'bodySearchBtnGo',
 			)
 		);
 
