@@ -49,7 +49,7 @@ class InputBox {
 
 	public function render() {
 		// Handle various types
-		switch( $this->mType ) {
+		switch ( $this->mType ) {
 			case 'create':
 			case 'comment':
 				return $this->getCreateForm();
@@ -127,7 +127,7 @@ class InputBox {
 			)
 		);
 
-		if( $this->mPrefix != '' ){
+		if ( $this->mPrefix != '' ) {
 			$htmlOut .= Xml::element( 'input',
 				array(
 					'name' => 'prefix',
@@ -157,9 +157,9 @@ class InputBox {
 				}
 
 				$mainMsg = wfMessage( 'inputbox-ns-main' )->inContentLanguage()->text();
-				if( $userNS == 'Main' || $userNS == $mainMsg ) {
+				if ( $userNS == 'Main' || $userNS == $mainMsg ) {
 					$i = 0;
-				} elseif( array_search( $userNS, $namespaces ) ) {
+				} elseif ( array_search( $userNS, $namespaces ) ) {
 					$i = array_search( $userNS, $namespaces );
 				} elseif ( isset( $nsAliases[$userNS] ) ) {
 					$i = $nsAliases[$userNS];
@@ -167,13 +167,13 @@ class InputBox {
 					continue; # Namespace not recognized, skip
 				}
 				$showNamespaces[$i] = $userNS;
-				if( isset( $checkedNS[$userNS] ) && $checkedNS[$userNS] ) {
+				if ( isset( $checkedNS[$userNS] ) && $checkedNS[$userNS] ) {
 					$checkedNS[$i] = true;
 				}
 			}
 
 			# Show valid namespaces
-			foreach( $showNamespaces as $i => $name ) {
+			foreach ( $showNamespaces as $i => $name ) {
 				$checked = array();
 				// Namespace flagged with "**" or if it's the only one
 				if ( ( isset( $checkedNS[$i] ) && $checkedNS[$i] ) || count( $showNamespaces ) == 1 ) {
@@ -209,7 +209,7 @@ class InputBox {
 
 			// Line break
 			$htmlOut .= $this->mBR;
-		} elseif( $type == 'search' ) {
+		} elseif ( $type == 'search' ) {
 			// Go button
 			$htmlOut .= Xml::element( 'input',
 				array(
@@ -233,7 +233,7 @@ class InputBox {
 		);
 
 		// Hidden fulltext param for IE (bug 17161)
-		if( $type == 'fulltext' ) {
+		if ( $type == 'fulltext' ) {
 			$htmlOut .= Html::hidden( 'fulltext', 'Search' );
 		}
 
@@ -349,7 +349,7 @@ class InputBox {
 			'action' => $wgScript,
 			'method' => 'get'
 		);
-		if( $this->mID !== '' ) {
+		if ( $this->mID !== '' ) {
 			$createBoxParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $createBoxParams );
@@ -460,7 +460,7 @@ class InputBox {
 			'action' => $wgScript,
 			'method' => 'get'
 		);
-		if( $this->mID !== '' ) {
+		if ( $this->mID !== '' ) {
 			$moveBoxParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $moveBoxParams );
@@ -533,7 +533,7 @@ class InputBox {
 			'action' => $wgScript,
 			'method' => 'get'
 		);
-		if( $this->mID !== '' ) {
+		if ( $this->mID !== '' ) {
 			$commentFormParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $commentFormParams );
