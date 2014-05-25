@@ -11,5 +11,8 @@
 	"inputbox-tryexact": "കൃത്യമായി യോജിക്കുന്ന ഫലങ്ങൾ ഉണ്ടോയെന്നു പരിശോധിക്കുക",
 	"inputbox-searchfulltext": "എഴുത്ത് മൊത്തമായി തിരയുക",
 	"inputbox-createarticle": "താൾ സൃഷ്ടിക്കുക",
+	"inputbox-movearticle": "താൾ മാറ്റുക",
+	"inputbox-postcomment": "പുതിയ വിഭാഗം",
+	"inputbox-postcommenttitle": "പുതിയ വിഭാഗം",
 	"inputbox-ns-main": "മുഖ്യം"
 }
