@@ -3,7 +3,8 @@
 		"authors": [
 			"Ebraminio",
 			"Huji",
-			"Mjbmr"
+			"Mjbmr",
+			"Calak"
 		]
 	},
 	"inputbox-desc": "اجازهٔ استفاده از فرم‌های HTML از پیش تعریف شده را می‌دهد",
@@ -12,5 +13,8 @@
 	"inputbox-tryexact": "مطابقت نظیر به نظیر را بیازما",
 	"inputbox-searchfulltext": "جستجوی کل متن",
 	"inputbox-createarticle": "ایجاد صفحه",
+	"inputbox-movearticle": "انتقال صفحه",
+	"inputbox-postcomment": "بخش جدید",
+	"inputbox-postcommenttitle": "بخش جدید",
 	"inputbox-ns-main": "اصلی"
 }
