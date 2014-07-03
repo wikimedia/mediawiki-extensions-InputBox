@@ -3,7 +3,8 @@
 		"authors": [
 			"AS",
 			"Ahonc",
-			"Dim Grits"
+			"Dim Grits",
+			"Ата"
 		]
 	},
 	"inputbox-desc": "Дозволяє включати заздалегідь визначені HTML-форми",
@@ -12,5 +13,8 @@
 	"inputbox-tryexact": "Строгий пошук",
 	"inputbox-searchfulltext": "Повнотекстовий пошук",
 	"inputbox-createarticle": "Створити статтю",
+	"inputbox-movearticle": "Перейменувати сторінку",
+	"inputbox-postcomment": "Новий розділ",
+	"inputbox-postcommenttitle": "Новий розділ",
 	"inputbox-ns-main": "Головна"
 }
