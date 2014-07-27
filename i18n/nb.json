@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"EivindJ"
+			"EivindJ",
+			"Danmichaelo"
 		]
 	},
 	"inputbox-desc": "Tillater inkludering av forhåndsdefinerte HTML-skjemaer",
@@ -10,5 +11,8 @@
 	"inputbox-tryexact": "Prøv nøyaktig treff",
 	"inputbox-searchfulltext": "Søk full tekst",
 	"inputbox-createarticle": "Opprett side",
+	"inputbox-movearticle": "Flytt side",
+	"inputbox-postcomment": "Nytt avsnitt",
+	"inputbox-postcommenttitle": "Nytt avsnitt",
 	"inputbox-ns-main": "Hoved"
 }
