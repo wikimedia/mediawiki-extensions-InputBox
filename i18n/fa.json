@@ -4,7 +4,8 @@
 			"Ebraminio",
 			"Huji",
 			"Mjbmr",
-			"Calak"
+			"Calak",
+			"Alirezaaa"
 		]
 	},
 	"inputbox-desc": "اجازهٔ استفاده از فرم‌های HTML از پیش تعریف شده را می‌دهد",
@@ -15,6 +16,6 @@
 	"inputbox-createarticle": "ایجاد صفحه",
 	"inputbox-movearticle": "انتقال صفحه",
 	"inputbox-postcomment": "بخش جدید",
-	"inputbox-postcommenttitle": "بخش جدید",
+	"inputbox-postcommenttitle": "بخش تازه",
 	"inputbox-ns-main": "اصلی"
 }
