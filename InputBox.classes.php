@@ -15,6 +15,7 @@ class InputBox {
 	private $mType = '';
 	private $mWidth = 50;
 	private $mPreload = '';
+	private $mPreloadparams = array();
 	private $mEditIntro = '';
 	private $mSummary = '';
 	private $mNosummary = '';
@@ -367,6 +368,15 @@ class InputBox {
 				'value' => $this->mPreload,
 			)
 		);
+		foreach ( $this->mPreloadparams as $preloadparams ) {
+			$htmlOut .= Xml::openElement( 'input',
+				array(
+					'type' => 'hidden',
+					'name' => 'preloadparams[]',
+					'value' => $preloadparams,
+				)
+			);
+		}
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => 'hidden',
@@ -551,6 +561,15 @@ class InputBox {
 				'value' => $this->mPreload,
 			)
 		);
+		foreach ( $this->mPreloadparams as $preloadparams ) {
+			$htmlOut .= Xml::openElement( 'input',
+				array(
+					'type' => 'hidden',
+					'name' => 'preloadparams[]',
+					'value' => $preloadparams,
+				)
+			);
+		}
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => 'hidden',
@@ -613,7 +632,14 @@ class InputBox {
 			if ( strpos( $line, '=' ) === false )
 				continue;
 			list( $name, $value ) = explode( '=', $line, 2 );
-			$values[ strtolower( trim( $name ) ) ] = Sanitizer::decodeCharReferences( trim( $value ) );
+			$name = strtolower( trim( $name ) );
+			$value = Sanitizer::decodeCharReferences( trim( $value ) );
+			if ( $name == 'preloadparams[]' ) {
+				// We have to special-case this one because it's valid for it to appear more than once.
+				$this->mPreloadparams[] = $value;
+			} else {
+				$values[ $name ] = $value;
+			}
 		}
 
 		// Validate the dir value.
