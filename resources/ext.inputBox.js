@@ -8,10 +8,8 @@
 ( function ( $, mw ) {
 	'use strict';
 	mw.hook( 'wikipage.content' ).add( function( $content ) {
-		var onChange,
-			events = 'keyup input change';
-
-		onChange = function() {
+		var $input = $content.find( '.createboxInput' ),
+			onChange = function() {
 			var $textbox = $( this ),
 				$submit = $textbox.data( 'form-submit' );
 
@@ -21,13 +19,12 @@
 			}
 
 			$submit.prop( 'disabled', $textbox.val().length < 1 );
-		};
+		}, i;
 
-		$content
-			.find( '.createboxInput' )
-			.on( events, onChange )
-			.trigger( 'keyup' )
-			.off( events, onChange )
-			.on( events, $.debounce( 50, onChange ) );
+		for ( i = 0; i < $input.length; i++ ) {
+			onChange.call( $input.get( i ) );
+		}
+
+		$input.on( 'keyup input change', $.debounce( 50, onChange ) );
       } );
 }( jQuery, mediaWiki ) );
