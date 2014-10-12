@@ -26,8 +26,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( -1 );
 }
 
-/* Configuration */
-
 // Credits
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
@@ -39,34 +37,33 @@ $wgExtensionCredits['parserhook'][] = array(
 	'descriptionmsg' => 'inputbox-desc',
 );
 
-// Shortcut to this extension directory
-$dir = __DIR__ . '/';
-
 // Internationalization
 $wgMessagesDirs['InputBox'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['InputBox'] = $dir . 'InputBox.i18n.php';
+$wgExtensionMessagesFiles['InputBox'] = __DIR__ . '/InputBox.i18n.php';
 
 // Register auto load for the special page class
-$wgAutoloadClasses['InputBoxHooks'] = $dir . 'InputBox.hooks.php';
-$wgAutoloadClasses['InputBox'] = $dir . 'InputBox.classes.php';
+$wgAutoloadClasses['InputBoxHooks'] = __DIR__ . '/InputBox.hooks.php';
+$wgAutoloadClasses['InputBox'] = __DIR__ . '/InputBox.classes.php';
 
 // Register parser hook
 $wgHooks['ParserFirstCallInit'][] = 'InputBoxHooks::register';
 $wgHooks['MediaWikiPerformAction'][] = 'InputBoxHooks::onMediaWikiPerformAction';
 $wgHooks['SpecialPageBeforeExecute'][] = 'InputBoxHooks::onSpecialPageBeforeExecute';
 
-$wgResourceModules['ext.inputBox.styles'] = array(
-	'localBasePath' => dirname( __FILE__ ) . '/resources',
-	'remoteExtPath' => 'InputBox/resources',
+$resourcePaths = array(
+	'localBasePath' => __DIR__ . '/resources',
+	'remoteExtPath' => 'InputBox/resources'
+);
+
+$wgResourceModules['ext.inputBox.styles'] = $resourcePaths + array(
 	'styles' => 'ext.inputBox.styles.css',
 );
-$resourcePaths = array(
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'InputBox'
-	);
-$wgResourceModules['ext.inputBox'] = array(
-	'scripts' => 'resources/ext.inputBox.js',
+
+$wgResourceModules['ext.inputBox'] = $resourcePaths + array(
+	'scripts' => 'ext.inputBox.js',
 	'dependencies' => array(
 		'jquery.throttle-debounce'
 	)
-) + $resourcePaths;
+);
+
+unset( $resourcePaths );
