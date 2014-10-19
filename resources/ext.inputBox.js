@@ -1,6 +1,5 @@
 /**
- * JavaScript functions for greying out InputBox Submit button until input recieved
- * from user
+ * Disable InputBox submit button when the corresponding text input field is empty.
  *
  * @author Tony Thomas
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
@@ -8,7 +7,7 @@
 ( function ( $, mw ) {
 	'use strict';
 	mw.hook( 'wikipage.content' ).add( function( $content ) {
-		var $input = $content.find( '.createboxInput' ),
+		var $input = $content.find( '.createboxInput:not([type=hidden])' ),
 			onChange = function() {
 			var $textbox = $( this ),
 				$submit = $textbox.data( 'form-submit' );
@@ -26,5 +25,5 @@
 		}
 
 		$input.on( 'keyup input change', $.debounce( 50, onChange ) );
-      } );
+	} );
 }( jQuery, mediaWiki ) );
