@@ -217,7 +217,7 @@ class InputBox {
 				array(
 					'type' => 'submit',
 					'name' => 'go',
-					'class' => 'searchboxGoButton',
+					'class' => 'mw-ui-button',
 					'value' => $this->mButtonLabel
 				)
 			);
@@ -229,7 +229,7 @@ class InputBox {
 			array(
 				'type' => 'submit',
 				'name' => 'fulltext',
-				'class' => 'searchboxSearchButton',
+				'class' => 'mw-ui-button',
 				'value' => $this->mSearchButtonLabel
 			)
 		);
@@ -300,7 +300,7 @@ class InputBox {
 				'type' => 'submit',
 				'name' => 'go',
 				'value' => $this->mButtonLabel,
-				'class' => 'bodySearchBtnGo',
+				'class' => 'mw-ui-button',
 			)
 		);
 
@@ -310,7 +310,7 @@ class InputBox {
 				array(
 					'type' => 'submit',
 					'name' => 'fulltext',
-					'class' => 'bodySearchBtnSearch',
+					'class' => 'mw-ui-button',
 					'value' => $this->mSearchButtonLabel
 				)
 			);
@@ -438,7 +438,7 @@ class InputBox {
 			array(
 				'type' => 'submit',
 				'name' => 'create',
-				'class' => 'createboxButton',
+				'class' => 'mw-ui-button mw-ui-progressive',
 				'value' => $this->mButtonLabel
 			)
 		);
@@ -511,7 +511,7 @@ class InputBox {
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => 'submit',
-				'class' => 'mw-moveboxButton',
+				'class' => 'mw-ui-button mw-ui-progressive',
 				'value' => $this->mButtonLabel
 			)
 		);
@@ -608,7 +608,7 @@ class InputBox {
 			array(
 				'type' => 'submit',
 				'name' => 'create',
-				'class' => 'commentboxButton',
+				'class' => 'mw-ui-button mw-ui-progressive',
 				'value' => $this->mButtonLabel
 			)
 		);
