@@ -625,8 +625,6 @@ class InputBox {
 	 * @param string $text Tag contents
 	 */
 	public function extractOptions( $text ) {
-		wfProfileIn( __METHOD__ );
-
 		// Parse all possible options
 		$values = array();
 		foreach ( explode( "\n", $text ) as $line ) {
@@ -689,7 +687,6 @@ class InputBox {
 		if ( !$this->isValidColor( $this->mBGColor ) ) {
 			$this->mBGColor = 'transparent';
 		}
-		wfProfileOut( __METHOD__ );
 	}
 
 	/**
