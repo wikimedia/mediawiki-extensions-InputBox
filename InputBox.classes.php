@@ -45,7 +45,11 @@ class InputBox {
 		// Split caches by language, to make sure visitors do not see a cached
 		// version in a random language (since labels are in the user language)
 		$this->mParser->getOptions()->getUserLangObj();
-		$this->mParser->getOutput()->addModuleStyles( 'ext.inputBox.styles' );
+		$this->mParser->getOutput()->addModuleStyles( array(
+			'ext.inputBox.styles',
+			'mediawiki.ui.input',
+			'mediawiki.ui.checkbox',
+		) );
 	}
 
 	public function render() {
@@ -119,7 +123,7 @@ class InputBox {
 		);
 		$htmlOut .= Xml::element( 'input',
 			array(
-				'class' => 'searchboxInput',
+				'class' => 'searchboxInput mw-ui-input mw-ui-input-inline',
 				'name' => 'search',
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'value' => $this->mDefaultText,
@@ -194,7 +198,7 @@ class InputBox {
 					);
 				} else {
 					// Checkbox
-					$htmlOut .= ' <div class="inputbox-element">';
+					$htmlOut .= ' <div class="inputbox-element mw-ui-checkbox">';
 					$htmlOut .= Xml::element( 'input',
 						array(
 							'type' => 'checkbox',
@@ -204,7 +208,7 @@ class InputBox {
 						) + $checked
 					);
 					// Label
-					$htmlOut .= '&#160;' . Xml::label( $name, 'mw-inputbox-ns' . $i . $idRandStr );
+					$htmlOut .= Xml::label( $name, 'mw-inputbox-ns' . $i . $idRandStr );
 					$htmlOut .= '</div> ';
 				}
 			}
@@ -290,12 +294,13 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'search',
+				'class' => 'mw-ui-input mw-ui-input-inline',
 				'size' => $this->mWidth,
 				'id' => 'bodySearchInput' . $id,
 				'dir' => $this->mDir,
 			)
 		);
-		$htmlOut .= Xml::element( 'input',
+		$htmlOut .= '&#160;' . Xml::element( 'input',
 			array(
 				'type' => 'submit',
 				'name' => 'go',
@@ -426,7 +431,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'title',
-				'class' => 'createboxInput',
+				'class' => 'createboxInput mw-ui-input mw-ui-input-inline',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
@@ -500,7 +505,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'wpNewTitle',
-				'class' => 'mw-moveboxInput',
+				'class' => 'mw-moveboxInput mw-ui-input mw-ui-input-inline',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
@@ -582,7 +587,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'preloadtitle',
-				'class' => 'commentboxInput',
+				'class' => 'commentboxInput mw-ui-input mw-ui-input-inline',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,

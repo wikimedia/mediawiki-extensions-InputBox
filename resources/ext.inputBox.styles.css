@@ -9,6 +9,7 @@
 }
 
 .inputbox-element {
-	display: inline;
+	/* important is needed to overwrite display:table from mw-ui checkbox */
+	display: inline-table !important;
 	white-space: nowrap;
 }
