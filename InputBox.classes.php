@@ -198,7 +198,7 @@ class InputBox {
 					);
 				} else {
 					// Checkbox
-					$htmlOut .= ' <div class="inputbox-element mw-ui-checkbox">';
+					$htmlOut .= ' <div class="mw-inputbox-element mw-ui-checkbox">';
 					$htmlOut .= Xml::element( 'input',
 						array(
 							'type' => 'checkbox',
@@ -431,7 +431,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'title',
-				'class' => 'createboxInput mw-ui-input mw-ui-input-inline',
+				'class' => 'mw-ui-input mw-ui-input-inline createboxInput',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
@@ -443,7 +443,7 @@ class InputBox {
 			array(
 				'type' => 'submit',
 				'name' => 'create',
-				'class' => 'mw-ui-button mw-ui-progressive',
+				'class' => 'mw-ui-button mw-ui-progressive createboxButton',
 				'value' => $this->mButtonLabel
 			)
 		);
