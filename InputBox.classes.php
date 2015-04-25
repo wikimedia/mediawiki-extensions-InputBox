@@ -123,7 +123,7 @@ class InputBox {
 		);
 		$htmlOut .= Xml::element( 'input',
 			array(
-				'class' => 'searchboxInput mw-ui-input mw-ui-input-inline',
+				'class' => 'mw-inputbox-input searchboxInput mw-ui-input mw-ui-input-inline',
 				'name' => 'search',
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'value' => $this->mDefaultText,
@@ -431,7 +431,8 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'title',
-				'class' => 'mw-ui-input mw-ui-input-inline createboxInput',
+				'class' => ( strtolower( $this->mBR ) === '<br />' ? 'mw-inputbox-input ' : '' ) .
+					'mw-ui-input mw-ui-input-inline createboxInput',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
@@ -505,7 +506,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'wpNewTitle',
-				'class' => 'mw-moveboxInput mw-ui-input mw-ui-input-inline',
+				'class' => 'mw-inputbox-input mw-moveboxInput mw-ui-input mw-ui-input-inline',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
@@ -587,7 +588,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'preloadtitle',
-				'class' => 'commentboxInput mw-ui-input mw-ui-input-inline',
+				'class' => 'mw-inputbox-input commentboxInput mw-ui-input mw-ui-input-inline',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
