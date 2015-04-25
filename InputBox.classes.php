@@ -17,6 +17,7 @@ class InputBox {
 	private $mPreload = '';
 	private $mPreloadparams = array();
 	private $mEditIntro = '';
+	private $mUseVE = '';
 	private $mSummary = '';
 	private $mNosummary = '';
 	private $mMinor = '';
@@ -81,6 +82,29 @@ class InputBox {
 					)
 				);
 		}
+	}
+
+	/*
+	 * Returns the action name and value to use in inputboxes which redirects to edit pages.
+	 * Decides, if the link should redirect to VE edit page (veaction=edit) or to wikitext editor
+	 * (action=edit).
+	 *
+	 * @return Array Array with name and value data
+	 */
+	private function getEditActionArgs() {
+		// default is wikitext editor
+		$args = array(
+			'name' => 'action',
+			'value' => 'edit',
+		);
+		// check, if VE is installed and VE editor is requested
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'VisualEditor' ) && $this->mUseVE ) {
+			$args = array(
+				'name' => 'veaction',
+				'value' => 'edit',
+			);
+		}
+		return $args;
 	}
 
 	/**
@@ -364,7 +388,8 @@ class InputBox {
 			$createBoxParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $createBoxParams );
-		$htmlOut .= Html::hidden( 'action', 'edit' );
+		$editArgs = $this->getEditActionArgs();
+		$htmlOut .= Html::hidden( $editArgs['name'], $editArgs['value'] );
 		$htmlOut .= Html::hidden( 'preload', $this->mPreload );
 		foreach ( $this->mPreloadparams as $preloadparams ) {
 			$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
@@ -486,7 +511,8 @@ class InputBox {
 			$commentFormParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $commentFormParams );
-		$htmlOut .= Html::hidden( 'action', 'edit' );
+		$editArgs = $this->getEditActionArgs();
+		$htmlOut .= Html::hidden( $editArgs['name'], $editArgs['value'] );
 		$htmlOut .= Html::hidden( 'preload', $this->mPreload );
 		foreach ( $this->mPreloadparams as $preloadparams ) {
 			$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
@@ -555,6 +581,7 @@ class InputBox {
 			'preload' => 'mPreload',
 			'page' => 'mPage',
 			'editintro' => 'mEditIntro',
+			'useve' => 'mUseVE',
 			'summary' => 'mSummary',
 			'nosummary' => 'mNosummary',
 			'minor' => 'mMinor',
