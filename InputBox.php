@@ -57,6 +57,7 @@ $resourcePaths = array(
 
 $wgResourceModules['ext.inputBox.styles'] = $resourcePaths + array(
 	'styles' => 'ext.inputBox.styles.css',
+	'targets' => array( 'mobile', 'desktop' ),
 );
 
 $wgResourceModules['ext.inputBox'] = $resourcePaths + array(
