@@ -56,6 +56,7 @@ $resourcePaths = array(
 );
 
 $wgResourceModules['ext.inputBox.styles'] = $resourcePaths + array(
+	'position' => 'top',
 	'styles' => 'ext.inputBox.styles.css',
 );
 
