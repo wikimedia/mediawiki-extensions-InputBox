@@ -23,7 +23,8 @@
 	},
 	"ResourceModules": {
 		"ext.inputBox.styles": {
-			"styles": "ext.inputBox.styles.css"
+			"styles": "ext.inputBox.styles.css",
+			"position": "top"
 		},
 		"ext.inputBox": {
 			"scripts": "ext.inputBox.js",
