@@ -16,6 +16,6 @@
 	"inputbox-error-bad-type": "Tipul de cutie intrare „$1” nu este recunoscut.\nVă rugăm să specificați parametrii „create”, „comment”, „search”, „search2” sau „fulltext”.",
 	"inputbox-tryexact": "Încearcă varianta exactă",
 	"inputbox-searchfulltext": "Caută textul întreg",
-	"inputbox-createarticle": "Creați pagina",
+	"inputbox-createarticle": "Creare pagină",
 	"inputbox-ns-main": "Principal"
 }
