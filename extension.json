@@ -11,6 +11,7 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:InputBox",
 	"description": "Allow inclusion of predefined HTML forms.",
 	"descriptionmsg": "inputbox-desc",
+	"license-name": "MIT",
 	"type": "parserhook",
 	"MessagesDirs": {
 		"InputBox": [
