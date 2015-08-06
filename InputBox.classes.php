@@ -134,13 +134,7 @@ class InputBox {
 		);
 
 		if ( $this->mPrefix != '' ) {
-			$htmlOut .= Xml::element( 'input',
-				array(
-					'name' => 'prefix',
-					'type' => 'hidden',
-					'value' => $this->mPrefix,
-				)
-			);
+			$htmlOut .= Html::hidden( 'prefix', $this->mPrefix );
 		}
 
 		$htmlOut .= $this->mBR;
@@ -360,72 +354,18 @@ class InputBox {
 			$createBoxParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $createBoxParams );
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'action',
-				'value' => 'edit',
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'preload',
-				'value' => $this->mPreload,
-			)
-		);
+		$htmlOut .= Html::hidden( 'action', 'edit' );
+		$htmlOut .= Html::hidden( 'preload', $this->mPreload );
 		foreach ( $this->mPreloadparams as $preloadparams ) {
-			$htmlOut .= Xml::openElement( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'preloadparams[]',
-					'value' => $preloadparams,
-				)
-			);
+			$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
 		}
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'editintro',
-				'value' => $this->mEditIntro,
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'summary',
-				'value' => $this->mSummary,
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'nosummary',
-				'value' => $this->mNosummary,
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'prefix',
-				'value' => $this->mPrefix,
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'minor',
-				'value' => $this->mMinor,
-			)
-		);
+		$htmlOut .= Html::hidden( 'editintro', $this->mEditIntro );
+		$htmlOut .= Html::hidden( 'summary', $this->mSummary );
+		$htmlOut .= Html::hidden( 'nosummary', $this->mNosummary );
+		$htmlOut .= Html::hidden( 'prefix', $this->mPrefix );
+		$htmlOut .= Html::hidden( 'minor', $this->mMinor );
 		if ( $this->mType == 'comment' ) {
-			$htmlOut .= Xml::openElement( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'section',
-					'value' => 'new',
-				)
-			);
+			$htmlOut .= Html::hidden( 'section', 'new' );
 		}
 		$htmlOut .= Xml::openElement( 'input',
 			array(
@@ -481,27 +421,9 @@ class InputBox {
 			$moveBoxParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $moveBoxParams );
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'title',
-				'value' => SpecialPage::getTitleFor( 'Movepage', $this->mPage )->getPrefixedText(),
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'wpReason',
-				'value' => $this->mSummary,
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'prefix',
-				'value' => $this->mPrefix,
-			)
-		);
+		$htmlOut .= Html::hidden( 'title', SpecialPage::getTitleFor( 'Movepage', $this->mPage )->getPrefixedText() );
+		$htmlOut .= Html::hidden( 'wpReason', $this->mSummary );
+		$htmlOut .= Html::hidden( 'prefix', $this->mPrefix );
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
@@ -554,36 +476,12 @@ class InputBox {
 			$commentFormParams['id'] = Sanitizer::escapeId( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $commentFormParams );
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'action',
-				'value' => 'edit',
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'preload',
-				'value' => $this->mPreload,
-			)
-		);
+		$htmlOut .= Html::hidden( 'action', 'edit' );
+		$htmlOut .= Html::hidden( 'preload', $this->mPreload );
 		foreach ( $this->mPreloadparams as $preloadparams ) {
-			$htmlOut .= Xml::openElement( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'preloadparams[]',
-					'value' => $preloadparams,
-				)
-			);
+			$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
 		}
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'editintro',
-				'value' => $this->mEditIntro,
-			)
-		);
+		$htmlOut .= Html::hidden( 'editintro', $this->mEditIntro );
 		$htmlOut .= Xml::openElement( 'input',
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
@@ -595,20 +493,8 @@ class InputBox {
 				'dir' => $this->mDir,
 			)
 		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'section',
-				'value' => 'new',
-			)
-		);
-		$htmlOut .= Xml::openElement( 'input',
-			array(
-				'type' => 'hidden',
-				'name' => 'title',
-				'value' => $this->mPage
-			)
-		);
+		$htmlOut .= Html::hidden( 'section', 'new' );
+		$htmlOut .= Html::hidden( 'title', $this->mPage );
 		$htmlOut .= $this->mBR;
 		$htmlOut .= Xml::openElement( 'input',
 			array(
