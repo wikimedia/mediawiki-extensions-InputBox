@@ -84,6 +84,16 @@ class InputBox {
 	}
 
 	/**
+	 * Get common classes, that could be added and depend on, if
+	 * a line break between a button and an input field is added or not.
+	 *
+	 * @return String
+	 */
+	private function getLinebreakClasses() {
+		return strtolower( $this->mBR ) === '<br />' ? 'mw-inputbox-input ' : '';
+	}
+
+	/**
 	 * Generate search form
 	 * @param $type
 	 * @return string HTML
@@ -123,7 +133,7 @@ class InputBox {
 		);
 		$htmlOut .= Xml::element( 'input',
 			array(
-				'class' => 'mw-inputbox-input searchboxInput mw-ui-input mw-ui-input-inline',
+				'class' => $this->getLinebreakClasses() . 'searchboxInput mw-ui-input mw-ui-input-inline',
 				'name' => 'search',
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'value' => $this->mDefaultText,
@@ -371,7 +381,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'title',
-				'class' => ( strtolower( $this->mBR ) === '<br />' ? 'mw-inputbox-input ' : '' ) .
+				'class' => $this->getLinebreakClasses() .
 					'mw-ui-input mw-ui-input-inline createboxInput',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
@@ -428,7 +438,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'wpNewTitle',
-				'class' => 'mw-inputbox-input mw-moveboxInput mw-ui-input mw-ui-input-inline',
+				'class' => $this->getLinebreakClasses() . 'mw-moveboxInput mw-ui-input mw-ui-input-inline',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
@@ -486,7 +496,7 @@ class InputBox {
 			array(
 				'type' => $this->mHidden ? 'hidden' : 'text',
 				'name' => 'preloadtitle',
-				'class' => 'mw-inputbox-input commentboxInput mw-ui-input mw-ui-input-inline',
+				'class' => $this->getLinebreakClasses() . 'commentboxInput mw-ui-input mw-ui-input-inline',
 				'value' => $this->mDefaultText,
 				'placeholder' => $this->mPlaceholderText,
 				'size' => $this->mWidth,
