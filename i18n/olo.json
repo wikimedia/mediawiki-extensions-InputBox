@@ -4,5 +4,9 @@
 			"Mashoi7"
 		]
 	},
-	"inputbox-tryexact": "Opi tarkah yhtehpädijiä"
+	"inputbox-tryexact": "Opi tarkah yhtehpädijiä",
+	"inputbox-searchfulltext": "Eči kogo tekstal",
+	"inputbox-createarticle": "Luaji sivu",
+	"inputbox-movearticle": "Siirrä sivu",
+	"inputbox-ns-main": "Piänimitila"
 }
