@@ -5,6 +5,8 @@
 		]
 	},
 	"inputbox-desc": "Аьттув хулийта хана хьалхе белгалъяьккха йола HTML-формаш хьалсага",
+	"inputbox-error-no-type": "Iочуяздара урда тайпа белгалдаьккхадац Iа.",
+	"inputbox-error-bad-type": "Неизвестный тип поля ввода «$1».\nПожалуйста, укажите один из допустимых типов: «create», «comment», «search», «search2» или «fulltext».",
 	"inputbox-tryexact": "ЛаьрххIа дола лахар",
 	"inputbox-createarticle": "Хьакхолла статья"
 }
