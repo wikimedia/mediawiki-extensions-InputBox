@@ -14,13 +14,13 @@ class InputBox {
 	private $mParser;
 	private $mType = '';
 	private $mWidth = 50;
-	private $mPreload = '';
-	private $mPreloadparams = [];
-	private $mEditIntro = '';
-	private $mUseVE = '';
-	private $mSummary = '';
-	private $mNosummary = '';
-	private $mMinor = '';
+	private $mPreload = null;
+	private $mPreloadparams = null;
+	private $mEditIntro = null;
+	private $mUseVE = null;
+	private $mSummary = null;
+	private $mNosummary = null;
+	private $mMinor = null;
 	private $mPage = '';
 	private $mBR = 'yes';
 	private $mDefaultText = '';
@@ -97,7 +97,7 @@ class InputBox {
 			'value' => 'edit',
 		];
 		// check, if VE is installed and VE editor is requested
-		if ( ExtensionRegistry::getInstance()->isLoaded( 'VisualEditor' ) && $this->mUseVE ) {
+		if ( $this->shouldUseVE() ) {
 			$args = [
 				'name' => 'veaction',
 				'value' => 'edit',
@@ -393,15 +393,29 @@ class InputBox {
 		$htmlOut .= Xml::openElement( 'form', $createBoxParams );
 		$editArgs = $this->getEditActionArgs();
 		$htmlOut .= Html::hidden( $editArgs['name'], $editArgs['value'] );
-		$htmlOut .= Html::hidden( 'preload', $this->mPreload );
-		foreach ( $this->mPreloadparams as $preloadparams ) {
-			$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
+		if ( $this->mPreload !== null ) {
+			$htmlOut .= Html::hidden( 'preload', $this->mPreload );
 		}
-		$htmlOut .= Html::hidden( 'editintro', $this->mEditIntro );
-		$htmlOut .= Html::hidden( 'summary', $this->mSummary );
-		$htmlOut .= Html::hidden( 'nosummary', $this->mNosummary );
-		$htmlOut .= Html::hidden( 'prefix', $this->mPrefix );
-		$htmlOut .= Html::hidden( 'minor', $this->mMinor );
+		if ( is_array( $this->mPreloadparams ) ) {
+			foreach ( $this->mPreloadparams as $preloadparams ) {
+				$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
+			}
+		}
+		if ( $this->mEditIntro !== null ) {
+			$htmlOut .= Html::hidden( 'editintro', $this->mEditIntro );
+		}
+		if ( $this->mSummary !== null ) {
+			$htmlOut .= Html::hidden( 'summary', $this->mSummary );
+		}
+		if ( $this->mNosummary !== null ) {
+			$htmlOut .= Html::hidden( 'nosummary', $this->mNosummary );
+		}
+		if ( $this->mPrefix !== '' ) {
+			$htmlOut .= Html::hidden( 'prefix', $this->mPrefix );
+		}
+		if ( $this->mMinor !== null ) {
+			$htmlOut .= Html::hidden( 'minor', $this->mMinor );
+		}
 		if ( $this->mType == 'comment' ) {
 			$htmlOut .= Html::hidden( 'section', 'new' );
 		}
@@ -517,11 +531,17 @@ class InputBox {
 		$htmlOut .= Xml::openElement( 'form', $commentFormParams );
 		$editArgs = $this->getEditActionArgs();
 		$htmlOut .= Html::hidden( $editArgs['name'], $editArgs['value'] );
-		$htmlOut .= Html::hidden( 'preload', $this->mPreload );
-		foreach ( $this->mPreloadparams as $preloadparams ) {
-			$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
+		if ( $this->mPreload !== null ) {
+			$htmlOut .= Html::hidden( 'preload', $this->mPreload );
 		}
-		$htmlOut .= Html::hidden( 'editintro', $this->mEditIntro );
+		if ( is_array( $this->mPreloadparams ) ) {
+			foreach ( $this->mPreloadparams as $preloadparams ) {
+				$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
+			}
+		}
+		if ( $this->mEditIntro !== null ) {
+			$htmlOut .= Html::hidden( 'editintro', $this->mEditIntro );
+		}
 		$htmlOut .= Xml::openElement( 'input',
 			[
 				'type' => $this->mHidden ? 'hidden' : 'text',
@@ -647,5 +667,15 @@ REGEX;
 			return 'background-color: ' . $this->mBGColor . ';';
 		}
 		return '';
+	}
+
+	/**
+	 * Returns true, if the VisualEditor is requested from the inputbox wikitext definition and
+	 * if the VisualEditor extension is actually installed or not, false otherwise.
+	 *
+	 * @return bool
+	 */
+	private function shouldUseVE() {
+		return ExtensionRegistry::getInstance()->isLoaded( 'VisualEditor' ) && $this->mUseVE !== null;
 	}
 }
