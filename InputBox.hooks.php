@@ -11,7 +11,7 @@ class InputBoxHooks {
 	// Initialization
 	public static function register( Parser &$parser ) {
 		// Register the hook with the parser
-		$parser->setHook( 'inputbox', array( 'InputBoxHooks', 'render' ) );
+		$parser->setHook( 'inputbox', [ 'InputBoxHooks', 'render' ] );
 
 		// Continue
 		return true;
@@ -61,12 +61,12 @@ class InputBoxHooks {
 		$request,
 		$wiki
 	) {
-		if( $wiki->getAction( $request ) !== 'edit' ){
-			# not our problem
+		if ( $wiki->getAction( $request ) !== 'edit' ){
+			// not our problem
 			return true;
 		}
-		if( $request->getText( 'prefix', '' ) === '' ){
-			# Fine
+		if ( $request->getText( 'prefix', '' ) === '' ){
+			// Fine
 			return true;
 		}
 
