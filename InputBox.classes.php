@@ -36,6 +36,7 @@ class InputBox {
 	private $mInline = false;
 	private $mPrefix = '';
 	private $mDir = '';
+	private $mSearchFilter = '';
 
 	/* Functions */
 
@@ -167,6 +168,10 @@ class InputBox {
 
 		if ( $this->mPrefix != '' ) {
 			$htmlOut .= Html::hidden( 'prefix', $this->mPrefix );
+		}
+
+		if ( $this->mSearchFilter != '' ) {
+			$htmlOut .= Html::hidden( 'searchfilter', $this->mSearchFilter );
 		}
 
 		$htmlOut .= $this->mBR;
@@ -599,6 +604,7 @@ class InputBox {
 			'inline' => 'mInline',
 			'prefix' => 'mPrefix',
 			'dir' => 'mDir',
+			'searchfilter' => 'mSearchFilter'
 		];
 		foreach ( $options as $name => $var ) {
 			if ( isset( $values[$name] ) ) {

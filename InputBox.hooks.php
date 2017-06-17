@@ -22,9 +22,14 @@ class InputBoxHooks {
 		$request = $special->getRequest();
 		$prefix = $request->getText( 'prefix', '' );
 		$title = $request->getText( 'wpNewTitle', '' );
+		$search = $request->getText( 'search', '' );
+		$searchfilter = $request->getText( 'searchfilter', '' );
 		if ( $special->getName() == 'Movepage' && $prefix !== '' && $title !== '' ) {
 			$request->setVal( 'wpNewTitle', $prefix . $title );
 			$request->unsetVal( 'prefix' );
+		}
+		if ( $special->getName() == 'Search' && $searchfilter !== '' ) {
+			$request->setVal( 'search', $search . ' ' . $searchfilter );
 		}
 		return true;
 	}
