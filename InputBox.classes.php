@@ -639,7 +639,7 @@ class InputBox {
 				) \s* \)
 			) $ /xi
 REGEX;
-		return (bool) preg_match( $regex, $color );
+		return (bool)preg_match( $regex, $color );
 	}
 
 	private function bgColorStyle() {

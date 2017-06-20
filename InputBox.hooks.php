@@ -66,11 +66,11 @@ class InputBoxHooks {
 		$request,
 		$wiki
 	) {
-		if ( $wiki->getAction( $request ) !== 'edit' ){
+		if ( $wiki->getAction( $request ) !== 'edit' ) {
 			// not our problem
 			return true;
 		}
-		if ( $request->getText( 'prefix', '' ) === '' ){
+		if ( $request->getText( 'prefix', '' ) === '' ) {
 			// Fine
 			return true;
 		}
