@@ -4,5 +4,11 @@
 			"Dinkawiki"
 		]
 	},
-	"inputbox-tryexact": "Them kot käthöŋ"
+	"inputbox-tryexact": "Them kot käthöŋ",
+	"inputbox-searchfulltext": "Caath në athör ëbɛ̈n",
+	"inputbox-createarticle": "Cak apam",
+	"inputbox-movearticle": "Jɔt apam",
+	"inputbox-postcomment": "Abak yam",
+	"inputbox-postcommenttitle": "Abak yam",
+	"inputbox-ns-main": "Këdït"
 }
