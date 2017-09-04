@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bunukwiki"
+			"Bunukwiki",
+			"Benel"
 		]
 	},
 	"inputbox-tryexact": "nipitaneng caay ngangaw sasutili’ay",
+	"inputbox-postcomment": "baluhay a tusil",
 	"inputbox-ns-main": "angangan"
 }
