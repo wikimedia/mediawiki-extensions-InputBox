@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Translatealcd"
+			"Translatealcd",
+			"Hitaypayan"
 		]
 	},
-	"inputbox-tryexact": "Tlamiy pspung kin ini’ ptkari’"
+	"inputbox-tryexact": "Tlamiy pspung kin ini’ ptkari’",
+	"inputbox-ns-main": "Spzyang balay na zyuwaw"
 }
