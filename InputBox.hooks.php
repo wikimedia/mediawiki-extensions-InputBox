@@ -6,9 +6,16 @@
  * @ingroup Extensions
  */
 
-// InputBox hooks
+/**
+ * InputBox hooks
+ */
 class InputBoxHooks {
-	// Initialization
+
+	/**
+	 * Initialization
+	 * @param Parser &$parser
+	 * @return true
+	 */
 	public static function register( Parser &$parser ) {
 		// Register the hook with the parser
 		$parser->setHook( 'inputbox', [ 'InputBoxHooks', 'render' ] );
@@ -17,7 +24,12 @@ class InputBoxHooks {
 		return true;
 	}
 
-	// Prepend prefix to wpNewTitle if necessary
+	/**
+	 * Prepend prefix to wpNewTitle if necessary
+	 * @param SpecialPage $special
+	 * @param string $subPage
+	 * @return true
+	 */
 	public static function onSpecialPageBeforeExecute( $special, $subPage ) {
 		$request = $special->getRequest();
 		$prefix = $request->getText( 'prefix', '' );
@@ -34,7 +46,13 @@ class InputBoxHooks {
 		return true;
 	}
 
-	// Render the input box
+	/**
+	 * Render the input box
+	 * @param string $input
+	 * @param array $args
+	 * @param Parser $parser
+	 * @return string
+	 */
 	public static function render( $input, $args, Parser $parser ) {
 		// Create InputBox
 		$inputBox = new InputBox( $parser );
@@ -50,12 +68,12 @@ class InputBoxHooks {
 	 * <inputbox type=create...> sends requests with action=edit, and
 	 * possibly a &prefix=Foo.  So we pick that up here, munge prefix
 	 * and title together, and redirect back out to the real page
-	 * @param $output OutputPage
-	 * @param $article Article
-	 * @param $title Title
-	 * @param $user User
-	 * @param $request WebRequest
-	 * @param $wiki MediaWiki
+	 * @param OutputPage $output
+	 * @param Article $article
+	 * @param Title $title
+	 * @param User $user
+	 * @param WebRequest $request
+	 * @param MediaWiki $wiki
 	 * @return bool
 	 */
 	public static function onMediaWikiPerformAction(

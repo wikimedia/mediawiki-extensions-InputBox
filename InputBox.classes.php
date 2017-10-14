@@ -6,7 +6,9 @@
  * @ingroup Extensions
  */
 
-// InputBox class
+/**
+ * InputBox class
+ */
 class InputBox {
 
 	/* Fields */
@@ -41,6 +43,9 @@ class InputBox {
 
 	/* Functions */
 
+	/**
+	 * @param Parser $parser
+	 */
 	public function __construct( $parser ) {
 		$this->mParser = $parser;
 		// Default value for dir taken from the page language (bug 37018)
@@ -84,7 +89,7 @@ class InputBox {
 		}
 	}
 
-	/*
+	/**
 	 * Returns the action name and value to use in inputboxes which redirects to edit pages.
 	 * Decides, if the link should redirect to VE edit page (veaction=edit) or to wikitext editor
 	 * (action=edit).
@@ -119,7 +124,7 @@ class InputBox {
 
 	/**
 	 * Generate search form
-	 * @param $type
+	 * @param string $type
 	 * @return string HTML
 	 */
 	public function getSearchForm( $type ) {
@@ -288,6 +293,7 @@ class InputBox {
 
 	/**
 	 * Generate search form version 2
+	 * @return string
 	 */
 	public function getSearchForm2() {
 		// Use button label fallbacks
@@ -366,6 +372,7 @@ class InputBox {
 
 	/**
 	 * Generate create page form
+	 * @return string
 	 */
 	public function getCreateForm() {
 		global $wgScript;
@@ -454,6 +461,7 @@ class InputBox {
 
 	/**
 	 * Generate move page form
+	 * @return string
 	 */
 	public function getMoveForm() {
 		global $wgScript;
@@ -510,6 +518,7 @@ class InputBox {
 
 	/**
 	 * Generate new section form
+	 * @return string
 	 */
 	public function getCommentForm() {
 		global $wgScript;
@@ -652,6 +661,8 @@ class InputBox {
 
 	/**
 	 * Do a security check on the bgcolor parameter
+	 * @param string $color
+	 * @return bool
 	 */
 	public function isValidColor( $color ) {
 		$regex = <<<REGEX
