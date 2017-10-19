@@ -138,13 +138,13 @@ class InputBox {
 			$this->mSearchButtonLabel = wfMessage( 'inputbox-searchfulltext' )->text();
 		}
 		if ( $this->mID !== '' ) {
-			$idArray = [ 'id' => Sanitizer::escapeId( $this->mID ) ];
+			$idArray = [ 'id' => Sanitizer::escapeIdForAttribute( $this->mID ) ];
 		} else {
 			$idArray = [];
 		}
 		// We need a unqiue id to link <label> to checkboxes, but also
 		// want multiple <inputbox>'s to not be invalid html
-		$idRandStr = Sanitizer::escapeId( '-' . $this->mID . wfRandom(), 'noninitial' );
+		$idRandStr = Sanitizer::escapeIdForAttribute( '-' . $this->mID . wfRandom() );
 
 		// Build HTML
 		$htmlOut = Xml::openElement( 'div',
@@ -309,7 +309,7 @@ class InputBox {
 			// having conflicts.
 			$unescapedID = wfRandom();
 		}
-		$id = Sanitizer::escapeId( $unescapedID, 'noninitial' );
+		$id = Sanitizer::escapeIdForAttribute( $unescapedID );
 		$htmlLabel = '';
 		if ( isset( $this->mLabelText ) && strlen( trim( $this->mLabelText ) ) ) {
 			$this->mLabelText = $this->mParser->recursiveTagParse( $this->mLabelText );
@@ -400,7 +400,7 @@ class InputBox {
 			'method' => 'get'
 		];
 		if ( $this->mID !== '' ) {
-			$createBoxParams['id'] = Sanitizer::escapeId( $this->mID );
+			$createBoxParams['id'] = Sanitizer::escapeIdForAttribute( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $createBoxParams );
 		$editArgs = $this->getEditActionArgs();
@@ -483,7 +483,7 @@ class InputBox {
 			'method' => 'get'
 		];
 		if ( $this->mID !== '' ) {
-			$moveBoxParams['id'] = Sanitizer::escapeId( $this->mID );
+			$moveBoxParams['id'] = Sanitizer::escapeIdForAttribute( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $moveBoxParams );
 		$htmlOut .= Html::hidden( 'title',
@@ -540,7 +540,7 @@ class InputBox {
 			'method' => 'get'
 		];
 		if ( $this->mID !== '' ) {
-			$commentFormParams['id'] = Sanitizer::escapeId( $this->mID );
+			$commentFormParams['id'] = Sanitizer::escapeIdForAttribute( $this->mID );
 		}
 		$htmlOut .= Xml::openElement( 'form', $commentFormParams );
 		$editArgs = $this->getEditActionArgs();
