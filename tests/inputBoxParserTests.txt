@@ -87,3 +87,22 @@ type=move
 </form>
 </div>
 !! end
+
+!! test
+InputBox langconvert
+!! options
+language=sr variant=sr-el
+!! wikitext
+<inputbox>
+type=create
+default=-{sr-el: Some latin; sr-ec: Not latin }-
+placeholder=-{sr-el: el; sr-ec: ec}-
+</inputbox>
+!! html+tidy
+<div class="mw-inputbox-centered" style="">
+<form name="createbox" class="createbox" action="/index.php" method="get" id="createbox">
+<p><input type="hidden" value="edit" name="action" /><input type="hidden" name="preload" /><input type="hidden" name="editintro" /><input type="hidden" name="summary" /><input type="hidden" name="nosummary" /><input type="hidden" name="prefix" /><input type="hidden" name="minor" /><input type="text" name="title" class="mw-inputbox-input mw-ui-input mw-ui-input-inline createboxInput" value="Some latin" placeholder="el" size="50" dir="ltr" /><br />
+<input type="submit" name="create" class="mw-ui-button mw-ui-progressive createboxButton" value="Направи страницу" /></p>
+</form>
+</div>
+!! end
