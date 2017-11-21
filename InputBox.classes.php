@@ -600,9 +600,20 @@ class InputBox {
 			'prefix' => 'mPrefix',
 			'dir' => 'mDir',
 		);
+		// Options we should maybe run through lang converter.
+		$convertOptions = [
+			'default' => true,
+			'buttonlabel' => true,
+			'searchbuttonlabel' => true,
+			'placeholder' => true
+		];
+
 		foreach ( $options as $name => $var ) {
 			if ( isset( $values[$name] ) ) {
 				$this->$var = $values[$name];
+				if ( isset( $convertOptions[$name] ) ) {
+					$this->$var = $this->languageConvert( $this->$var );
+				}
 			}
 		}
 
@@ -641,5 +652,27 @@ REGEX;
 			return 'background-color: ' . $this->mBGColor . ';';
 		}
 		return '';
+	}
+
+	/**
+	 * For compatability with pre T119158 behaviour
+	 *
+	 * If a field that is going to be used as an attribute
+	 * and it contains "-{" in it, run it through language
+	 * converter.
+	 *
+	 * Its not really clear if it would make more sense to
+	 * always convert instead of only if -{ is present. This
+	 * function just more or less restores the previous
+	 * accidental behaviour.
+	 *
+	 * @see https://phabricator.wikimedia.org/T180485
+	 */
+	private function languageConvert( $text ) {
+		$lang = $this->mParser->getConverterLanguage();
+		if ( $lang->hasVariants() && strpos( $text, '-{' ) !== false ) {
+			$text = $lang->convert( $text );
+		}
+		return $text;
 	}
 }
