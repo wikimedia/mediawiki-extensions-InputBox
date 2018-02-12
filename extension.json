@@ -27,7 +27,6 @@
 	"ResourceModules": {
 		"ext.inputBox.styles": {
 			"styles": "ext.inputBox.styles.css",
-			"position": "top",
 			"targets": [
 				"mobile",
 				"desktop"
