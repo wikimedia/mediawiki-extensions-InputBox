@@ -21,8 +21,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"InputBoxHooks": "InputBox.hooks.php",
-		"InputBox": "InputBox.classes.php"
+		"InputBoxHooks": "includes/InputBoxHooks.php",
+		"InputBox": "includes/InputBox.php"
 	},
 	"ResourceModules": {
 		"ext.inputBox.styles": {
