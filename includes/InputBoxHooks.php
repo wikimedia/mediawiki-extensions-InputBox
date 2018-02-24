@@ -84,7 +84,7 @@ class InputBoxHooks {
 		$request,
 		$wiki
 	) {
-		if ( $wiki->getAction( $request ) !== 'edit' && $request->getText( 'veaction' ) !== 'edit' ) {
+		if ( $wiki->getAction() !== 'edit' && $request->getText( 'veaction' ) !== 'edit' ) {
 			// not our problem
 			return true;
 		}
