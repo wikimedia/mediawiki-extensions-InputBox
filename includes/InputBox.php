@@ -312,9 +312,8 @@ class InputBox {
 		$id = Sanitizer::escapeIdForAttribute( $unescapedID );
 		$htmlLabel = '';
 		if ( isset( $this->mLabelText ) && strlen( trim( $this->mLabelText ) ) ) {
-			$this->mLabelText = $this->mParser->recursiveTagParse( $this->mLabelText );
 			$htmlLabel = Xml::openElement( 'label', [ 'for' => 'bodySearchInput' . $id ] );
-			$htmlLabel .= $this->mLabelText;
+			$htmlLabel .= $this->mParser->recursiveTagParse( $this->mLabelText );
 			$htmlLabel .= Xml::closeElement( 'label' );
 		}
 		$htmlOut = Xml::openElement( 'form',
