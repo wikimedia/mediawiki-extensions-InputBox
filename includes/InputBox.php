@@ -266,7 +266,7 @@ class InputBox {
 					'value' => $this->mButtonLabel
 				]
 			);
-			$htmlOut .= '&#160;';
+			$htmlOut .= "\u{00A0}";
 		}
 
 		// Search button
@@ -341,7 +341,7 @@ class InputBox {
 				'dir' => $this->mDir,
 			]
 		);
-		$htmlOut .= '&#160;' . Xml::element( 'input',
+		$htmlOut .= "\u{00A0}" . Xml::element( 'input',
 			[
 				'type' => 'submit',
 				'name' => 'go',
