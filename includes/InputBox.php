@@ -6,6 +6,8 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * InputBox class
  */
@@ -128,7 +130,7 @@ class InputBox {
 	 * @return string HTML
 	 */
 	public function getSearchForm( $type ) {
-		global $wgContLang, $wgNamespaceAliases;
+		global $wgNamespaceAliases;
 
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
@@ -189,8 +191,9 @@ class InputBox {
 		// Determine namespace checkboxes
 		$namespacesArray = explode( ',', $this->mNamespaces );
 		if ( $this->mNamespaces ) {
-			$namespaces = $wgContLang->getNamespaces();
-			$nsAliases = array_merge( $wgContLang->getNamespaceAliases(), $wgNamespaceAliases );
+			$contLang = MediaWikiServices::getInstance()->getContentLanguage();
+			$namespaces = $contLang->getNamespaces();
+			$nsAliases = array_merge( $contLang->getNamespaceAliases(), $wgNamespaceAliases );
 			$showNamespaces = [];
 			$checkedNS = [];
 			// Check for valid namespaces
