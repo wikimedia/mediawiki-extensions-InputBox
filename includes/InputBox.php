@@ -118,7 +118,7 @@ class InputBox {
 	 * Get common classes, that could be added and depend on, if
 	 * a line break between a button and an input field is added or not.
 	 *
-	 * @return String
+	 * @return string
 	 */
 	private function getLinebreakClasses() {
 		return strtolower( $this->mBR ) === '<br />' ? 'mw-inputbox-input ' : '';
