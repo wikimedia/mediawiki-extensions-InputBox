@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Les Meloures"
 		]
 	},
 	"inputbox-desc": "Erlaabt d'Afüge vu viirdefinéierten HTML-Formulairen",
 	"inputbox-error-no-type": "Dir hutt den Typ vu Këscht fir eppes anzeginn net uginn.",
 	"inputbox-error-bad-type": "Këscht fir anzeginn vum Typ \"$1\" net erkannt.\nGitt wgl. \"create\", \"comment\", \"search\", \"search2\" oder \"fulltext\" un.",
-	"inputbox-tryexact": "Versicht et matt der preziser Sich:",
+	"inputbox-tryexact": "Versicht et mat der preziser Sich:",
 	"inputbox-searchfulltext": "Am ganzen Text sichen",
 	"inputbox-createarticle": "Säit uleeën",
 	"inputbox-movearticle": "Säit réckelen",
