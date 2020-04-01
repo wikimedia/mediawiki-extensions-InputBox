@@ -1,3 +1,9 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! hooks
+inputbox
+!! endhooks
+
 !! test
 InputBox type=search
 !! wikitext
