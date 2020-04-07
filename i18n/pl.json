@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Derbeth",
-			"Sp5uhe",
 			"Alan ffm",
-			"Michał Sobkowski"
+			"Derbeth",
+			"Michał Sobkowski",
+			"Sp5uhe"
 		]
 	},
 	"inputbox-desc": "Umożliwia włączenie w treść strony wcześniej zdefiniowanych formularzy HTML",

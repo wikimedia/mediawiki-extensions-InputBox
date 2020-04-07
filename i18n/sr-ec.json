@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"BadDog",
+			"Milicevic01",
 			"Millosh",
 			"Rancher",
-			"Михајло Анђелковић",
-			"Milicevic01",
-			"BadDog",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"Михајло Анђелковић"
 		]
 	},
 	"inputbox-desc": "Омогућава укључивање унапред дефинисаних HTML образаца.",
