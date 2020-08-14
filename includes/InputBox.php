@@ -165,7 +165,8 @@ class InputBox {
 		);
 
 		$htmlOut .= $this->buildTextBox( [
-			'class' => $this->getLinebreakClasses() . 'searchboxInput mw-ui-input mw-ui-input-inline',
+			// enable SearchSuggest with mw-searchInput class
+			'class' => $this->getLinebreakClasses() . 'mw-searchInput searchboxInput mw-ui-input mw-ui-input-inline',
 			'name' => 'search',
 			'type' => $this->mHidden ? 'hidden' : 'text',
 			'value' => $this->mDefaultText,
@@ -338,7 +339,8 @@ class InputBox {
 		$htmlOut .= $this->buildTextBox( [
 			'type' => $this->mHidden ? 'hidden' : 'text',
 			'name' => 'search',
-			'class' => 'mw-ui-input mw-ui-input-inline',
+			// enable SearchSuggest with mw-searchInput class
+			'class' => 'mw-searchInput mw-ui-input mw-ui-input-inline',
 			'size' => $this->mWidth,
 			'id' => 'bodySearchInput' . $id,
 			'dir' => $this->mDir,
