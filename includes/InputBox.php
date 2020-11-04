@@ -97,7 +97,7 @@ class InputBox {
 	 * Decides, if the link should redirect to VE edit page (veaction=edit) or to wikitext editor
 	 * (action=edit).
 	 *
-	 * @return Array Array with name and value data
+	 * @return array Array with name and value data
 	 */
 	private function getEditActionArgs() {
 		// default is wikitext editor
