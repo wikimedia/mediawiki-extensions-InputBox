@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abbas dhothar",
 			"Khalid Mahmood"
 		]
 	},
@@ -9,6 +10,6 @@
 	"inputbox-error-bad-type": "انپٹ ڈبہ ٹائپ \"$1\" نئیں پچھانیا گیا۔\nمہربانی کرکے \"create\", \"comment\", \"search\", \"search2\"  \"fulltext\" بارے دسو۔",
 	"inputbox-tryexact": "ٹھیک جوڑ رلاؤ",
 	"inputbox-searchfulltext": "پوری لکھت لبو",
-	"inputbox-createarticle": "صفہ بناؤ",
+	"inputbox-createarticle": "صفحہ بناؤ",
 	"inputbox-ns-main": "مین"
 }
