@@ -744,8 +744,10 @@ REGEX;
 	 */
 	private function languageConvert( $text ) {
 		$lang = $this->mParser->getTargetLanguage();
-		if ( $lang->hasVariants() && strpos( $text, '-{' ) !== false ) {
-			$text = $lang->convert( $text );
+		$langConv = MediaWikiServices::getInstance()->getLanguageConverterFactory()
+			->getLanguageConverter( $lang );
+		if ( $langConv->hasVariants() && strpos( $text, '-{' ) !== false ) {
+			$text = $langConv->convert( $text );
 		}
 		return $text;
 	}
