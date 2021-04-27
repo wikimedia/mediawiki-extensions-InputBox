@@ -24,6 +24,6 @@
 			onChange.call( $input.get( i ) );
 		}
 
-		$input.on( 'keyup input change', $.debounce( 50, onChange ) );
+		$input.on( 'keyup input change', mw.util.debounce( 50, onChange ) );
 	} );
 }( jQuery, mediaWiki ) );
