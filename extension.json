@@ -35,7 +35,7 @@
 		"ext.inputBox": {
 			"scripts": "ext.inputBox.js",
 			"dependencies": [
-				"jquery.throttle-debounce"
+				"mediawiki.util"
 			],
 			"targets": [
 				"mobile",
