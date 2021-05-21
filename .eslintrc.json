@@ -5,10 +5,10 @@
 		"wikimedia/mediawiki"
 	],
 	"env": {
-		"browser": true,
-		"jquery": true
+		"browser": true
 	},
 	"globals": {
-		"mediaWiki": false
+		"mw": false,
+		"$": false
 	}
 }
