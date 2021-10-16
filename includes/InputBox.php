@@ -174,15 +174,15 @@ class InputBox {
 			'dir' => $this->mDir
 		] );
 
-		if ( $this->mPrefix != '' ) {
+		if ( $this->mPrefix !== '' ) {
 			$htmlOut .= Html::hidden( 'prefix', $this->mPrefix );
 		}
 
-		if ( $this->mSearchFilter != '' ) {
+		if ( $this->mSearchFilter !== '' ) {
 			$htmlOut .= Html::hidden( 'searchfilter', $this->mSearchFilter );
 		}
 
-		if ( $this->mTour != '' ) {
+		if ( $this->mTour !== '' ) {
 			$htmlOut .= Html::hidden( 'tour', $this->mTour );
 		}
 
@@ -207,7 +207,7 @@ class InputBox {
 				}
 
 				$mainMsg = wfMessage( 'inputbox-ns-main' )->inContentLanguage()->text();
-				if ( $userNS == 'Main' || $userNS == $mainMsg ) {
+				if ( $userNS === 'Main' || $userNS === $mainMsg ) {
 					$i = 0;
 				} elseif ( array_search( $userNS, $namespaces ) ) {
 					$i = array_search( $userNS, $namespaces );
@@ -226,11 +226,11 @@ class InputBox {
 			foreach ( $showNamespaces as $i => $name ) {
 				$checked = [];
 				// Namespace flagged with "**" or if it's the only one
-				if ( ( isset( $checkedNS[$i] ) && $checkedNS[$i] ) || count( $showNamespaces ) == 1 ) {
+				if ( ( isset( $checkedNS[$i] ) && $checkedNS[$i] ) || count( $showNamespaces ) === 1 ) {
 					$checked = [ 'checked' => 'checked' ];
 				}
 
-				if ( count( $showNamespaces ) == 1 ) {
+				if ( count( $showNamespaces ) === 1 ) {
 					// Checkbox
 					$htmlOut .= Xml::element( 'input',
 						[
@@ -259,7 +259,7 @@ class InputBox {
 
 			// Line break
 			$htmlOut .= $this->mBR;
-		} elseif ( $type == 'search' ) {
+		} elseif ( $type === 'search' ) {
 			// Go button
 			$htmlOut .= Xml::element( 'input',
 				[
@@ -283,7 +283,7 @@ class InputBox {
 		);
 
 		// Hidden fulltext param for IE (bug 17161)
-		if ( $type == 'fulltext' ) {
+		if ( $type === 'fulltext' ) {
 			$htmlOut .= Html::hidden( 'fulltext', 'Search' );
 		}
 
@@ -381,7 +381,7 @@ class InputBox {
 	public function getCreateForm() {
 		global $wgScript;
 
-		if ( $this->mType == "comment" ) {
+		if ( $this->mType === 'comment' ) {
 			if ( !$this->mButtonLabel ) {
 				$this->mButtonLabel = wfMessage( 'inputbox-postcomment' )->text();
 			}
@@ -432,7 +432,7 @@ class InputBox {
 		if ( $this->mMinor !== null ) {
 			$htmlOut .= Html::hidden( 'minor', $this->mMinor );
 		}
-		if ( $this->mType == 'comment' ) {
+		if ( $this->mType === 'comment' ) {
 			$htmlOut .= Html::hidden( 'section', 'new' );
 		}
 
@@ -607,7 +607,7 @@ class InputBox {
 			list( $name, $value ) = explode( '=', $line, 2 );
 			$name = strtolower( trim( $name ) );
 			$value = Sanitizer::decodeCharReferences( trim( $value ) );
-			if ( $name == 'preloadparams[]' ) {
+			if ( $name === 'preloadparams[]' ) {
 				// We have to special-case this one because it's valid for it to appear more than once.
 				$this->mPreloadparams[] = $value;
 			} else {
@@ -667,7 +667,7 @@ class InputBox {
 		}
 
 		// Insert a line break if configured to do so
-		$this->mBR = ( strtolower( $this->mBR ) == "no" ) ? ' ' : '<br />';
+		$this->mBR = ( strtolower( $this->mBR ) === 'no' ) ? ' ' : '<br />';
 
 		// Validate the width; make sure it's a valid, positive integer
 		$this->mWidth = intval( $this->mWidth <= 0 ? 50 : $this->mWidth );
@@ -712,7 +712,7 @@ REGEX;
 	}
 
 	private function bgColorStyle() {
-		if ( $this->mBGColor != 'transparent' ) {
+		if ( $this->mBGColor !== 'transparent' ) {
 			return 'background-color: ' . $this->mBGColor . ';';
 		}
 		return '';
