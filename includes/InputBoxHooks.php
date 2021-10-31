@@ -6,16 +6,36 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\Hook\MediaWikiPerformActionHook;
+use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
+
 /**
  * InputBox hooks
  */
-class InputBoxHooks {
+class InputBoxHooks implements
+	ParserFirstCallInitHook,
+	SpecialPageBeforeExecuteHook,
+	MediaWikiPerformActionHook
+{
+
+	/** @var Config */
+	private $config;
+
+	/**
+	 * @param Config $config
+	 */
+	public function __construct(
+		Config $config
+	) {
+		$this->config = $config;
+	}
 
 	/**
 	 * Initialization
 	 * @param Parser $parser
 	 */
-	public static function register( Parser $parser ) {
+	public function onParserFirstCallInit( $parser ) {
 		// Register the hook with the parser
 		$parser->setHook( 'inputbox', [ 'InputBoxHooks', 'render' ] );
 	}
@@ -25,7 +45,7 @@ class InputBoxHooks {
 	 * @param SpecialPage $special
 	 * @param string $subPage
 	 */
-	public static function onSpecialPageBeforeExecute( $special, $subPage ) {
+	public function onSpecialPageBeforeExecute( $special, $subPage ) {
 		$request = $special->getRequest();
 		$prefix = $request->getText( 'prefix', '' );
 		$title = $request->getText( 'wpNewTitle', '' );
@@ -70,7 +90,7 @@ class InputBoxHooks {
 	 * @param MediaWiki $wiki
 	 * @return bool
 	 */
-	public static function onMediaWikiPerformAction(
+	public function onMediaWikiPerformAction(
 		$output,
 		$article,
 		$title,
@@ -92,8 +112,7 @@ class InputBoxHooks {
 		unset( $params['prefix'] );
 		$params['title'] = $title;
 
-		global $wgScript;
-		$output->redirect( wfAppendQuery( $wgScript, $params ), '301' );
+		$output->redirect( wfAppendQuery( $this->config->get( 'Script' ), $params ), '301' );
 		return false;
 	}
 }

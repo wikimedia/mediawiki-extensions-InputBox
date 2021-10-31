@@ -38,15 +38,17 @@
 		"remoteExtPath": "InputBox/resources"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"InputBoxHooks::register"
-		],
-		"MediaWikiPerformAction": [
-			"InputBoxHooks::onMediaWikiPerformAction"
-		],
-		"SpecialPageBeforeExecute": [
-			"InputBoxHooks::onSpecialPageBeforeExecute"
-		]
+		"ParserFirstCallInit": "main",
+		"MediaWikiPerformAction": "main",
+		"SpecialPageBeforeExecute": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "InputBoxHooks",
+			"services": [
+				"MainConfig"
+			]
+		}
 	},
 	"manifest_version": 2
 }
