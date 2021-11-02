@@ -14,21 +14,16 @@ class InputBoxHooks {
 	/**
 	 * Initialization
 	 * @param Parser $parser
-	 * @return true
 	 */
 	public static function register( Parser $parser ) {
 		// Register the hook with the parser
 		$parser->setHook( 'inputbox', [ 'InputBoxHooks', 'render' ] );
-
-		// Continue
-		return true;
 	}
 
 	/**
 	 * Prepend prefix to wpNewTitle if necessary
 	 * @param SpecialPage $special
 	 * @param string $subPage
-	 * @return true
 	 */
 	public static function onSpecialPageBeforeExecute( $special, $subPage ) {
 		$request = $special->getRequest();
@@ -43,7 +38,6 @@ class InputBoxHooks {
 		if ( $special->getName() === 'Search' && $searchfilter !== '' ) {
 			$request->setVal( 'search', $search . ' ' . $searchfilter );
 		}
-		return true;
 	}
 
 	/**
