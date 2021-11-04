@@ -99,7 +99,6 @@ class InputBoxHooks {
 		$params['title'] = $title;
 
 		global $wgScript;
-		// @phan-suppress-next-line PhanPossiblyUndeclaredVariable
 		$output->redirect( wfAppendQuery( $wgScript, $params ), '301' );
 		return false;
 	}
