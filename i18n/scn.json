@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Aushulz",
 			"Santu",
 			"Sarvaturi"
@@ -12,5 +13,8 @@
 	"inputbox-tryexact": "Cerca currispunnenza giusta",
 	"inputbox-searchfulltext": "Circata ntô testu",
 	"inputbox-createarticle": "Crea vuci",
+	"inputbox-movearticle": "Sposta la pàggina",
+	"inputbox-postcomment": "Sizzioni nova",
+	"inputbox-postcommenttitle": "Sizzioni nova",
 	"inputbox-ns-main": "Principali"
 }
