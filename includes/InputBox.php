@@ -6,8 +6,6 @@
  * @ingroup Extensions
  */
 
-use MediaWiki\MediaWikiServices;
-
 /**
  * InputBox class
  */
@@ -191,7 +189,7 @@ class InputBox {
 		// Determine namespace checkboxes
 		$namespacesArray = explode( ',', $this->mNamespaces );
 		if ( $this->mNamespaces ) {
-			$contLang = MediaWikiServices::getInstance()->getContentLanguage();
+			$contLang = $this->mParser->getContentLanguage();
 			$namespaces = $contLang->getNamespaces();
 			$nsAliases = array_merge( $contLang->getNamespaceAliases(), $wgNamespaceAliases );
 			$showNamespaces = [];
@@ -745,9 +743,7 @@ REGEX;
 	 * @return string
 	 */
 	private function languageConvert( $text ) {
-		$lang = $this->mParser->getTargetLanguage();
-		$langConv = MediaWikiServices::getInstance()->getLanguageConverterFactory()
-			->getLanguageConverter( $lang );
+		$langConv = $this->mParser->getTargetLanguageConverter();
 		if ( $langConv->hasVariants() && strpos( $text, '-{' ) !== false ) {
 			$text = $langConv->convert( $text );
 		}
