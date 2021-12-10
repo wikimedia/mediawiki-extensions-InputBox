@@ -48,7 +48,7 @@ class InputBoxHooks implements
 	 */
 	public function onParserFirstCallInit( $parser ) {
 		// Register the hook with the parser
-		$parser->setHook( 'inputbox', 'MediaWiki\Extension\InputBox\InputBoxHooks::render' );
+		$parser->setHook( 'inputbox', [ $this, 'render' ] );
 	}
 
 	/**
@@ -78,7 +78,7 @@ class InputBoxHooks implements
 	 * @param Parser $parser
 	 * @return string
 	 */
-	public static function render( $input, $args, Parser $parser ) {
+	public function render( $input, $args, Parser $parser ) {
 		// Create InputBox
 		$inputBox = new InputBox( $parser );
 
