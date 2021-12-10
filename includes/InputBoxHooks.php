@@ -6,9 +6,20 @@
  * @ingroup Extensions
  */
 
+namespace MediaWiki\Extension\InputBox;
+
+use Article;
+use Config;
+use MediaWiki;
 use MediaWiki\Hook\MediaWikiPerformActionHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
+use OutputPage;
+use Parser;
+use SpecialPage;
+use Title;
+use User;
+use WebRequest;
 
 /**
  * InputBox hooks
@@ -37,7 +48,7 @@ class InputBoxHooks implements
 	 */
 	public function onParserFirstCallInit( $parser ) {
 		// Register the hook with the parser
-		$parser->setHook( 'inputbox', [ 'InputBoxHooks', 'render' ] );
+		$parser->setHook( 'inputbox', 'MediaWiki\Extension\InputBox\InputBoxHooks::render' );
 	}
 
 	/**

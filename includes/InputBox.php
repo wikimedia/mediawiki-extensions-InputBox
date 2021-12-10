@@ -6,6 +6,15 @@
  * @ingroup Extensions
  */
 
+namespace MediaWiki\Extension\InputBox;
+
+use ExtensionRegistry;
+use Html;
+use Parser;
+use Sanitizer;
+use SpecialPage;
+use Xml;
+
 /**
  * InputBox class
  */

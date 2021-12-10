@@ -20,9 +20,8 @@
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"InputBoxHooks": "includes/InputBoxHooks.php",
-		"InputBox": "includes/InputBox.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\InputBox\\": "includes/"
 	},
 	"ResourceModules": {
 		"ext.inputBox.styles": {
@@ -44,7 +43,7 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "InputBoxHooks",
+			"class": "MediaWiki\\Extension\\InputBox\\InputBoxHooks",
 			"services": [
 				"MainConfig"
 			]
