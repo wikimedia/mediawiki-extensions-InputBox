@@ -2,8 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Kadek Ayu Sulastri",
-			"NoiX180"
+			"NoiX180",
+			"Chinamoonroll"
 		]
 	},
-	"inputbox-tryexact": "Indayang sané cocok"
+	"inputbox-error-bad-type": "Soroh kotak manjingan \"$1\" tan kauningin.\nDurus anggén \"create\", \"comment\", \"search\", \"search2\", utawi \"fulltext\".",
+	"inputbox-tryexact": "Indayang sané patut"
 }
