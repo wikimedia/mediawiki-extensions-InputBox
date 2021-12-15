@@ -87,12 +87,11 @@ class InputBox {
 			case 'search2':
 				return $this->getSearchForm2();
 			default:
+				$key = $this->mType === '' ? 'inputbox-error-no-type' : 'inputbox-error-bad-type';
 				return Xml::tags( 'div', null,
 					Xml::element( 'strong',
 						[ 'class' => 'error' ],
-						strlen( $this->mType ) > 0
-							? wfMessage( 'inputbox-error-bad-type', $this->mType )->text()
-							: wfMessage( 'inputbox-error-no-type' )->text()
+						wfMessage( $key, $this->mType )->text()
 					)
 				);
 		}
