@@ -25,7 +25,10 @@
 	},
 	"ResourceModules": {
 		"ext.inputBox.styles": {
-			"styles": "ext.inputBox.styles.less",
+			"styles": {
+				"ext.inputBox.styles.less": { "media": "screen" },
+				"ext.inputBox.print.less": { "media": "print" }
+			},
 			"targets": [
 				"mobile",
 				"desktop"
