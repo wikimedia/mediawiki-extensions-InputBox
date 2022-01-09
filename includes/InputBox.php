@@ -22,6 +22,7 @@ class InputBox {
 
 	/* Fields */
 
+	/** @var Parser */
 	private $mParser;
 	private $mType = '';
 	private $mWidth = 50;
