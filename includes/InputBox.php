@@ -684,6 +684,12 @@ class InputBox {
 		if ( !$this->isValidColor( $this->mBGColor ) ) {
 			$this->mBGColor = 'transparent';
 		}
+
+		// T297725: De-obfuscate attempts to trick people into making edits to .js pages
+		$target = $this->mType === 'commenttitle' ? $this->mPage : $this->mDefaultText;
+		if ( $this->mHidden && $this->mPreload && substr( $target, -3 ) === '.js' ) {
+			$this->mHidden = false;
+		}
 	}
 
 	/**
