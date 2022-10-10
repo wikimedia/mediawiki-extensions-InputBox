@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Abbas dhothar",
+			"Bgo eiu",
 			"Khalid Mahmood"
 		]
 	},
@@ -11,5 +12,8 @@
 	"inputbox-tryexact": "ٹھیک جوڑ رلاؤ",
 	"inputbox-searchfulltext": "پوری لکھت لبھو",
 	"inputbox-createarticle": "صفحہ بناؤ",
+	"inputbox-movearticle": "صفحہ لے جاؤ",
+	"inputbox-postcomment": "نواں حصہ",
+	"inputbox-postcommenttitle": "نواں حصہ",
 	"inputbox-ns-main": "مین"
 }
