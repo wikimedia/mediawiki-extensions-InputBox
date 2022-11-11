@@ -28,19 +28,19 @@ class InputBox {
 	private $mType = '';
 	/** @var int */
 	private $mWidth = 50;
-	/** @var string|null */
+	/** @var ?string */
 	private $mPreload = null;
-	/** @var array|null */
+	/** @var ?array */
 	private $mPreloadparams = null;
-	/** @var string|null */
+	/** @var ?string */
 	private $mEditIntro = null;
-	/** @var string|null */
+	/** @var ?string */
 	private $mUseVE = null;
-	/** @var string|null */
+	/** @var ?string */
 	private $mSummary = null;
-	/** @var string|null */
+	/** @var ?string */
 	private $mNosummary = null;
-	/** @var string|null */
+	/** @var ?string */
 	private $mMinor = null;
 	/** @var string */
 	private $mPage = '';
@@ -60,14 +60,14 @@ class InputBox {
 	private $mFullTextButton = '';
 	/** @var string */
 	private $mLabelText = '';
-	/** @var string|false */
+	/** @var ?string */
 	private $mHidden = '';
 	/** @var string */
 	private $mNamespaces = '';
 	/** @var string */
 	private $mID = '';
-	/** @var string|false */
-	private $mInline = false;
+	/** @var ?string */
+	private $mInline = null;
 	/** @var string */
 	private $mPrefix = '';
 	/** @var string */
@@ -717,7 +717,7 @@ class InputBox {
 		// T297725: De-obfuscate attempts to trick people into making edits to .js pages
 		$target = $this->mType === 'commenttitle' ? $this->mPage : $this->mDefaultText;
 		if ( $this->mHidden && $this->mPreload && substr( $target, -3 ) === '.js' ) {
-			$this->mHidden = false;
+			$this->mHidden = null;
 		}
 	}
 
