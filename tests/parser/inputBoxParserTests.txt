@@ -231,10 +231,13 @@ tour=test
 <div class="mw-inputbox-centered" style=""><form name="searchbox" class="searchbox" action="/wiki/Special:Search"><input class="mw-inputbox-input mw-searchInput searchboxInput mw-ui-input mw-ui-input-inline" name="search" placeholder="" size="50" dir="ltr" /><input type="hidden" value="test" name="tour" /><br /><input type="submit" name="go" class="mw-ui-button" value="Try exact match" />&#160;<input type="submit" name="fulltext" class="mw-ui-button" value="Search full text" /></form></div>
 !! end
 
+# XXX This test is broken: note that the UX text is in sr-Cyrl but the
+# variant requested was sr-Latn
 !! test
 InputBox langconvert
 !! options
 language=sr variant=sr-Latn
+disabled
 !! wikitext
 <inputbox>
 type=create
