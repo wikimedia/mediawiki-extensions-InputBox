@@ -96,7 +96,9 @@ class InputBoxHooks implements
 		$request,
 		$wiki
 	) {
-		if ( $output->getActionName() !== 'edit' && $request->getRawVal( 'veaction' ) !== 'edit' ) {
+		// In order to check for 'action=edit' in URL parameters, even if another extension overrides
+		// the action, we must not use getActionName() here. (T337436)
+		if ( $request->getRawVal( 'action' ) !== 'edit' && $request->getRawVal( 'veaction' ) !== 'edit' ) {
 			// not our problem
 			return true;
 		}
