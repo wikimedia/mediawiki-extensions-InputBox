@@ -13,10 +13,10 @@ use MediaWiki;
 use MediaWiki\Hook\MediaWikiPerformActionHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
+use MediaWiki\Title\Title;
 use OutputPage;
 use Parser;
 use SpecialPage;
-use Title;
 use User;
 use WebRequest;
 
