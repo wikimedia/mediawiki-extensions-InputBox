@@ -97,6 +97,7 @@ class InputBox {
 			'ext.inputBox.styles',
 			'mediawiki.ui.input',
 			'mediawiki.ui.checkbox',
+			'mediawiki.ui.button',
 		] );
 	}
 
