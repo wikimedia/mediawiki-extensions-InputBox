@@ -395,7 +395,7 @@ class InputBox {
 		);
 
 		// Better testing needed here!
-		if ( !empty( $this->mFullTextButton ) ) {
+		if ( $this->mFullTextButton !== '' ) {
 			$htmlOut .= Xml::element( 'input',
 				[
 					'type' => 'submit',
