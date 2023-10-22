@@ -50,7 +50,10 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\Extension\\InputBox\\InputBoxHooks"
+			"class": "MediaWiki\\Extension\\InputBox\\InputBoxHooks",
+			"services": [
+				"MainConfig"
+			]
 		}
 	},
 	"manifest_version": 2

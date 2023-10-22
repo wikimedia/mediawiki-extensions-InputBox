@@ -9,7 +9,9 @@
 namespace MediaWiki\Extension\InputBox;
 
 use ExtensionRegistry;
+use MediaWiki\Config\Config;
 use MediaWiki\Html\Html;
+use MediaWiki\MainConfigNames;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\SpecialPage\SpecialPage;
 use Parser;
@@ -22,6 +24,8 @@ class InputBox {
 
 	/* Fields */
 
+	/** @var Config */
+	private $config;
 	/** @var Parser */
 	private $mParser;
 	/** @var string */
@@ -84,9 +88,14 @@ class InputBox {
 	/* Functions */
 
 	/**
+	 * @param Config $config
 	 * @param Parser $parser
 	 */
-	public function __construct( $parser ) {
+	public function __construct(
+		Config $config,
+		$parser
+	) {
+		$this->config = $config;
 		$this->mParser = $parser;
 		// Default value for dir taken from the page language (bug 37018)
 		$this->mDir = $this->mParser->getTargetLanguage()->getDir();
@@ -167,8 +176,6 @@ class InputBox {
 	 * @return string HTML
 	 */
 	public function getSearchForm( $type ) {
-		global $wgNamespaceAliases;
-
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
 			$this->mButtonLabel = wfMessage( 'inputbox-tryexact' )->text();
@@ -230,7 +237,10 @@ class InputBox {
 		if ( $this->mNamespaces ) {
 			$contLang = $this->mParser->getContentLanguage();
 			$namespaces = $contLang->getNamespaces();
-			$nsAliases = array_merge( $contLang->getNamespaceAliases(), $wgNamespaceAliases );
+			$nsAliases = array_merge(
+				$contLang->getNamespaceAliases(),
+				$this->config->get( MainConfigNames::NamespaceAliases )
+			);
 			$showNamespaces = [];
 			$checkedNS = [];
 			// Check for valid namespaces
@@ -418,8 +428,6 @@ class InputBox {
 	 * @return string
 	 */
 	public function getCreateForm() {
-		global $wgScript;
-
 		if ( $this->mType === 'comment' ) {
 			if ( !$this->mButtonLabel ) {
 				$this->mButtonLabel = wfMessage( 'inputbox-postcomment' )->text();
@@ -439,7 +447,7 @@ class InputBox {
 		$createBoxParams = [
 			'name' => 'createbox',
 			'class' => 'createbox',
-			'action' => $wgScript,
+			'action' => $this->config->get( MainConfigNames::Script ),
 			'method' => 'get'
 		];
 		if ( $this->mID !== '' ) {
@@ -514,8 +522,6 @@ class InputBox {
 	 * @return string
 	 */
 	public function getMoveForm() {
-		global $wgScript;
-
 		if ( !$this->mButtonLabel ) {
 			$this->mButtonLabel = wfMessage( 'inputbox-movearticle' )->text();
 		}
@@ -529,7 +535,7 @@ class InputBox {
 		$moveBoxParams = [
 			'name' => 'movebox',
 			'class' => 'mw-movebox',
-			'action' => $wgScript,
+			'action' => $this->config->get( MainConfigNames::Script ),
 			'method' => 'get'
 		];
 		if ( $this->mID !== '' ) {
@@ -571,8 +577,6 @@ class InputBox {
 	 * @return string
 	 */
 	public function getCommentForm() {
-		global $wgScript;
-
 		if ( !$this->mButtonLabel ) {
 				$this->mButtonLabel = wfMessage( 'inputbox-postcommenttitle' )->text();
 		}
@@ -586,7 +590,7 @@ class InputBox {
 		$commentFormParams = [
 			'name' => 'commentbox',
 			'class' => 'commentbox',
-			'action' => $wgScript,
+			'action' => $this->config->get( MainConfigNames::Script ),
 			'method' => 'get'
 		];
 		if ( $this->mID !== '' ) {

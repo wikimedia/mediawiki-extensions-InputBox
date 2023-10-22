@@ -10,6 +10,7 @@ namespace MediaWiki\Extension\InputBox;
 
 use Article;
 use MediaWiki;
+use MediaWiki\Config\Config;
 use MediaWiki\Hook\MediaWikiPerformActionHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Output\OutputPage;
@@ -28,6 +29,17 @@ class InputBoxHooks implements
 	SpecialPageBeforeExecuteHook,
 	MediaWikiPerformActionHook
 {
+	/** @var Config */
+	private $config;
+
+	/**
+	 * @param Config $config
+	 */
+	public function __construct(
+		Config $config
+	) {
+		$this->config = $config;
+	}
 
 	/**
 	 * Initialization
@@ -67,7 +79,7 @@ class InputBoxHooks implements
 	 */
 	public function render( $input, $args, Parser $parser ) {
 		// Create InputBox
-		$inputBox = new InputBox( $parser );
+		$inputBox = new InputBox( $this->config, $parser );
 
 		// Configure InputBox
 		$inputBox->extractOptions( $parser->replaceVariables( $input ) );
