@@ -9,10 +9,10 @@
 namespace MediaWiki\Extension\InputBox;
 
 use ExtensionRegistry;
-use Html;
+use MediaWiki\Html\Html;
+use MediaWiki\Parser\Sanitizer;
+use MediaWiki\SpecialPage\SpecialPage;
 use Parser;
-use Sanitizer;
-use SpecialPage;
 use Xml;
 
 /**
