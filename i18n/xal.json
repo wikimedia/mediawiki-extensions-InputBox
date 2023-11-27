@@ -7,7 +7,7 @@
 	},
 	"inputbox-error-no-type": "Та бүтәлдг оруллһна теегин янз заав уга.",
 	"inputbox-error-bad-type": "«$1» буру оруллһна теегин янз болҗана.\nБуйн болтха, нег йоста янз автн: «create», «comment», «search», «search2» аль «fulltext».",
-	"inputbox-tryexact": "Нәрн зокцл",
+	"inputbox-tryexact": "Батта тохрц",
 	"inputbox-searchfulltext": "Күцц бичг хәәлһн",
 	"inputbox-createarticle": "Халхиг бүтәх"
 }
