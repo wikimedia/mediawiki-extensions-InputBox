@@ -9,7 +9,7 @@
 namespace MediaWiki\Extension\InputBox;
 
 use Article;
-use MediaWiki;
+use MediaWiki\Actions\ActionEntryPoint;
 use MediaWiki\Config\Config;
 use MediaWiki\Hook\MediaWikiPerformActionHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
@@ -97,7 +97,7 @@ class InputBoxHooks implements
 	 * @param Title $title
 	 * @param User $user
 	 * @param WebRequest $request
-	 * @param MediaWiki $wiki
+	 * @param ActionEntryPoint $wiki
 	 * @return bool
 	 */
 	public function onMediaWikiPerformAction(
