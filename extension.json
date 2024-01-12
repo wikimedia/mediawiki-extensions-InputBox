@@ -32,11 +32,7 @@
 				"ext.inputBox.print.less": {
 					"media": "print"
 				}
-			},
-			"targets": [
-				"mobile",
-				"desktop"
-			]
+			}
 		}
 	},
 	"ResourceFileModulePaths": {
