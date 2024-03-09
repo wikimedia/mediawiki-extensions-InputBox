@@ -103,9 +103,6 @@ class InputBox {
 		$this->mParser->getOptions()->getUserLangObj();
 		$this->mParser->getOutput()->addModuleStyles( [
 			'ext.inputBox.styles',
-			'mediawiki.ui.input',
-			'mediawiki.ui.checkbox',
-			'mediawiki.ui.button',
 		] );
 	}
 
@@ -165,6 +162,16 @@ class InputBox {
 	 *
 	 * @return string
 	 */
+	private function getFormLinebreakClasses() {
+		return strtolower( $this->mBR ) === '<br />' ? ' mw-inputbox-form' : ' mw-inputbox-form-inline';
+	}
+
+	/**
+	 * Get common classes, that could be added and depend on, if
+	 * a line break between a button and an input field is added or not.
+	 *
+	 * @return string
+	 */
 	private function getLinebreakClasses() {
 		return strtolower( $this->mBR ) === '<br />' ? 'mw-inputbox-input ' : '';
 	}
@@ -201,7 +208,7 @@ class InputBox {
 		$htmlOut .= Html::openElement( 'form',
 			[
 				'name' => 'searchbox',
-				'class' => 'searchbox',
+				'class' => 'searchbox' . $this->getFormLinebreakClasses(),
 				'action' => SpecialPage::getTitleFor( 'Search' )->getLocalUrl(),
 			] + $idArray
 		);
@@ -352,7 +359,9 @@ class InputBox {
 		$id = Sanitizer::escapeIdForAttribute( $unescapedID );
 		$htmlLabel = '';
 		if ( strlen( trim( $this->mLabelText ) ) ) {
-			$htmlLabel = Html::openElement( 'label', [ 'for' => 'bodySearchInput' . $id ] );
+			$htmlLabel = Html::openElement( 'label', [ 'for' => 'bodySearchInput' . $id,
+				'class' => 'mw-inputbox-label'
+			] );
 			$htmlLabel .= $this->mParser->recursiveTagParse( $this->mLabelText );
 			$htmlLabel .= Html::closeElement( 'label' );
 		}
@@ -360,7 +369,8 @@ class InputBox {
 			[
 				'name' => 'bodySearch' . $id,
 				'id' => 'bodySearch' . $id,
-				'class' => 'bodySearch' . ( $this->mInline ? ' mw-inputbox-inline' : '' ),
+				'class' => 'bodySearch' .
+					( $this->mInline ? ' mw-inputbox-inline' : '' ) . $this->getFormLinebreakClasses(),
 				'action' => SpecialPage::getTitleFor( 'Search' )->getLocalUrl(),
 			]
 		);
@@ -432,7 +442,7 @@ class InputBox {
 		);
 		$createBoxParams = [
 			'name' => 'createbox',
-			'class' => 'createbox',
+			'class' => 'createbox' . $this->getFormLinebreakClasses(),
 			'action' => $this->config->get( MainConfigNames::Script ),
 			'method' => 'get'
 		];
@@ -520,7 +530,7 @@ class InputBox {
 		);
 		$moveBoxParams = [
 			'name' => 'movebox',
-			'class' => 'mw-movebox',
+			'class' => 'mw-movebox' . $this->getFormLinebreakClasses(),
 			'action' => $this->config->get( MainConfigNames::Script ),
 			'method' => 'get'
 		];
@@ -575,7 +585,7 @@ class InputBox {
 		);
 		$commentFormParams = [
 			'name' => 'commentbox',
-			'class' => 'commentbox',
+			'class' => 'commentbox' . $this->getFormLinebreakClasses(),
 			'action' => $this->config->get( MainConfigNames::Script ),
 			'method' => 'get'
 		];
@@ -753,9 +763,13 @@ REGEX;
 		}
 
 		$class = $defaultAttr[ 'class' ] ?? '';
-		$class .= '  mw-ui-input mw-ui-input-inline';
+		$class .= ' cdx-text-input__input';
 		$defaultAttr[ 'class' ] = $class;
-		return Html::element( 'input', $defaultAttr );
+		return Html::openElement( 'div', [
+			'class' => 'cdx-text-input',
+		] )
+			. Html::element( 'input', $defaultAttr )
+			. Html::closeElement( 'div' );
 	}
 
 	/**
@@ -769,18 +783,22 @@ REGEX;
 	 * @return string
 	 */
 	private function buildCheckboxInput( $label, $name, $id, $value, $defaultAttr = [] ) {
-		$htmlOut = ' <div class="mw-inputbox-element mw-ui-checkbox">';
+		$htmlOut = ' <span class="cdx-checkbox cdx-checkbox--inline">';
 		$htmlOut .= Html::element( 'input',
 			[
 				'type' => 'checkbox',
 				'name' => $name,
 				'value' => $value,
 				'id' => $id,
+				'class' => 'cdx-checkbox__input',
 			] + $defaultAttr
 		);
+		$htmlOut .= '<span class="cdx-checkbox__icon"></span>';
 		// Label
-		$htmlOut .= Html::label( $label, $id );
-		$htmlOut .= '</div> ';
+		$htmlOut .= Html::label( $label, $id, [
+			'class' => 'cdx-checkbox__label',
+		] );
+		$htmlOut .= '</span> ';
 		return $htmlOut;
 	}
 
@@ -793,9 +811,9 @@ REGEX;
 	 */
 	private function buildSubmitInput( $defaultAttr, $isProgressive = false ) {
 		$defaultAttr[ 'class' ] ??= '';
-		$defaultAttr[ 'class' ] .= ' mw-ui-button';
+		$defaultAttr[ 'class' ] .= ' cdx-button';
 		if ( $isProgressive ) {
-			$defaultAttr[ 'class' ] .= ' mw-ui-progressive';
+			$defaultAttr[ 'class' ] .= ' cdx-button--action-progressive cdx-button--weight-primary';
 		}
 		$defaultAttr[ 'class' ] = trim( $defaultAttr[ 'class' ] );
 		return Html::element( 'input', $defaultAttr );
