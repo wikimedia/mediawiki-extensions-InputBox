@@ -209,7 +209,7 @@ class InputBox {
 
 		$htmlOut .= $this->buildTextBox( [
 			// enable SearchSuggest with mw-searchInput class
-			'class' => $this->getLinebreakClasses() . 'mw-searchInput searchboxInput mw-ui-input mw-ui-input-inline',
+			'class' => $this->getLinebreakClasses() . 'mw-searchInput searchboxInput',
 			'name' => 'search',
 			'type' => $this->mHidden ? 'hidden' : 'text',
 			'value' => $this->mDefaultText,
@@ -291,18 +291,9 @@ class InputBox {
 					);
 				} else {
 					// Checkbox
-					$htmlOut .= ' <div class="mw-inputbox-element mw-ui-checkbox">';
-					$htmlOut .= Xml::element( 'input',
-						[
-							'type' => 'checkbox',
-							'name' => 'ns' . $i,
-							'value' => 1,
-							'id' => 'mw-inputbox-ns' . $i . $idRandStr
-						] + $checked
+					$htmlOut .= $this->buildCheckboxInput(
+						'ns' . $i, 'mw-inputbox-ns' . $i . $idRandStr, "1", $checked
 					);
-					// Label
-					$htmlOut .= Xml::label( $name, 'mw-inputbox-ns' . $i . $idRandStr );
-					$htmlOut .= '</div> ';
 				}
 			}
 
@@ -310,11 +301,10 @@ class InputBox {
 			$htmlOut .= $this->mBR;
 		} elseif ( $type === 'search' ) {
 			// Go button
-			$htmlOut .= Xml::element( 'input',
+			$htmlOut .= $this->buildSubmitInput(
 				[
 					'type' => 'submit',
 					'name' => 'go',
-					'class' => 'mw-ui-button',
 					'value' => $this->mButtonLabel
 				]
 			);
@@ -322,11 +312,10 @@ class InputBox {
 		}
 
 		// Search button
-		$htmlOut .= Xml::element( 'input',
+		$htmlOut .= $this->buildSubmitInput(
 			[
 				'type' => 'submit',
 				'name' => 'fulltext',
-				'class' => 'mw-ui-button',
 				'value' => $this->mSearchButtonLabel
 			]
 		);
@@ -388,29 +377,27 @@ class InputBox {
 			'type' => $this->mHidden ? 'hidden' : 'text',
 			'name' => 'search',
 			// enable SearchSuggest with mw-searchInput class
-			'class' => 'mw-searchInput mw-ui-input mw-ui-input-inline',
+			'class' => 'mw-searchInput',
 			'size' => $this->mWidth,
 			'id' => 'bodySearchInput' . $id,
 			'dir' => $this->mDir,
 			'placeholder' => $this->mPlaceholderText
 		] );
 
-		$htmlOut .= "\u{00A0}" . Xml::element( 'input',
+		$htmlOut .= "\u{00A0}" . $this->buildSubmitInput(
 			[
 				'type' => 'submit',
 				'name' => 'go',
 				'value' => $this->mButtonLabel,
-				'class' => 'mw-ui-button',
 			]
 		);
 
 		// Better testing needed here!
 		if ( $this->mFullTextButton !== '' ) {
-			$htmlOut .= Xml::element( 'input',
+			$htmlOut .= $this->buildSubmitInput(
 				[
 					'type' => 'submit',
 					'name' => 'fulltext',
-					'class' => 'mw-ui-button',
 					'value' => $this->mSearchButtonLabel
 				]
 			);
@@ -491,7 +478,7 @@ class InputBox {
 			'type' => $this->mHidden ? 'hidden' : 'text',
 			'name' => 'title',
 			'class' => $this->getLinebreakClasses() .
-				'mw-ui-input mw-ui-input-inline mw-inputbox-createbox',
+				'mw-inputbox-createbox',
 			'value' => $this->mDefaultText,
 			'placeholder' => $this->mPlaceholderText,
 			// For visible input fields, use required so that the form will not
@@ -502,13 +489,13 @@ class InputBox {
 		] );
 
 		$htmlOut .= $this->mBR;
-		$htmlOut .= Xml::openElement( 'input',
+		$htmlOut .= $this->buildSubmitInput(
 			[
 				'type' => 'submit',
 				'name' => 'create',
-				'class' => 'mw-ui-button mw-ui-progressive',
 				'value' => $this->mButtonLabel
-			]
+			],
+			true
 		);
 		$htmlOut .= Xml::closeElement( 'form' );
 		$htmlOut .= Xml::closeElement( 'div' );
@@ -550,7 +537,7 @@ class InputBox {
 		$htmlOut .= $this->buildTextBox( [
 			'type' => $this->mHidden ? 'hidden' : 'text',
 			'name' => 'wpNewTitle',
-			'class' => $this->getLinebreakClasses() . 'mw-moveboxInput mw-ui-input mw-ui-input-inline',
+			'class' => $this->getLinebreakClasses() . 'mw-moveboxInput',
 			'value' => $this->mDefaultText,
 			'placeholder' => $this->mPlaceholderText,
 			'size' => $this->mWidth,
@@ -558,12 +545,12 @@ class InputBox {
 		] );
 
 		$htmlOut .= $this->mBR;
-		$htmlOut .= Xml::openElement( 'input',
+		$htmlOut .= $this->buildSubmitInput(
 			[
 				'type' => 'submit',
-				'class' => 'mw-ui-button mw-ui-progressive',
 				'value' => $this->mButtonLabel
-			]
+			],
+			true
 		);
 		$htmlOut .= Xml::closeElement( 'form' );
 		$htmlOut .= Xml::closeElement( 'div' );
@@ -614,7 +601,7 @@ class InputBox {
 		$htmlOut .= $this->buildTextBox( [
 			'type' => $this->mHidden ? 'hidden' : 'text',
 			'name' => 'preloadtitle',
-			'class' => $this->getLinebreakClasses() . 'commentboxInput mw-ui-input mw-ui-input-inline',
+			'class' => $this->getLinebreakClasses() . 'commentboxInput',
 			'value' => $this->mDefaultText,
 			'placeholder' => $this->mPlaceholderText,
 			'size' => $this->mWidth,
@@ -627,13 +614,13 @@ class InputBox {
 		}
 		$htmlOut .= Html::hidden( 'title', $this->mPage );
 		$htmlOut .= $this->mBR;
-		$htmlOut .= Xml::openElement( 'input',
+		$htmlOut .= $this->buildSubmitInput(
 			[
 				'type' => 'submit',
 				'name' => 'create',
-				'class' => 'mw-ui-button mw-ui-progressive',
 				'value' => $this->mButtonLabel
-			]
+			],
+			true
 		);
 		$htmlOut .= Xml::closeElement( 'form' );
 		$htmlOut .= Xml::closeElement( 'div' );
@@ -756,7 +743,8 @@ REGEX;
 	}
 
 	/**
-	 * Factory method to help build the textbox widget
+	 * Factory method to help build the textbox widget.
+	 *
 	 * @param array $defaultAttr
 	 * @return string
 	 */
@@ -765,7 +753,52 @@ REGEX;
 			$defaultAttr[ 'aria-label' ] = $this->mTextBoxAriaLabel;
 		}
 
-		return Html::openElement( 'input', $defaultAttr );
+		$class = $defaultAttr[ 'class' ] ?? '';
+		$class .= '  mw-ui-input mw-ui-input-inline';
+		$defaultAttr[ 'class' ] = $class;
+		return Html::element( 'input', $defaultAttr );
+	}
+
+	/**
+	 * Factory method to help build checkbox input.
+	 *
+	 * @param string $name name of input
+	 * @param string $id id of input
+	 * @param string $value value of input
+	 * @param array $defaultAttr (optional)
+	 * @return string
+	 */
+	private function buildCheckboxInput( $name, $id, $value, $defaultAttr = [] ) {
+		$htmlOut = ' <div class="mw-inputbox-element mw-ui-checkbox">';
+		$htmlOut .= Xml::element( 'input',
+			[
+				'type' => 'checkbox',
+				'name' => $name,
+				'value' => $value,
+				'id' => $id,
+			] + $defaultAttr
+		);
+		// Label
+		$htmlOut .= Xml::label( $name, $id );
+		$htmlOut .= '</div> ';
+		return $htmlOut;
+	}
+
+	/**
+	 * Factory method to help build submit button.
+	 *
+	 * @param array $defaultAttr
+	 * @param bool $isProgressive (optional)
+	 * @return string
+	 */
+	private function buildSubmitInput( $defaultAttr, $isProgressive = false ) {
+		$defaultAttr[ 'class' ] ??= '';
+		$defaultAttr[ 'class' ] .= ' mw-ui-button';
+		if ( $isProgressive ) {
+			$defaultAttr[ 'class' ] .= ' mw-ui-progressive';
+		}
+		$defaultAttr[ 'class' ] = trim( $defaultAttr[ 'class' ] );
+		return Xml::element( 'input', $defaultAttr );
 	}
 
 	private function bgColorStyle() {
