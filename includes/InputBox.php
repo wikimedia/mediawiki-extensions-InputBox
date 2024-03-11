@@ -654,7 +654,7 @@ class InputBox {
 			if ( strpos( $line, '=' ) === false ) {
 				continue;
 			}
-			list( $name, $value ) = explode( '=', $line, 2 );
+			[ $name, $value ] = explode( '=', $line, 2 );
 			$name = strtolower( trim( $name ) );
 			$value = Sanitizer::decodeCharReferences( trim( $value ) );
 			if ( $name === 'preloadparams[]' ) {
