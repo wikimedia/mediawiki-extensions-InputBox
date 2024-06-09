@@ -12,9 +12,9 @@ use ExtensionRegistry;
 use MediaWiki\Config\Config;
 use MediaWiki\Html\Html;
 use MediaWiki\MainConfigNames;
+use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\SpecialPage\SpecialPage;
-use Parser;
 
 /**
  * InputBox class
