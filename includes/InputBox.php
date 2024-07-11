@@ -821,7 +821,11 @@ REGEX;
 
 	private function bgColorStyle() {
 		if ( $this->mBGColor !== 'transparent' ) {
-			return 'background-color: ' . $this->mBGColor . ';';
+			// Define color to avoid flagging linting warnings.
+			// https://phabricator.wikimedia.org/T369619
+			// Editor is assumed to know what they are doing here,
+			// and choosing a color compatible with dark and light themes...
+			return 'background-color: ' . $this->mBGColor . '; color: inherit;';
 		}
 		return '';
 	}
