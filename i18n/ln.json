@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Lydie maliki",
 			"Moyogo"
 		]
 	},
+	"inputbox-tryexact": "Meka kosala match exact",
 	"inputbox-createarticle": "Kokela ekakoli"
 }
