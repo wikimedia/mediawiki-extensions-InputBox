@@ -1,7 +1,8 @@
 !! Version 2
-# Force the test runner to ensure the extension is loaded
+# Force the test runner to ensure the extension and its dependency are loaded
 !! hooks
 inputbox
+extension:MediaSearch
 !! endhooks
 
 !! test
@@ -254,4 +255,16 @@ arialabel=Search this wiki
 </inputbox>
 !! html
 <div class="mw-inputbox-centered" style=""><form name="searchbox" class="searchbox mw-inputbox-form" action="/wiki/Special:Search"><div class="cdx-text-input"><input class="mw-inputbox-input mw-searchInput searchboxInput cdx-text-input__input" name="search" placeholder="" size="50" dir="ltr" aria-label="Search this wiki" /></div><br /><input type="submit" name="go" value="Try exact match" class="cdx-button" />&#160;<input type="submit" name="fulltext" value="Search full text" class="cdx-button" /></form></div>
+!! end
+
+!! test
+InputBox with different search-special-page preference value
+!! config
+wgDefaultUserOptions={"search-special-page": "MediaSearch"}
+!! wikitext
+<inputbox>
+type=search
+</inputbox>
+!! html
+<div class="mw-inputbox-centered" style=""><form name="searchbox" class="searchbox mw-inputbox-form" action="/wiki/Special:MediaSearch"><div class="cdx-text-input"><input class="mw-inputbox-input mw-searchInput searchboxInput cdx-text-input__input" name="search" placeholder="" size="50" dir="ltr" /></div><br /><input type="submit" name="go" value="Try exact match" class="cdx-button" />&#160;<input type="submit" name="fulltext" value="Search full text" class="cdx-button" /></form></div>
 !! end
