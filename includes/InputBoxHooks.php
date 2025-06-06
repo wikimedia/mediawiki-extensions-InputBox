@@ -56,9 +56,11 @@ class InputBoxHooks implements
 	}
 
 	/**
-	 * Prepend prefix to wpNewTitle if necessary
+	 * If necssary, prepend prefix to wpNewTitle, or update the search parameter with the searchfilter.
+	 *
 	 * @param SpecialPage $special
-	 * @param string $subPage
+	 * @param string|null $subPage Subpage string, or null if no subpage was specified
+	 * @return bool|void True or no return value to continue or false to prevent execution
 	 */
 	public function onSpecialPageBeforeExecute( $special, $subPage ) {
 		$request = $special->getRequest();
@@ -71,7 +73,12 @@ class InputBoxHooks implements
 			$request->unsetVal( 'prefix' );
 		}
 		if ( in_array( $special->getName(), [ 'Search', 'MediaSearch' ] ) && $searchfilter !== '' ) {
-			$request->setVal( 'search', $search . ' ' . $searchfilter );
+			// Redirect to Special:Search after modifying the search parameter.
+			$searchQuery = $request->getQueryValues();
+			$searchQuery[ 'search' ] = trim( $search ) . ' ' . $searchfilter;
+			unset( $searchQuery['searchfilter'], $searchQuery['title'] );
+			$special->getOutput()->redirect( $special->getPageTitle()->getFullURL( $searchQuery ) );
+			return false;
 		}
 	}
 
