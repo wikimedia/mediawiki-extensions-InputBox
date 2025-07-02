@@ -15,6 +15,7 @@ use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\Article;
 use MediaWiki\Parser\Parser;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -32,13 +33,17 @@ class InputBoxHooks implements
 	/** @var Config */
 	private $config;
 
+	private ExtensionRegistry $extensionRegistry;
+
 	/**
 	 * @param Config $config
 	 */
 	public function __construct(
-		Config $config
+		Config $config,
+		ExtensionRegistry $extensionRegistry
 	) {
 		$this->config = $config;
+		$this->extensionRegistry = $extensionRegistry;
 	}
 
 	/**
@@ -65,7 +70,7 @@ class InputBoxHooks implements
 			$request->setVal( 'wpNewTitle', $prefix . $title );
 			$request->unsetVal( 'prefix' );
 		}
-		if ( $special->getName() === 'Search' && $searchfilter !== '' ) {
+		if ( in_array( $special->getName(), [ 'Search', 'MediaSearch' ] ) && $searchfilter !== '' ) {
 			$request->setVal( 'search', $search . ' ' . $searchfilter );
 		}
 	}
@@ -83,7 +88,7 @@ class InputBoxHooks implements
 		}
 
 		// Create InputBox
-		$inputBox = new InputBox( $this->config, $parser );
+		$inputBox = new InputBox( $this->config, $this->extensionRegistry, $parser );
 
 		// Configure InputBox
 		$inputBox->extractOptions( $parser->replaceVariables( $input ) );

@@ -25,6 +25,7 @@ class InputBox {
 
 	/** @var Config */
 	private $config;
+	private ExtensionRegistry $extensionRegistry;
 	/** @var Parser */
 	private $mParser;
 	/** @var string */
@@ -88,13 +89,16 @@ class InputBox {
 
 	/**
 	 * @param Config $config
+	 * @param ExtensionRegistry $extensionRegistry
 	 * @param Parser $parser
 	 */
 	public function __construct(
 		Config $config,
+		ExtensionRegistry $extensionRegistry,
 		$parser
 	) {
 		$this->config = $config;
+		$this->extensionRegistry = $extensionRegistry;
 		$this->mParser = $parser;
 		// Default value for dir taken from the page language (bug 37018)
 		$this->mDir = $this->mParser->getTargetLanguage()->getDir();
@@ -209,7 +213,7 @@ class InputBox {
 			[
 				'name' => 'searchbox',
 				'class' => 'searchbox' . $this->getFormLinebreakClasses(),
-				'action' => SpecialPage::getTitleFor( 'Search' )->getLocalUrl(),
+				'action' => $this->buildSearchActionUrl(),
 			] + $idArray
 		);
 
@@ -371,7 +375,7 @@ class InputBox {
 				'id' => 'bodySearch' . $id,
 				'class' => 'bodySearch' .
 					( $this->mInline ? ' mw-inputbox-inline' : '' ) . $this->getFormLinebreakClasses(),
-				'action' => SpecialPage::getTitleFor( 'Search' )->getLocalUrl(),
+				'action' => $this->buildSearchActionUrl(),
 			]
 		);
 		$htmlOut .= Html::openElement( 'div',
@@ -800,6 +804,25 @@ REGEX;
 		] );
 		$htmlOut .= '</span> ';
 		return $htmlOut;
+	}
+
+	/**
+	 * Get the URL for Special:Search or Special:MediaSearch.
+	 *
+	 * @return string Local URL of the search page.
+	 */
+	private function buildSearchActionUrl(): string {
+		$searchSpecialPage = $this->config->get( 'DefaultUserOptions' )['search-special-page'] ?? 'Search';
+		if ( $this->extensionRegistry->isLoaded( 'MediaSearch' )
+			&& $this->mParser->getUserIdentity()->isRegistered()
+		) {
+			$this->mParser->getOutput()->addModules( [ 'ext.inputBox' ] );
+			$this->mParser->getOutput()->setJsConfigVar( 'SpecialSearchPages', [
+				'Search' => SpecialPage::getTitleFor( 'Search' )->getFullText(),
+				'MediaSearch' => SpecialPage::getTitleFor( 'MediaSearch' )->getFullText(),
+			] );
+		}
+		return SpecialPage::getTitleFor( $searchSpecialPage )->getLocalUrl();
 	}
 
 	/**
