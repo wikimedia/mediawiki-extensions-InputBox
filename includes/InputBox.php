@@ -81,6 +81,8 @@ class InputBox {
 	/** @var string */
 	private $mSearchFilter = '';
 	/** @var string */
+	private $mSearchEngine = '';
+	/** @var string */
 	private $mTour = '';
 	/** @var string */
 	private $mTextBoxAriaLabel = '';
@@ -171,6 +173,14 @@ class InputBox {
 	}
 
 	/**
+	 * Get space-separated list of classes for the search forms.
+	 */
+	private function getSearchFormClasses(): string {
+		return $this->getFormLinebreakClasses()
+			. ( $this->mSearchEngine ? ' inputbox-searchengine-set' : ' inputbox-searchengine-not-set' );
+	}
+
+	/**
 	 * Get common classes, that could be added and depend on, if
 	 * a line break between a button and an input field is added or not.
 	 *
@@ -212,7 +222,7 @@ class InputBox {
 		$htmlOut .= Html::openElement( 'form',
 			[
 				'name' => 'searchbox',
-				'class' => 'searchbox' . $this->getFormLinebreakClasses(),
+				'class' => 'searchbox' . $this->getSearchFormClasses(),
 				'action' => $this->buildSearchActionUrl(),
 			] + $idArray
 		);
@@ -374,7 +384,7 @@ class InputBox {
 				'name' => 'bodySearch' . $id,
 				'id' => 'bodySearch' . $id,
 				'class' => 'bodySearch' .
-					( $this->mInline ? ' mw-inputbox-inline' : '' ) . $this->getFormLinebreakClasses(),
+					( $this->mInline ? ' mw-inputbox-inline' : '' ) . $this->getSearchFormClasses(),
 				'action' => $this->buildSearchActionUrl(),
 			]
 		);
@@ -696,6 +706,7 @@ class InputBox {
 			'inline' => 'mInline',
 			'prefix' => 'mPrefix',
 			'dir' => 'mDir',
+			'searchengine' => 'mSearchEngine',
 			'searchfilter' => 'mSearchFilter',
 			'tour' => 'mTour',
 			'arialabel' => 'mTextBoxAriaLabel'
@@ -812,15 +823,21 @@ REGEX;
 	 * @return string Local URL of the search page.
 	 */
 	private function buildSearchActionUrl(): string {
-		$searchSpecialPage = $this->config->get( 'DefaultUserOptions' )['search-special-page'] ?? 'Search';
-		if ( $this->extensionRegistry->isLoaded( 'MediaSearch' )
-			&& $this->mParser->getUserIdentity()->isRegistered()
-		) {
-			$this->mParser->getOutput()->addModules( [ 'ext.inputBox' ] );
-			$this->mParser->getOutput()->setJsConfigVar( 'SpecialSearchPages', [
-				'Search' => SpecialPage::getTitleFor( 'Search' )->getFullText(),
-				'MediaSearch' => SpecialPage::getTitleFor( 'MediaSearch' )->getFullText(),
-			] );
+		if ( in_array( $this->mSearchEngine, [ 'Search', 'MediaSearch' ] ) ) {
+			// Use the provided `searchengine=` parameter if it's valid.
+			$searchSpecialPage = $this->mSearchEngine;
+		} else {
+			// Otherwise, the use search-special-page preference.
+			$searchSpecialPage = $this->config->get( 'DefaultUserOptions' )['search-special-page'] ?? 'Search';
+			if ( $this->extensionRegistry->isLoaded( 'MediaSearch' )
+				&& $this->mParser->getUserIdentity()->isRegistered()
+			) {
+				$this->mParser->getOutput()->addModules( [ 'ext.inputBox' ] );
+				$this->mParser->getOutput()->setJsConfigVar( 'SpecialSearchPages', [
+					'Search' => SpecialPage::getTitleFor( 'Search' )->getFullText(),
+					'MediaSearch' => SpecialPage::getTitleFor( 'MediaSearch' )->getFullText(),
+				] );
+			}
 		}
 		return SpecialPage::getTitleFor( $searchSpecialPage )->getLocalUrl();
 	}
