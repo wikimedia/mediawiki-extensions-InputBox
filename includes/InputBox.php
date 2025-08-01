@@ -81,9 +81,11 @@ class InputBox {
 	/** @var string */
 	private $mDir = '';
 	/** @var string */
-	private $mSearchFilter = '';
-	/** @var string */
 	private $mSearchEngine = '';
+	/** @var string One of 'image', 'video', 'audio', 'page', or 'other'. */
+	private string $mSearchType = '';
+	/** @var string */
+	private $mSearchFilter = '';
 	/** @var string */
 	private $mTour = '';
 	/** @var string */
@@ -246,6 +248,10 @@ class InputBox {
 
 		if ( $this->mSearchFilter !== '' ) {
 			$htmlOut .= Html::hidden( 'searchfilter', $this->mSearchFilter );
+		}
+
+		if ( $this->mSearchType !== '' && $this->mSearchEngine === 'MediaSearch' ) {
+			$htmlOut .= Html::hidden( 'type', $this->mSearchType );
 		}
 
 		if ( $this->mTour !== '' ) {
@@ -713,6 +719,7 @@ class InputBox {
 			'prefix' => 'mPrefix',
 			'dir' => 'mDir',
 			'searchengine' => 'mSearchEngine',
+			'searchtype' => 'mSearchType',
 			'searchfilter' => 'mSearchFilter',
 			'tour' => 'mTour',
 			'arialabel' => 'mTextBoxAriaLabel'
