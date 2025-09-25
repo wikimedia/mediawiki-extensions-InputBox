@@ -192,10 +192,32 @@ type=comment
 !! end
 
 !! test
+InputBox type=comment with preloadtitle
+!! wikitext
+<inputbox>
+type=comment
+preloadtitle=My title
+</inputbox>
+!! html
+<div class="mw-inputbox-centered" style=""><form name="createbox" class="createbox mw-inputbox-form" action="/index.php" method="get"><input type="hidden" value="edit" name="action" /><input type="hidden" value="My title" name="preloadtitle" /><input type="hidden" value="new" name="section" /><div class="cdx-text-input"><input name="title" class="mw-inputbox-input mw-inputbox-createbox cdx-text-input__input" placeholder="" required="" size="50" dir="ltr" /></div><br /><input type="submit" name="create" value="New section" class="cdx-button cdx-button--action-progressive cdx-button--weight-primary" /></form></div>
+!! end
+
+!! test
 InputBox type=commenttitle
 !! wikitext
 <inputbox>
 type=commenttitle
+</inputbox>
+!! html
+<div class="mw-inputbox-centered" style=""><form name="commentbox" class="commentbox mw-inputbox-form" action="/index.php" method="get"><input type="hidden" value="edit" name="action" /><div class="cdx-text-input"><input name="preloadtitle" class="mw-inputbox-input commentboxInput cdx-text-input__input" placeholder="" size="50" dir="ltr" /></div><input type="hidden" value="new" name="section" /><input type="hidden" name="title" /><br /><input type="submit" name="create" value="New section" class="cdx-button cdx-button--action-progressive cdx-button--weight-primary" /></form></div>
+!! end
+
+!! test
+InputBox type=commenttitle with preloadtitle
+!! wikitext
+<inputbox>
+type=commenttitle
+preloadtitle=This should be ignored
 </inputbox>
 !! html
 <div class="mw-inputbox-centered" style=""><form name="commentbox" class="commentbox mw-inputbox-form" action="/index.php" method="get"><input type="hidden" value="edit" name="action" /><div class="cdx-text-input"><input name="preloadtitle" class="mw-inputbox-input commentboxInput cdx-text-input__input" placeholder="" size="50" dir="ltr" /></div><input type="hidden" value="new" name="section" /><input type="hidden" name="title" /><br /><input type="submit" name="create" value="New section" class="cdx-button cdx-button--action-progressive cdx-button--weight-primary" /></form></div>

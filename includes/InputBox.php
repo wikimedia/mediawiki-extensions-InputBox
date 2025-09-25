@@ -34,6 +34,8 @@ class InputBox {
 	private $mWidth = 50;
 	/** @var ?string */
 	private $mPreload = null;
+	/** @var ?string */
+	private $mPreloadTitle = null;
 	/** @var ?array */
 	private $mPreloadparams = null;
 	/** @var ?string */
@@ -469,6 +471,9 @@ class InputBox {
 		if ( $this->mPreload !== null ) {
 			$htmlOut .= Html::hidden( 'preload', $this->mPreload );
 		}
+		if ( $this->mPreloadTitle !== null ) {
+			$htmlOut .= Html::hidden( 'preloadtitle', $this->mPreloadTitle );
+		}
 		if ( is_array( $this->mPreloadparams ) ) {
 			foreach ( $this->mPreloadparams as $preloadparams ) {
 				$htmlOut .= Html::hidden( 'preloadparams[]', $preloadparams );
@@ -685,6 +690,7 @@ class InputBox {
 			'type' => 'mType',
 			'width' => 'mWidth',
 			'preload' => 'mPreload',
+			'preloadtitle' => 'mPreloadTitle',
 			'page' => 'mPage',
 			'editintro' => 'mEditIntro',
 			'useve' => 'mUseVE',
