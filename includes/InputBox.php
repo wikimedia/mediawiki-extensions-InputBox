@@ -23,9 +23,6 @@ class InputBox {
 
 	/* Fields */
 
-	/** @var Config */
-	private $config;
-	private ExtensionRegistry $extensionRegistry;
 	/** @var Parser */
 	private $mParser;
 	/** @var string */
@@ -99,12 +96,10 @@ class InputBox {
 	 * @param Parser $parser
 	 */
 	public function __construct(
-		Config $config,
-		ExtensionRegistry $extensionRegistry,
+		private readonly Config $config,
+		private readonly ExtensionRegistry $extensionRegistry,
 		$parser
 	) {
-		$this->config = $config;
-		$this->extensionRegistry = $extensionRegistry;
 		$this->mParser = $parser;
 		// Default value for dir taken from the page language (bug 37018)
 		$this->mDir = $this->mParser->getTargetLanguage()->getDir();

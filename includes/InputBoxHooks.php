@@ -30,20 +30,10 @@ class InputBoxHooks implements
 	SpecialPageBeforeExecuteHook,
 	MediaWikiPerformActionHook
 {
-	/** @var Config */
-	private $config;
-
-	private ExtensionRegistry $extensionRegistry;
-
-	/**
-	 * @param Config $config
-	 */
 	public function __construct(
-		Config $config,
-		ExtensionRegistry $extensionRegistry
+		private readonly Config $config,
+		private readonly ExtensionRegistry $extensionRegistry,
 	) {
-		$this->config = $config;
-		$this->extensionRegistry = $extensionRegistry;
 	}
 
 	/**
