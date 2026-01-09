@@ -831,15 +831,19 @@ REGEX;
 	 * @return string Local URL of the search page.
 	 */
 	private function buildSearchActionUrl(): string {
+		// If MediaSearch isn't installed then use Special:Search.
+		if ( !$this->extensionRegistry->isLoaded( 'MediaSearch' ) ) {
+			return SpecialPage::getTitleFor( 'Search' )->getLocalUrl();
+		}
+
+		// If it is installed, optionally use it.
 		if ( in_array( $this->mSearchEngine, [ 'Search', 'MediaSearch' ] ) ) {
 			// Use the provided `searchengine=` parameter if it's valid.
 			$searchSpecialPage = $this->mSearchEngine;
 		} else {
 			// Otherwise, the use search-special-page preference.
 			$searchSpecialPage = $this->config->get( 'DefaultUserOptions' )['search-special-page'] ?? 'Search';
-			if ( $this->extensionRegistry->isLoaded( 'MediaSearch' )
-				&& $this->mParser->getUserIdentity()->isRegistered()
-			) {
+			if ( $this->mParser->getUserIdentity()->isRegistered() ) {
 				$this->mParser->getOutput()->addModules( [ 'ext.inputBox' ] );
 				$this->mParser->getOutput()->setJsConfigVar( 'SpecialSearchPages', [
 					'Search' => SpecialPage::getTitleFor( 'Search' )->getFullText(),
