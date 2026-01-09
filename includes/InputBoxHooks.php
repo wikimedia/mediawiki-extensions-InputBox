@@ -15,6 +15,7 @@ use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\Article;
 use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\PPFrame;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
@@ -77,9 +78,10 @@ class InputBoxHooks implements
 	 * @param string|null $input
 	 * @param array $args
 	 * @param Parser $parser
+	 * @param PPFrame $frame
 	 * @return string
 	 */
-	public function render( $input, $args, Parser $parser ) {
+	public function render( $input, $args, Parser $parser, PPFrame $frame ) {
 		if ( $input === null ) {
 			return '';
 		}
@@ -88,7 +90,7 @@ class InputBoxHooks implements
 		$inputBox = new InputBox( $this->config, $this->extensionRegistry, $parser );
 
 		// Configure InputBox
-		$inputBox->extractOptions( $parser->replaceVariables( $input ) );
+		$inputBox->extractOptions( $parser->replaceVariables( $input, $frame ) );
 
 		// Return output
 		return $inputBox->render();
