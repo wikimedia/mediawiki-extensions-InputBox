@@ -495,7 +495,6 @@ class InputBox {
 		if ( $this->mMinor !== null ) {
 			$htmlOut .= Html::hidden( 'minor', $this->mMinor );
 		}
-		// @phan-suppress-next-line PhanSuspiciousValueComparison False positive
 		if ( $this->mType === 'comment' ) {
 			$htmlOut .= Html::hidden( 'section', 'new' );
 			if ( $this->mUseDT ) {
