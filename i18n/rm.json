@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Albinfo"
+			"Albinfo",
+			"Bild-Sprache"
 		]
 	},
-	"inputbox-tryexact": "Tschertga da correspundenza exacta"
+	"inputbox-tryexact": "Tschertga da concordanza exacta"
 }
