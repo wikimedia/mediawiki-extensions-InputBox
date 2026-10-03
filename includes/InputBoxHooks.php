@@ -43,7 +43,7 @@ class InputBoxHooks implements
 	 */
 	public function onParserFirstCallInit( $parser ) {
 		// Register the hook with the parser
-		$parser->setHook( 'inputbox', [ $this, 'render' ] );
+		$parser->setHook( 'inputbox', $this->render( ... ) );
 	}
 
 	/**
@@ -80,8 +80,9 @@ class InputBoxHooks implements
 	 * @param Parser $parser
 	 * @param PPFrame $frame
 	 * @return string
+	 * @suppress PhanUnusedPrivateMethodParameter Used as callback with fix signature
 	 */
-	public function render( $input, $args, Parser $parser, PPFrame $frame ) {
+	private function render( $input, $args, Parser $parser, PPFrame $frame ) {
 		if ( $input === null ) {
 			return '';
 		}
