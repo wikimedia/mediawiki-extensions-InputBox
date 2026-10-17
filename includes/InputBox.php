@@ -137,7 +137,7 @@ class InputBox {
 	 *
 	 * @return array Array with name and value data
 	 */
-	private function getEditActionArgs() {
+	private function getEditActionArgs(): array {
 		// default is wikitext editor
 		$args = [
 			'name' => 'action',
@@ -156,10 +156,8 @@ class InputBox {
 	/**
 	 * Get common classes, that could be added and depend on, if
 	 * a line break between a button and an input field is added or not.
-	 *
-	 * @return string
 	 */
-	private function getFormLinebreakClasses() {
+	private function getFormLinebreakClasses(): string {
 		return strtolower( $this->mBR ) === '<br />' ? ' mw-inputbox-form' : ' mw-inputbox-form-inline';
 	}
 
@@ -174,10 +172,8 @@ class InputBox {
 	/**
 	 * Get common classes, that could be added and depend on, if
 	 * a line break between a button and an input field is added or not.
-	 *
-	 * @return string
 	 */
-	private function getLinebreakClasses() {
+	private function getLinebreakClasses(): string {
 		return strtolower( $this->mBR ) === '<br />' ? 'mw-inputbox-input ' : '';
 	}
 
@@ -186,7 +182,7 @@ class InputBox {
 	 * @param string $type
 	 * @return string HTML
 	 */
-	public function getSearchForm( $type ) {
+	private function getSearchForm( string $type ): string {
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
 			$this->mButtonLabel = wfMessage( 'inputbox-tryexact' )->text();
@@ -349,9 +345,8 @@ class InputBox {
 
 	/**
 	 * Generate search form version 2
-	 * @return string
 	 */
-	public function getSearchForm2() {
+	private function getSearchForm2(): string {
 		// Use button label fallbacks
 		if ( !$this->mButtonLabel ) {
 			$this->mButtonLabel = wfMessage( 'inputbox-tryexact' )->text();
@@ -430,9 +425,8 @@ class InputBox {
 
 	/**
 	 * Generate create page form
-	 * @return string
 	 */
-	public function getCreateForm() {
+	private function getCreateForm(): string {
 		if ( $this->mType === 'comment' ) {
 			if ( !$this->mButtonLabel ) {
 				$this->mButtonLabel = wfMessage( 'inputbox-postcomment' )->text();
@@ -526,9 +520,8 @@ class InputBox {
 
 	/**
 	 * Generate move page form
-	 * @return string
 	 */
-	public function getMoveForm() {
+	private function getMoveForm(): string {
 		if ( !$this->mButtonLabel ) {
 			$this->mButtonLabel = wfMessage( 'inputbox-movearticle' )->text();
 		}
@@ -581,9 +574,8 @@ class InputBox {
 
 	/**
 	 * Generate new section form
-	 * @return string
 	 */
-	public function getCommentForm() {
+	private function getCommentForm(): string {
 		if ( !$this->mButtonLabel ) {
 				$this->mButtonLabel = wfMessage( 'inputbox-postcommenttitle' )->text();
 		}
@@ -654,7 +646,7 @@ class InputBox {
 	 *
 	 * @param string $text Tag contents
 	 */
-	public function extractOptions( $text ) {
+	public function extractOptions( string $text ): void {
 		// Parse all possible options
 		$values = [];
 		foreach ( explode( "\n", $text ) as $line ) {
@@ -747,10 +739,8 @@ class InputBox {
 
 	/**
 	 * Do a security check on the bgcolor parameter
-	 * @param string $color
-	 * @return bool
 	 */
-	public function isValidColor( $color ) {
+	private function isValidColor( string $color ): bool {
 		$regex = <<<REGEX
 			/^ (
 				[a-zA-Z]* |       # color names
@@ -767,11 +757,8 @@ REGEX;
 
 	/**
 	 * Factory method to help build the textbox widget.
-	 *
-	 * @param array $defaultAttr
-	 * @return string
 	 */
-	private function buildTextBox( $defaultAttr ) {
+	private function buildTextBox( array $defaultAttr ): string {
 		if ( $this->mTextBoxAriaLabel ) {
 			$defaultAttr[ 'aria-label' ] = $this->mTextBoxAriaLabel;
 		}
@@ -796,7 +783,13 @@ REGEX;
 	 * @param array $defaultAttr (optional)
 	 * @return string
 	 */
-	private function buildCheckboxInput( $label, $name, $id, $value, $defaultAttr = [] ) {
+	private function buildCheckboxInput(
+		string $label,
+		string $name,
+		string $id,
+		string $value,
+		array $defaultAttr = [],
+	): string {
 		$htmlOut = ' <span class="cdx-checkbox cdx-checkbox--inline">';
 		$htmlOut .= Html::element( 'input',
 			[
@@ -852,7 +845,7 @@ REGEX;
 	 * @param bool $isProgressive (optional)
 	 * @return string
 	 */
-	private function buildSubmitInput( $defaultAttr, $isProgressive = false ) {
+	private function buildSubmitInput( array $defaultAttr, bool $isProgressive = false ): string {
 		$defaultAttr[ 'class' ] ??= '';
 		$defaultAttr[ 'class' ] .= ' cdx-button';
 		if ( $isProgressive ) {
@@ -876,10 +869,8 @@ REGEX;
 	/**
 	 * Returns true, if the VisualEditor is requested from the inputbox wikitext definition and
 	 * if the VisualEditor extension is actually installed or not, false otherwise.
-	 *
-	 * @return bool
 	 */
-	private function shouldUseVE() {
+	private function shouldUseVE(): bool {
 		return ExtensionRegistry::getInstance()->isLoaded( 'VisualEditor' ) && $this->mUseVE !== null;
 	}
 
@@ -896,10 +887,8 @@ REGEX;
 	 * accidental behaviour.
 	 *
 	 * @see https://phabricator.wikimedia.org/T180485
-	 * @param string $text
-	 * @return string
 	 */
-	private function languageConvert( $text ) {
+	private function languageConvert( string $text ): string {
 		$langConv = $this->parser->getTargetLanguageConverter();
 		if ( $langConv->hasVariants() && strpos( $text, '-{' ) !== false ) {
 			$text = $langConv->convert( $text );
