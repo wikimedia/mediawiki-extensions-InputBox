@@ -23,8 +23,6 @@ class InputBox {
 
 	/* Fields */
 
-	/** @var Parser */
-	private $mParser;
 	/** @var string */
 	private $mType = '';
 	/** @var int */
@@ -90,23 +88,17 @@ class InputBox {
 
 	/* Functions */
 
-	/**
-	 * @param Config $config
-	 * @param ExtensionRegistry $extensionRegistry
-	 * @param Parser $parser
-	 */
 	public function __construct(
 		private readonly Config $config,
 		private readonly ExtensionRegistry $extensionRegistry,
-		$parser
+		private readonly Parser $parser,
 	) {
-		$this->mParser = $parser;
 		// Default value for dir taken from the page language (bug 37018)
-		$this->mDir = $this->mParser->getTargetLanguage()->getDir();
+		$this->mDir = $parser->getTargetLanguage()->getDir();
 		// Split caches by language, to make sure visitors do not see a cached
 		// version in a random language (since labels are in the user language)
-		$this->mParser->getOptions()->getUserLangObj();
-		$this->mParser->getOutput()->addModuleStyles( [
+		$parser->getOptions()->getUserLangObj();
+		$parser->getOutput()->addModuleStyles( [
 			'ext.inputBox.styles',
 		] );
 	}
@@ -258,7 +250,7 @@ class InputBox {
 		// Determine namespace checkboxes
 		$namespacesArray = explode( ',', $this->mNamespaces );
 		if ( $this->mNamespaces ) {
-			$contLang = $this->mParser->getContentLanguage();
+			$contLang = $this->parser->getContentLanguage();
 			$namespaces = $contLang->getNamespaces();
 			$nsAliases = array_merge(
 				$contLang->getNamespaceAliases(),
@@ -379,7 +371,7 @@ class InputBox {
 			$htmlLabel = Html::openElement( 'label', [ 'for' => 'bodySearchInput' . $id,
 				'class' => 'mw-inputbox-label'
 			] );
-			$htmlLabel .= $this->mParser->recursiveTagParse( $this->mLabelText );
+			$htmlLabel .= $this->parser->recursiveTagParse( $this->mLabelText );
 			$htmlLabel .= Html::closeElement( 'label' );
 		}
 		$htmlOut = Html::openElement( 'form',
@@ -842,9 +834,9 @@ REGEX;
 		} else {
 			// Otherwise, the use search-special-page preference.
 			$searchSpecialPage = $this->config->get( 'DefaultUserOptions' )['search-special-page'] ?? 'Search';
-			if ( $this->mParser->getUserIdentity()->isRegistered() ) {
-				$this->mParser->getOutput()->addModules( [ 'ext.inputBox' ] );
-				$this->mParser->getOutput()->setJsConfigVar( 'SpecialSearchPages', [
+			if ( $this->parser->getUserIdentity()->isRegistered() ) {
+				$this->parser->getOutput()->addModules( [ 'ext.inputBox' ] );
+				$this->parser->getOutput()->setJsConfigVar( 'SpecialSearchPages', [
 					'Search' => SpecialPage::getTitleFor( 'Search' )->getFullText(),
 					'MediaSearch' => SpecialPage::getTitleFor( 'MediaSearch' )->getFullText(),
 				] );
@@ -908,7 +900,7 @@ REGEX;
 	 * @return string
 	 */
 	private function languageConvert( $text ) {
-		$langConv = $this->mParser->getTargetLanguageConverter();
+		$langConv = $this->parser->getTargetLanguageConverter();
 		if ( $langConv->hasVariants() && strpos( $text, '-{' ) !== false ) {
 			$text = $langConv->convert( $text );
 		}
