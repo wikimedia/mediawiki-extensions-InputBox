@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Miilehti"
 		]
 	},
+	"inputbox-tryexact": "Ǩiččâl tääʹrǩes teivvmõõžž",
 	"inputbox-createarticle": "Raaj seeid",
 	"inputbox-movearticle": "Seeʹrd seeid"
 }
